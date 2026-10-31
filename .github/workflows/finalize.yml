@@ -1,0 +1,115 @@
+name: Finalize
+
+# 1) README 顶部插入「在线预览」入口
+# 2) 打 tag v0.4.0 并创建 Release
+# 跳过 .github/workflows/（GITHUB_TOKEN 无权改工作流）
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: README 加在线预览块
+        run: |
+          python3 - <<'PY'
+          import os
+          SITE = 'https://oonb-xu.github.io/xuanji-minglironghe/'
+          p = 'README.md'
+          t = open(p, encoding='utf-8').read()
+          if SITE in t:
+              print('已有在线预览，跳过')
+          else:
+              lines = t.splitlines()
+              i = next((k for k, l in enumerate(lines) if l.startswith('# ')), -1)
+              if i < 0:
+                  print('找不到一级标题，跳过')
+              else:
+                  block = [
+                      '',
+                      '**在线预览**：[oonb-xu.github.io/xuanji-minglironghe](' + SITE + ') · '
+                      '[宣传视频](' + SITE + 'video.html) · '
+                      '[论文](' + SITE + 'paper.html)',
+                      '',
+                      '> 站点只放静态介绍；完整的融合盘 / 合盘 / 六壬 / 生时矫正需要本地运行（`npm start`）。',
+                  ]
+                  lines[i+1:i+1] = block
+                  open(p, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
+                  print('已插入在线预览块')
+          PY
+
+      - name: 提交 README
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "README 无变更"
+          else
+            git commit -m "docs: README 顶部加在线预览入口"
+            git push
+          fi
+
+      - name: 写 Release 说明
+        run: |
+          cat > /tmp/notes.md <<'MD'
+          ## 玄机 v0.4.0 —— 四个体系，一套模型
+
+          > 把八字 / 古典占星 / 七政四余 / 紫微斗数 翻译到同一张盘上。
+          > 不是拼贴，是底层逻辑对应。
+
+          ### 核心结论（已实测，可复核）
+
+          | 对账项 | 结果 |
+          |---|---|
+          | 月支 ↔ 太阳黄经 | 恒等 **100%** |
+          | 时支 ↔ 太阳时角 | **67.5%** |
+          | 60 甲子 ↔ 木土会合 | 3 次会合 **59.58991 年**，极差 0.119 年 |
+          | 命宫 ↔ 上升点 ASC | 结构对应 |
+          | 年柱/日柱 ↔ 逆星历 | 可推，须经「逆星历 → 日期 → 历法锚点」 |
+
+          ### 三层结构
+          几何层（可反推） / 计数层（可推但要转一道） / 符号层（查表即得）
+
+          ### 包含内容
+          - 融合盘 3D：真实星空 + 七柱 + 十二宫 + 双环对照（外环锚黄经、内环锚 ASC）
+          - 合盘 / 大六壬 / 时序 / 生时矫正
+          - 统一 CLI：`xuanji serve | bazi | natal | liuren | rectify | doctor | test`
+          - 39 套回归测试
+          - 完整论证文档（`docs/`，44 篇）
+
+          ### 定位：本地工具，不是网站
+          GitHub Pages 只放静态介绍页；完整的盘面计算需要本机运行：
+
+          ```bash
+          git clone https://github.com/oonb-xu/xuanji-minglironghe.git
+          cd xuanji-minglironghe
+          npm install && npm start
+          ```
+
+          ### 许可
+          Apache-2.0
+
+          ### 免责
+          本项目仅仅是兴趣爱好的开放讨论，不构成任何诊断、预测或决策建议。
+          MD
+
+      - name: 打 tag 并发 Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git tag -f v0.4.0
+          git push -f origin v0.4.0 || true
+          gh release create v0.4.0 \
+            --title "v0.4.0 · 玄机 · 中西命理融合" \
+            --notes-file /tmp/notes.md || echo "Release 已存在或无权限，跳过"
