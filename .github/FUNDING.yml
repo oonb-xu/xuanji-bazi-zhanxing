@@ -1,7 +1,7 @@
 # GitHub 赞助入口（显示在仓库右上角 "Sponsor" 按钮）
 # 爱发电属于「自定义链接」，填在 custom 下
 
-# custom: []   # 爱发电开通后把链接填这里
+custom: ['https://afdian.com/a/XuanJi-tool']
 
 # 如有 GitHub Sponsors，取消注释：
 # github: [your-github-username]
