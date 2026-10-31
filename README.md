@@ -1,5 +1,9 @@
 # 玄机 · 中西命理融合
 
+**在线预览**：[oonb-xu.github.io/xuanji-minglironghe](https://oonb-xu.github.io/xuanji-minglironghe/) · [宣传视频](https://oonb-xu.github.io/xuanji-minglironghe/video.html) · [论文](https://oonb-xu.github.io/xuanji-minglironghe/paper.html)
+
+> 站点只放静态介绍；完整的融合盘 / 合盘 / 六壬 / 生时矫正需要本地运行（`npm start`）。
+
 > 把四套体系（八字 / 古典占星 / 七政四余 / 紫微斗数）翻译到同一张盘上 ——
 > 不是拼贴，是**底层逻辑对应**。
 
