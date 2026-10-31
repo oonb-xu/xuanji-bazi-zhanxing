@@ -1,0 +1,89 @@
+name: Apply patch
+
+# 把 patch.zip 展开覆盖到仓库，并按 DELETE.txt 删除文件。
+# 兼容 PowerShell 打的反斜杠路径；跳过 .github/workflows/。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 应用补丁
+        run: |
+          python3 - <<'PY'
+          import os, shutil, zipfile
+
+          SRC = 'patch.zip'
+          if not os.path.exists(SRC):
+              print('patch.zip 不存在，跳过')
+              raise SystemExit(0)
+
+          def skip(name):
+              return name.startswith('.github/workflows/')
+
+          n = 0
+          with zipfile.ZipFile(SRC) as z:
+              for info in z.infolist():
+                  if info.is_dir():
+                      continue
+                  name = info.filename.replace('\\', '/').lstrip('/')
+                  if name.startswith('./'):
+                      name = name[2:]
+                  if name in ('DELETE.txt', 'patch.zip'):
+                      continue
+                  if skip(name):
+                      print('skip workflow:', name)
+                      continue
+                  dst = os.path.join('.', name)
+                  os.makedirs(os.path.dirname(dst) or '.', exist_ok=True)
+                  with z.open(info) as f, open(dst, 'wb') as o:
+                      shutil.copyfileobj(f, o)
+                  n += 1
+          print('覆盖', n, '个文件')
+
+          # 删除清单
+          if os.path.exists('DELETE.txt'):
+              for line in open('DELETE.txt', encoding='utf-8').read().splitlines():
+                  p = line.strip()
+                  if not p:
+                      continue
+                  if os.path.exists(p):
+                      os.remove(p)
+                      print('deleted', p)
+
+          # 清掉 README 里残留的占位说明
+          p = 'README.md'
+          if os.path.exists(p):
+              t = open(p, encoding='utf-8').read()
+              t2 = t.replace('** （把 YOUR_ID 换成你的爱发电 ID）', '**').replace('（把 YOUR_ID 换成你的爱发电 ID）', '')
+              if t2 != t:
+                  open(p, 'w', encoding='utf-8').write(t2)
+                  print('README 占位说明已清')
+
+          # 清理补丁文件本身
+          for f in ('patch.zip', 'DELETE.txt'):
+              if os.path.exists(f):
+                  os.remove(f)
+                  print('removed', f)
+          PY
+
+      - name: 提交
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: 应用脱敏补丁（关于页搬入站点 + 移除真实案例数据）"
+            git push
+          fi
