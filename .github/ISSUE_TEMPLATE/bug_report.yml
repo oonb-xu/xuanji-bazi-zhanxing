@@ -1,0 +1,42 @@
+name: 🐛 Bug 报告
+description: 报告一个可复现的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢报告！请**务必**用虚构的等价盘代替真实出生时间，避免隐私泄漏。
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象
+      description: 发生了什么？期望是什么？
+      placeholder: 排盘后……期望……实际……
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 最小复现
+      description: 步骤或命令。出生时间请换成虚构的等价盘。
+      placeholder: |
+        1. 打开 / 页
+        2. 输入 2000-01-01 12:00（虚构）
+        3. 点「排盘」
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 环境
+      placeholder: Node 20.11 / Windows 11 / Chrome 120
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 报错信息 / 截图
+      description: 若有控制台报错请贴上（请先确认不含个人信息）
+    validations:
+      required: false

@@ -1,0 +1,110 @@
+# ═══════════════════════════════════════════════════════
+#  玄机 · 中西命理融合 —— .gitignore
+#
+#  ⚠ 三条硬性原则（按优先级）：
+#   1) 隐私：任何真实出生信息（时间/经纬度/姓名/事件）绝不入库
+#   2) 许可：第三方数据集不入库（体积 + 授权）
+#   3) 卫生：构建产物、备份、临时文件、截图不入库
+# ═══════════════════════════════════════════════════════
+
+# ── 依赖与虚拟环境 ──
+node_modules/
+.venv/
+.ephemeris/
+.pnpm-store/
+*.pyc
+__pycache__/
+
+# ── 构建产物 ──
+dist/
+build/
+*.out.json
+*.log
+
+# ── 临时与缓存 ──
+.tmp/
+.npm-cache/
+.cache/
+tools/_dump.json
+
+# ── ⚠ 隐私：真实采集样本一律不入库 ──
+#    data/samples/      用户提交的「出生时间 + 事例」样本
+#    data/samples.jsonl 同上（追加式汇总）
+#    data/contrib/      贡献数据
+data/samples/
+data/samples.jsonl
+data/contrib/
+data/records/
+data/groundtruth/
+data/charts/
+data/cases/
+
+# ── ⚠ 第三方数据集：不入库（体积大 + 各自授权）──
+#    korean     : 韩式 Saju 3.9 万张盘
+#    vedastro   : 第三方星历推理数据
+#    bazi-corpus: 外部八字语料（含抓取内容）
+#    baziqa     : 外部题库
+data/korean/
+data/vedastro/
+data/bazi-corpus/
+data/baziqa/
+data/yangyan/
+data/liuren/
+
+# ── ⚠ 分析产物（可能含真实盘数据）──
+reports/
+
+# ── ⚠ 截图与图片（截图里含测试生辰，且是二进制）──
+shot-*.png
+screenshots/
+browser-screenshots/
+*.psd
+
+# ── ⚠ 本机信息（含用户名/绝对路径）──
+tools/shortcut-result.json
+tools/_dump.json
+*.lnk
+
+# ── 备份文件（工作过程中产生）──
+*.bak
+*.bak*
+*.bak[0-9]*
+*.bak-*
+*.before-*
+*.pre-*
+*_old.*
+*.orig
+
+# ── 编辑器与系统 ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── 本地配置（绝不上传 Key）──
+.env
+.env.*
+!.env.example
+*.local
+config.local.*
+
+# ── 允许入库的示例数据（白名单说明）──
+#    data/samples/_demo-synthetic.json  虚构盘，用于演示与测试
+#    data/schema/                       Schema 定义
+#    data/SOURCES.md                    数据来源登记
+!data/samples/_demo-synthetic.json
+
+# ── 实验副本与空目录（开发过程残留）──
+web-lab/
+logs/
+leph-*/
+video/
+scripts/*.ps1
+
+# ── Python 侧辅助（如需入库请显式放行）──
+py/
+*.pyc
+
+# ── 本地环境变量示例之外的一切 ──
+.env.local

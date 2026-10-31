@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "n": 300,
+    "trainN": 150,
+    "testN": 150,
+    "baseT": 0.5289986406887177,
+    "fitT": 0.540666062528319,
+    "baseS": 0.48067520372526196,
+    "fitS": 0.50023282887078,
+    "overfitBp": -78.90203305916832,
+    "metrics": {
+      "n": 299,
+      "auc": 0.5051670685497761,
+      "pairs": 17418,
+      "hit5": 0.1505016722408027,
+      "hit10": 0.3010033444816054,
+      "mrr": 0.12129109301305838,
+      "randomHit5": 0.09433962264150944,
+      "randomHit10": 0.18867924528301888,
+      "span": 53
+    }
+  },
+  "weights": {
+    "b_chongDay": 1,
+    "b_chongHour": 1,
+    "b_chongYear": 1,
+    "b_chongMonth": 1,
+    "b_tianKeDiChong": 1,
+    "b_fuYin": 1,
+    "b_sanHe": 1,
+    "b_sanXing": 1,
+    "b_isDaYunStart": 1,
+    "a_saturnHit": 1.5,
+    "a_uranusHit": 0,
+    "a_plutoHit": 3,
+    "a_jupiterHit": 0,
+    "a_hitAngle": 0.5,
+    "a_hitLum": -1,
+    "a_closeOrb": 0
+  },
+  "trace": [
+    {
+      "pass": 0,
+      "auc": 0.529
+    },
+    {
+      "pass": 1,
+      "auc": 0.5387,
+      "changed": true
+    },
+    {
+      "pass": 2,
+      "auc": 0.5407,
+      "changed": true
+    }
+  ]
+}

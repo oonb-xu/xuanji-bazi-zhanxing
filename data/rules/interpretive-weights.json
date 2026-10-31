@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "fitOn": "train 2021-2023",
+    "nTrain": 120,
+    "nTest": 80,
+    "baseTrain": 0.2916666666666667,
+    "trainAcc": 0.39166666666666666,
+    "baseTest": 0.2125,
+    "fittedTest": 0.225,
+    "allBase": 52,
+    "allFitted": 65
+  },
+  "weights": {
+    "T-002_chongDay": -2,
+    "T-003_chongHour": -3,
+    "T-004_chongYear": 1.5,
+    "T-006_tianKeDiChong": -3,
+    "T-007_fuYin": 1,
+    "T-001_sanHe": -3,
+    "T-005_sanXing": 2,
+    "kinPalaceChong": 1.5,
+    "H-001_organOver": 2,
+    "H-002_organWeakAttacked": 2,
+    "H-002w_organWeak": 2,
+    "K-005_kinAbsent": 1.5,
+    "K-001_kinMany": 0.8,
+    "K-002_kinPalaceChong": 1.5,
+    "hasYear": 0.2,
+    "hasGanzhi": -3,
+    "isTimeQ": 0,
+    "qKin": 0,
+    "qOrgan": 0,
+    "qWealth": 0,
+    "biasA": -3,
+    "biasB": -1,
+    "biasC": 0,
+    "biasD": 0.5
+  },
+  "table": [
+    {
+      "feature": "T-002_chongDay",
+      "weight": -2,
+      "domain": "时间",
+      "rule": "T-002_chongDay"
+    },
+    {
+      "feature": "T-003_chongHour",
+      "weight": -3,
+      "domain": "时间",
+      "rule": "T-003_chongHour"
+    },
+    {
+      "feature": "T-004_chongYear",
+      "weight": 1.5,
+      "domain": "时间",
+      "rule": "T-004_chongYear"
+    },
+    {
+      "feature": "T-006_tianKeDiChong",
+      "weight": -3,
+      "domain": "时间",
+      "rule": "T-006_tianKeDiChong"
+    },
+    {
+      "feature": "T-007_fuYin",
+      "weight": 1,
+      "domain": "时间",
+      "rule": "T-007_fuYin"
+    },
+    {
+      "feature": "T-001_sanHe",
+      "weight": -3,
+      "domain": "时间",
+      "rule": "T-001_sanHe"
+    },
+    {
+      "feature": "T-005_sanXing",
+      "weight": 2,
+      "domain": "时间",
+      "rule": "T-005_sanXing"
+    },
+    {
+      "feature": "kinPalaceChong",
+      "weight": 1.5,
+      "domain": "问题类型",
+      "rule": "kinPalaceChong"
+    },
+    {
+      "feature": "H-001_organOver",
+      "weight": 2,
+      "domain": "疾病",
+      "rule": "H-001_organOver"
+    },
+    {
+      "feature": "H-002_organWeakAttacked",
+      "weight": 2,
+      "domain": "疾病",
+      "rule": "H-002_organWeakAttacked"
+    },
+    {
+      "feature": "H-002w_organWeak",
+      "weight": 2,
+      "domain": "疾病",
+      "rule": "H-002w_organWeak"
+    },
+    {
+      "feature": "K-005_kinAbsent",
+      "weight": 1.5,
+      "domain": "六亲",
+      "rule": "K-005_kinAbsent"
+    },
+    {
+      "feature": "K-001_kinMany",
+      "weight": 0.8,
+      "domain": "六亲",
+      "rule": "K-001_kinMany"
+    },
+    {
+      "feature": "K-002_kinPalaceChong",
+      "weight": 1.5,
+      "domain": "六亲",
+      "rule": "K-002_kinPalaceChong"
+    },
+    {
+      "feature": "hasYear",
+      "weight": 0.2,
+      "domain": "问题类型",
+      "rule": "hasYear"
+    },
+    {
+      "feature": "hasGanzhi",
+      "weight": -3,
+      "domain": "问题类型",
+      "rule": "hasGanzhi"
+    },
+    {
+      "feature": "isTimeQ",
+      "weight": 0,
+      "domain": "问题类型",
+      "rule": "isTimeQ"
+    },
+    {
+      "feature": "qKin",
+      "weight": 0,
+      "domain": "问题类型",
+      "rule": "qKin"
+    },
+    {
+      "feature": "qOrgan",
+      "weight": 0,
+      "domain": "问题类型",
+      "rule": "qOrgan"
+    },
+    {
+      "feature": "qWealth",
+      "weight": 0,
+      "domain": "问题类型",
+      "rule": "qWealth"
+    },
+    {
+      "feature": "biasA",
+      "weight": -3,
+      "domain": "选项位置",
+      "rule": "biasA"
+    },
+    {
+      "feature": "biasB",
+      "weight": -1,
+      "domain": "选项位置",
+      "rule": "biasB"
+    },
+    {
+      "feature": "biasC",
+      "weight": 0,
+      "domain": "选项位置",
+      "rule": "biasC"
+    },
+    {
+      "feature": "biasD",
+      "weight": 0.5,
+      "domain": "选项位置",
+      "rule": "biasD"
+    }
+  ],
+  "trace": [
+    {
+      "pass": 0,
+      "acc": 0.2917
+    },
+    {
+      "pass": 1,
+      "acc": 0.3417,
+      "changed": true
+    },
+    {
+      "pass": 2,
+      "acc": 0.375,
+      "changed": true
+    },
+    {
+      "pass": 3,
+      "acc": 0.3917,
+      "changed": true
+    }
+  ]
+}

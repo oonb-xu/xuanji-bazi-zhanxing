@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>术语查表 · 四系统白话对照</title>
+<style>
+  :root{--bg:#04070d;--fg:#dfeaf5;--mut:#8ba6bf;--line:rgba(90,160,220,.18);--gold:#ffc457;--cyan:#5ef1ff;--green:#7dffb4;--red:#ff9a8a}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 800px at 50% -10%,#0a1524,#04070d 60%);color:var(--fg);
+    font:14px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;padding:28px 20px 80px}
+  .wrap{max-width:1080px;margin:0 auto}
+  h1{font-size:22px;margin:0 0 6px;letter-spacing:.02em}
+  .sub{color:var(--mut);font-size:12.5px;margin-bottom:22px}
+  .search{position:relative;margin-bottom:18px}
+  .search input{width:100%;padding:14px 16px;font-size:15px;color:var(--fg);background:rgba(8,16,28,.8);
+    border:1px solid var(--line);border-radius:10px;outline:none}
+  .search input:focus{border-color:rgba(94,241,255,.5);box-shadow:0 0 0 3px rgba(94,241,255,.08)}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}
+  .chip{padding:4px 11px;border-radius:999px;font-size:12px;cursor:pointer;user-select:none;
+    background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--mut)}
+  .chip:hover,.chip.on{background:rgba(94,241,255,.13);border-color:rgba(94,241,255,.45);color:var(--cyan)}
+  .card{background:rgba(8,16,28,.62);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+  .card h2{font-size:15px;margin:0 0 12px;color:#eaf7ff;display:flex;align-items:baseline;gap:10px}
+  .card h2 span{font-size:11.5px;color:var(--mut);font-weight:400}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{text-align:left;color:rgba(150,205,235,.62);font-size:11px;letter-spacing:.08em;padding:7px 9px;
+    border-bottom:1px solid var(--line);font-weight:600;white-space:nowrap}
+  td{padding:9px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:top;line-height:1.7}
+  tr:last-child td{border-bottom:none}
+  .pn{color:#eaf7ff;font-weight:700;white-space:nowrap}
+  .tg{display:inline-block;padding:1px 9px;border-radius:999px;font-size:11px;font-weight:700;
+    background:rgba(255,196,87,.14);border:1px solid rgba(255,196,87,.4);color:var(--gold);white-space:nowrap}
+  .sys{display:inline-block;padding:1px 9px;border-radius:999px;font-size:11px;
+    background:rgba(94,241,255,.1);border:1px solid rgba(94,241,255,.3);color:var(--cyan);white-space:nowrap}
+  .mut{color:var(--mut);font-size:12px}
+  .hit{background:rgba(94,241,255,.035)}
+  .empty{color:var(--mut);text-align:center;padding:34px 0}
+  .note{color:var(--mut);font-size:11.5px;margin-top:10px;line-height:1.8}
+  .warn{color:var(--red)}
+  .layers{margin:0;padding:0;list-style:none}
+  .layers li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+  .layers li:last-child{border-bottom:none}
+  .layers b{color:var(--cyan)}
+  .tag{font-size:11px;padding:1px 7px;border-radius:5px;background:rgba(255,255,255,.07);color:var(--mut);margin-left:6px}
+  .back{position:fixed;bottom:18px;right:18px;padding:9px 16px;border-radius:9px;background:rgba(8,16,28,.92);
+    border:1px solid var(--line);color:var(--cyan);text-decoration:none;font-size:12.5px}
+  @media(max-width:640px){th:nth-child(4),td:nth-child(4){display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>术语查表 · 四系统白话对照</h1>
+  <div class="sub">输入任意一个星宿 / 神煞 / 主星 / 行星名，看它属于哪套体系、对应哪个十神、白话是什么意思。<br>
+    一个词可能同时属于多套体系（例如「太阳」既是紫微主星也是占星行星），会一并列出。</div>
+
+  <div class="search">
+    <input id="q" placeholder="试试：七杀 / 罗睺 / 土星 / 桃花 / 天梁 / 天蝎 / 第7宫 / 角宿" autocomplete="off">
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div id="result"></div>
+
+  
+</div>
+<a class="back" href="/">← 回主界面</a>
+
+<script>
+let DATA = null;
+
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function renderEntries(list, kw){
+  if (!list.length) return '<div class="card"><div class="empty">没找到「' + esc(kw) + '」</div></div>';
+  let h = '<div class="card"><h2>「' + esc(kw || '全部') + '」 <span>' + list.length + ' 条</span></h2>';
+  h += '<table><thead><tr><th>术语</th><th>体系</th><th>十神</th><th>对应</th><th>白话</th></tr></thead><tbody>';
+  for (const e of list) {
+    h += '<tr class="hit"><td class="pn">' + esc(e.term) + '</td>'
+      + '<td><span class="sys">' + esc(e.system) + '</span> <span class="mut">' + esc(e.kind) + '</span></td>'
+      + '<td>' + (e.tg && e.tg !== '—' ? '<span class="tg">' + esc(e.tg) + '</span>' : '<span class="mut">—</span>') + '</td>'
+      + '<td class="mut">' + esc(e.as) + '</td>'
+      + '<td>' + esc(e.plain) + (e.note ? '<div class="mut" style="font-size:11px;margin-top:3px">' + esc(e.note) + '</div>' : '') + '</td></tr>';
+  }
+  return h + '</tbody></table></div>';
+}
+
+function search(kw){
+  if (!DATA) return;
+  const q = (kw || '').trim();
+  if (!q) {
+    document.querySelector('#result').innerHTML =
+      '<div class="card"><div class="empty">输入一个术语开始查（共 ' + DATA.count + ' 条）</div></div>';
+    return;
+  }
+  // 精确优先，其次包含
+  const exact = DATA.entries.filter(e => e.term === q);
+  const fuzzy = DATA.entries.filter(e => e.term !== q && (e.term.includes(q) || (e.as||'').includes(q) || (e.plain||'').includes(q)));
+  document.querySelector('#result').innerHTML = renderEntries([...exact, ...fuzzy], q);
+}
+
+/* 已迁出：各体系独有优势/庙旺差异/一图四层/四系统共同骨架 → index.html 关于页 */
+
+
+fetch('/glossary-data.json', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(j => {
+    DATA = j;
+    const chips = ['七杀', '罗睺', '土星', '桃花', '天梁', '天蝎', '第7宫', '角宿', '化忌', '月亮'];
+    document.querySelector('#chips').innerHTML = chips.map(c => '<span class="chip" data-k="' + c + '">' + c + '</span>').join('');
+    document.querySelector('#chips').addEventListener('click', e => {
+      const k = e.target.closest('.chip');
+      if (!k) return;
+      document.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
+      k.classList.add('on');
+      document.querySelector('#q').value = k.dataset.k;
+      search(k.dataset.k);
+    });
+    let t = null;
+    document.querySelector('#q').addEventListener('input', e => {
+      clearTimeout(t);
+      const v = e.target.value;
+      t = setTimeout(() => search(v), 120);
+    });
+    /* 4 板块已迁至关于页方法论之后，此处不再渲染 */
+    search('');
+  })
+  .catch(e => {
+    document.querySelector('#result').innerHTML = '<div class="card"><div class="empty">数据加载失败：' + esc(e.message) + '</div></div>';
+  });
+</script>
+</body>
+</html>

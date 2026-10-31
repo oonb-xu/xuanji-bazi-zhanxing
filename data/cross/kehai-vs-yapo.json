@@ -1,0 +1,9002 @@
+[
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0.89,
+   "pluPressure": 0,
+   "uraPressure": 1.613,
+   "hardCount": 17,
+   "hardDensity": 0.4474,
+   "total": 2.7346368421052634
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.979,
+   "marPressure": 0.646,
+   "pluPressure": 0,
+   "uraPressure": 1.233,
+   "hardCount": 24,
+   "hardDensity": 0.48,
+   "total": 4.0778
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.625,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.425
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.909,
+   "marPressure": 1.777,
+   "pluPressure": 0.883,
+   "uraPressure": 1.248,
+   "hardCount": 16,
+   "hardDensity": 0.32,
+   "total": 2.9446
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.5,
+   "xingChong": 1.8,
+   "oppress": 2.5,
+   "total": 11.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 1.409,
+   "uraPressure": 1.935,
+   "hardCount": 24,
+   "hardDensity": 0.6316,
+   "total": 3.266357894736842
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 3.211,
+   "uraPressure": 3.032,
+   "hardCount": 14,
+   "hardDensity": 0.359,
+   "total": 2.590848717948718
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 1.608,
+   "pluPressure": 1.046,
+   "uraPressure": 2.55,
+   "hardCount": 21,
+   "hardDensity": 0.3818,
+   "total": 3.485636363636364
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 1,
+   "oppress": 1.5,
+   "total": 4.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.28,
+   "marPressure": 0,
+   "pluPressure": 2.348,
+   "uraPressure": 0.596,
+   "hardCount": 10,
+   "hardDensity": 0.303,
+   "total": 3.129260606060606
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.656,
+   "marPressure": 0,
+   "pluPressure": 0.384,
+   "uraPressure": 1.351,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 1.4485000000000001
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.777,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 0.268,
+   "hardCount": 11,
+   "hardDensity": 0.3438,
+   "total": 1.1564
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.375,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 9.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.803,
+   "uraPressure": 0.233,
+   "hardCount": 15,
+   "hardDensity": 0.3571,
+   "total": 1.0250857142857144
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.915,
+   "marPressure": 0.794,
+   "pluPressure": 1.688,
+   "uraPressure": 2.069,
+   "hardCount": 14,
+   "hardDensity": 0.3684,
+   "total": 4.139042105263158
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.25,
+   "xingChong": 2.1,
+   "oppress": 3.5,
+   "total": 12.85
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.005,
+   "marPressure": 0.269,
+   "pluPressure": 0,
+   "uraPressure": 2.785,
+   "hardCount": 14,
+   "hardDensity": 0.3684,
+   "total": 2.1824421052631577
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0,
+   "oppress": 0.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.278,
+   "marPressure": 0,
+   "pluPressure": 1.031,
+   "uraPressure": 0,
+   "hardCount": 6,
+   "hardDensity": 0.1714,
+   "total": 1.2911571428571427
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.04,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 11,
+   "hardDensity": 0.3143,
+   "total": 1.0445714285714285
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.451,
+   "marPressure": 1.25,
+   "pluPressure": 3.319,
+   "uraPressure": 2.134,
+   "hardCount": 22,
+   "hardDensity": 0.3929,
+   "total": 4.647114285714286
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.88,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.824,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 2.121346341463415
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.726,
+   "marPressure": 0.49,
+   "pluPressure": 1.012,
+   "uraPressure": 0.682,
+   "hardCount": 19,
+   "hardDensity": 0.4043,
+   "total": 1.875710638297872
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.468,
+   "marPressure": 0.893,
+   "pluPressure": 2.059,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 3.3089000000000004
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 3.3,
+   "oppress": 2.5,
+   "total": 10.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.894,
+   "marPressure": 0,
+   "pluPressure": 0.999,
+   "uraPressure": 1.562,
+   "hardCount": 11,
+   "hardDensity": 0.2895,
+   "total": 2.7942473684210527
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.453,
+   "marPressure": 0.99,
+   "pluPressure": 1.054,
+   "uraPressure": 0.358,
+   "hardCount": 9,
+   "hardDensity": 0.2308,
+   "total": 1.5076384615384617
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.174,
+   "marPressure": 0.347,
+   "pluPressure": 0.744,
+   "uraPressure": 0.583,
+   "hardCount": 12,
+   "hardDensity": 0.375,
+   "total": 1.8739
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 3.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 1.558,
+   "pluPressure": 0,
+   "uraPressure": 2.065,
+   "hardCount": 12,
+   "hardDensity": 0.2609,
+   "total": 2.764439130434783
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 2.3,
+   "oppress": 2.5,
+   "total": 8.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.411,
+   "pluPressure": 0.794,
+   "uraPressure": 1.211,
+   "hardCount": 13,
+   "hardDensity": 0.3333,
+   "total": 1.8325666666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 3.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.442,
+   "marPressure": 1.645,
+   "pluPressure": 0,
+   "uraPressure": 1.644,
+   "hardCount": 17,
+   "hardDensity": 0.2833,
+   "total": 1.9388666666666665
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.125,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 8.125
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.633,
+   "marPressure": 0.666,
+   "pluPressure": 1.558,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.3636,
+   "total": 2.2775727272727275
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.875,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 8.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.448,
+   "marPressure": 0,
+   "pluPressure": 0.584,
+   "uraPressure": 1.334,
+   "hardCount": 16,
+   "hardDensity": 0.4211,
+   "total": 1.6415052631578946
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 7.85
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.428,
+   "marPressure": 0.557,
+   "pluPressure": 1.659,
+   "uraPressure": 0.557,
+   "hardCount": 10,
+   "hardDensity": 0.2632,
+   "total": 2.127915789473684
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 4.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.914,
+   "marPressure": 2.85,
+   "pluPressure": 0.748,
+   "uraPressure": 0.291,
+   "hardCount": 18,
+   "hardDensity": 0.439,
+   "total": 4.786748780487805
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.375,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 10.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.643,
+   "marPressure": 0,
+   "pluPressure": 2.203,
+   "uraPressure": 1.944,
+   "hardCount": 21,
+   "hardDensity": 0.375,
+   "total": 2.8156
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.5,
+   "oppress": 1.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.775,
+   "marPressure": 2.196,
+   "pluPressure": 0,
+   "uraPressure": 0.775,
+   "hardCount": 20,
+   "hardDensity": 0.3448,
+   "total": 2.188055172413793
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 2.1,
+   "oppress": 2.5,
+   "total": 9.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.374,
+   "marPressure": 1.477,
+   "pluPressure": 2.419,
+   "uraPressure": 0.395,
+   "hardCount": 16,
+   "hardDensity": 0.2963,
+   "total": 3.2145925925925924
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.729,
+   "pluPressure": 0,
+   "uraPressure": 0.675,
+   "hardCount": 14,
+   "hardDensity": 0.35,
+   "total": 1.9941000000000002
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 2.1,
+   "oppress": 3.5,
+   "total": 12.1
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.587,
+   "marPressure": 1.252,
+   "pluPressure": 0.252,
+   "uraPressure": 0,
+   "hardCount": 7,
+   "hardDensity": 0.2,
+   "total": 2.7699
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.278,
+   "marPressure": 0.966,
+   "pluPressure": 2.118,
+   "uraPressure": 0.278,
+   "hardCount": 16,
+   "hardDensity": 0.4211,
+   "total": 2.086305263157895
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.324,
+   "uraPressure": 0.62,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 0.9173463414634146
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.344,
+   "marPressure": 1.45,
+   "pluPressure": 1.448,
+   "uraPressure": 0,
+   "hardCount": 17,
+   "hardDensity": 0.4359,
+   "total": 2.5581948717948717
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 1.762,
+   "uraPressure": 0.624,
+   "hardCount": 16,
+   "hardDensity": 0.4,
+   "total": 1.5158
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.375,
+   "xingChong": 1,
+   "oppress": 1.5,
+   "total": 4.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.037,
+   "marPressure": 0.38,
+   "pluPressure": 0.38,
+   "uraPressure": 0,
+   "hardCount": 17,
+   "hardDensity": 0.4146,
+   "total": 1.6137682926829267
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 7.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.968,
+   "pluPressure": 0.777,
+   "uraPressure": 0.746,
+   "hardCount": 11,
+   "hardDensity": 0.2683,
+   "total": 1.3806853658536586
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 7.55
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.698,
+   "marPressure": 1.798,
+   "pluPressure": 1.737,
+   "uraPressure": 0.438,
+   "hardCount": 16,
+   "hardDensity": 0.3019,
+   "total": 3.8244735849056606
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.856,
+   "marPressure": 0.747,
+   "pluPressure": 1.447,
+   "uraPressure": 2.96,
+   "hardCount": 15,
+   "hardDensity": 0.2941,
+   "total": 2.6371352941176474
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.375,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 7.375
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.633,
+   "marPressure": 2.372,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3488,
+   "total": 2.962974418604651
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 11
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.56,
+   "pluPressure": 1.233,
+   "uraPressure": 1.634,
+   "hardCount": 17,
+   "hardDensity": 0.4146,
+   "total": 1.913368292682927
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 1.5,
+   "total": 4.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.51,
+   "marPressure": 0.684,
+   "pluPressure": 0.684,
+   "uraPressure": 1.85,
+   "hardCount": 16,
+   "hardDensity": 0.3721,
+   "total": 3.032986046511628
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 9.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.851,
+   "marPressure": 0,
+   "pluPressure": 0.288,
+   "uraPressure": 1.681,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 2.556740540540541
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 11.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.627,
+   "marPressure": 2.799,
+   "pluPressure": 3.379,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.4419,
+   "total": 3.3305209302325585
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.02,
+   "marPressure": 0,
+   "pluPressure": 0.228,
+   "uraPressure": 0.341,
+   "hardCount": 14,
+   "hardDensity": 0.4242,
+   "total": 3.5291848484848485
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.273,
+   "marPressure": 2.071,
+   "pluPressure": 3.405,
+   "uraPressure": 2.259,
+   "hardCount": 23,
+   "hardDensity": 0.5349,
+   "total": 4.233867441860465
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.359,
+   "pluPressure": 1.44,
+   "uraPressure": 0.834,
+   "hardCount": 8,
+   "hardDensity": 0.2,
+   "total": 1.2258
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 2,
+   "total": 2
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.49,
+   "marPressure": 0,
+   "pluPressure": 0.585,
+   "uraPressure": 0.3,
+   "hardCount": 8,
+   "hardDensity": 0.2424,
+   "total": 1.4953484848484848
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.325,
+   "pluPressure": 0,
+   "uraPressure": 4.42,
+   "hardCount": 20,
+   "hardDensity": 0.5263,
+   "total": 2.5086315789473685
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 2.1,
+   "oppress": 2.5,
+   "total": 6.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.106,
+   "pluPressure": 2.317,
+   "uraPressure": 0,
+   "hardCount": 17,
+   "hardDensity": 0.3617,
+   "total": 1.860904255319149
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 3.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.897,
+   "marPressure": 1.334,
+   "pluPressure": 1.178,
+   "uraPressure": 1.103,
+   "hardCount": 11,
+   "hardDensity": 0.2895,
+   "total": 2.2453473684210525
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.985,
+   "marPressure": 1.465,
+   "pluPressure": 0.521,
+   "uraPressure": 2.872,
+   "hardCount": 20,
+   "hardDensity": 0.4167,
+   "total": 3.9297333333333335
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.905,
+   "uraPressure": 0.525,
+   "hardCount": 11,
+   "hardDensity": 0.3056,
+   "total": 2.040111111111111
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 1.655,
+   "pluPressure": 0,
+   "uraPressure": 1.911,
+   "hardCount": 16,
+   "hardDensity": 0.4103,
+   "total": 3.0558128205128208
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.253,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.375,
+   "total": 1.2511999999999999
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.86,
+   "marPressure": 3.558,
+   "pluPressure": 1.894,
+   "uraPressure": 0.739,
+   "hardCount": 20,
+   "hardDensity": 0.4255,
+   "total": 5.994163829787234
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.788,
+   "marPressure": 1.547,
+   "pluPressure": 1.461,
+   "uraPressure": 1.916,
+   "hardCount": 13,
+   "hardDensity": 0.3611,
+   "total": 3.2481222222222224
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.435,
+   "marPressure": 1.219,
+   "pluPressure": 1.663,
+   "uraPressure": 1.531,
+   "hardCount": 14,
+   "hardDensity": 0.4118,
+   "total": 3.486829411764706
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.772,
+   "marPressure": 0,
+   "pluPressure": 0.723,
+   "uraPressure": 1.039,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 2.9551405405405404
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.26,
+   "marPressure": 1.578,
+   "pluPressure": 2.313,
+   "uraPressure": 0.725,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 3.3237627906976748
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.3,
+   "oppress": 1.5,
+   "total": 7.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.91,
+   "marPressure": 2.374,
+   "pluPressure": 1.645,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.2927,
+   "total": 2.4834658536585366
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.716,
+   "pluPressure": 0.716,
+   "uraPressure": 1.982,
+   "hardCount": 13,
+   "hardDensity": 0.4063,
+   "total": 1.9083
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.625,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 5.925
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.402,
+   "marPressure": 0.768,
+   "pluPressure": 0.366,
+   "uraPressure": 1.915,
+   "hardCount": 14,
+   "hardDensity": 0.359,
+   "total": 1.910448717948718
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 5.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.053,
+   "marPressure": 0.813,
+   "pluPressure": 1.088,
+   "uraPressure": 1.935,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 2.9394510638297873
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 2,
+   "total": 2
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.191,
+   "marPressure": 1.406,
+   "pluPressure": 0.562,
+   "uraPressure": 2.948,
+   "hardCount": 17,
+   "hardDensity": 0.3542,
+   "total": 3.4192333333333336
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 7.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.758,
+   "marPressure": 0.706,
+   "pluPressure": 0.758,
+   "uraPressure": 0.978,
+   "hardCount": 9,
+   "hardDensity": 0.2368,
+   "total": 1.6558842105263156
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 9.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 2.404,
+   "uraPressure": 0.679,
+   "hardCount": 22,
+   "hardDensity": 0.449,
+   "total": 1.8228591836734693
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.808,
+   "marPressure": 1.119,
+   "pluPressure": 3.259,
+   "uraPressure": 1.33,
+   "hardCount": 19,
+   "hardDensity": 0.3878,
+   "total": 4.003810204081633
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.36,
+   "marPressure": 2.707,
+   "pluPressure": 0.44,
+   "uraPressure": 0.348,
+   "hardCount": 18,
+   "hardDensity": 0.4091,
+   "total": 2.8173818181818184
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 9
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.529,
+   "marPressure": 0.649,
+   "pluPressure": 0.649,
+   "uraPressure": 0.622,
+   "hardCount": 22,
+   "hardDensity": 0.44,
+   "total": 2.7854
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 8.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.838,
+   "marPressure": 0.838,
+   "pluPressure": 0.784,
+   "uraPressure": 0.83,
+   "hardCount": 13,
+   "hardDensity": 0.3714,
+   "total": 2.981257142857143
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 3.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.771,
+   "marPressure": 2.557,
+   "pluPressure": 1.627,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.3684,
+   "total": 2.633242105263158
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 2.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.883,
+   "marPressure": 0.517,
+   "pluPressure": 2.969,
+   "uraPressure": 0.449,
+   "hardCount": 16,
+   "hardDensity": 0.3478,
+   "total": 2.369352173913043
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.159,
+   "marPressure": 0.561,
+   "pluPressure": 0.896,
+   "uraPressure": 1.283,
+   "hardCount": 10,
+   "hardDensity": 0.2381,
+   "total": 2.9337904761904765
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.831,
+   "pluPressure": 2.003,
+   "uraPressure": 0.28,
+   "hardCount": 10,
+   "hardDensity": 0.2439,
+   "total": 1.9051048780487805
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 6.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.837,
+   "marPressure": 0.431,
+   "pluPressure": 0.862,
+   "uraPressure": 0.837,
+   "hardCount": 10,
+   "hardDensity": 0.2632,
+   "total": 2.626915789473684
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 7.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.503,
+   "marPressure": 3.306,
+   "pluPressure": 3.792,
+   "uraPressure": 3.945,
+   "hardCount": 17,
+   "hardDensity": 0.3148,
+   "total": 7.024629629629629
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.371,
+   "marPressure": 1.849,
+   "pluPressure": 0.509,
+   "uraPressure": 0.509,
+   "hardCount": 8,
+   "hardDensity": 0.2,
+   "total": 1.6305
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.5,
+   "xingChong": 0,
+   "oppress": 2,
+   "total": 2.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.063,
+   "marPressure": 0.34,
+   "pluPressure": 0.34,
+   "uraPressure": 0.742,
+   "hardCount": 12,
+   "hardDensity": 0.3243,
+   "total": 1.6407486486486487
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.347,
+   "marPressure": 1,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 11,
+   "hardDensity": 0.2683,
+   "total": 2.6100853658536587
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 9.35
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.38,
+   "marPressure": 0.777,
+   "pluPressure": 0.7,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.35,
+   "total": 2.9108
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.37,
+   "marPressure": 1.296,
+   "pluPressure": 1.246,
+   "uraPressure": 0.261,
+   "hardCount": 11,
+   "hardDensity": 0.3548,
+   "total": 1.8651774193548387
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 4.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.094,
+   "marPressure": 0,
+   "pluPressure": 1.381,
+   "uraPressure": 0.206,
+   "hardCount": 13,
+   "hardDensity": 0.2708,
+   "total": 2.064766666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 7.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.467,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 0.933,
+   "hardCount": 12,
+   "hardDensity": 0.2857,
+   "total": 1.5848285714285715
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 3.1,
+   "oppress": 3.5,
+   "total": 10.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.576,
+   "marPressure": 1.38,
+   "pluPressure": 0.818,
+   "uraPressure": 0.818,
+   "hardCount": 12,
+   "hardDensity": 0.3243,
+   "total": 2.9794486486486487
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0.8,
+   "oppress": 2,
+   "total": 2.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.705,
+   "pluPressure": 1.417,
+   "uraPressure": 3.262,
+   "hardCount": 24,
+   "hardDensity": 0.4,
+   "total": 2.8857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 2.3,
+   "oppress": 2.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.738,
+   "marPressure": 2.402,
+   "pluPressure": 1.599,
+   "uraPressure": 2.084,
+   "hardCount": 15,
+   "hardDensity": 0.3125,
+   "total": 3.0597000000000003
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 6.6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.009,
+   "marPressure": 0.814,
+   "pluPressure": 1.806,
+   "uraPressure": 0.814,
+   "hardCount": 15,
+   "hardDensity": 0.3191,
+   "total": 4.254397872340426
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.5,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 2.117,
+   "uraPressure": 1.876,
+   "hardCount": 12,
+   "hardDensity": 0.3333,
+   "total": 2.8645666666666663
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.204,
+   "marPressure": 0.73,
+   "pluPressure": 2.418,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.2093,
+   "total": 2.0380046511627907
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.222,
+   "marPressure": 0.704,
+   "pluPressure": 0.52,
+   "uraPressure": 0.52,
+   "hardCount": 13,
+   "hardDensity": 0.3095,
+   "total": 2.823647619047619
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.226,
+   "pluPressure": 0.633,
+   "uraPressure": 0.633,
+   "hardCount": 12,
+   "hardDensity": 0.2927,
+   "total": 1.4555658536585365
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0.5,
+   "oppress": 3,
+   "total": 3.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.711,
+   "marPressure": 0.711,
+   "pluPressure": 0,
+   "uraPressure": 1.376,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 1.733551063829787
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.44,
+   "marPressure": 2.8,
+   "pluPressure": 0.256,
+   "uraPressure": 1.44,
+   "hardCount": 15,
+   "hardDensity": 0.3125,
+   "total": 2.4737999999999998
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 3.2,
+   "oppress": 0,
+   "total": 8.7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.869,
+   "marPressure": 0.869,
+   "pluPressure": 0.717,
+   "uraPressure": 1.218,
+   "hardCount": 11,
+   "hardDensity": 0.2973,
+   "total": 2.9571945945945948
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 1,
+   "oppress": 0.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.805,
+   "marPressure": 0,
+   "pluPressure": 0.249,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3191,
+   "total": 2.615497872340425
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.411,
+   "marPressure": 2.82,
+   "pluPressure": 0.524,
+   "uraPressure": 0.968,
+   "hardCount": 15,
+   "hardDensity": 0.3571,
+   "total": 2.4953857142857143
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 12.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.899,
+   "marPressure": 1.318,
+   "pluPressure": 1.14,
+   "uraPressure": 0.955,
+   "hardCount": 14,
+   "hardDensity": 0.4375,
+   "total": 2.4802
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.296,
+   "marPressure": 2.288,
+   "pluPressure": 0.368,
+   "uraPressure": 0,
+   "hardCount": 18,
+   "hardDensity": 0.36,
+   "total": 2.3936
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.875,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.799,
+   "marPressure": 0.735,
+   "pluPressure": 3.856,
+   "uraPressure": 1.902,
+   "hardCount": 20,
+   "hardDensity": 0.4545,
+   "total": 3.329990909090909
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.375,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.213,
+   "marPressure": 2.146,
+   "pluPressure": 1.526,
+   "uraPressure": 1.565,
+   "hardCount": 14,
+   "hardDensity": 0.359,
+   "total": 3.110148717948718
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.083,
+   "marPressure": 0.514,
+   "pluPressure": 1.62,
+   "uraPressure": 2.935,
+   "hardCount": 18,
+   "hardDensity": 0.3462,
+   "total": 2.8059076923076924
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.89,
+   "marPressure": 1.024,
+   "pluPressure": 0.718,
+   "uraPressure": 1.883,
+   "hardCount": 13,
+   "hardDensity": 0.3611,
+   "total": 2.8571222222222223
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 7.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.84,
+   "marPressure": 0.616,
+   "pluPressure": 2.098,
+   "uraPressure": 1.9,
+   "hardCount": 15,
+   "hardDensity": 0.3659,
+   "total": 4.097507317073171
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 3.1,
+   "oppress": 3.5,
+   "total": 10.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.951,
+   "marPressure": 1.074,
+   "pluPressure": 0,
+   "uraPressure": 0.774,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 1.7714463414634145
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.198,
+   "marPressure": 1.187,
+   "pluPressure": 1.11,
+   "uraPressure": 0.596,
+   "hardCount": 15,
+   "hardDensity": 0.4412,
+   "total": 2.4679529411764705
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.372,
+   "marPressure": 0.853,
+   "pluPressure": 1.708,
+   "uraPressure": 1.427,
+   "hardCount": 19,
+   "hardDensity": 0.3115,
+   "total": 2.090650819672131
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.377,
+   "marPressure": 1.257,
+   "pluPressure": 0.933,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.2449,
+   "total": 1.460995918367347
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.875,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.619,
+   "marPressure": 0.712,
+   "pluPressure": 0.839,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3261,
+   "total": 1.9981739130434784
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 2.1,
+   "oppress": 3.5,
+   "total": 9.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.389,
+   "marPressure": 0.389,
+   "pluPressure": 1.107,
+   "uraPressure": 0,
+   "hardCount": 18,
+   "hardDensity": 0.4286,
+   "total": 1.5393428571428571
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 10.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.472,
+   "marPressure": 1.208,
+   "pluPressure": 2.053,
+   "uraPressure": 0.869,
+   "hardCount": 12,
+   "hardDensity": 0.3529,
+   "total": 2.8016823529411767
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.125,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6.625
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.783,
+   "marPressure": 1.134,
+   "pluPressure": 1.596,
+   "uraPressure": 1.529,
+   "hardCount": 9,
+   "hardDensity": 0.2308,
+   "total": 2.2441384615384616
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 9.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 3.393,
+   "pluPressure": 0,
+   "uraPressure": 0.559,
+   "hardCount": 15,
+   "hardDensity": 0.3125,
+   "total": 2.1498999999999997
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.736,
+   "marPressure": 2.563,
+   "pluPressure": 0.85,
+   "uraPressure": 0.85,
+   "hardCount": 17,
+   "hardDensity": 0.3617,
+   "total": 2.626604255319149
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 3.0999999999999996,
+   "oppress": 2.5,
+   "total": 10.85
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.571,
+   "marPressure": 0.475,
+   "pluPressure": 4.474,
+   "uraPressure": 0,
+   "hardCount": 24,
+   "hardDensity": 0.5,
+   "total": 3.3177000000000003
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 2.1,
+   "oppress": 3.5,
+   "total": 6.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.469,
+   "marPressure": 2.278,
+   "pluPressure": 3.322,
+   "uraPressure": 2.793,
+   "hardCount": 18,
+   "hardDensity": 0.4091,
+   "total": 4.298381818181818
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.375,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.055,
+   "marPressure": 0.287,
+   "pluPressure": 0,
+   "uraPressure": 0.695,
+   "hardCount": 8,
+   "hardDensity": 0.1951,
+   "total": 1.2410439024390243
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.388,
+   "uraPressure": 1.639,
+   "hardCount": 10,
+   "hardDensity": 0.2778,
+   "total": 1.1636555555555557
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 2,
+   "total": 2
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.863,
+   "marPressure": 0.974,
+   "pluPressure": 2.078,
+   "uraPressure": 1.395,
+   "hardCount": 13,
+   "hardDensity": 0.3611,
+   "total": 4.085222222222222
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 3.362,
+   "marPressure": 1.828,
+   "pluPressure": 0,
+   "uraPressure": 0.272,
+   "hardCount": 21,
+   "hardDensity": 0.4468,
+   "total": 3.3874170212765957
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 10.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.89,
+   "marPressure": 1.248,
+   "pluPressure": 0.284,
+   "uraPressure": 1.187,
+   "hardCount": 18,
+   "hardDensity": 0.4,
+   "total": 3.1855
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 10.55
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.157,
+   "marPressure": 0,
+   "pluPressure": 3.368,
+   "uraPressure": 0.63,
+   "hardCount": 21,
+   "hardDensity": 0.3684,
+   "total": 3.514742105263158
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.625,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 5.625
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.395,
+   "marPressure": 2.756,
+   "pluPressure": 1.768,
+   "uraPressure": 0.662,
+   "hardCount": 18,
+   "hardDensity": 0.4615,
+   "total": 3.9519769230769235
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.506,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.482,
+   "hardCount": 15,
+   "hardDensity": 0.3125,
+   "total": 3.3226
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.116,
+   "marPressure": 1.303,
+   "pluPressure": 0.328,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 2.8287627906976747
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.75,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 10.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.304,
+   "marPressure": 1.314,
+   "pluPressure": 1.015,
+   "uraPressure": 0,
+   "hardCount": 10,
+   "hardDensity": 0.2632,
+   "total": 2.008415789473684
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 6.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.663,
+   "marPressure": 1.43,
+   "pluPressure": 0,
+   "uraPressure": 0.663,
+   "hardCount": 11,
+   "hardDensity": 0.2973,
+   "total": 2.696994594594595
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 10.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.99,
+   "marPressure": 0,
+   "pluPressure": 1.465,
+   "uraPressure": 0.33,
+   "hardCount": 11,
+   "hardDensity": 0.2444,
+   "total": 2.0223888888888886
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.275,
+   "pluPressure": 1.705,
+   "uraPressure": 2.134,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 2.6617
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 4.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.636,
+   "marPressure": 0,
+   "pluPressure": 2.295,
+   "uraPressure": 1.386,
+   "hardCount": 11,
+   "hardDensity": 0.2895,
+   "total": 2.0012473684210526
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.444,
+   "marPressure": 1.253,
+   "pluPressure": 0.761,
+   "uraPressure": 1.548,
+   "hardCount": 15,
+   "hardDensity": 0.4286,
+   "total": 3.773042857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 5.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.331,
+   "marPressure": 0.275,
+   "pluPressure": 0,
+   "uraPressure": 1.3,
+   "hardCount": 15,
+   "hardDensity": 0.3488,
+   "total": 3.363174418604651
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.204,
+   "marPressure": 1.184,
+   "pluPressure": 0.651,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.2692,
+   "total": 1.3093615384615385
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 4.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 1.784,
+   "uraPressure": 0.668,
+   "hardCount": 15,
+   "hardDensity": 0.3571,
+   "total": 2.4498857142857142
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.989,
+   "marPressure": 2.036,
+   "pluPressure": 0.274,
+   "uraPressure": 0.974,
+   "hardCount": 8,
+   "hardDensity": 0.2286,
+   "total": 2.6404428571428573
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 6.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.408,
+   "marPressure": 0.405,
+   "pluPressure": 1.45,
+   "uraPressure": 1.508,
+   "hardCount": 8,
+   "hardDensity": 0.2424,
+   "total": 1.7382484848484847
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 6.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.514,
+   "marPressure": 0,
+   "pluPressure": 0.408,
+   "uraPressure": 0.255,
+   "hardCount": 17,
+   "hardDensity": 0.3208,
+   "total": 3.5974094339622633
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.102,
+   "marPressure": 2.065,
+   "pluPressure": 0,
+   "uraPressure": 1.72,
+   "hardCount": 13,
+   "hardDensity": 0.3611,
+   "total": 4.115222222222222
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.302,
+   "marPressure": 2.269,
+   "pluPressure": 0.395,
+   "uraPressure": 1.1,
+   "hardCount": 11,
+   "hardDensity": 0.2895,
+   "total": 3.586047368421053
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 10.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.877,
+   "marPressure": 0.623,
+   "pluPressure": 2.41,
+   "uraPressure": 0.835,
+   "hardCount": 19,
+   "hardDensity": 0.2969,
+   "total": 3.25495
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.412,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.522,
+   "hardCount": 13,
+   "hardDensity": 0.3333,
+   "total": 1.3292666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.988,
+   "marPressure": 0.871,
+   "pluPressure": 0.764,
+   "uraPressure": 1.361,
+   "hardCount": 11,
+   "hardDensity": 0.2821,
+   "total": 3.0440025641025645
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 3.067,
+   "marPressure": 2.032,
+   "pluPressure": 0.605,
+   "uraPressure": 1.414,
+   "hardCount": 20,
+   "hardDensity": 0.4348,
+   "total": 3.821565217391304
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.475,
+   "marPressure": 2.029,
+   "pluPressure": 1.119,
+   "uraPressure": 1.698,
+   "hardCount": 9,
+   "hardDensity": 0.2432,
+   "total": 2.380686486486486
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 1.8,
+   "oppress": 3,
+   "total": 4.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.913,
+   "marPressure": 2.227,
+   "pluPressure": 1.836,
+   "uraPressure": 0.235,
+   "hardCount": 12,
+   "hardDensity": 0.2857,
+   "total": 4.5400285714285715
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 3.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.634,
+   "marPressure": 0.763,
+   "pluPressure": 0,
+   "uraPressure": 1.667,
+   "hardCount": 15,
+   "hardDensity": 0.3947,
+   "total": 1.9117736842105264
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.375,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 3.875
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.645,
+   "marPressure": 0.686,
+   "pluPressure": 1.441,
+   "uraPressure": 0.686,
+   "hardCount": 14,
+   "hardDensity": 0.35,
+   "total": 3.4350000000000005
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 7.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.605,
+   "marPressure": 0.834,
+   "pluPressure": 0.753,
+   "uraPressure": 0.605,
+   "hardCount": 14,
+   "hardDensity": 0.4242,
+   "total": 1.8919848484848485
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 6.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.485,
+   "marPressure": 0.888,
+   "pluPressure": 1.441,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.2889,
+   "total": 1.6077777777777778
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.32,
+   "marPressure": 1.28,
+   "pluPressure": 1.541,
+   "uraPressure": 1.508,
+   "hardCount": 12,
+   "hardDensity": 0.24,
+   "total": 2.5667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 6.1
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.829,
+   "marPressure": 0.617,
+   "pluPressure": 1.885,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.3958,
+   "total": 4.018466666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.875,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.056,
+   "marPressure": 2.137,
+   "pluPressure": 0.876,
+   "uraPressure": 0.546,
+   "hardCount": 16,
+   "hardDensity": 0.4211,
+   "total": 2.651505263157895
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.875,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5.875
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.079,
+   "marPressure": 1.52,
+   "pluPressure": 1.515,
+   "uraPressure": 0,
+   "hardCount": 16,
+   "hardDensity": 0.4103,
+   "total": 3.9225128205128206
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.919,
+   "marPressure": 0,
+   "pluPressure": 3.593,
+   "uraPressure": 0.904,
+   "hardCount": 19,
+   "hardDensity": 0.38,
+   "total": 3.0686
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 11.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.434,
+   "marPressure": 0.546,
+   "pluPressure": 0,
+   "uraPressure": 1.055,
+   "hardCount": 10,
+   "hardDensity": 0.2857,
+   "total": 1.8233285714285714
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 4.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.085,
+   "pluPressure": 1.578,
+   "uraPressure": 1.113,
+   "hardCount": 15,
+   "hardDensity": 0.3571,
+   "total": 1.9555857142857143
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0.5,
+   "oppress": 2,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.711,
+   "marPressure": 1.149,
+   "pluPressure": 2.268,
+   "uraPressure": 0.674,
+   "hardCount": 12,
+   "hardDensity": 0.3333,
+   "total": 2.8643666666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 2.6,
+   "oppress": 2.5,
+   "total": 6.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.901,
+   "marPressure": 0.476,
+   "pluPressure": 0,
+   "uraPressure": 0.365,
+   "hardCount": 15,
+   "hardDensity": 0.4054,
+   "total": 1.561210810810811
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.706,
+   "pluPressure": 0.38,
+   "uraPressure": 0.706,
+   "hardCount": 12,
+   "hardDensity": 0.3243,
+   "total": 1.2568486486486488
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 7.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.386,
+   "marPressure": 1.089,
+   "pluPressure": 0.475,
+   "uraPressure": 0.386,
+   "hardCount": 13,
+   "hardDensity": 0.26,
+   "total": 2.4069000000000003
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 2.1,
+   "oppress": 3.5,
+   "total": 9.35
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.185,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.579,
+   "hardCount": 9,
+   "hardDensity": 0.2,
+   "total": 1.9662000000000002
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.864,
+   "marPressure": 0,
+   "pluPressure": 2.484,
+   "uraPressure": 0.877,
+   "hardCount": 8,
+   "hardDensity": 0.1778,
+   "total": 3.2958555555555558
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 7.85
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.711,
+   "marPressure": 2.087,
+   "pluPressure": 1.312,
+   "uraPressure": 1.42,
+   "hardCount": 12,
+   "hardDensity": 0.3429,
+   "total": 2.695614285714286
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.826,
+   "marPressure": 0.449,
+   "pluPressure": 1.233,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3421,
+   "total": 2.6467105263157893
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 7.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.877,
+   "marPressure": 0,
+   "pluPressure": 1.815,
+   "uraPressure": 0.897,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 1.7926405405405406
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8.5,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.262,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 7,
+   "hardDensity": 0.175,
+   "total": 0.981
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.539,
+   "marPressure": 1.274,
+   "pluPressure": 0.631,
+   "uraPressure": 0.948,
+   "hardCount": 8,
+   "hardDensity": 0.16,
+   "total": 2.0728
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.125,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.925
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.072,
+   "marPressure": 1.445,
+   "pluPressure": 1.289,
+   "uraPressure": 1.178,
+   "hardCount": 16,
+   "hardDensity": 0.32,
+   "total": 3.9941
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.822,
+   "marPressure": 1.073,
+   "pluPressure": 1.623,
+   "uraPressure": 1.198,
+   "hardCount": 15,
+   "hardDensity": 0.3846,
+   "total": 3.4557307692307693
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.875,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.675
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.74,
+   "marPressure": 0.671,
+   "pluPressure": 1.29,
+   "uraPressure": 1.111,
+   "hardCount": 13,
+   "hardDensity": 0.3514,
+   "total": 3.061402702702703
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.809,
+   "marPressure": 0.599,
+   "pluPressure": 0.888,
+   "uraPressure": 0.902,
+   "hardCount": 11,
+   "hardDensity": 0.2157,
+   "total": 3.112472549019608
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.702,
+   "marPressure": 2.369,
+   "pluPressure": 0.574,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.2727,
+   "total": 3.0162545454545455
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 7.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.365,
+   "marPressure": 2.012,
+   "pluPressure": 0.864,
+   "uraPressure": 0.24,
+   "hardCount": 16,
+   "hardDensity": 0.3137,
+   "total": 3.445950980392157
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.531,
+   "marPressure": 0,
+   "pluPressure": 0.372,
+   "uraPressure": 1.925,
+   "hardCount": 29,
+   "hardDensity": 0.6591,
+   "total": 4.2727818181818185
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 2.6,
+   "oppress": 2.5,
+   "total": 6.85
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.03,
+   "marPressure": 1.646,
+   "pluPressure": 0.617,
+   "uraPressure": 1.402,
+   "hardCount": 13,
+   "hardDensity": 0.2708,
+   "total": 2.3207666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.428,
+   "marPressure": 3.567,
+   "pluPressure": 1.023,
+   "uraPressure": 0.486,
+   "hardCount": 20,
+   "hardDensity": 0.4545,
+   "total": 3.0025909090909093
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.625,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.125
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.441,
+   "marPressure": 1.043,
+   "pluPressure": 1.577,
+   "uraPressure": 0.985,
+   "hardCount": 11,
+   "hardDensity": 0.275,
+   "total": 2.4563000000000006
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.526,
+   "marPressure": 0.526,
+   "pluPressure": 1.168,
+   "uraPressure": 0,
+   "hardCount": 11,
+   "hardDensity": 0.3056,
+   "total": 2.934911111111111
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0.816,
+   "pluPressure": 1.54,
+   "uraPressure": 0.816,
+   "hardCount": 20,
+   "hardDensity": 0.3704,
+   "total": 2.7739407407407404
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.875,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 9.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.911,
+   "marPressure": 0,
+   "pluPressure": 0.535,
+   "uraPressure": 0.479,
+   "hardCount": 10,
+   "hardDensity": 0.2778,
+   "total": 1.3152555555555556
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.748,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.359,
+   "total": 1.017148717948718
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 9.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.738,
+   "marPressure": 1.098,
+   "pluPressure": 0.803,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.3415,
+   "total": 3.232026829268293
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.893,
+   "marPressure": 0.678,
+   "pluPressure": 1.202,
+   "uraPressure": 1.9,
+   "hardCount": 12,
+   "hardDensity": 0.2667,
+   "total": 3.6816333333333326
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 0.5,
+   "oppress": 1.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.537,
+   "marPressure": 2.566,
+   "pluPressure": 2.544,
+   "uraPressure": 2.199,
+   "hardCount": 18,
+   "hardDensity": 0.4737,
+   "total": 4.665168421052631
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0.8,
+   "oppress": 3,
+   "total": 3.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.673,
+   "marPressure": 0.886,
+   "pluPressure": 2.06,
+   "uraPressure": 0.261,
+   "hardCount": 18,
+   "hardDensity": 0.3913,
+   "total": 4.169808695652174
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 2.437,
+   "pluPressure": 1.217,
+   "uraPressure": 2.661,
+   "hardCount": 14,
+   "hardDensity": 0.4,
+   "total": 3.9382
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 0.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.675,
+   "marPressure": 1.997,
+   "pluPressure": 0.775,
+   "uraPressure": 0.81,
+   "hardCount": 17,
+   "hardDensity": 0.3036,
+   "total": 3.218942857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 0,
+   "oppress": 2,
+   "total": 7.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.261,
+   "marPressure": 2.665,
+   "pluPressure": 5.111,
+   "uraPressure": 0.721,
+   "hardCount": 27,
+   "hardDensity": 0.4426,
+   "total": 3.8313459016393443
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.375,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 10.475
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.007,
+   "marPressure": 0,
+   "pluPressure": 1.29,
+   "uraPressure": 0.214,
+   "hardCount": 18,
+   "hardDensity": 0.4,
+   "total": 1.7547000000000001
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 2.3,
+   "oppress": 3.5,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.498,
+   "marPressure": 0.551,
+   "pluPressure": 2.175,
+   "uraPressure": 1.636,
+   "hardCount": 14,
+   "hardDensity": 0.3415,
+   "total": 3.295626829268293
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 2.6,
+   "oppress": 2.5,
+   "total": 6.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.901,
+   "marPressure": 0.476,
+   "pluPressure": 0,
+   "uraPressure": 0.365,
+   "hardCount": 15,
+   "hardDensity": 0.4054,
+   "total": 1.561210810810811
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 8.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 3.241,
+   "marPressure": 3.099,
+   "pluPressure": 1.054,
+   "uraPressure": 0.267,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 3.937251063829787
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.869,
+   "marPressure": 0.799,
+   "pluPressure": 0.657,
+   "uraPressure": 1.369,
+   "hardCount": 11,
+   "hardDensity": 0.3235,
+   "total": 3.0089588235294116
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.513,
+   "marPressure": 0.891,
+   "pluPressure": 1.788,
+   "uraPressure": 0.69,
+   "hardCount": 20,
+   "hardDensity": 0.4762,
+   "total": 3.8086809523809517
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.498,
+   "marPressure": 0.498,
+   "pluPressure": 0,
+   "uraPressure": 0.232,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 2.151946341463415
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 2.3,
+   "oppress": 3.5,
+   "total": 11.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.078,
+   "marPressure": 0.531,
+   "pluPressure": 0.696,
+   "uraPressure": 1.506,
+   "hardCount": 11,
+   "hardDensity": 0.2895,
+   "total": 2.990947368421053
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.775,
+   "marPressure": 0,
+   "pluPressure": 0.535,
+   "uraPressure": 2.075,
+   "hardCount": 13,
+   "hardDensity": 0.2708,
+   "total": 1.7121666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0.8,
+   "oppress": 1.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.574,
+   "marPressure": 0,
+   "pluPressure": 1.979,
+   "uraPressure": 0.985,
+   "hardCount": 11,
+   "hardDensity": 0.2558,
+   "total": 3.1878279069767443
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.125,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7.125
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0.252,
+   "pluPressure": 2.646,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.4118,
+   "total": 2.718129411764706
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.125,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.625
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.766,
+   "marPressure": 0.762,
+   "pluPressure": 0.803,
+   "uraPressure": 1.546,
+   "hardCount": 13,
+   "hardDensity": 0.2889,
+   "total": 1.9702777777777778
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.345,
+   "marPressure": 0.573,
+   "pluPressure": 0,
+   "uraPressure": 0.505,
+   "hardCount": 21,
+   "hardDensity": 0.3443,
+   "total": 3.2417245901639347
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.5,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 2
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.134,
+   "marPressure": 1.193,
+   "pluPressure": 0.382,
+   "uraPressure": 1.792,
+   "hardCount": 14,
+   "hardDensity": 0.3333,
+   "total": 2.3630666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.038,
+   "marPressure": 0.284,
+   "pluPressure": 2.458,
+   "uraPressure": 0.689,
+   "hardCount": 21,
+   "hardDensity": 0.4773,
+   "total": 4.531245454545455
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 1.607,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.3878,
+   "total": 1.2576102040816326
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 5.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.843,
+   "marPressure": 0.546,
+   "pluPressure": 1.13,
+   "uraPressure": 0.965,
+   "hardCount": 13,
+   "hardDensity": 0.3333,
+   "total": 3.4350666666666663
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 3.567,
+   "marPressure": 0,
+   "pluPressure": 0.704,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.475,
+   "total": 2.9447
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.375,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 6.475
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.399,
+   "marPressure": 0.688,
+   "pluPressure": 2.236,
+   "uraPressure": 0.656,
+   "hardCount": 18,
+   "hardDensity": 0.3462,
+   "total": 2.5346076923076923
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.338,
+   "marPressure": 2.49,
+   "pluPressure": 1.666,
+   "uraPressure": 1.194,
+   "hardCount": 12,
+   "hardDensity": 0.2667,
+   "total": 3.5563333333333333
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.635,
+   "marPressure": 2.084,
+   "pluPressure": 0,
+   "uraPressure": 1.497,
+   "hardCount": 11,
+   "hardDensity": 0.2619,
+   "total": 2.124009523809524
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.467,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3659,
+   "total": 1.4652073170731708
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.917,
+   "marPressure": 1.299,
+   "pluPressure": 1.766,
+   "uraPressure": 0.789,
+   "hardCount": 12,
+   "hardDensity": 0.2727,
+   "total": 2.290054545454545
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.883,
+   "marPressure": 2.329,
+   "pluPressure": 1.92,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.2727,
+   "total": 4.4945545454545455
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.126,
+   "pluPressure": 0,
+   "uraPressure": 0.751,
+   "hardCount": 14,
+   "hardDensity": 0.3784,
+   "total": 1.4324567567567568
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 5.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.465,
+   "marPressure": 0.468,
+   "pluPressure": 0.99,
+   "uraPressure": 0.445,
+   "hardCount": 13,
+   "hardDensity": 0.3023,
+   "total": 2.4548511627906975
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.685,
+   "marPressure": 0,
+   "pluPressure": 0.594,
+   "uraPressure": 0.594,
+   "hardCount": 16,
+   "hardDensity": 0.4211,
+   "total": 2.0410052631578948
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.125,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 4.625
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.582,
+   "marPressure": 1.392,
+   "pluPressure": 1.178,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.2093,
+   "total": 2.1198046511627906
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.875,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.175
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.377,
+   "marPressure": 0.448,
+   "pluPressure": 0.613,
+   "uraPressure": 0.775,
+   "hardCount": 8,
+   "hardDensity": 0.2286,
+   "total": 1.241242857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.823,
+   "marPressure": 0,
+   "pluPressure": 1.452,
+   "uraPressure": 1.702,
+   "hardCount": 14,
+   "hardDensity": 0.3415,
+   "total": 3.0406268292682928
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 3.195,
+   "pluPressure": 0.395,
+   "uraPressure": 0.395,
+   "hardCount": 24,
+   "hardDensity": 0.5217,
+   "total": 2.558478260869565
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.886,
+   "pluPressure": 0.229,
+   "uraPressure": 2.345,
+   "hardCount": 21,
+   "hardDensity": 0.4565,
+   "total": 2.4396434782608694
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 2.6,
+   "oppress": 2.5,
+   "total": 7.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.901,
+   "marPressure": 3.208,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 3.3678463414634146
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 0.5,
+   "oppress": 1.5,
+   "total": 3.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.735,
+   "marPressure": 1.721,
+   "pluPressure": 0.324,
+   "uraPressure": 2.536,
+   "hardCount": 11,
+   "hardDensity": 0.3143,
+   "total": 2.5424714285714285
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.229,
+   "pluPressure": 0,
+   "uraPressure": 0.26,
+   "hardCount": 16,
+   "hardDensity": 0.3556,
+   "total": 1.680711111111111
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.426,
+   "pluPressure": 0.744,
+   "uraPressure": 2.952,
+   "hardCount": 12,
+   "hardDensity": 0.3429,
+   "total": 1.9649142857142856
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 2.3,
+   "oppress": 3.5,
+   "total": 11.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.357,
+   "marPressure": 0.5,
+   "pluPressure": 2.137,
+   "uraPressure": 1.264,
+   "hardCount": 13,
+   "hardDensity": 0.3514,
+   "total": 2.1015027027027027
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1.6,
+   "oppress": 1.5,
+   "total": 6.6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.259,
+   "marPressure": 0,
+   "pluPressure": 1.551,
+   "uraPressure": 1.626,
+   "hardCount": 10,
+   "hardDensity": 0.303,
+   "total": 2.6886606060606058
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.452,
+   "marPressure": 1.783,
+   "pluPressure": 1.619,
+   "uraPressure": 1.126,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 3.9138627906976744
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.875,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.89,
+   "marPressure": 0.566,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.1837,
+   "total": 1.5387469387755102
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.275,
+   "marPressure": 0,
+   "pluPressure": 1.845,
+   "uraPressure": 0.953,
+   "hardCount": 23,
+   "hardDensity": 0.575,
+   "total": 2.6269
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 4.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.217,
+   "pluPressure": 1.989,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.2889,
+   "total": 1.2612777777777777
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.351,
+   "marPressure": 0.23,
+   "pluPressure": 0.23,
+   "uraPressure": 0.272,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 2.5692627906976746
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 3.612,
+   "pluPressure": 2.314,
+   "uraPressure": 0,
+   "hardCount": 21,
+   "hardDensity": 0.4667,
+   "total": 3.072333333333334
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.938,
+   "marPressure": 1.696,
+   "pluPressure": 1.857,
+   "uraPressure": 1.646,
+   "hardCount": 10,
+   "hardDensity": 0.2273,
+   "total": 2.6528454545454543
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.249,
+   "marPressure": 2.375,
+   "pluPressure": 0,
+   "uraPressure": 1.865,
+   "hardCount": 17,
+   "hardDensity": 0.425,
+   "total": 4.484
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.399,
+   "pluPressure": 1.895,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3947,
+   "total": 1.9175736842105262
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.55,
+   "marPressure": 1.209,
+   "pluPressure": 1.706,
+   "uraPressure": 1.279,
+   "hardCount": 17,
+   "hardDensity": 0.3864,
+   "total": 3.426827272727273
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.889,
+   "marPressure": 1.178,
+   "pluPressure": 0.478,
+   "uraPressure": 0.589,
+   "hardCount": 21,
+   "hardDensity": 0.4884,
+   "total": 2.712544186046512
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.375,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.175
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.873,
+   "marPressure": 0.746,
+   "pluPressure": 0,
+   "uraPressure": 1.443,
+   "hardCount": 13,
+   "hardDensity": 0.2826,
+   "total": 1.7330173913043478
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.375,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.954,
+   "marPressure": 2.734,
+   "pluPressure": 0.941,
+   "uraPressure": 0.647,
+   "hardCount": 16,
+   "hardDensity": 0.3333,
+   "total": 2.7136666666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 2.3,
+   "oppress": 3.5,
+   "total": 12.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.461,
+   "marPressure": 0.794,
+   "pluPressure": 0.751,
+   "uraPressure": 2.155,
+   "hardCount": 10,
+   "hardDensity": 0.2273,
+   "total": 2.3744454545454547
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 6.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.234,
+   "marPressure": 0,
+   "pluPressure": 0.673,
+   "uraPressure": 1.544,
+   "hardCount": 12,
+   "hardDensity": 0.2727,
+   "total": 2.3275545454545457
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.241,
+   "marPressure": 1.161,
+   "pluPressure": 0.384,
+   "uraPressure": 1.649,
+   "hardCount": 17,
+   "hardDensity": 0.4048,
+   "total": 4.004323809523809
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 11.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.023,
+   "marPressure": 0,
+   "pluPressure": 0.898,
+   "uraPressure": 0.888,
+   "hardCount": 12,
+   "hardDensity": 0.2609,
+   "total": 3.0690391304347826
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 9
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.522,
+   "marPressure": 1.009,
+   "pluPressure": 1.153,
+   "uraPressure": 0.784,
+   "hardCount": 16,
+   "hardDensity": 0.2759,
+   "total": 3.797424137931034
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.75,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 10.85
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.397,
+   "marPressure": 0.93,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 2.2046463414634148
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 5.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.29,
+   "marPressure": 0.694,
+   "pluPressure": 0.563,
+   "uraPressure": 0.451,
+   "hardCount": 12,
+   "hardDensity": 0.2727,
+   "total": 1.2722545454545453
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.625,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7.625
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.084,
+   "marPressure": 0,
+   "pluPressure": 1.119,
+   "uraPressure": 1.323,
+   "hardCount": 14,
+   "hardDensity": 0.4118,
+   "total": 2.098129411764706
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.579,
+   "pluPressure": 0.708,
+   "uraPressure": 1.761,
+   "hardCount": 9,
+   "hardDensity": 0.2093,
+   "total": 1.3909046511627907
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.294,
+   "marPressure": 0.736,
+   "pluPressure": 1.934,
+   "uraPressure": 0.796,
+   "hardCount": 19,
+   "hardDensity": 0.3016,
+   "total": 2.363574603174603
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 5.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.585,
+   "marPressure": 0,
+   "pluPressure": 0.539,
+   "uraPressure": 2.225,
+   "hardCount": 14,
+   "hardDensity": 0.3889,
+   "total": 2.8994777777777774
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.875,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 5.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.759,
+   "marPressure": 1.596,
+   "pluPressure": 1.037,
+   "uraPressure": 0.417,
+   "hardCount": 11,
+   "hardDensity": 0.2973,
+   "total": 2.0486945945945947
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.929,
+   "marPressure": 0.328,
+   "pluPressure": 0.328,
+   "uraPressure": 1.986,
+   "hardCount": 22,
+   "hardDensity": 0.55,
+   "total": 4.389900000000001
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.5,
+   "xingChong": 1.8,
+   "oppress": 2.5,
+   "total": 11.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.73,
+   "marPressure": 0.676,
+   "pluPressure": 0,
+   "uraPressure": 0.267,
+   "hardCount": 17,
+   "hardDensity": 0.3953,
+   "total": 1.5061976744186047
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 0,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.365,
+   "marPressure": 0.761,
+   "pluPressure": 1.021,
+   "uraPressure": 0.656,
+   "hardCount": 11,
+   "hardDensity": 0.3438,
+   "total": 2.6775
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 2,
+   "total": 2
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.73,
+   "pluPressure": 0,
+   "uraPressure": 1.673,
+   "hardCount": 14,
+   "hardDensity": 0.3889,
+   "total": 1.9716777777777779
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.244,
+   "marPressure": 0.564,
+   "pluPressure": 1.202,
+   "uraPressure": 1.28,
+   "hardCount": 10,
+   "hardDensity": 0.2857,
+   "total": 3.6636285714285712
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.158,
+   "marPressure": 0,
+   "pluPressure": 1.346,
+   "uraPressure": 0,
+   "hardCount": 23,
+   "hardDensity": 0.4259,
+   "total": 2.8346518518518518
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.025,
+   "pluPressure": 0.316,
+   "uraPressure": 1.288,
+   "hardCount": 12,
+   "hardDensity": 0.2927,
+   "total": 1.4765658536585367
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 13.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.642,
+   "pluPressure": 0.294,
+   "uraPressure": 3.755,
+   "hardCount": 20,
+   "hardDensity": 0.3175,
+   "total": 2.5064206349206346
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.883,
+   "marPressure": 0,
+   "pluPressure": 2.54,
+   "uraPressure": 1.204,
+   "hardCount": 8,
+   "hardDensity": 0.1951,
+   "total": 2.4549439024390245
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.816,
+   "marPressure": 0.815,
+   "pluPressure": 0.525,
+   "uraPressure": 0.471,
+   "hardCount": 10,
+   "hardDensity": 0.2564,
+   "total": 3.0456205128205127
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 11.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.302,
+   "marPressure": 1.769,
+   "pluPressure": 0.724,
+   "uraPressure": 0.478,
+   "hardCount": 15,
+   "hardDensity": 0.3659,
+   "total": 3.450907317073171
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 9.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.695,
+   "marPressure": 3.455,
+   "pluPressure": 3.087,
+   "uraPressure": 1.141,
+   "hardCount": 20,
+   "hardDensity": 0.339,
+   "total": 4.175866101694915
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.75,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 10.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.055,
+   "marPressure": 0.693,
+   "pluPressure": 1.231,
+   "uraPressure": 0.473,
+   "hardCount": 17,
+   "hardDensity": 0.5,
+   "total": 3.8159
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 9
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 2.881,
+   "pluPressure": 1.513,
+   "uraPressure": 0.572,
+   "hardCount": 16,
+   "hardDensity": 0.3019,
+   "total": 3.38167358490566
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.875,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 4.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.28,
+   "marPressure": 1.807,
+   "pluPressure": 0.927,
+   "uraPressure": 1.468,
+   "hardCount": 15,
+   "hardDensity": 0.3488,
+   "total": 2.278974418604651
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.379,
+   "pluPressure": 1.344,
+   "uraPressure": 1.708,
+   "hardCount": 12,
+   "hardDensity": 0.3636,
+   "total": 2.1944727272727276
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.908,
+   "marPressure": 0.925,
+   "pluPressure": 2.021,
+   "uraPressure": 1.67,
+   "hardCount": 11,
+   "hardDensity": 0.2157,
+   "total": 2.3626725490196074
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 7.35
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0.455,
+   "pluPressure": 2.37,
+   "uraPressure": 0,
+   "hardCount": 18,
+   "hardDensity": 0.4,
+   "total": 2.6929999999999996
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.695,
+   "marPressure": 1.698,
+   "pluPressure": 2.307,
+   "uraPressure": 0.975,
+   "hardCount": 15,
+   "hardDensity": 0.3191,
+   "total": 2.6495978723404257
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0.8,
+   "oppress": 2,
+   "total": 5.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.888,
+   "marPressure": 0.951,
+   "pluPressure": 2.203,
+   "uraPressure": 0.951,
+   "hardCount": 16,
+   "hardDensity": 0.32,
+   "total": 2.9106
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.307,
+   "marPressure": 0.344,
+   "pluPressure": 1.435,
+   "uraPressure": 0.738,
+   "hardCount": 20,
+   "hardDensity": 0.3704,
+   "total": 3.183740740740741
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.104,
+   "marPressure": 0,
+   "pluPressure": 0.403,
+   "uraPressure": 1.672,
+   "hardCount": 13,
+   "hardDensity": 0.2889,
+   "total": 2.2522777777777776
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.446,
+   "marPressure": 0,
+   "pluPressure": 1.069,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.25,
+   "total": 1.0436999999999999
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.55
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.644,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 0.259,
+   "hardCount": 14,
+   "hardDensity": 0.359,
+   "total": 2.6176487179487182
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.195,
+   "marPressure": 2.669,
+   "pluPressure": 0.861,
+   "uraPressure": 1.218,
+   "hardCount": 17,
+   "hardDensity": 0.4359,
+   "total": 3.660594871794872
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.276,
+   "marPressure": 1.807,
+   "pluPressure": 0.424,
+   "uraPressure": 2.661,
+   "hardCount": 22,
+   "hardDensity": 0.4583,
+   "total": 3.7029666666666663
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.255,
+   "marPressure": 1.596,
+   "pluPressure": 1.33,
+   "uraPressure": 0.534,
+   "hardCount": 11,
+   "hardDensity": 0.2558,
+   "total": 2.336727906976744
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0.5,
+   "oppress": 3,
+   "total": 3.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 3.132,
+   "pluPressure": 0,
+   "uraPressure": 0.695,
+   "hardCount": 16,
+   "hardDensity": 0.4103,
+   "total": 3.2818128205128207
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.21,
+   "hardCount": 10,
+   "hardDensity": 0.2326,
+   "total": 0.8281162790697674
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.36,
+   "marPressure": 1.995,
+   "pluPressure": 1.712,
+   "uraPressure": 1.592,
+   "hardCount": 11,
+   "hardDensity": 0.2558,
+   "total": 3.480827906976744
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.379,
+   "marPressure": 0.915,
+   "pluPressure": 0.989,
+   "uraPressure": 1.101,
+   "hardCount": 12,
+   "hardDensity": 0.2667,
+   "total": 3.215833333333333
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.556,
+   "marPressure": 2.179,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.4167,
+   "total": 2.4829333333333334
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.945,
+   "marPressure": 1.76,
+   "pluPressure": 0,
+   "uraPressure": 0.858,
+   "hardCount": 21,
+   "hardDensity": 0.4375,
+   "total": 3.3089
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 5.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.011,
+   "marPressure": 0.634,
+   "pluPressure": 0,
+   "uraPressure": 0.378,
+   "hardCount": 15,
+   "hardDensity": 0.3659,
+   "total": 2.604207317073171
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.419,
+   "marPressure": 3.32,
+   "pluPressure": 1.389,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.3585,
+   "total": 4.671181132075472
+  }
+ },
+ {
+  "b": {
+   "guanSha": 10,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 14.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.266,
+   "marPressure": 0.682,
+   "pluPressure": 2.016,
+   "uraPressure": 0,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 2.6914510638297875
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.5,
+   "oppress": 1.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.763,
+   "pluPressure": 0.763,
+   "uraPressure": 0,
+   "hardCount": 17,
+   "hardDensity": 0.3953,
+   "total": 1.3247976744186047
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.672,
+   "marPressure": 1.585,
+   "pluPressure": 0,
+   "uraPressure": 1.685,
+   "hardCount": 22,
+   "hardDensity": 0.5238,
+   "total": 3.0231190476190477
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 4.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.741,
+   "marPressure": 1.645,
+   "pluPressure": 0.689,
+   "uraPressure": 1.432,
+   "hardCount": 9,
+   "hardDensity": 0.2571,
+   "total": 2.179085714285714
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 7.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.143,
+   "hardCount": 9,
+   "hardDensity": 0.18,
+   "total": 0.7029
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.375,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 9.475
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.318,
+   "marPressure": 0.586,
+   "pluPressure": 1.036,
+   "uraPressure": 1.158,
+   "hardCount": 16,
+   "hardDensity": 0.3077,
+   "total": 2.6669846153846155
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.375,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 3.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.456,
+   "marPressure": 2.26,
+   "pluPressure": 0.458,
+   "uraPressure": 0.458,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 2.4473405405405404
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.715,
+   "marPressure": 0.439,
+   "pluPressure": 0,
+   "uraPressure": 2.426,
+   "hardCount": 17,
+   "hardDensity": 0.2537,
+   "total": 1.7683626865671642
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.924,
+   "marPressure": 1.436,
+   "pluPressure": 0.497,
+   "uraPressure": 1.975,
+   "hardCount": 15,
+   "hardDensity": 0.283,
+   "total": 3.844037735849056
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.32,
+   "marPressure": 0.304,
+   "pluPressure": 0.692,
+   "uraPressure": 0.542,
+   "hardCount": 13,
+   "hardDensity": 0.3514,
+   "total": 1.8545027027027028
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.839,
+   "marPressure": 1,
+   "pluPressure": 0,
+   "uraPressure": 0.839,
+   "hardCount": 20,
+   "hardDensity": 0.5128,
+   "total": 2.0968410256410257
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.715,
+   "marPressure": 0.686,
+   "pluPressure": 1.999,
+   "uraPressure": 1.751,
+   "hardCount": 26,
+   "hardDensity": 0.4262,
+   "total": 3.109359016393443
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.655,
+   "marPressure": 1.321,
+   "pluPressure": 0,
+   "uraPressure": 1.945,
+   "hardCount": 12,
+   "hardDensity": 0.3077,
+   "total": 3.5547846153846154
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.899,
+   "pluPressure": 1.344,
+   "uraPressure": 0.525,
+   "hardCount": 14,
+   "hardDensity": 0.3111,
+   "total": 1.5425222222222224
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0.357,
+   "pluPressure": 0.686,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.4,
+   "total": 2.1486
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.667,
+   "marPressure": 0.517,
+   "pluPressure": 0,
+   "uraPressure": 1.602,
+   "hardCount": 12,
+   "hardDensity": 0.3158,
+   "total": 1.6524789473684212
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.375,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.212,
+   "marPressure": 2.387,
+   "pluPressure": 1.779,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.3333,
+   "total": 2.2611666666666665
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.725,
+   "marPressure": 0,
+   "pluPressure": 0.974,
+   "uraPressure": 1.114,
+   "hardCount": 8,
+   "hardDensity": 0.2222,
+   "total": 1.4333444444444443
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0.5,
+   "oppress": 3,
+   "total": 3.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.68,
+   "marPressure": 1.082,
+   "pluPressure": 0,
+   "uraPressure": 0.77,
+   "hardCount": 10,
+   "hardDensity": 0.3333,
+   "total": 2.6704666666666665
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.317,
+   "marPressure": 0,
+   "pluPressure": 1.206,
+   "uraPressure": 0.617,
+   "hardCount": 11,
+   "hardDensity": 0.3056,
+   "total": 1.8165111111111112
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 1.8,
+   "oppress": 1,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.719,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 3.16,
+   "hardCount": 17,
+   "hardDensity": 0.4857,
+   "total": 2.278928571428571
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 5.55
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.43,
+   "marPressure": 1.009,
+   "pluPressure": 0.4,
+   "uraPressure": 0.829,
+   "hardCount": 12,
+   "hardDensity": 0.2609,
+   "total": 2.5090391304347825
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 3.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.184,
+   "marPressure": 1.118,
+   "pluPressure": 1.398,
+   "uraPressure": 2.002,
+   "hardCount": 13,
+   "hardDensity": 0.2708,
+   "total": 2.6008666666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.971,
+   "marPressure": 1.29,
+   "pluPressure": 0.37,
+   "uraPressure": 1.18,
+   "hardCount": 12,
+   "hardDensity": 0.3871,
+   "total": 3.240693548387097
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.257,
+   "marPressure": 1.256,
+   "pluPressure": 1.686,
+   "uraPressure": 2.136,
+   "hardCount": 20,
+   "hardDensity": 0.3636,
+   "total": 3.5047727272727274
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8.25,
+   "xingChong": 0,
+   "oppress": 0,
+   "total": 8.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.743,
+   "marPressure": 0,
+   "pluPressure": 0.722,
+   "uraPressure": 0,
+   "hardCount": 11,
+   "hardDensity": 0.2973,
+   "total": 3.182694594594595
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.414,
+   "pluPressure": 0.963,
+   "uraPressure": 2.959,
+   "hardCount": 24,
+   "hardDensity": 0.4528,
+   "total": 2.647860377358491
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.709,
+   "marPressure": 1.36,
+   "pluPressure": 0.709,
+   "uraPressure": 0,
+   "hardCount": 10,
+   "hardDensity": 0.2273,
+   "total": 1.5657454545454546
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 1,
+   "oppress": 1.5,
+   "total": 3.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.653,
+   "marPressure": 0.993,
+   "pluPressure": 1.053,
+   "uraPressure": 0.8,
+   "hardCount": 15,
+   "hardDensity": 0.3488,
+   "total": 1.9772744186046514
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1,
+   "oppress": 1.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.862,
+   "marPressure": 0,
+   "pluPressure": 0.657,
+   "uraPressure": 2.496,
+   "hardCount": 13,
+   "hardDensity": 0.3514,
+   "total": 3.0796027027027026
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.983,
+   "marPressure": 0.358,
+   "pluPressure": 1.801,
+   "uraPressure": 2.421,
+   "hardCount": 17,
+   "hardDensity": 0.3696,
+   "total": 3.6404304347826084
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.25,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 1.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.958,
+   "marPressure": 1.524,
+   "pluPressure": 0.958,
+   "uraPressure": 1.986,
+   "hardCount": 14,
+   "hardDensity": 0.4667,
+   "total": 2.9051333333333336
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.411,
+   "marPressure": 1.118,
+   "pluPressure": 1.863,
+   "uraPressure": 1.613,
+   "hardCount": 11,
+   "hardDensity": 0.2895,
+   "total": 2.2744473684210527
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.536,
+   "marPressure": 3.437,
+   "pluPressure": 0.899,
+   "uraPressure": 0,
+   "hardCount": 18,
+   "hardDensity": 0.4186,
+   "total": 2.7497093023255816
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.9,
+   "marPressure": 0.679,
+   "pluPressure": 1.169,
+   "uraPressure": 1.243,
+   "hardCount": 20,
+   "hardDensity": 0.5714,
+   "total": 3.588057142857143
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.965,
+   "marPressure": 0.556,
+   "pluPressure": 1.29,
+   "uraPressure": 1.051,
+   "hardCount": 18,
+   "hardDensity": 0.4286,
+   "total": 2.264342857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 1.489,
+   "pluPressure": 0,
+   "uraPressure": 1.532,
+   "hardCount": 12,
+   "hardDensity": 0.375,
+   "total": 2.8052
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8.875,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 12.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.648,
+   "marPressure": 1.396,
+   "pluPressure": 0.971,
+   "uraPressure": 0.874,
+   "hardCount": 14,
+   "hardDensity": 0.3043,
+   "total": 2.0445956521739133
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 10
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.49,
+   "marPressure": 3.208,
+   "pluPressure": 1,
+   "uraPressure": 2.84,
+   "hardCount": 16,
+   "hardDensity": 0.3721,
+   "total": 3.9243860465116276
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.504,
+   "marPressure": 0.524,
+   "pluPressure": 0,
+   "uraPressure": 1.549,
+   "hardCount": 15,
+   "hardDensity": 0.4286,
+   "total": 2.283442857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.628,
+   "marPressure": 1.439,
+   "pluPressure": 1.347,
+   "uraPressure": 2.116,
+   "hardCount": 15,
+   "hardDensity": 0.2679,
+   "total": 3.964214285714286
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.872,
+   "marPressure": 2.43,
+   "pluPressure": 0.764,
+   "uraPressure": 0.212,
+   "hardCount": 16,
+   "hardDensity": 0.4,
+   "total": 2.5008
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 0,
+   "oppress": 0.5,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.604,
+   "marPressure": 0.997,
+   "pluPressure": 2.458,
+   "uraPressure": 1.819,
+   "hardCount": 21,
+   "hardDensity": 0.4118,
+   "total": 4.807429411764706
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 10.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.651,
+   "marPressure": 1.233,
+   "pluPressure": 0.666,
+   "uraPressure": 1.213,
+   "hardCount": 15,
+   "hardDensity": 0.3061,
+   "total": 1.9946448979591838
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.545,
+   "uraPressure": 0.545,
+   "hardCount": 8,
+   "hardDensity": 0.2162,
+   "total": 0.7594324324324324
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.782,
+   "marPressure": 0.846,
+   "pluPressure": 0.515,
+   "uraPressure": 1.706,
+   "hardCount": 13,
+   "hardDensity": 0.4194,
+   "total": 2.2344096774193547
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 10.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.705,
+   "marPressure": 0,
+   "pluPressure": 1.814,
+   "uraPressure": 1.106,
+   "hardCount": 8,
+   "hardDensity": 0.2424,
+   "total": 2.213348484848485
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.14,
+   "marPressure": 0,
+   "pluPressure": 2.577,
+   "uraPressure": 2.82,
+   "hardCount": 17,
+   "hardDensity": 0.3778,
+   "total": 2.9446555555555554
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.875,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 2.875
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.457,
+   "marPressure": 1.48,
+   "pluPressure": 0,
+   "uraPressure": 1.569,
+   "hardCount": 14,
+   "hardDensity": 0.35,
+   "total": 3.4912
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.494,
+   "marPressure": 0.637,
+   "pluPressure": 0.637,
+   "uraPressure": 0,
+   "hardCount": 16,
+   "hardDensity": 0.32,
+   "total": 1.3329
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.494,
+   "marPressure": 0.637,
+   "pluPressure": 0.637,
+   "uraPressure": 0,
+   "hardCount": 16,
+   "hardDensity": 0.32,
+   "total": 1.3329
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.687,
+   "marPressure": 0.698,
+   "pluPressure": 2.94,
+   "uraPressure": 0.53,
+   "hardCount": 21,
+   "hardDensity": 0.3889,
+   "total": 3.4414777777777776
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.456,
+   "marPressure": 1.512,
+   "pluPressure": 0.456,
+   "uraPressure": 1.471,
+   "hardCount": 14,
+   "hardDensity": 0.2857,
+   "total": 1.9823285714285714
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.003,
+   "marPressure": 1.417,
+   "pluPressure": 1.091,
+   "uraPressure": 0.547,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 2.7405510638297876
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.371,
+   "marPressure": 0,
+   "pluPressure": 0.607,
+   "uraPressure": 0,
+   "hardCount": 11,
+   "hardDensity": 0.2973,
+   "total": 1.9621945945945947
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.109,
+   "marPressure": 0.281,
+   "pluPressure": 4.818,
+   "uraPressure": 1.228,
+   "hardCount": 28,
+   "hardDensity": 0.6829,
+   "total": 4.846553658536585
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.75,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 10.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.651,
+   "marPressure": 1.149,
+   "pluPressure": 1.683,
+   "uraPressure": 1.869,
+   "hardCount": 13,
+   "hardDensity": 0.3171,
+   "total": 3.9848463414634145
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.148,
+   "marPressure": 1.484,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3095,
+   "total": 3.286647619047619
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 7.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.826,
+   "marPressure": 0.587,
+   "pluPressure": 0.826,
+   "uraPressure": 1.014,
+   "hardCount": 10,
+   "hardDensity": 0.2273,
+   "total": 2.654345454545455
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1,
+   "oppress": 1,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.725,
+   "marPressure": 0.587,
+   "pluPressure": 1.358,
+   "uraPressure": 0.226,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 1.6130405405405406
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.875,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 8.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.056,
+   "marPressure": 0.558,
+   "pluPressure": 0,
+   "uraPressure": 1.032,
+   "hardCount": 21,
+   "hardDensity": 0.3962,
+   "total": 2.353252830188679
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.506,
+   "marPressure": 0.727,
+   "pluPressure": 0.675,
+   "uraPressure": 0.291,
+   "hardCount": 12,
+   "hardDensity": 0.3333,
+   "total": 3.0002666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.375,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 5.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 4.091,
+   "marPressure": 1.239,
+   "pluPressure": 0.351,
+   "uraPressure": 1.335,
+   "hardCount": 29,
+   "hardDensity": 0.6304,
+   "total": 4.3077695652173915
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.804,
+   "pluPressure": 3.404,
+   "uraPressure": 1.679,
+   "hardCount": 14,
+   "hardDensity": 0.3415,
+   "total": 2.5294268292682927
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 3.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.503,
+   "marPressure": 2.274,
+   "pluPressure": 0.513,
+   "uraPressure": 0.732,
+   "hardCount": 14,
+   "hardDensity": 0.359,
+   "total": 2.252548717948718
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0.5,
+   "oppress": 1.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.713,
+   "marPressure": 0.255,
+   "pluPressure": 1.328,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3023,
+   "total": 1.4615511627906976
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.375,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.609,
+   "marPressure": 2.27,
+   "pluPressure": 0.688,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.2979,
+   "total": 2.0146446808510636
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.86,
+   "marPressure": 0.243,
+   "pluPressure": 0.762,
+   "uraPressure": 0.782,
+   "hardCount": 13,
+   "hardDensity": 0.3095,
+   "total": 2.109447619047619
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 5.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.724,
+   "pluPressure": 0.301,
+   "uraPressure": 1.573,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 1.5029627906976746
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7.375,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 9.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.176,
+   "marPressure": 1.26,
+   "pluPressure": 0.948,
+   "uraPressure": 1.195,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 2.3349
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 4.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.183,
+   "marPressure": 1.823,
+   "pluPressure": 1.16,
+   "uraPressure": 0.631,
+   "hardCount": 14,
+   "hardDensity": 0.2857,
+   "total": 2.4294285714285713
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.53,
+   "marPressure": 0.743,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.2571,
+   "total": 2.0764857142857145
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 9.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.657,
+   "marPressure": 0.329,
+   "pluPressure": 0.434,
+   "uraPressure": 0.763,
+   "hardCount": 14,
+   "hardDensity": 0.3182,
+   "total": 2.455563636363636
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.367,
+   "pluPressure": 1.829,
+   "uraPressure": 2.403,
+   "hardCount": 12,
+   "hardDensity": 0.3636,
+   "total": 2.9436727272727277
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 3.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.032,
+   "marPressure": 1.377,
+   "pluPressure": 0.522,
+   "uraPressure": 0.494,
+   "hardCount": 16,
+   "hardDensity": 0.4211,
+   "total": 3.213705263157895
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 3.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.435,
+   "marPressure": 0.442,
+   "pluPressure": 1.478,
+   "uraPressure": 0.261,
+   "hardCount": 13,
+   "hardDensity": 0.3611,
+   "total": 2.1382222222222222
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.062,
+   "marPressure": 0,
+   "pluPressure": 1.806,
+   "uraPressure": 1.868,
+   "hardCount": 13,
+   "hardDensity": 0.2955,
+   "total": 3.7241090909090904
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 4.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 0.456,
+   "pluPressure": 1.548,
+   "uraPressure": 0.74,
+   "hardCount": 15,
+   "hardDensity": 0.3409,
+   "total": 2.5506181818181815
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 10.8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.371,
+   "marPressure": 1.839,
+   "pluPressure": 1.565,
+   "uraPressure": 1.913,
+   "hardCount": 11,
+   "hardDensity": 0.25,
+   "total": 3.4645
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.255,
+   "pluPressure": 0.495,
+   "uraPressure": 1.215,
+   "hardCount": 13,
+   "hardDensity": 0.3023,
+   "total": 2.019651162790698
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.6,
+   "oppress": 1.5,
+   "total": 8.1
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 2.954,
+   "marPressure": 1.655,
+   "pluPressure": 0,
+   "uraPressure": 2.195,
+   "hardCount": 22,
+   "hardDensity": 0.5,
+   "total": 4.7975
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.625,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 5.125
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.49,
+   "marPressure": 0.579,
+   "pluPressure": 0.579,
+   "uraPressure": 0.789,
+   "hardCount": 9,
+   "hardDensity": 0.225,
+   "total": 1.837
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 8.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.632,
+   "pluPressure": 1.024,
+   "uraPressure": 0.873,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 1.902751063829787
+  }
+ },
+ {
+  "b": {
+   "guanSha": 11,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 12
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.743,
+   "marPressure": 0.341,
+   "pluPressure": 1.176,
+   "uraPressure": 2.464,
+   "hardCount": 17,
+   "hardDensity": 0.4474,
+   "total": 3.494636842105263
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.271,
+   "marPressure": 0.721,
+   "pluPressure": 0.721,
+   "uraPressure": 1.624,
+   "hardCount": 12,
+   "hardDensity": 0.3529,
+   "total": 1.8332823529411764
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.875,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 7.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.087,
+   "marPressure": 1.188,
+   "pluPressure": 1.85,
+   "uraPressure": 0,
+   "hardCount": 16,
+   "hardDensity": 0.3265,
+   "total": 2.226761224489796
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 2.3,
+   "oppress": 3.5,
+   "total": 9.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.374,
+   "marPressure": 0,
+   "pluPressure": 0.449,
+   "uraPressure": 2.82,
+   "hardCount": 13,
+   "hardDensity": 0.2708,
+   "total": 1.7093666666666665
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.629,
+   "marPressure": 1.228,
+   "pluPressure": 1.133,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.2857,
+   "total": 1.7170285714285713
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 1,
+   "oppress": 3,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.526,
+   "pluPressure": 0,
+   "uraPressure": 1.473,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 1.6522999999999999
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 12.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.449,
+   "marPressure": 0.547,
+   "pluPressure": 0.885,
+   "uraPressure": 2.919,
+   "hardCount": 16,
+   "hardDensity": 0.3556,
+   "total": 3.2956111111111115
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.375,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.875
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.519,
+   "marPressure": 1.617,
+   "pluPressure": 0,
+   "uraPressure": 1.693,
+   "hardCount": 11,
+   "hardDensity": 0.3235,
+   "total": 3.561258823529412
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.668,
+   "marPressure": 1.228,
+   "pluPressure": 2.895,
+   "uraPressure": 0.474,
+   "hardCount": 22,
+   "hardDensity": 0.4583,
+   "total": 3.7525666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.218,
+   "marPressure": 0,
+   "pluPressure": 1.864,
+   "uraPressure": 1.254,
+   "hardCount": 10,
+   "hardDensity": 0.2564,
+   "total": 2.5572205128205128
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.875,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 9.375
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.562,
+   "marPressure": 0.783,
+   "pluPressure": 0.63,
+   "uraPressure": 1.971,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 1.9745000000000004
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.625,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 4.625
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 1.491,
+   "pluPressure": 1.85,
+   "uraPressure": 0.555,
+   "hardCount": 13,
+   "hardDensity": 0.2653,
+   "total": 2.8485122448979596
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 1.3,
+   "oppress": 2,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.69,
+   "pluPressure": 1.411,
+   "uraPressure": 0,
+   "hardCount": 18,
+   "hardDensity": 0.3673,
+   "total": 2.2339938775510206
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.645,
+   "marPressure": 0,
+   "pluPressure": 2.135,
+   "uraPressure": 1.404,
+   "hardCount": 10,
+   "hardDensity": 0.2326,
+   "total": 1.8493162790697673
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 1,
+   "oppress": 1.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.746,
+   "marPressure": 0,
+   "pluPressure": 1.606,
+   "uraPressure": 0.884,
+   "hardCount": 12,
+   "hardDensity": 0.2553,
+   "total": 2.6306382978723404
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.25,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 4.35
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.208,
+   "marPressure": 1.113,
+   "pluPressure": 1.97,
+   "uraPressure": 2.424,
+   "hardCount": 13,
+   "hardDensity": 0.2889,
+   "total": 2.9451777777777775
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 8.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 2.13,
+   "uraPressure": 2.131,
+   "hardCount": 18,
+   "hardDensity": 0.5,
+   "total": 2.2782999999999998
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 4.85
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.375,
+   "marPressure": 0.375,
+   "pluPressure": 0.993,
+   "uraPressure": 0.993,
+   "hardCount": 11,
+   "hardDensity": 0.3056,
+   "total": 2.544411111111111
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 8.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.516,
+   "marPressure": 2.121,
+   "pluPressure": 0,
+   "uraPressure": 0.791,
+   "hardCount": 11,
+   "hardDensity": 0.3548,
+   "total": 2.053377419354839
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.379,
+   "marPressure": 0.668,
+   "pluPressure": 2.139,
+   "uraPressure": 1.541,
+   "hardCount": 18,
+   "hardDensity": 0.45,
+   "total": 3.9606999999999997
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 1.998,
+   "pluPressure": 0.359,
+   "uraPressure": 0.782,
+   "hardCount": 15,
+   "hardDensity": 0.2344,
+   "total": 2.6102499999999997
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.625,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 5.625
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.722,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.771,
+   "hardCount": 13,
+   "hardDensity": 0.3611,
+   "total": 2.1145222222222224
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.903,
+   "marPressure": 1.014,
+   "pluPressure": 1.457,
+   "uraPressure": 1.568,
+   "hardCount": 15,
+   "hardDensity": 0.4167,
+   "total": 2.597933333333333
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.665,
+   "marPressure": 2.361,
+   "pluPressure": 0.629,
+   "uraPressure": 0,
+   "hardCount": 7,
+   "hardDensity": 0.2,
+   "total": 1.8656000000000001
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.952,
+   "marPressure": 2.216,
+   "pluPressure": 2.617,
+   "uraPressure": 1.794,
+   "hardCount": 19,
+   "hardDensity": 0.4524,
+   "total": 5.090461904761905
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.794,
+   "marPressure": 0.383,
+   "pluPressure": 0,
+   "uraPressure": 0.681,
+   "hardCount": 9,
+   "hardDensity": 0.2903,
+   "total": 1.3351451612903227
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 5.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.895,
+   "marPressure": 0.895,
+   "pluPressure": 0.585,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.4634,
+   "total": 2.907829268292683
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 1,
+   "total": 1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.435,
+   "marPressure": 0.544,
+   "pluPressure": 0.34,
+   "uraPressure": 0,
+   "hardCount": 8,
+   "hardDensity": 0.2051,
+   "total": 1.4473564102564103
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 5.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.488,
+   "marPressure": 1.201,
+   "pluPressure": 1.446,
+   "uraPressure": 0.418,
+   "hardCount": 9,
+   "hardDensity": 0.2647,
+   "total": 3.313011764705882
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 10.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.237,
+   "marPressure": 0.899,
+   "pluPressure": 0,
+   "uraPressure": 1.409,
+   "hardCount": 12,
+   "hardDensity": 0.3243,
+   "total": 2.0494486486486485
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.25,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 9.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.503,
+   "marPressure": 1.613,
+   "pluPressure": 1.367,
+   "uraPressure": 0,
+   "hardCount": 14,
+   "hardDensity": 0.3889,
+   "total": 3.5845777777777776
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.75,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.959,
+   "marPressure": 2.186,
+   "pluPressure": 1.26,
+   "uraPressure": 0.488,
+   "hardCount": 20,
+   "hardDensity": 0.5556,
+   "total": 3.9894111111111115
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.244,
+   "marPressure": 1.344,
+   "pluPressure": 2.032,
+   "uraPressure": 0.733,
+   "hardCount": 16,
+   "hardDensity": 0.4444,
+   "total": 3.377988888888889
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.595,
+   "marPressure": 0.434,
+   "pluPressure": 0,
+   "uraPressure": 0.54,
+   "hardCount": 15,
+   "hardDensity": 0.3947,
+   "total": 2.4225736842105263
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.386,
+   "marPressure": 0,
+   "pluPressure": 0.325,
+   "uraPressure": 0.641,
+   "hardCount": 10,
+   "hardDensity": 0.2778,
+   "total": 2.0383555555555555
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.75,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 8.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.651,
+   "marPressure": 0.666,
+   "pluPressure": 0.628,
+   "uraPressure": 1.582,
+   "hardCount": 9,
+   "hardDensity": 0.2368,
+   "total": 1.7285842105263158
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.949,
+   "marPressure": 1.325,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 10,
+   "hardDensity": 0.2632,
+   "total": 1.5308157894736842
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.777,
+   "marPressure": 0.588,
+   "pluPressure": 0.831,
+   "uraPressure": 0.777,
+   "hardCount": 22,
+   "hardDensity": 0.55,
+   "total": 2.2061
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.743,
+   "marPressure": 1.234,
+   "pluPressure": 1.129,
+   "uraPressure": 0.795,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 2.593462790697674
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.25,
+   "xingChong": 1.8,
+   "oppress": 2.5,
+   "total": 9.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.093,
+   "marPressure": 0.729,
+   "pluPressure": 1.044,
+   "uraPressure": 2.123,
+   "hardCount": 9,
+   "hardDensity": 0.2308,
+   "total": 2.2497384615384615
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.223,
+   "marPressure": 0,
+   "pluPressure": 2.122,
+   "uraPressure": 0,
+   "hardCount": 8,
+   "hardDensity": 0.2286,
+   "total": 1.705242857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.375,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.675,
+   "marPressure": 0.57,
+   "pluPressure": 1.073,
+   "uraPressure": 0.57,
+   "hardCount": 17,
+   "hardDensity": 0.4595,
+   "total": 2.477318918918919
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1,
+   "oppress": 1,
+   "total": 3.75
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.587,
+   "marPressure": 0.343,
+   "pluPressure": 2.104,
+   "uraPressure": 1.068,
+   "hardCount": 21,
+   "hardDensity": 0.3889,
+   "total": 3.1600777777777775
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.073,
+   "pluPressure": 0,
+   "uraPressure": 2.026,
+   "hardCount": 8,
+   "hardDensity": 0.2105,
+   "total": 1.4580526315789473
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.75,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.479,
+   "marPressure": 0.588,
+   "pluPressure": 0.392,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3514,
+   "total": 2.295002702702703
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 3.805,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.3878,
+   "total": 2.297510204081633
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.414,
+   "marPressure": 0.644,
+   "pluPressure": 2.346,
+   "uraPressure": 1.07,
+   "hardCount": 15,
+   "hardDensity": 0.3409,
+   "total": 2.171218181818182
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 9.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.369,
+   "pluPressure": 0.706,
+   "uraPressure": 1.565,
+   "hardCount": 8,
+   "hardDensity": 0.2424,
+   "total": 1.3137484848484848
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 10.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.792,
+   "pluPressure": 1.161,
+   "uraPressure": 0.388,
+   "hardCount": 16,
+   "hardDensity": 0.3404,
+   "total": 1.4623510638297872
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 2.6,
+   "oppress": 2.5,
+   "total": 10.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.64,
+   "marPressure": 1.31,
+   "pluPressure": 1.515,
+   "uraPressure": 0.544,
+   "hardCount": 10,
+   "hardDensity": 0.2564,
+   "total": 1.9745205128205128
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.525,
+   "marPressure": 0.236,
+   "pluPressure": 0.867,
+   "uraPressure": 1.131,
+   "hardCount": 10,
+   "hardDensity": 0.25,
+   "total": 1.4563
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 5.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.131,
+   "marPressure": 0.818,
+   "pluPressure": 0.232,
+   "uraPressure": 0.606,
+   "hardCount": 17,
+   "hardDensity": 0.34,
+   "total": 1.8241
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.611,
+   "marPressure": 1.298,
+   "pluPressure": 0.611,
+   "uraPressure": 1.947,
+   "hardCount": 21,
+   "hardDensity": 0.4468,
+   "total": 3.4857170212765958
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.776,
+   "marPressure": 1.396,
+   "pluPressure": 0.863,
+   "uraPressure": 0.863,
+   "hardCount": 12,
+   "hardDensity": 0.3871,
+   "total": 2.238393548387097
+  }
+ },
+ {
+  "b": {
+   "guanSha": 9.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 12
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.636,
+   "pluPressure": 0,
+   "uraPressure": 1.297,
+   "hardCount": 8,
+   "hardDensity": 0.2286,
+   "total": 1.500642857142857
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 11.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.966,
+   "pluPressure": 0.639,
+   "uraPressure": 0.606,
+   "hardCount": 16,
+   "hardDensity": 0.4,
+   "total": 1.5599
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.75,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.583,
+   "marPressure": 2.8,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3125,
+   "total": 2.0364999999999998
+  }
+ },
+ {
+  "b": {
+   "guanSha": 7,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 11
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.454,
+   "marPressure": 0.333,
+   "pluPressure": 2.239,
+   "uraPressure": 2.933,
+   "hardCount": 16,
+   "hardDensity": 0.4103,
+   "total": 3.7323128205128207
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8.375,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 11.875
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.684,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.2571,
+   "total": 1.3562857142857143
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 5.55
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.318,
+   "marPressure": 1.691,
+   "pluPressure": 1.948,
+   "uraPressure": 1.801,
+   "hardCount": 12,
+   "hardDensity": 0.2553,
+   "total": 3.47073829787234
+  }
+ },
+ {
+  "b": {
+   "guanSha": 8.75,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 12.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.439,
+   "marPressure": 0.924,
+   "pluPressure": 0.318,
+   "uraPressure": 0.318,
+   "hardCount": 12,
+   "hardDensity": 0.3333,
+   "total": 2.4465666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.335,
+   "marPressure": 1.774,
+   "pluPressure": 1.436,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.325,
+   "total": 1.9579
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 8.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.819,
+   "marPressure": 0.87,
+   "pluPressure": 0.446,
+   "uraPressure": 0,
+   "hardCount": 11,
+   "hardDensity": 0.2973,
+   "total": 1.4858945945945947
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.551,
+   "marPressure": 0.266,
+   "pluPressure": 1.215,
+   "uraPressure": 0.95,
+   "hardCount": 11,
+   "hardDensity": 0.2821,
+   "total": 2.5955025641025644
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 9.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.018,
+   "marPressure": 1.14,
+   "pluPressure": 1.804,
+   "uraPressure": 1.121,
+   "hardCount": 8,
+   "hardDensity": 0.1951,
+   "total": 2.2327439024390245
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.484,
+   "marPressure": 0,
+   "pluPressure": 1.807,
+   "uraPressure": 1.482,
+   "hardCount": 18,
+   "hardDensity": 0.4,
+   "total": 3.5286999999999997
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.25,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 4.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 5.02,
+   "marPressure": 0.639,
+   "pluPressure": 1.847,
+   "uraPressure": 3.406,
+   "hardCount": 27,
+   "hardDensity": 0.4737,
+   "total": 5.288868421052632
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.634,
+   "marPressure": 1.976,
+   "pluPressure": 1.598,
+   "uraPressure": 1.024,
+   "hardCount": 17,
+   "hardDensity": 0.425,
+   "total": 3.2439999999999998
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.98,
+   "uraPressure": 3.37,
+   "hardCount": 29,
+   "hardDensity": 0.617,
+   "total": 2.5390425531914893
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.25,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 4.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.203,
+   "pluPressure": 0,
+   "uraPressure": 2.635,
+   "hardCount": 12,
+   "hardDensity": 0.3333,
+   "total": 1.9383666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 3.273,
+   "marPressure": 1.142,
+   "pluPressure": 1.045,
+   "uraPressure": 0,
+   "hardCount": 19,
+   "hardDensity": 0.3958,
+   "total": 3.1984666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 7.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.113,
+   "marPressure": 0,
+   "pluPressure": 0.939,
+   "uraPressure": 2.348,
+   "hardCount": 11,
+   "hardDensity": 0.3548,
+   "total": 2.2522774193548383
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 2.299,
+   "pluPressure": 0.961,
+   "uraPressure": 1.056,
+   "hardCount": 12,
+   "hardDensity": 0.2609,
+   "total": 2.0464391304347824
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.5,
+   "xingChong": 1,
+   "oppress": 2.5,
+   "total": 10
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.297,
+   "pluPressure": 1.953,
+   "uraPressure": 0.654,
+   "hardCount": 9,
+   "hardDensity": 0.2368,
+   "total": 1.3745842105263157
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.375,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 5.175
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.425,
+   "pluPressure": 0.541,
+   "uraPressure": 0.541,
+   "hardCount": 13,
+   "hardDensity": 0.3095,
+   "total": 1.1136476190476192
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 7.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.821,
+   "marPressure": 1.496,
+   "pluPressure": 2.894,
+   "uraPressure": 2.582,
+   "hardCount": 15,
+   "hardDensity": 0.4054,
+   "total": 4.4625108108108105
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.949,
+   "marPressure": 0,
+   "pluPressure": 0,
+   "uraPressure": 1.567,
+   "hardCount": 13,
+   "hardDensity": 0.3023,
+   "total": 2.0492511627906973
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.985,
+   "marPressure": 0.384,
+   "pluPressure": 1.887,
+   "uraPressure": 0.804,
+   "hardCount": 15,
+   "hardDensity": 0.3571,
+   "total": 2.167685714285714
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.75,
+   "xingChong": 0.5,
+   "oppress": 1.5,
+   "total": 8.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.936,
+   "marPressure": 0.609,
+   "pluPressure": 1.115,
+   "uraPressure": 3.248,
+   "hardCount": 22,
+   "hardDensity": 0.4583,
+   "total": 2.9371666666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 5.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.854,
+   "marPressure": 0.854,
+   "pluPressure": 0.251,
+   "uraPressure": 2.364,
+   "hardCount": 11,
+   "hardDensity": 0.2683,
+   "total": 2.0896853658536587
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.821,
+   "marPressure": 1.04,
+   "pluPressure": 0.234,
+   "uraPressure": 0.556,
+   "hardCount": 11,
+   "hardDensity": 0.2292,
+   "total": 2.521833333333334
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.856,
+   "marPressure": 0,
+   "pluPressure": 1.789,
+   "uraPressure": 1.436,
+   "hardCount": 14,
+   "hardDensity": 0.2917,
+   "total": 2.4788333333333337
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 6.35
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.481,
+   "marPressure": 1.993,
+   "pluPressure": 1.777,
+   "uraPressure": 1.822,
+   "hardCount": 15,
+   "hardDensity": 0.2679,
+   "total": 2.6531142857142855
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 7.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.958,
+   "marPressure": 1.066,
+   "pluPressure": 2.159,
+   "uraPressure": 1.101,
+   "hardCount": 18,
+   "hardDensity": 0.4865,
+   "total": 3.8563729729729728
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.939,
+   "marPressure": 1.674,
+   "pluPressure": 1.1,
+   "uraPressure": 2.252,
+   "hardCount": 13,
+   "hardDensity": 0.2955,
+   "total": 2.7356090909090907
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.75,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 8.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.734,
+   "marPressure": 0,
+   "pluPressure": 2.526,
+   "uraPressure": 0.875,
+   "hardCount": 18,
+   "hardDensity": 0.4091,
+   "total": 3.2054818181818185
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 8.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.317,
+   "marPressure": 2.29,
+   "pluPressure": 3.876,
+   "uraPressure": 0.978,
+   "hardCount": 28,
+   "hardDensity": 0.5957,
+   "total": 4.722189361702128
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.286,
+   "marPressure": 1.204,
+   "pluPressure": 1.06,
+   "uraPressure": 0.286,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 2.5689405405405408
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 3.091,
+   "marPressure": 1.947,
+   "pluPressure": 1.727,
+   "uraPressure": 2.132,
+   "hardCount": 22,
+   "hardDensity": 0.4583,
+   "total": 5.398666666666667
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.25,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 8.05
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.413,
+   "marPressure": 0,
+   "pluPressure": 1.724,
+   "uraPressure": 1.182,
+   "hardCount": 13,
+   "hardDensity": 0.3333,
+   "total": 2.2449666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.428,
+   "marPressure": 0,
+   "pluPressure": 0.227,
+   "uraPressure": 0.873,
+   "hardCount": 10,
+   "hardDensity": 0.25,
+   "total": 2.044
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 7.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.592,
+   "marPressure": 0,
+   "pluPressure": 1.581,
+   "uraPressure": 1.228,
+   "hardCount": 14,
+   "hardDensity": 0.3684,
+   "total": 3.3755421052631576
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.5,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 5.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.091,
+   "marPressure": 0,
+   "pluPressure": 1.069,
+   "uraPressure": 1.758,
+   "hardCount": 11,
+   "hardDensity": 0.2444,
+   "total": 1.8824888888888889
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.029,
+   "marPressure": 0.701,
+   "pluPressure": 0.543,
+   "uraPressure": 1.038,
+   "hardCount": 16,
+   "hardDensity": 0.4,
+   "total": 2.0692000000000004
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 2.608,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 20,
+   "hardDensity": 0.4255,
+   "total": 2.894263829787234
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 0,
+   "oppress": 0.5,
+   "total": 6.25
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.785,
+   "marPressure": 1.666,
+   "pluPressure": 1.33,
+   "uraPressure": 2.273,
+   "hardCount": 18,
+   "hardDensity": 0.5294,
+   "total": 3.6986235294117646
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.875,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 10.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.301,
+   "marPressure": 0.484,
+   "pluPressure": 0.582,
+   "uraPressure": 0.516,
+   "hardCount": 10,
+   "hardDensity": 0.2703,
+   "total": 1.2140405405405406
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.25,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 10.35
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.445,
+   "pluPressure": 1.508,
+   "uraPressure": 0.826,
+   "hardCount": 6,
+   "hardDensity": 0.15,
+   "total": 1.5782
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 1,
+   "oppress": 3,
+   "total": 4
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.524,
+   "marPressure": 0.537,
+   "pluPressure": 2.516,
+   "uraPressure": 0.426,
+   "hardCount": 12,
+   "hardDensity": 0.3077,
+   "total": 2.974784615384616
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 3.406,
+   "pluPressure": 0.317,
+   "uraPressure": 0.94,
+   "hardCount": 13,
+   "hardDensity": 0.3095,
+   "total": 3.358547619047619
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.512,
+   "marPressure": 0,
+   "pluPressure": 0.863,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.3,
+   "total": 1.1149
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.25,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.087,
+   "marPressure": 1.859,
+   "pluPressure": 0,
+   "uraPressure": 0.369,
+   "hardCount": 13,
+   "hardDensity": 0.3023,
+   "total": 2.502451162790698
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 0,
+   "oppress": 3,
+   "total": 3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.843,
+   "marPressure": 1.2,
+   "pluPressure": 0.924,
+   "uraPressure": 0.581,
+   "hardCount": 8,
+   "hardDensity": 0.25,
+   "total": 2.853
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.75,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 4.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.55,
+   "marPressure": 2.544,
+   "pluPressure": 0.751,
+   "uraPressure": 0.55,
+   "hardCount": 14,
+   "hardDensity": 0.3684,
+   "total": 3.419742105263158
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 8.8
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.89,
+   "marPressure": 1.001,
+   "pluPressure": 0,
+   "uraPressure": 1.756,
+   "hardCount": 9,
+   "hardDensity": 0.2432,
+   "total": 2.3586864864864863
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 10.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.54,
+   "marPressure": 2.412,
+   "pluPressure": 0.34,
+   "uraPressure": 1.811,
+   "hardCount": 15,
+   "hardDensity": 0.375,
+   "total": 3.6300999999999997
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.375,
+   "xingChong": 1.6,
+   "oppress": 2.5,
+   "total": 7.475
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.96,
+   "uraPressure": 1.033,
+   "hardCount": 14,
+   "hardDensity": 0.2692,
+   "total": 1.1363615384615384
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.072,
+   "marPressure": 1.048,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.3429,
+   "total": 2.1409142857142855
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.05
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.271,
+   "marPressure": 0.796,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 9,
+   "hardDensity": 0.2143,
+   "total": 2.3824714285714284
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 9
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.557,
+   "marPressure": 0,
+   "pluPressure": 2.459,
+   "uraPressure": 0.718,
+   "hardCount": 13,
+   "hardDensity": 0.325,
+   "total": 2.8815999999999997
+  }
+ },
+ {
+  "b": {
+   "guanSha": 6.25,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 8.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.825,
+   "marPressure": 0.852,
+   "pluPressure": 0,
+   "uraPressure": 0,
+   "hardCount": 13,
+   "hardDensity": 0.3333,
+   "total": 1.4199666666666666
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.5,
+   "xingChong": 1,
+   "oppress": 3.5,
+   "total": 7
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.758,
+   "marPressure": 1.006,
+   "pluPressure": 1.877,
+   "uraPressure": 0.725,
+   "hardCount": 14,
+   "hardDensity": 0.3256,
+   "total": 3.713162790697674
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.485,
+   "marPressure": 0,
+   "pluPressure": 0.735,
+   "uraPressure": 0.444,
+   "hardCount": 9,
+   "hardDensity": 0.225,
+   "total": 1.0462
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 2.6,
+   "oppress": 3.5,
+   "total": 11.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.511,
+   "marPressure": 1.741,
+   "pluPressure": 0.677,
+   "uraPressure": 1.221,
+   "hardCount": 13,
+   "hardDensity": 0.2766,
+   "total": 2.0744914893617024
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0.875,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 4.675
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.216,
+   "marPressure": 0,
+   "pluPressure": 1.989,
+   "uraPressure": 1.951,
+   "hardCount": 16,
+   "hardDensity": 0.4103,
+   "total": 3.1105128205128203
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 2.5,
+   "total": 6.3
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 1.651,
+   "marPressure": 0.335,
+   "pluPressure": 0.556,
+   "uraPressure": 0.912,
+   "hardCount": 21,
+   "hardDensity": 0.5122,
+   "total": 3.4242902439024387
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.994,
+   "marPressure": 0.811,
+   "pluPressure": 0.994,
+   "uraPressure": 0.91,
+   "hardCount": 7,
+   "hardDensity": 0.2059,
+   "total": 1.8043647058823526
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.136,
+   "marPressure": 2.239,
+   "pluPressure": 2.399,
+   "uraPressure": 0.518,
+   "hardCount": 20,
+   "hardDensity": 0.5,
+   "total": 3.8387000000000002
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 0.8,
+   "oppress": 3.5,
+   "total": 7.3
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.085,
+   "marPressure": 1.973,
+   "pluPressure": 2.165,
+   "uraPressure": 0.875,
+   "hardCount": 10,
+   "hardDensity": 0.2564,
+   "total": 2.756520512820513
+  }
+ },
+ {
+  "b": {
+   "guanSha": 0,
+   "xingChong": 1.6,
+   "oppress": 1,
+   "total": 2.6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.628,
+   "marPressure": 0.33,
+   "pluPressure": 2.287,
+   "uraPressure": 0.73,
+   "hardCount": 10,
+   "hardDensity": 0.2778,
+   "total": 1.9066555555555555
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3.5,
+   "xingChong": 0.5,
+   "oppress": 2.5,
+   "total": 6.5
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0,
+   "marPressure": 3.074,
+   "pluPressure": 3.177,
+   "uraPressure": 0,
+   "hardCount": 12,
+   "hardDensity": 0.2353,
+   "total": 3.653288235294118
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 4.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 1.502,
+   "marPressure": 0.227,
+   "pluPressure": 1.57,
+   "uraPressure": 0,
+   "hardCount": 15,
+   "hardDensity": 0.3,
+   "total": 1.9127999999999998
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.75,
+   "xingChong": 1.3,
+   "oppress": 3.5,
+   "total": 6.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 1.774,
+   "pluPressure": 0.884,
+   "uraPressure": 0.779,
+   "hardCount": 11,
+   "hardDensity": 0.275,
+   "total": 1.7585
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5,
+   "xingChong": 0,
+   "oppress": 2.5,
+   "total": 7.5
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.324,
+   "marPressure": 1.762,
+   "pluPressure": 1.805,
+   "uraPressure": 0,
+   "hardCount": 16,
+   "hardDensity": 0.3636,
+   "total": 3.135572727272727
+  }
+ },
+ {
+  "b": {
+   "guanSha": 4.5,
+   "xingChong": 0,
+   "oppress": 1.5,
+   "total": 6
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0.282,
+   "marPressure": 1.304,
+   "pluPressure": 0.737,
+   "uraPressure": 0.714,
+   "hardCount": 13,
+   "hardDensity": 0.2955,
+   "total": 1.688809090909091
+  }
+ },
+ {
+  "b": {
+   "guanSha": 1.25,
+   "xingChong": 0.5,
+   "oppress": 3.5,
+   "total": 5.25
+  },
+  "a": {
+   "satAngular": 1,
+   "satPressure": 0.528,
+   "marPressure": 1.45,
+   "pluPressure": 1.111,
+   "uraPressure": 2.434,
+   "hardCount": 19,
+   "hardDensity": 0.475,
+   "total": 3.8575
+  }
+ },
+ {
+  "b": {
+   "guanSha": 3,
+   "xingChong": 1.6,
+   "oppress": 3.5,
+   "total": 8.1
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0.98,
+   "pluPressure": 0.459,
+   "uraPressure": 1.559,
+   "hardCount": 13,
+   "hardDensity": 0.325,
+   "total": 1.6474000000000002
+  }
+ },
+ {
+  "b": {
+   "guanSha": 2.25,
+   "xingChong": 0,
+   "oppress": 3.5,
+   "total": 5.75
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 0,
+   "marPressure": 0,
+   "pluPressure": 0.445,
+   "uraPressure": 2.503,
+   "hardCount": 12,
+   "hardDensity": 0.2667,
+   "total": 1.4177333333333335
+  }
+ },
+ {
+  "b": {
+   "guanSha": 5.75,
+   "xingChong": 1.3,
+   "oppress": 2.5,
+   "total": 9.55
+  },
+  "a": {
+   "satAngular": 0,
+   "satPressure": 2.355,
+   "marPressure": 1.596,
+   "pluPressure": 0,
+   "uraPressure": 1.294,
+   "hardCount": 11,
+   "hardDensity": 0.3143,
+   "total": 2.8326714285714285
+  }
+ }
+]

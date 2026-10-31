@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>玄机 · 中西命理融合</title>
+<meta name="description" content="八字 / 古典占星 / 七政四余 / 紫微斗数 的统一推演模型。开源、可复现、本地运行。">
+<style>
+  :root{--bg:#05080e;--fg:#eaf7ff;--mut:rgba(160,200,225,.72);--cyan:#5ef1ff;--gold:#ffc457;--green:#7dffb4}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.8;min-height:100vh}
+  .wrap{max-width:880px;margin:0 auto;padding:64px 24px 96px}
+  .eyebrow{font-size:12px;letter-spacing:.3em;color:rgba(120,180,215,.65);margin-bottom:18px}
+  h1{font-size:44px;line-height:1.2;margin:0 0 18px;font-weight:800;
+    background:linear-gradient(120deg,#eaf7ff,#5ef1ff 55%,#ffc457);-webkit-background-clip:text;
+    background-clip:text;color:transparent;padding-bottom:6px}
+  .lead{font-size:19px;color:var(--fg);margin:0 0 10px}
+  .mut{color:var(--mut);font-size:15.5px}
+  h2{font-size:22px;margin:44px 0 14px;font-weight:700;color:var(--cyan)}
+  .card{padding:20px 22px;border-radius:14px;background:rgba(8,16,28,.66);
+    border:1px solid rgba(90,160,220,.2);margin:14px 0}
+  .card b{color:var(--gold)}
+  code{background:rgba(94,241,255,.08);padding:2px 7px;border-radius:5px;font-size:13.5px;color:var(--cyan)}
+  pre{background:rgba(4,10,18,.9);border:1px solid rgba(90,160,220,.18);border-radius:10px;
+    padding:16px 18px;overflow-x:auto;font-size:13.5px;line-height:1.75}
+  pre code{background:none;padding:0;color:#d8ecf7}
+  a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(94,241,255,.3)}
+  a:hover{border-bottom-color:var(--cyan)}
+  .links{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+  .links a{display:inline-block;padding:11px 20px;border-radius:10px;border:1px solid rgba(94,241,255,.32);
+    background:rgba(94,241,255,.07);font-weight:600;border-bottom:1px solid rgba(94,241,255,.32)}
+  .warn{border-color:rgba(255,154,138,.34);background:rgba(255,154,138,.06)}
+  .ok{border-color:rgba(125,255,180,.3);background:rgba(125,255,180,.05)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th{text-align:left;padding:9px 11px;color:var(--mut);font-size:12px;letter-spacing:.08em;
+    border-bottom:1px solid rgba(90,160,220,.25);font-weight:600}
+  td{padding:9px 11px;border-bottom:1px solid rgba(255,255,255,.055);vertical-align:top}
+  footer{margin-top:64px;padding-top:22px;border-top:1px solid rgba(90,160,220,.18);font-size:13px;color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">中西命理 · 融合模型</div>
+  <h1>玄机</h1>
+  <p class="lead">把四套体系翻译到同一张盘上 —— <b style="color:var(--gold)">不是拼贴，是底层逻辑对应</b>。</p>
+  <p class="mut">八字 · 古典占星 · 七政四余 · 紫微斗数</p>
+
+  <div class="row links">
+    <a href="./paper.html">📄 论文</a>
+    <a href="./video.html">🎬 宣传视频</a>
+    <a href="https://github.com/YOUR_NAME/xuanji">⭐ GitHub 仓库</a>
+  </div>
+
+  <div class="card warn">
+    <b>⚠️ 这里只是静态介绍页</b><br>
+    完整的融合盘、合盘、六壬、生时矫正<b>需要本机运行</b>（依赖 Node 引擎）。<br>
+    GitHub Pages 只能托管静态文件，跑不了 <code>/api/fusion</code> 这类后端接口 ——
+    这是平台限制，不是项目偷懒。
+  </div>
+
+  <h2>怎么用</h2>
+  <pre><code>git clone https://github.com/YOUR_NAME/xuanji.git
+cd xuanji
+npm install
+npm start          # 浏览器自动打开 http://127.0.0.1:8788</code></pre>
+  <p class="mut">没装 Node？看仓库里的 <a href="https://github.com/YOUR_NAME/xuanji/blob/main/USAGE.md">USAGE.md</a>
+    第 4 节（便携版 Node / 内网共享 / 云端环境）。</p>
+
+  <h2>核心结论（已实测）</h2>
+  <table>
+    <thead><tr><th>对账项</th><th>结果</th></tr></thead>
+    <tbody>
+      <tr><td>月支 ↔ 太阳黄经</td><td><b style="color:var(--green)">恒等 100%</b></td></tr>
+      <tr><td>时支 ↔ 太阳时角</td><td>67.5%（需均时差 + 真太阳时）</td></tr>
+      <tr><td>60 甲子 ↔ 木土会合</td><td>3 次会合 <b>59.58991 年</b>（极差 0.119 年）</td></tr>
+      <tr><td>命宫 ↔ 上升点 ASC</td><td>结构对应</td></tr>
+      <tr><td>年柱/日柱 ↔ 逆星历</td><td>可推，但须经「逆星历 → 日期 → 历法锚点」</td></tr>
+    </tbody>
+  </table>
+
+  <h2>三层结构</h2>
+  <table>
+    <thead><tr><th>层</th><th>内容</th><th>能否反推</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 几何层</b></td><td>黄经→月支、时角→时支、ASC→命宫</td><td style="color:var(--green)">可</td></tr>
+      <tr><td><b>② 计数层</b></td><td>年柱、日柱</td><td style="color:var(--gold)">可，但要转一道</td></tr>
+      <tr><td><b>③ 符号层</b></td><td>藏干、十神、神煞、紫微宫名</td><td>查表即得</td></tr>
+    </tbody>
+  </table>
+
+  <h2>这是什么 / 不是什么</h2>
+  <div class="card ok">
+    <b>是</b>：可复现、可机检的开源命理建模项目；把能算的算清，把不能算的标注清楚。
+  </div>
+  <div class="card warn">
+    <b>不是</b>：不是产品、不是服务、不下吉凶、不宣称能预测。
+    本项目仅仅是<b>兴趣爱好的开放讨论</b>，因使用其输出结果造成的现实问题与开发者无关。
+  </div>
+
+  <footer>
+    以 <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a> 发布 ·
+    不收集身份信息，绝无 API Key 接收 ·
+    <a href="https://github.com/YOUR_NAME/xuanji/blob/main/PRIVACY.md">隐私政策</a><br><br>
+    兴趣，不是命运指南。
+  </footer>
+</div>
+</body>
+</html>

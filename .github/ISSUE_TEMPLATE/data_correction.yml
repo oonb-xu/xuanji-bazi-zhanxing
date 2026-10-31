@@ -1,0 +1,23 @@
+name: 📚 文献 / 数据纠错
+description: 指出史实、文献或数据上的错误
+title: "[Data] "
+labels: ["data", "documentation"]
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: 我们错在哪
+      description: 引用站内原文或文档位置
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 正确的说法与出处
+      description: 请给出可核对的文献/链接/页码
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        > 本项目对"编造来源"零容忍 —— 宁可写"未找到"，也不虚构出处。

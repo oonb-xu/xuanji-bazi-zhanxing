@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>论中西命理体系的融合路径</title>
+<style>
+:root{--bg:#04070d;--fg:#dfeaf5;--mut:#93aec5;--line:rgba(90,160,220,.18);--gold:#ffc457;--cyan:#5ef1ff;--green:#7dffb4}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 800px at 50% -10%,#0a1524,#04070d 60%);color:var(--fg);
+  font:15px/1.9 -apple-system,"Segoe UI","Microsoft YaHei",serif;padding:40px 20px 100px}
+.wrap{max-width:880px;margin:0 auto}
+h1{font-size:26px;line-height:1.5;margin:0 0 28px;padding-bottom:18px;border-bottom:1px solid var(--line);color:#eaf7ff}
+h2{font-size:19px;margin:38px 0 14px;color:var(--cyan);letter-spacing:.02em}
+h3{font-size:16px;margin:26px 0 10px;color:var(--gold)}
+h4{font-size:14.5px;margin:20px 0 8px;color:var(--fg)}
+p{margin:11px 0;color:rgba(220,234,245,.92)}
+strong{color:#fff}
+em{color:var(--mut)}
+a{color:var(--cyan)}
+code{background:rgba(94,241,255,.1);padding:1px 6px;border-radius:4px;font-family:Consolas,monospace;font-size:12.5px;color:#9fe8ff}
+pre{background:rgba(2,6,12,.85);border:1px solid var(--line);border-radius:9px;padding:14px 16px;overflow-x:auto;margin:14px 0}
+pre code{background:none;padding:0;color:#9fe8ff;font-size:12px;line-height:1.8}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+th{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(94,241,255,.3);color:rgba(150,205,235,.8);font-size:11.5px;letter-spacing:.06em}
+td{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:top;line-height:1.75}
+tr:last-child td{border-bottom:none}
+blockquote{margin:16px 0;padding:12px 18px;border-left:3px solid var(--gold);background:rgba(255,196,87,.05);color:rgba(240,225,190,.95);border-radius:0 8px 8px 0}
+blockquote strong{color:var(--gold)}
+ul,ol{margin:11px 0;padding-left:26px}
+li{margin:5px 0;color:rgba(220,234,245,.9)}
+hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+.formula{background:rgba(94,241,255,.05);border:1px solid rgba(94,241,255,.18);border-radius:8px;
+  padding:14px;margin:14px 0;text-align:center;font-family:Consolas,monospace;font-size:13.5px;color:#9fe8ff}
+.back{position:fixed;bottom:18px;right:18px;padding:9px 16px;border-radius:9px;background:rgba(8,16,28,.94);
+  border:1px solid var(--line);color:var(--cyan);text-decoration:none;font-size:12.5px}
+@media(max-width:640px){body{padding:22px 14px 80px}h1{font-size:21px}h2{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>论中西命理体系的融合路径：从编码类型差异到四系统统一模型</h1>
+<blockquote>玄机 · 中西命理融合 —— 底层融合路径</blockquote>
+<hr>
+<h2>摘要</h2>
+<p>本文提出一个可检验的融合框架，处理四套命理体系（八字、古典占星、七政四余、紫微斗数）的统一问题。<br>核心论点有三：</p>
+<p><strong>其一</strong>，七政四余与古典占星并非"相似"，而是<strong>同源</strong>——均源自巴比伦黄道十二宫体系，<br>因此融合不是比附，而是恢复共有骨架。</p>
+<p><strong>其二</strong>，两套体系的底层差异不在文化，而在<strong>编码类型</strong>：<br>占星是<strong>纯几何编码</strong>（位置自足，无历法原点），八字是<strong>几何 + 计数混合编码</strong>（含人为甲子原点）。<br>此差异可严格证明：从行星位置可推出月支（100%），而年柱与日柱<strong>不能由几何直接得出</strong>，须经"逆星历 → 绝对日期 → 历法锚点"两步——<br>因为 60 确有天文近似依据（= LCM(12木, 30土) ≈ 3×木土会合 59.577 年），但它是<strong>计数</strong>，不是可测的几何量；星盘给不出"这是第几个甲子"，<b>却能给出"这是哪一天"</b>——而日期一旦确定，甲子序位就由历法锚点唯一确定。</p>
+<p><strong>其三</strong>，融合的正确形态不是"互相解释"，而是<strong>分层各取所长</strong>：<br>用十神说力量（八字独有相对性），用宫位说领域（其余三套共有），<br>用本质尊贵测心理（占星 f(星,星座)），用星宫亮度测物质（紫微 f(星,宫位)）。</p>
+<hr>
+
+      <h2 id="sec-qzy-method">〇、方法论：以七政四余为骨架的逆向复现</h2>
+      <blockquote>本文不作「四套体系如何对应」的正向拼接，而是从<b>七政四余这条唯一未被切断的链</b>出发，倒推其余三套各自在哪一环截断、把什么换成了计数或查表，再按这条链重新装配。</blockquote>
+
+      <h3>0.1 七政四余的特殊地位</h3>
+      <p>四套体系里，只有七政四余保持「<b>真实天体位置 → 十二宫/十二次/二十八宿 → 人事判断</b>」的<b>全程可追溯</b>。
+      它的每一个判断对象都能回溯到一个可测的天文量（黄经、宿度、时角）——
+      换句话说，它是四套里<b>唯一"每一环都还有物理对应物"</b>的体系。这就是它可以充当骨架的原因。</p>
+
+      <h3>0.2 其余三套各切断了一环</h3>
+      <table class="holo-tb">
+        <thead><tr><th>体系</th><th>保留的天文量</th><th>在哪一步切断 / 替换成什么</th></tr></thead>
+        <tbody>
+          <tr><td><b>七政四余</b></td><td>七政（日月五星）＋四余的宿度与黄经（全量）</td><td>——（<b>全链保留</b>，故为骨架）</td></tr>
+          <tr><td><b>古典占星</b></td><td>黄经 → 星座 / 宫位</td><td>人事侧替换为<b>心理轴</b>；宫位成为「领域标签」而非"位置"</td></tr>
+          <tr><td><b>八字</b></td><td>太阳黄经（→ 月支）、时角（→ 时支）</td><td><b>年柱、日柱换成纯计数</b>（60 甲子 / 连续日计数），从此与天体脱钩</td></tr>
+          <tr><td><b>紫微斗数</b></td><td><b>无</b>（只用农历月日时）</td><td>全链<b>符号化</b>：只保留「地支 ↔ 星 ↔ 宫」的排布规则</td></tr>
+        </tbody>
+      </table>
+      <p>注意这不是"高下"，而是<b>不同的编码选择</b>：八字用计数换来了<b>可机算</b>，紫微用符号化换来了<b>强结构</b>，占星用心理轴换来了<b>细腻</b>。
+      代价都是同一个：<b>某一环的物理可追溯性被切断</b>。</p>
+
+      <h3>0.3 逆向复现的四步</h3>
+      <ol>
+        <li><b>坐标还原</b> —— 给每个量标注它锚定在哪个物理量上：<b>黄经 / 时角 / 计数 / 查表</b>。</li>
+        <li><b>截断点识别</b> —— 找出哪些量在传递中"换了对象"：几何 → 计数（年柱、日柱）、几何 → 查表（藏干、十神、神煞）。</li>
+        <li><b>按链重装</b> —— 以七政四余的链为骨架，让每套体系<b>只在自己保留最完整的那一段说话</b>，其余段落闭嘴。</li>
+        <li><b>精进补正</b> —— 古人修过的（超辰、岁差、定朔、真太阳时、均时差）我们补；<b>古人没修的（60 甲子的天文对位）明确标为"设计选择"，不补、也不假装补</b>。</li>
+      </ol>
+
+      <h3>0.4 装配结果：三层结构</h3>
+      <table class="holo-tb">
+        <thead><tr><th>层</th><th>内容</th><th>可逆性</th><th>七政四余对应物</th></tr></thead>
+        <tbody>
+          <tr><td><b>① 几何层</b></td><td>黄经 λ → <b>月支</b>（硬恒等 100%）；时角 → <b>时支</b>（67.5%）；ASC → <b>命宫 / 身宫</b></td><td><b>可逆</b></td><td>宿度、时角</td></tr>
+          <tr><td><b>② 计数层</b></td><td><b>年柱、日柱</b>（含日主）</td><td><b>不可逆</b>——需外部历法锚点</td><td>（七政四余无此层）</td></tr>
+          <tr><td><b>③ 符号层</b></td><td>藏干、十神、神煞、紫微十二宫名</td><td><b>查表</b>——干支一定就确定</td><td>庙旺、喜忌</td></tr>
+        </tbody>
+      </table>
+      <p><b>这张表就是本文的全部骨架</b>：能不能"从行星位置反推八字"，等价于问「这个量落在哪一层」——几何层可反推，计数层不可反推，符号层查表即得。</p>
+
+      <h3>0.5 这是"精进"，不是"复古"</h3>
+      <p>七政四余用<b>宿度</b>（恒星黄道，随岁差漂移，约 50.29″/年）；八字用<b>节气</b>（回归黄道，锁太阳）。两者混用会出系统性偏差，所以本文<b>分开记账</b>：</p>
+      <ul>
+        <li><b>月支</b>锚<b>回归黄道</b>（与太阳黄经硬恒等，实测 100%）；</li>
+        <li><b>宿度层</b>单独标注<b>岁差</b>，不与月支混算；</li>
+        <li>另外补上七政四余没有的<b>计数层记账</b>：60 甲子明确标为计数，它与木土会合 59.577 年的关系是<b>背景</b>（3 次会合成组时极差仅 0.119 年），不是可反推的等式。</li>
+      </ul>
+      <hr>
+
+<h2>一、问题的提法</h2>
+<h3>1.1 常见的两种错误融合</h3>
+<table><thead><tr><th>错误形态</th><th>表现</th><th>问题</th></tr></thead><tbody><tr><td><strong>对应式融合</strong></td><td>"木星 = 印"、"土星 = 官杀"</td><td>把两个不同层的量当成同一个量</td></tr><tr><td><strong>平均式融合</strong></td><td>占星说好、八字说坏 ⇒ 综合"中等"</td><td>平均掉的是信息，不是噪声</td></tr></tbody></table>
+<p>两者的共同病根：<strong>没有先问"它们在测什么"</strong>。</p>
+<h3>1.2 本文的立场</h3>
+<blockquote>融合的第一步不是建立对应，而是<strong>确定每套体系的主测轴</strong>；<br>在它主测的轴上让它说话，在其他轴上让它闭嘴。</blockquote>
+<hr>
+<h2>二、七政四余与古典占星同源（史实层）</h2>
+<p>两条传播路径均出自巴比伦黄道十二宫：</p>
+<pre><code>巴比伦 ──→ 希腊（托勒密《四书》）──────────────→ 古典占星
+    └────→ 印度（《希腊大集》Yavanajātaka）→ 中亚 → 中国 → 七政四余</code></pre>
+<p>共享要素：</p>
+<table><thead><tr><th>要素</th><th>西方</th><th>七政四余</th></tr></thead><tbody><tr><td>黄道十二宫</td><td>白羊…双鱼</td><td>十二次 / 十二宫</td></tr><tr><td>七曜</td><td>日月 + 五星</td><td><strong>七政</strong></td></tr><tr><td>交点/远地点</td><td>北南交点、月亮远地点</td><td><strong>罗睺 / 计都 / 月孛</strong></td></tr><tr><td>本质尊贵</td><td>庙旺陷落</td><td><strong>庙旺喜乐</strong></td></tr><tr><td>相位</td><td>合冲刑拱</td><td>三方四正</td></tr></tbody></table>
+<p><strong>四余的可通约性必须分级</strong>：</p>
+<table><thead><tr><th>四余</th><th>现代对应</th><th>可通约性</th></tr></thead><tbody><tr><td>罗睺</td><td>北交点（升交点）</td><td>✅ 严格</td></tr><tr><td>计都</td><td>南交点（降交点）</td><td>✅ 严格</td></tr><tr><td>月孛</td><td>月亮远地点</td><td>✅ 严格</td></tr><tr><td>紫炁</td><td>——（纯中国概念）</td><td>❌ 不可通约</td></tr></tbody></table>
+<hr>
+<h2>三、★★★ 核心证明：编码类型差异</h2>
+<h3>3.1 可推的部分：月支（硬恒等）</h3>
+<p><strong>节气就是太阳黄经的 30° 刻度。</strong></p>
+<table><thead><tr><th>节气</th><th>太阳黄经</th><th>月建</th></tr></thead><tbody><tr><td>立春</td><td>315°</td><td>寅</td></tr><tr><td>惊蛰</td><td>345°</td><td>卯</td></tr><tr><td>清明</td><td>15°</td><td>辰</td></tr></tbody></table>
+<div class="formula">\text{月支} = \text{寅} + \left\lfloor \frac{(\lambda_\odot - 315°) \bmod 360°}{30°} \right\rfloor</div>
+<p><strong>实测 120/120 = 100.0%</strong>（5 地、跨 65 年）。<br>这不是统计相关、不是拟合，而是<strong>同一个事实的两种命名</strong>。</p>
+<h3>3.2 部分可推：时支（近似）</h3>
+<p>时支由<strong>太阳时角</strong>决定：</p>
+<div class="formula">\text{时支索引} = \left\lfloor \frac{(\text{HA} - 165° + \text{EoT}) \bmod 360°}{30°} \right\rfloor</div>
+<p>其中 <code>\text{HA} = \text{RAMC} - \alpha_\odot</code>（时角），EoT 为均时差（由太阳黄经反算）。</p>
+<p><strong>实测 81/120 = 67.5%</strong>。剩余误差集中在<strong>时辰边界附近</strong>（±1 位）。<br><strong>不足以替代真实出生时辰</strong> —— 这一点必须在产品中明示。</p>
+<h3>3.3 不"直接"可推：年柱、日柱要靠逆星历转一道</h3>
+<p><strong>年柱</strong>是"60 甲子计数的第几位"。若它可从位置推出，则必有行星位置函数具<strong>严格 60 年周期</strong>。<br>但：</p>
+<table><thead><tr><th>量</th><th>周期（年）</th><th>与 60 的关系</th></tr></thead><tbody><tr><td>木星</td><td>11.862</td><td>不可通约</td></tr><tr><td>土星</td><td>29.457</td><td>不可通约</td></tr><tr><td><strong>木土会合</strong></td><td><strong>59.58</strong></td><td><strong>≠ 60（差 0.42 年）</strong></td></tr><tr><td>天王星</td><td>84.01</td><td>不可通约</td></tr><tr><td>海王星</td><td>164.79</td><td>不可通约</td></tr></tbody></table>
+<p><strong>最接近的木土会合是 59.58 年，仍不等于 60。这 0.42 年的差就是"天文"与"历法"的缝隙。</strong></p>
+<p><strong>日柱</strong> = 自甲子日起的连续天数 mod 60。月亮能给出"月内第几天"（周期 29.53 天），<br>但 <strong>29.53 与 60 不锁定绝对日序</strong>。</p>
+<blockquote><strong>⇒ 年柱与日柱不是"精度不够"，而是"信息不存在"。</strong><br>它们依赖一个人为历法原点，而这个原点在天空中<strong>不存在</strong>。</blockquote>
+<h3>3.4 结论：两套体系的底层差异</h3>
+<table><thead><tr><th></th><th>星盘</th><th>八字</th></tr></thead><tbody><tr><td>编码类型</td><td><strong>纯几何</strong></td><td><strong>几何 + 计数</strong></td></tr><tr><td>是否自足</td><td>✅ 不需历法原点</td><td>❌ 需甲子日、甲子年</td></tr><tr><td>时间分辨率</td><td>连续（度、分）</td><td>离散（60 位一循环）</td></tr><tr><td>能表达"第几步"</td><td>❌</td><td>✅ 大运第几步、几岁起运</td></tr><tr><td>能表达"几度几分"</td><td>✅</td><td>❌</td></tr></tbody></table>
+<p><strong>这解释了为什么八字能说"第几步大运"、占星只能说"几度几分入相"——<br>一个天生带序号，一个天生带坐标。而两者都缺同一维：绝对历史计数。</strong></p>
+<p><strong>信息流向的不对称：</strong></p>
+<pre><code>四柱  →  星盘：通 ✅（月支定太阳黄经区间、日定月相、时支定上升）
+星盘  →  四柱：只通几何那一半，卡在 60 甲子上 ❌</code></pre>
+<p>此不对称即证明：<strong>八字携带了星盘没有的信息（绝对计数），星盘携带了八字没有的信息（连续坐标）。</strong></p>
+<hr>
+<h2>四、★★★ 双轴模型：心理与物质</h2>
+<h3>4.1 一个曾被误判为"冲突"的现象</h3>
+<table><thead><tr><th>体系</th><th>月亮在天蝎</th></tr></thead><tbody><tr><td>古典占星</td><td>月亮<strong>落</strong>（×0.60）</td></tr><tr><td>紫微斗数</td><td>太阴在亥为<strong>庙</strong>（×1.30）</td></tr></tbody></table>
+<p>初判为矛盾。<strong>实际不是矛盾，而是两个不同的测量轴。</strong></p>
+<h3>4.2 结构依据（非事后解释）</h3>
+<table><thead><tr><th></th><th>庙旺是…的函数</th><th>该维度是什么</th><th>测什么</th></tr></thead><tbody><tr><td><strong>紫微斗数</strong></td><td>f(星, <strong>宫位</strong>)</td><td>宫位 = 财帛/官禄/田宅/疾厄…<strong>全是生活事项</strong></td><td><strong>物质</strong></td></tr><tr><td><strong>古典占星</strong></td><td>f(星, <strong>星座</strong>)</td><td>星座 = <strong>性质</strong>，非事项</td><td><strong>心理</strong></td></tr></tbody></table>
+<blockquote><strong>物质属性刻在紫微的数据结构里；心理属性刻在占星的数据结构里。</strong></blockquote>
+<p><strong>这不是约定，是维度决定的</strong>：只要紫微把"本性"耦合进"事项宫位"，它的庙旺必带物质色彩；<br>只要占星把"本性"分离在"性质星座"上，它的尊贵只剩纯品质。</p>
+<h3>4.3 四象限读法</h3>
+<table><thead><tr><th>心理轴</th><th>物质轴</th><th>白话</th></tr></thead><tbody><tr><td>强</td><td>强</td><td><strong>里外都好</strong></td></tr><tr><td>强</td><td>弱</td><td><strong>心里有底，现实缺位</strong></td></tr><tr><td>弱</td><td>强</td><td><strong>物质有靠，但心里不安</strong></td></tr><tr><td>弱</td><td>弱</td><td><strong>两头都要补</strong></td></tr></tbody></table>
+<p><strong>本盘实测</strong>：月亮天蝎（占星落）= 心理弱；太阴在亥（紫微庙）= 物质旺<br>⇒ <strong>「物质有靠，但心里不安 —— 现实稳，情绪拧」</strong></p>
+<p><strong>这是一条有用的断语，而不是需要消除的矛盾。</strong></p>
+<h3>4.4 纪律</h3>
+<ol><li>禁止把不同轴的量相乘或加权平均（心理弱 × 物质旺 ≠ 中等）</li><li>禁止用一个体系的结论否定另一个在别的轴上的结论</li><li>两轴相反时必须输出<strong>完整读法句</strong>，而非只给数字</li><li><strong>同一轴</strong>上的相反结论（如占星本质尊贵 vs 七政庙旺，均为 f(星,星座)）<strong>才是真冲突</strong>，此时并列不平均</li></ol>
+<hr>
+<h2>五、各体系的独有优势与缺陷互补</h2>
+<p>判定标准：不是"它也能算"，而是"<strong>它的数据结构里天然有这一维</strong>"。</p>
+<table><thead><tr><th>体系</th><th>独有优势</th><th>结构缺陷</th><th>由谁补</th></tr></thead><tbody><tr><td><strong>八字</strong></td><td>①<strong>相对性（十神）</strong>：同一颗月亮对甲木是食神、对庚金是伤官&lt;br&gt;②<strong>质变（合化）</strong>：甲己合化土是变成另一种东西</td><td><strong>缺领域</strong>（无"落在哪"的原生维度）</td><td>占星/紫微/七政</td></tr><tr><td><strong>古典占星</strong></td><td>①<strong>正交分离</strong>：本质尊贵 f(星,星座) × 偶然尊贵 f(星,宫位) 独立打分&lt;br&gt;②<strong>几何精度</strong>：相位 orb 连续&lt;br&gt;③<strong>昼夜盘</strong>：天文事实驱动</td><td><strong>缺关系算子</strong>（无"相对于你"）</td><td>八字十神</td></tr><tr><td><strong>七政四余</strong></td><td>①<strong>四余当星用</strong>（罗计孛可严格换算）&lt;br&gt;②<strong>二十八宿不等分</strong>（井 31° vs 觜 2°，分辨率细一倍）&lt;br&gt;③<strong>神煞合流</strong></td><td>缺关系算子；庙旺无宫位维度</td><td>八字 + 紫微</td></tr><tr><td><strong>紫微斗数</strong></td><td>①<strong>星×宫二维庙旺（耦合）</strong>：一步说出"这颗星在这一块多强"&lt;br&gt;②<strong>四化流转</strong>：同一颗星在不同大限变功能&lt;br&gt;③<strong>借宫与三方四正</strong>：领域间传导</td><td><strong>缺天文锚点</strong>（十四主星全是虚拟星，不对应真实天体）</td><td>占星</td></tr></tbody></table>
+<h3>5.1 关键的耦合 vs 分离</h3>
+<table><thead><tr><th>体系</th><th>庙旺维度</th><th>性质</th><th>优点</th><th>代价</th></tr></thead><tbody><tr><td>紫微</td><td>f(星, 宫位)</td><td><strong>耦合</strong></td><td>一步到位、直觉强</td><td>不可分离</td></tr><tr><td>占星·本质</td><td>f(星, 星座)</td><td>分离</td><td>可单独追问"本性多强"</td><td>需两步</td></tr><tr><td>占星·偶然</td><td>f(星, 宫位)+相位</td><td>分离</td><td>把"显不显"与"强不强"分开</td><td>需两步</td></tr><tr><td>七政</td><td>f(星, 星座)</td><td>偏分离</td><td>与占星同构，可互换</td><td>无宫位维度</td></tr><tr><td>八字</td><td>f(字, 月令/地支/数量/生扶)</td><td>分离</td><td>四维可分别诊断</td><td>无宫位概念</td></tr></tbody></table>
+<blockquote><strong>紫微是唯一把"本性"与"领域"耦合的体系，所以它最直觉；其余全部分离，所以它们可计算。<br>这不是优劣，是设计取舍。</strong></blockquote>
+<hr>
+<h2>六、融合方案：一图七层</h2>
+<p><strong>坐标基准：黄经</strong>——四套体系里唯一可精确计算、无歧义的量。</p>
+<table><thead><tr><th>层</th><th>来源</th><th>提供</th><th>为什么是它</th></tr></thead><tbody><tr><td><strong>坐标层</strong></td><td>古典占星</td><td>黄经 0–360°、星座 30° 段、宫位切分</td><td>唯一严格可算的基准</td></tr><tr><td><strong>本质层（心理）</strong></td><td>古典占星</td><td>庙 1.55 / 旺 1.38 / 平 1.00 / 陷 0.72 / 落 0.60</td><td>正交分离，可单独追问</td></tr><tr><td><strong>偶然层（物质）</strong></td><td>古典占星 + 紫微斗数</td><td>角宫×1.28 / 续宫×1.06 / 果宫×0.80 ＋ 紫微七级亮度</td><td>两者都提供"落在哪"的强度，紫微作加乘</td></tr><tr><td><strong>关系层</strong></td><td>八字</td><td>十神组权重（比劫/印/食伤/财/官杀）＋ 动态修正</td><td>唯一提供"相对于你"</td></tr><tr><td><strong>领域层</strong></td><td>占星 + 紫微 + 七政</td><td>十二宫领域名（三重命名）</td><td>三套都有，占星最可算</td></tr><tr><td><strong>细分层</strong></td><td>七政四余</td><td>四余（罗计炁孛）＋ 二十八宿位置</td><td>额外观测点与更细分辨率</td></tr><tr><td><strong>符号层</strong></td><td>八字神煞</td><td>天乙/文昌/驿马/桃花… ＋ 心理轴</td><td>具体事件与心理颗粒度</td></tr></tbody></table>
+<p><strong>规则：每层只回答一个问题；层与层之间不互相解释，只在结果上并排。冲突时并列，不取平均。</strong></p>
+<h3>6.1 动态十神权重</h3>
+<p>十神权重不是常数，而是<strong>状态相关</strong>：</p>
+<table><thead><tr><th>概念</th><th>由什么决定</th><th>作用</th></tr></thead><tbody><tr><td><strong>strength（总体强弱）</strong></td><td>尊贵 × 宫位档 × 灼伤 × 得时 × 合相</td><td>统一作用，<strong>不改组内配比</strong></td></tr><tr><td><strong>weights（组内配比）</strong></td><td>基础映射 + 硬相位(→官杀/比劫) + 和谐相位(→印/食伤)</td><td>决定"此刻更像哪一组"</td></tr></tbody></table>
+<blockquote><strong>一颗入庙的木星是"更强的木星"，不是"不同的木星"。</strong></blockquote>
+<h3>6.2 合相的两个效应必须分开</h3>
+<table><thead><tr><th>效应</th><th>公式</th><th>性质</th><th>八字类比</th></tr></thead><tbody><tr><td><strong>可见度放大</strong></td><td><code>1+0.18×(1−orb/8)</code>，对称</td><td>同度共处</td><td><strong>合（位置）</strong></td></tr><tr><td><strong>单向输能</strong></td><td>`\</td><td>尊贵差\</td><td>×0.5×(1−orb/8)`，非对称</td><td>强者补给弱者</td><td><strong>印（这才是"生"）</strong></td></tr></tbody></table>
+<p><strong>⇒ 合相本身不是"生"；只有尊贵悬殊时的单向补给才是。</strong></p>
+<hr>
+<h2>七、置信度体系与纪律</h2>
+<table><thead><tr><th>证据类型</th><th>置信度</th></tr></thead><tbody><tr><td>恒等（如月支⇔太阳黄经）</td><td>0.95（上限 1.0）</td></tr><tr><td>结构（如十神组↔行星性质）</td><td>0.6</td></tr><tr><td>文献</td><td>0.4</td></tr><tr><td>经验</td><td>0.2</td></tr><tr><td>巧合</td><td>0</td></tr></tbody></table>
+<p><strong>四条纪律：</strong></p>
+<ol><li><strong>可通约 / 不可通约必须分开标注</strong>（紫炁、二十八宿、紫微十二宫实际含义 = 不可通约或需谨慎）</li><li><strong>不合并，只并排</strong>（紫微"父母宫"在 12 位 vs 占星父母看 4/10 宫 —— 这是实际差异）</li><li><strong>置信度 ≤0.6，不因"同源"提高</strong>（同源只说明骨架相同，不说明断语等价）</li><li><strong>不下吉凶</strong>：翻译成白话是为了让人看懂，不是为了给结论</li></ol>
+<hr>
+<h2>八、边界：什么是做不到的</h2>
+<p><strong>结构性无解</strong>：若两套体系都是同一时刻 <code>t</code> 的确定性函数，则</p>
+<div class="formula">I(A;B \mid t) = 0</div>
+<p>即它们的相关信息<strong>完全由共同输入 <code>t</code> 承载</strong>，统计相关无法证明体系对应。</p>
+<p><strong>此边界下仍有解的三类问题：</strong></p>
+<table><thead><tr><th>类型</th><th>例子</th><th>是否有解</th></tr></thead><tbody><tr><td>恒等类</td><td>月支 ⇔ 太阳黄经</td><td>✅ 有解（本文核心）</td></tr><tr><td>分辨率类</td><td>二十八宿 &gt; 十二宫</td><td>✅ 有解</td></tr><tr><td>覆盖类</td><td>八字无领域，占星有</td><td>✅ 有解</td></tr><tr><td>信息增益类</td><td>紫微补物质轴</td><td>✅ 有解</td></tr><tr><td><strong>同现类</strong></td><td>"木星是不是印"</td><td>❌ <strong>无解</strong></td></tr></tbody></table>
+<hr>
+<h2>九、实际作用层</h2>
+<table><thead><tr><th>你手上有什么</th><th>能推出什么</th></tr></thead><tbody><tr><td><strong>只有星盘</strong></td><td>月支 ✅(100%)、胎元 ✅、时支 ⚠️(67.5%)、命宫/身宫 ⚠️；年柱/日柱 ❌</td></tr><tr><td><strong>只有星盘 + 大概哪年生</strong></td><td><strong>七柱全推</strong></td></tr><tr><td><strong>只有四柱</strong></td><td><strong>全星盘 ✅</strong></td></tr><tr><td><strong>什么都没有</strong></td><td>一柱都推不出</td></tr></tbody></table>
+<p><strong>生时矫正的理论基础正在于此</strong>：用<strong>事件</strong>（婚/丧/迁/病/业）作外部锚点反推时支；<br>一旦时支确定，命宫与身宫随之而定。</p>
+<p>⚠️ <strong>但需注意</strong>：生时矫正与本文的映射推导都属于<strong>近似恢复</strong>，<br>精度受限于事件数量与质量。<strong>若要求高精度，仍建议接入 API 由模型做全局约束求解</strong>——<br>本地确定性算法只能给出候选集，不能给出唯一解。</p>
+<hr>
+<h2>十、结论</h2>
+<ol><li>七政四余与古典占星<strong>同源</strong>，融合是恢复共有骨架，不是比附。</li><li>两套体系的底层差异在<strong>编码类型</strong>：占星纯几何（自足），八字几何+计数（含人为原点）。</li><li>此差异可<strong>严格证明</strong>：月支 100% 直接可推；年柱日柱可推，但要经"逆星历 → 日期 → 历法锚点"。</li><li>庙旺的差异是<strong>双轴</strong>（心理/物质），不是冲突。</li><li>融合的正确形态是<strong>分层各取所长</strong>：七层结构，每层只回答一个问题。</li><li>边界必须承认：<strong>同现类问题结构性无解</strong>；恒等/分辨率/覆盖/信息增益类有解。</li><li>精度不足时<strong>明示</strong>：时支 67.5%、生时矫正为近似恢复，<strong>高精度需求应接入 API</strong>。</li></ol>
+<hr>
+<h2>附：代码与验证</h2>
+<table><thead><tr><th>模块</th><th>内容</th></tr></thead><tbody><tr><td><code>src/cross/four-systems.mjs</code></td><td>七政/四余/月将月建/十二宫领域/紫微十四主星/四化/白话翻译器</td></tr><tr><td><code>src/cross/system-advantages.mjs</code></td><td>11 项独有优势 / 耦合对照 / 一图七层 / 双轴 synthesize</td></tr><tr><td><code>src/cross/position-to-pillars.mjs</code></td><td>月支恒等 / 时支时角法 / 年柱日柱须经逆星历的可推性</td></tr><tr><td><code>src/cross/pillar-derivation.mjs</code></td><td>七柱依赖图 / 四档可推断性 / 宫位地支 / 藏干触发条件</td></tr><tr><td><code>src/cross/dynamic-ten-god.mjs</code></td><td>多十神映射 / strength 与配比分离 / 合相双效应 / 八字印证</td></tr><tr><td><code>src/cross/hidden-stem.mjs</code></td><td>藏干透出（占星实现）/ 土星双角色</td></tr><tr><td><code>src/bazi/shensha.mjs</code></td><td>十项神煞 + 心理轴 + 占星收敛度</td></tr></tbody></table>
+<p><strong>回归：36 套机检全部通过。</strong></p>
+</div>
+<a class="back" href="/">← 回主界面</a>
+</body>
+</html>

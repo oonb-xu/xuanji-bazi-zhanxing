@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const BASE = 'https://registry.npmmirror.com/-/binary/ffmpeg-static/b6.1.1/';
+const r = await fetch(BASE, { signal: AbortSignal.timeout(15000) });
+const t = await r.text();
+const items = [...t.matchAll(/"name"\s*:\s*"([^"]+)"/g)].map(m => m[1]);
+console.log('b6.1.1 下 ' + items.length + ' 项：');
+for (const i of items) console.log('  ' + i);
+const win = items.filter(x => /win32.*x64/i.test(x));
+console.log('\nWindows x64 候选：' + (win.join(', ') || '无'));
+fs.writeFileSync('.tmp/ffmpeg-candidates.json', JSON.stringify({ base: BASE, win }, null, 2), 'utf8');

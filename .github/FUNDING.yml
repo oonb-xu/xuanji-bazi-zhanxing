@@ -1,0 +1,9 @@
+# GitHub 赞助入口（显示在仓库右上角 "Sponsor" 按钮）
+# 爱发电属于「自定义链接」，填在 custom 下
+
+custom: ['https://afdian.com/@YOUR_ID']
+
+# 如有 GitHub Sponsors，取消注释：
+# github: [your-github-username]
+
+# 说明：赞助不附带任何承诺（不换付费咨询、不换功能优先级）

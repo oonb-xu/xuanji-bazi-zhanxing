@@ -1,0 +1,23 @@
+{
+  "_schema": "星盘输入（Part 5 交叉修正引擎）：planets[名] = {sign, house, deg, retro?}；aspects[] = {a, b, type}，type ∈ 合相|对冲|四分相|三分相|六分相|梅花相",
+  "planets": {
+    "太阳": { "sign": "摩羯", "house": 7, "deg": 15 },
+    "月亮": { "sign": "巨蟹", "house": 2, "deg": 8 },
+    "上升": { "sign": "双子", "house": 1, "deg": 3 },
+    "水星": { "sign": "摩羯", "house": 6, "deg": 27 },
+    "金星": { "sign": "天蝎", "house": 8, "deg": 12 },
+    "火星": { "sign": "白羊", "house": 10, "deg": 4 },
+    "木星": { "sign": "摩羯", "house": 7, "deg": 22 },
+    "土星": { "sign": "处女", "house": 4, "deg": 19 },
+    "天王星": { "sign": "水瓶", "house": 10, "deg": 2 },
+    "海王星": { "sign": "双鱼", "house": 11, "deg": 9 },
+    "冥王星": { "sign": "射手", "house": 7, "deg": 26 },
+    "北交点": { "sign": "双鱼", "house": 9, "deg": 17 },
+    "南交点": { "sign": "处女", "house": 3, "deg": 17 }
+  },
+  "aspects": [
+    { "a": "冥王星", "b": "太阳", "type": "对冲" },
+    { "a": "土星", "b": "月亮", "type": "四分相" },
+    { "a": "木星", "b": "太阳", "type": "合相" }
+  ]
+}

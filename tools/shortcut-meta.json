@@ -1,0 +1,8 @@
+{
+  "name": "玄机 · 中西命理融合",
+  "description": "玄机 · 中西命理融合（直接调用已签名的 node.exe，绕过 Smart App Control 对 .cmd 的拦截）",
+  "mode": "node",
+  "script": "server.mjs",
+  "args": "8788 --open",
+  "icon": "xuanji.ico"
+}

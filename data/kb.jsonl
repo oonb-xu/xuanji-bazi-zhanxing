@@ -1,0 +1,53 @@
+{"ts":"2026-10-08T14:43:41.879Z","collection":"run","kind":"start","index":1,"chartId":"庚午辛巳乙酉癸未-金牛","bazi":"庚午 辛巳 乙酉 癸未","astro":null}
+{"ts":"2026-10-08T14:43:41.879Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"太阳","shiShen":"日主 / 命宫","verdict":"共振","sign":"金牛","dignity":"中性","shiShenLevel":"中"}
+{"ts":"2026-10-08T14:43:41.880Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"月亮","shiShen":"身宫 / 印星","verdict":"共振","sign":"双鱼","dignity":"中性","shiShenLevel":"中"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"上升","shiShen":"年柱 / 命宫","verdict":"中性","sign":"天秤","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"水星","shiShen":"食伤 / 印星","verdict":"中性","sign":"金牛","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"金星","shiShen":"财星 / 比劫","verdict":"背离","sign":"白羊","dignity":"陷","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"火星","shiShen":"七杀 / 羊刃","verdict":"中性","sign":"双鱼","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"木星","shiShen":"食伤 / 印星","verdict":"共振","sign":"巨蟹","dignity":"旺","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"土星","shiShen":"正官 / 七杀","verdict":"共振","sign":"摩羯","dignity":"庙","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.883Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"天王星","shiShen":"食伤 / 偏印","verdict":"中性","sign":"摩羯","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.884Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"海王星","shiShen":"偏印 / 印星","verdict":"共振","sign":"摩羯","dignity":"中性","shiShenLevel":"中"}
+{"ts":"2026-10-08T14:43:41.884Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"冥王星","shiShen":"七杀 / 偏财","verdict":"共振","sign":"天蝎","dignity":"庙","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.884Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"北交点","shiShen":"用神 / 通关用神","verdict":"共振","sign":"水瓶","dignity":"中性","shiShenLevel":"中"}
+{"ts":"2026-10-08T14:43:41.884Z","collection":"correspondence","chartId":"庚午辛巳乙酉癸未-金牛","planet":"南交点","shiShen":"忌神 / 业力","verdict":"中性","sign":"狮子","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:43:41.884Z","collection":"resonance","chartId":"庚午辛巳乙酉癸未-金牛","patterns":[],"score":0,"level":"无"}
+{"ts":"2026-10-08T14:43:41.885Z","collection":"proposal","id":"rules:append:庚午辛巳乙酉癸未-金牛:78458d6c","chartId":"庚午辛巳乙酉癸未-金牛","target":"rules","op":"append","entry":"木星落巨蟹（旺） ⟺ 八字食伤 / 印星强","reason":"本命局共振（十神2.5 vs 尊贵分1）","evidence":"木星(巨蟹·旺) ↔ 食伤 / 印星：十神强 vs 行星尊贵强 → 共振","status":"pending-human"}
+{"ts":"2026-10-08T14:43:41.885Z","collection":"proposal","id":"rules:append:庚午辛巳乙酉癸未-金牛:d2d76825","chartId":"庚午辛巳乙酉癸未-金牛","target":"rules","op":"append","entry":"土星落摩羯（庙） ⟺ 八字正官 / 七杀强","reason":"本命局共振（十神3 vs 尊贵分2）","evidence":"土星(摩羯·庙) ↔ 正官 / 七杀：十神强 vs 行星尊贵强 → 共振","status":"pending-human"}
+{"ts":"2026-10-08T14:43:41.886Z","collection":"proposal","id":"rules:append:庚午辛巳乙酉癸未-金牛:b48c740b","chartId":"庚午辛巳乙酉癸未-金牛","target":"rules","op":"append","entry":"冥王星落天蝎（庙） ⟺ 八字七杀 / 偏财强","reason":"本命局共振（十神3 vs 尊贵分2）","evidence":"冥王星(天蝎·庙) ↔ 七杀 / 偏财：十神强 vs 行星尊贵强 → 共振","status":"pending-human"}
+{"ts":"2026-10-08T14:50:39.877Z","collection":"run","kind":"start","index":2,"chartId":"丁亥壬子癸巳庚申-摩羯","bazi":"丁亥 壬子 癸巳 庚申","astro":null}
+{"ts":"2026-10-08T14:50:39.877Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"太阳","shiShen":"日主 / 命宫","verdict":"中性","sign":"摩羯","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.877Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"月亮","shiShen":"身宫 / 印星","verdict":"共振","sign":"巨蟹","dignity":"庙","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.877Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"上升","shiShen":"年柱 / 命宫","verdict":"中性","sign":"双子","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.877Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"水星","shiShen":"食伤 / 印星","verdict":"中性","sign":"摩羯","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"金星","shiShen":"财星 / 比劫","verdict":"背离","sign":"天蝎","dignity":"陷","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"火星","shiShen":"七杀 / 羊刃","verdict":"背离","sign":"巨蟹","dignity":"落","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"木星","shiShen":"食伤 / 印星","verdict":"背离","sign":"摩羯","dignity":"落","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"土星","shiShen":"正官 / 七杀","verdict":"中性","sign":"处女","dignity":"中性","shiShenLevel":"弱"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"天王星","shiShen":"食伤 / 偏印","verdict":"中性","sign":"双鱼","dignity":"中性","shiShenLevel":"弱"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"海王星","shiShen":"偏印 / 印星","verdict":"背离","sign":"水瓶","dignity":"落","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.878Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"冥王星","shiShen":"七杀 / 偏财","verdict":"共振","sign":"射手","dignity":"中性","shiShenLevel":"中"}
+{"ts":"2026-10-08T14:50:39.879Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"北交点","shiShen":"用神 / 通关用神","verdict":"中性","sign":"双鱼","dignity":"中性","shiShenLevel":"弱"}
+{"ts":"2026-10-08T14:50:39.879Z","collection":"correspondence","chartId":"丁亥壬子癸巳庚申-摩羯","planet":"南交点","shiShen":"忌神 / 业力","verdict":"中性","sign":"处女","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-08T14:50:39.879Z","collection":"resonance","chartId":"丁亥壬子癸巳庚申-摩羯","patterns":["火星冲冥王星","太阳冲月亮","土星冲天王星"],"score":1.6,"level":"低"}
+{"ts":"2026-10-08T14:50:39.879Z","collection":"proposal","id":"rules:append:丁亥壬子癸巳庚申-摩羯:a53e3e6d","chartId":"丁亥壬子癸巳庚申-摩羯","target":"rules","op":"append","entry":"月亮落巨蟹（庙） ⟺ 八字身宫 / 印星强","reason":"本命局共振（十神3 vs 尊贵分2）","evidence":"月亮(巨蟹·庙) ↔ 身宫 / 印星：十神强 vs 行星尊贵强 → 共振","status":"pending-human"}
+{"ts":"2026-10-08T14:50:39.881Z","collection":"proposal","kind":"decision","id":"rules:append:丁亥壬子癸巳庚申-摩羯:a53e3e6d","decision":"accepted","note":"用户指令：每次推演后修正 rule 库"}
+{"ts":"2026-10-09T05:05:45.082Z","collection":"run","kind":"start","index":3,"chartId":"丁亥壬子癸巳辛酉-摩羯-kery","bazi":"丁亥 壬子 癸巳 辛酉","astro":null}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"太阳","shiShen":"日主 / 命宫","verdict":"中性","sign":"摩羯","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"月亮","shiShen":"身宫 / 印星","verdict":"共振","sign":"巨蟹","dignity":"庙","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"上升","shiShen":"年柱 / 命宫","verdict":"中性","sign":"双子","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"水星","shiShen":"食伤 / 印星","verdict":"中性","sign":"摩羯","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"金星","shiShen":"财星 / 比劫","verdict":"背离","sign":"天蝎","dignity":"陷","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"火星","shiShen":"七杀 / 羊刃","verdict":"背离","sign":"巨蟹","dignity":"落","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"木星","shiShen":"食伤 / 印星","verdict":"背离","sign":"摩羯","dignity":"落","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.083Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"土星","shiShen":"正官 / 七杀","verdict":"中性","sign":"处女","dignity":"中性","shiShenLevel":"弱"}
+{"ts":"2026-10-09T05:05:45.084Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"天王星","shiShen":"食伤 / 偏印","verdict":"中性","sign":"双鱼","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.084Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"海王星","shiShen":"偏印 / 印星","verdict":"背离","sign":"水瓶","dignity":"落","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.084Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"冥王星","shiShen":"七杀 / 偏财","verdict":"共振","sign":"射手","dignity":"中性","shiShenLevel":"中"}
+{"ts":"2026-10-09T05:05:45.084Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"北交点","shiShen":"用神 / 通关用神","verdict":"中性","sign":"水瓶","dignity":"中性","shiShenLevel":"弱"}
+{"ts":"2026-10-09T05:05:45.084Z","collection":"correspondence","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","planet":"南交点","shiShen":"忌神 / 业力","verdict":"中性","sign":"狮子","dignity":"中性","shiShenLevel":"强"}
+{"ts":"2026-10-09T05:05:45.084Z","collection":"resonance","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","patterns":["火星冲冥王星","冥王星冲上升","火星冲木星","太阳冲火星","水星冲火星","土星冲天顶"],"score":6.1,"level":"高"}
+{"ts":"2026-10-09T05:05:45.085Z","collection":"proposal","id":"rules:append:丁亥壬子癸巳辛酉-摩羯-kery:a53e3e6d","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","target":"rules","op":"append","entry":"月亮落巨蟹（庙） ⟺ 八字身宫 / 印星强","reason":"本命局共振（十神3.1 vs 尊贵分2）","evidence":"月亮(巨蟹·庙) ↔ 身宫 / 印星：十神强 vs 行星尊贵强 → 共振","status":"pending-human"}
+{"ts":"2026-10-09T05:06:03.846Z","collection":"run","kind":"start","index":4,"chartId":"丁亥壬子癸巳辛酉-摩羯-kery","bazi":"丁亥 壬子 癸巳 辛酉","astro":null}
+{"ts":"2026-10-09T05:06:03.847Z","collection":"resonance","chartId":"丁亥壬子癸巳辛酉-摩羯-kery","patterns":["火星冲冥王星","冥王星冲上升","火星冲木星","太阳冲火星","水星冲火星","土星冲天顶"],"score":6.1,"level":"高"}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>玄机 · 融合路径</title>
+<style>
+:root{--bg:#04070d;--fg:#dfeaf5;--mut:#8ba6bf;--gold:#ffc457;--cyan:#5ef1ff;--green:#7dffb4;--red:#ff9a8a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#02040a;overflow:hidden}
+body{font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:var(--fg)}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(1200px 800px at 50% 40%,#0a1524,#02040a 70%)}
+#frame{position:relative;width:1280px;height:720px;background:linear-gradient(175deg,#050a12,#03060b 60%,#020408);
+  overflow:hidden;box-shadow:0 30px 120px rgba(0,0,0,.8);border-radius:4px}
+#frame::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.75;
+  background:
+    radial-gradient(1px 1px at 8% 18%,rgba(255,255,255,.5),transparent),
+    radial-gradient(1px 1px at 22% 62%,rgba(255,255,255,.4),transparent),
+    radial-gradient(1px 1px at 35% 26%,rgba(255,255,255,.45),transparent),
+    radial-gradient(1px 1px at 48% 78%,rgba(255,255,255,.35),transparent),
+    radial-gradient(1px 1px at 61% 34%,rgba(255,255,255,.42),transparent),
+    radial-gradient(1px 1px at 74% 66%,rgba(255,255,255,.38),transparent),
+    radial-gradient(1px 1px at 87% 22%,rgba(255,255,255,.48),transparent),
+    radial-gradient(1px 1px at 93% 84%,rgba(255,255,255,.3),transparent),
+    radial-gradient(900px 600px at 70% 20%,rgba(56,92,180,.1),transparent 65%),
+    radial-gradient(700px 500px at 20% 80%,rgba(140,70,150,.07),transparent 68%)}
+.scene{position:absolute;inset:0;padding:70px 88px;display:flex;flex-direction:column;justify-content:center;
+  opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;pointer-events:none;z-index:1}
+.scene.on{opacity:1;transform:none}
+.eyebrow{font-size:11px;letter-spacing:.32em;color:rgba(120,180,215,.6);margin-bottom:18px}
+h1{font-size:50px;line-height:1.28;font-weight:800;letter-spacing:-.01em}
+h2{font-size:37px;line-height:1.34;font-weight:800}
+h3{font-size:24px;line-height:1.5;font-weight:700;color:#eaf7ff}
+p{font-size:19px;line-height:1.95;color:rgba(205,225,240,.92);margin-top:15px;max-width:1030px}
+.lead{font-size:24px;line-height:1.85;color:#eaf7ff}
+.mut{color:var(--mut);font-size:16px;line-height:1.9}
+.gold{color:var(--gold)}.cyan{color:var(--cyan)}.green{color:var(--green)}.red{color:var(--red)}
+.row{display:flex;gap:15px;margin-top:22px;flex-wrap:wrap}
+.card{flex:1;min-width:0;padding:17px 19px;border-radius:12px;background:rgba(8,16,28,.66);
+  border:1px solid rgba(90,160,220,.2)}
+.card .t{font-size:12.5px;color:rgba(140,190,225,.65);letter-spacing:.1em;margin-bottom:7px}
+.card .b{font-size:16.5px;line-height:1.72;color:#eaf7ff;font-weight:600}
+.card .s{font-size:13.5px;line-height:1.7;color:rgba(155,195,220,.8);margin-top:7px;font-weight:400}
+.card.warn{border-color:rgba(255,154,138,.32);background:rgba(255,154,138,.06)}
+.card.ok{border-color:rgba(125,255,180,.3);background:rgba(125,255,180,.05)}
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:15.5px}
+th{text-align:left;padding:9px 11px;color:rgba(140,190,225,.7);font-size:11.5px;letter-spacing:.1em;
+  border-bottom:1px solid rgba(90,160,220,.25);font-weight:600}
+td{padding:9px 11px;border-bottom:1px solid rgba(255,255,255,.055);line-height:1.62;vertical-align:top}
+.pn{color:#eaf7ff;font-weight:700;white-space:nowrap}
+.hl{background:rgba(94,241,255,.06)}
+.q{border-left:3px solid var(--gold);padding:14px 22px;margin-top:22px;background:rgba(255,196,87,.055);
+  border-radius:0 8px 8px 0;font-size:20px;line-height:1.8;color:#f2e6c8}
+#bar{position:absolute;bottom:0;left:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--gold));
+  width:0;z-index:9}
+#ctrl{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:20}
+#ctrl button{padding:7px 15px;border-radius:8px;background:rgba(8,16,28,.9);color:#9fd8f5;
+  border:1px solid rgba(120,180,220,.28);font-size:12.5px;cursor:pointer;font-family:inherit}
+#ctrl button:hover{background:rgba(94,241,255,.14);color:var(--cyan)}
+#idx{position:absolute;bottom:16px;right:24px;font-size:11.5px;color:rgba(120,170,205,.5);z-index:9;
+  letter-spacing:.1em;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div id="stage"><div id="frame">
+
+  <!-- ① 引子：他们都在谈"命"这件事 -->
+  <section class="scene on" data-dur="8000">
+    <div class="eyebrow">引子 · 三个人，三种对"命"的思考</div>
+    <h1>"命"到底是个什么东西？</h1>
+    <p class="mut">这不是命理师在问，是几个做成事的人在公开场合反复谈起的话题。</p>
+    <div class="row">
+      <div class="card"><div class="t">某教育博主</div><div class="b">谈"选择比努力重要"</div>
+        <div class="s">他反复讲的其实是：<b class="gold">起点给定了多少</b>，努力还能改多少</div></div>
+      <div class="card"><div class="t">某科技企业家</div><div class="b">谈"风口"与"顺势"</div>
+        <div class="s">他强调的是：<b class="gold">时势的权重</b>，可能大过个人</div></div>
+      <div class="card"><div class="t">某电商创始人</div><div class="b">谈"我不太信命"</div>
+        <div class="s">他给的答案是：<b class="gold">人可以去改</b>那部分给定的东西</div></div>
+    </div>
+  </section>
+
+  <!-- ② 三种态度背后是同一个问题 -->
+  <section class="scene" data-dur="7500">
+    <div class="eyebrow">共同点</div>
+    <h2>三个人的答案不一样，<br>问的却是<b class="cyan">同一件事</b></h2>
+    <p class="lead" style="margin-top:22px">有多少是<b class="gold">给定的</b>，<br>有多少是<b class="green">自己挣的</b>？</p>
+    <p class="mut" style="margin-top:20px">注意：本节<b>不分析任何人</b>。我们没有他们的出生时辰，
+      对具体的人下命理结论，正是后面要批评的那种做法。<br>
+      这里只借用他们提出的<b>问题</b>——因为中国和西方，各自都有一套回答它的系统。</p>
+  </section>
+
+  <!-- ③ 两套系统 -->
+  <section class="scene" data-dur="8500">
+    <div class="eyebrow">回答这个问题的两套系统</div>
+    <div class="row" style="margin-top:0">
+      <div class="card"><div class="t">中 · 干支</div><div class="b">殷商甲骨已用干支纪日<br>
+        <span class="mut" style="font-size:13.5px">连续纪日三千年以上</span></div>
+        <div class="s">长成：四柱八字、大运流年</div></div>
+      <div class="card"><div class="t">西 · 黄道</div><div class="b">巴比伦十二等分黄道<br>
+        <span class="mut" style="font-size:13.5px">经希腊与印度两条路</span></div>
+        <div class="s">长成：古典占星、七政四余</div></div>
+    </div>
+    <h3 style="margin-top:28px"><b class="green">它们不是两个体系。</b><br>是同一套天文骨架的两条分支。</h3>
+    <p class="mut">所以融合不是比附，是<b>恢复它们本来共有的骨架</b>。</p>
+  </section>
+
+  <!-- ④ 八字强项与缺口 -->
+  <section class="scene" data-dur="7000">
+    <div class="eyebrow">八字 · 强项与缺口</div>
+    <h2>它回答「来的是<b class="gold">哪种力量</b>」</h2>
+    <p><b class="green">强项</b>：十神是一套<b>关系算子</b>——同一颗月亮，对甲木是食神，对庚金是伤官。
+      别的体系给不出"相对于你"这一层。<br>
+      还有<b>质变</b>：甲己合化土，是<b>变成另一种东西</b>，不是量的加减。</p>
+    <p><b class="red">缺口</b>：没有"这件事发生在生活哪一块"的原生维度。<br>
+      <span class="mut">能说"你的财"，但说不出"你的财在哪"。</span></p>
+  </section>
+
+  <!-- ⑤ 占星强项与缺口 -->
+  <section class="scene" data-dur="7000">
+    <div class="eyebrow">占星 · 强项与缺口</div>
+    <h2>它回答「落在<b class="gold">哪一块</b>」</h2>
+    <p><b class="green">强项</b>：十二宫就是生活领域；本质尊贵（星×星座）与偶然尊贵（星×宫位）
+      <b>是两套独立打分</b>。<br>相位是精确角度加 orb，能表达"差 6.3° 的合相"。</p>
+    <p><b class="red">缺口</b>：没有"相对于你"——只能说你"有金星"，不能说你"有财"。<br>
+      <span class="mut">"财"必须相对于"我"才成立。</span></p>
+  </section>
+
+  <!-- ⑥ 四系统优劣 -->
+  <section class="scene" data-dur="10000">
+    <div class="eyebrow">四套体系 · 独有优势与结构缺陷</div>
+    <table>
+      <thead><tr><th style="width:13%">体系</th><th style="width:45%">独有优势（别人结构上做不到）</th><th>结构缺陷</th></tr></thead>
+      <tbody>
+        <tr class="hl"><td class="pn">八字</td>
+          <td><b>相对性</b>（十神）· <b>质变</b>（合化）</td><td class="red">无领域</td></tr>
+        <tr><td class="pn">古典占星</td>
+          <td><b>正交分离</b>（本质/偶然尊贵）· <b>几何精度</b>（orb）· <b>昼夜盘</b></td>
+          <td class="red">无关系算子</td></tr>
+        <tr><td class="pn">七政四余</td>
+          <td><b>四余当星用</b>· <b>二十八宿不等分</b>（井31° vs 觜2°）· <b>神煞合流</b></td>
+          <td class="red">庙旺只有星×星座一维</td></tr>
+        <tr><td class="pn">紫微斗数</td>
+          <td><b>星×宫二维庙旺（耦合）</b>· <b>四化流转</b>· <b>借宫传导</b></td>
+          <td class="red">无天文锚点（十四主星全是虚拟星）</td></tr>
+      </tbody>
+    </table>
+    <p class="mut" style="margin-top:20px"><b class="gold">紫微把"本性"与"领域"耦合，所以最直觉；
+      其余全部分离，所以可计算。</b>这不是优劣，是设计取舍。</p>
+  </section>
+
+  <!-- ⑦ 三层次判决 -->
+  <section class="scene" data-dur="9500">
+    <div class="eyebrow">判决 · 什么可融，什么不可融</div>
+    <div class="row" style="margin-top:0">
+      <div class="card ok"><div class="t">天文层 · 可融</div><div class="b">有恒等式<br>
+        <span class="mut" style="font-size:13.5px">月支 ⇔ 太阳黄经　实测 <b class="green">100%</b></span></div></div>
+      <div class="card ok"><div class="t">结构层 · 可融</div><div class="b">须同层级零模型<br>
+        <span class="mut" style="font-size:13.5px">十神组 ↔ 行星性质（χ² 独立）</span></div></div>
+      <div class="card"><div class="t">符号层 · 条件可融</div><div class="b">基础 × 宫位 × 相位<br>
+        <span class="mut" style="font-size:13.5px">置信度 ≤ 0.6</span></div></div>
+    </div>
+    <div class="q" style="margin-top:26px">边界：若两套体系都是同一时刻 t 的确定性函数，<br>
+      则 <b class="cyan">I(A;B | t) = 0</b> —— 统计相关无法证明体系对应。</div>
+  </section>
+
+  <!-- ⑧ 难点与矛盾（核心） -->
+  <section class="scene" data-dur="11000">
+    <div class="eyebrow">这一节是本系统最该被看的部分</div>
+    <h2>难点、矛盾、<b class="red">无法复现与无法对应</b></h2>
+    <table>
+      <thead><tr><th style="width:29%">问题</th><th style="width:32%">性质</th><th>现状</th></tr></thead>
+      <tbody>
+        <tr><td class="pn">时支仅 67.5% 可推</td><td class="mut">精度不足</td><td class="red">边界会差一位，<b>不能替代真实出生时辰</b></td></tr>
+        <tr><td class="pn">年柱 / 日柱无法从星盘推出</td><td class="mut">原理性（60 甲子的计数锚）</td><td class="red">须外部锚点，<b>不声称可推</b></td></tr>
+        <tr><td class="pn">命宫 / 身宫口径分歧</td><td class="mut">流派差异（14/26 法 vs 和法）</td><td class="red">本地引擎与 iztro <b>不一致</b>，只并排</td></tr>
+        <tr><td class="pn">60 甲子连续性只是假设</td><td class="mut">史料问题（非算术）</td><td class="red">已独立检验，<b>局部有 1 天级调整</b></td></tr>
+        <tr><td class="pn">二十八宿 / 紫炁</td><td class="mut">不可通约</td><td class="red">明确标注，<b>不允许它去对应</b></td></tr>
+        <tr><td class="pn">神煞与心理</td><td class="mut">内部一致性</td><td class="red">只是"收敛度"，<b>不是外部验证</b></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ⑨ 融合路径总结 -->
+  <section class="scene" data-dur="9000">
+    <div class="eyebrow">总结 · 融合路径</div>
+    <p class="lead">不去让两套体系互相解释，<br>而是<b class="cyan">各自给出对方没有的那一维</b>。</p>
+    <div class="row">
+      <div class="card"><div class="t">层 1 · 坐标</div><div class="b">黄经——四套里唯一严格可算的基准</div></div>
+      <div class="card"><div class="t">层 2 · 力量</div><div class="b">十神（八字唯一提供"相对于你"）</div></div>
+      <div class="card"><div class="t">层 3 · 领域</div><div class="b">十二宫（占星/紫微/七政共有）</div></div>
+    </div>
+    <div class="row">
+      <div class="card ok"><div class="t">层 4 · 心理轴</div><div class="b">本质尊贵 f(星, 星座)</div></div>
+      <div class="card ok"><div class="t">层 5 · 物质轴</div><div class="b">紫微星宫亮度 f(星, 宫位)</div></div>
+      <div class="card"><div class="t">层 6 · 细分</div><div class="b">四余 + 二十八宿</div></div>
+    </div>
+    <p class="mut" style="margin-top:20px">两轴可以同时一强一弱——那不是矛盾，是有效信息。<br>
+      「物质有靠，但心里不安」比一个"综合分"有用得多。</p>
+  </section>
+
+  <!-- ⑩ 收尾 -->
+  <section class="scene" data-dur="9000">
+    <div class="eyebrow">回到开头那个问题</div>
+    <h1 style="font-size:42px">有多少是给定的，<br>有多少是<b class="green">自己挣的</b>？</h1>
+    <p style="margin-top:26px">本系统能给出的，不是这个问题的答案，<br>
+      而是<b class="gold">一套能说清"哪里能说、哪里不能说"的刻度</b>。</p>
+    <div class="q" style="margin-top:24px">凡是不能对应的，本系统不允许它去对应。</div>
+  </section>
+
+  <!-- ══════════ 以下为「新探索」分幕（2026-10 增补）══════════ -->
+
+  <!-- ⑥ 逆向复现方法论 -->
+  <section class="scene" data-dur="10500">
+    <div class="eyebrow">新方法论 · 七政四余逆向复现</div>
+    <h2>不再问「怎么对应」，<br>而是问「各自<b class="gold">丢掉了哪一环</b>」</h2>
+    <p class="mut" style="margin-top:14px">四套体系里，只有<b class="cyan">七政四余</b>保持「天体位置 → 宫次宿度 → 人事」的<b>全程可追溯</b>。
+      它是唯一"每一环都还有物理对应物"的体系 —— 所以拿它当骨架，反推其余三套在哪一步截断。</p>
+    <table>
+      <thead><tr><th style="width:22%">体系</th><th style="width:32%">保留的天文量</th><th>切断后换成了什么</th></tr></thead>
+      <tbody>
+        <tr><td class="pn">七政四余</td><td>七政 + 四余的宿度与黄经</td><td><b class="green">全链保留</b> ⇒ 骨架</td></tr>
+        <tr><td class="pn">古典占星</td><td>黄经 → 星座 / 宫位</td><td>人事侧换成 <b>心理轴</b>，宫位变「领域标签」</td></tr>
+        <tr><td class="pn">八字</td><td>太阳黄经（月支）、时角（时支）</td><td><b>年柱日柱换成纯计数</b>，与天体脱钩</td></tr>
+        <tr><td class="pn">紫微斗数</td><td>无（只用农历月日时）</td><td>全链 <b>符号化</b>，只留「地支↔星↔宫」排布</td></tr>
+      </tbody>
+    </table>
+    <p class="mut" style="margin-top:12px">这不是高下，是<b>不同的编码选择</b>：八字用计数换<b class="cyan">可机算</b>，
+      紫微用符号化换<b class="cyan">强结构</b>，占星用心理轴换<b class="cyan">细腻</b> —— 代价是同一个：某一环的物理可追溯性被切断。</p>
+  </section>
+
+  <!-- ⑦ 三层结构 -->
+  <section class="scene" data-dur="9500">
+    <div class="eyebrow">装配结果</div>
+    <h2>三个层次，<b class="cyan">各管各的</b></h2>
+    <table style="margin-top:22px">
+      <thead><tr><th style="width:16%">层</th><th>内容</th><th style="width:26%">能否由星盘反推</th></tr></thead>
+      <tbody>
+        <tr class="hl"><td class="pn">① 几何层</td><td>黄经 → <b>月支</b>（恒等 100%）· 时角 → <b>时支</b>（67.5%）· ASC → 命宫/身宫</td><td><b class="green">可反推</b></td></tr>
+        <tr><td class="pn">② 计数层</td><td><b>年柱、日柱</b>（含日主）</td><td><b class="gold">可推，但须转一道</b></td></tr>
+        <tr><td class="pn">③ 符号层</td><td>藏干、十神、神煞、紫微宫名</td><td><b class="cyan">查表即得</b></td></tr>
+      </tbody>
+    </table>
+    <p class="lead" style="margin-top:26px">所以「能不能用行星宫位反推八字」<br>这个问题，<b class="gold">本身就该拆成三问</b>。</p>
+    <p class="mut" style="margin-top:12px">几何层能、计数层能但要经「逆星历 → 绝对日期 → 历法锚点」、符号层不用推。</p>
+  </section>
+
+  <!-- ⑧ 大周期精确模型 -->
+  <section class="scene" data-dur="10000">
+    <div class="eyebrow">实测 · 误差不是线性漂移</div>
+    <h2>它是<b class="cyan">周期性的</b>，<br>所以<b class="green">几百年窗口就够用</b></h2>
+    <p class="mut" style="margin-top:14px">用 astronomy-engine 实扫 <b>1702–2298 年（596 年）全部 31 次木土会合</b>，不假设、不外推。</p>
+    <div class="row">
+      <div class="card warn"><div class="t">单次会合间隔</div><div class="b">19.8653 年，极差 <b class="red">1.3776</b></div>
+        <div class="s">抖得厉害 —— 拿单次会合当"60 年刻度"不可靠</div></div>
+      <div class="card ok"><div class="t">3 次会合跨度</div><div class="b">59.58991 年，极差 <b class="green">0.119</b> 年</div>
+        <div class="s">43 天 —— 三次一组几乎是常数</div></div>
+      <div class="card"><div class="t">间隔自相关</div><div class="b">滞后 3 次会合，<b class="cyan">r = 0.992</b></div>
+        <div class="s">强周期结构，周期 ≈ 60 年</div></div>
+    </div>
+    <p class="mut" style="margin-top:20px">与 60 的差稳定在 <b class="gold">−0.454 ~ −0.366 年</b>（约 −5 个月）；
+      会合点每 60 年沿黄道挪约 10°，绕行一周约 <b>2145 年</b>。</p>
+    <div class="q">误差 = <b>≈60 年为节拍的振荡</b> ⊕ <b>≈2145 年的慢绕行</b>，<br>不是单调线性漂移。</div>
+  </section>
+
+  <!-- ⑨ 双环对照 -->
+  <section class="scene" data-dur="9500">
+    <div class="eyebrow">看得见的接缝</div>
+    <h2>外环不动，内环在转 ——<br>旋转量就是<b class="cyan">上升点</b></h2>
+    <div class="row" style="margin-top:6px">
+      <div class="card"><div class="t">外环 · 黄道</div><div class="b">十二地支 + 藏干</div>
+        <div class="s">锚定<b>天球黄经</b>，<b class="green">静态</b><br>寅永远是 315°–345°（立春→惊蛰）</div></div>
+      <div class="card"><div class="t">内环 · 宫位</div><div class="b">十二宫 + 紫微宫名</div>
+        <div class="s">锚定<b>上升点 ASC</b>，<b class="gold">动态</b><br>宫 1 起于你这张盘的 ASC</div></div>
+      <div class="card"><div class="t">接缝</div><div class="b">ASC / MC 两条线</div>
+        <div class="s">两环之间的<b>旋转量</b><br>就是两套坐标系的差</div></div>
+    </div>
+    <p class="mut" style="margin-top:22px">
+      紫微斗数是这套关系的<b>对偶写法</b>：地支固定排在圆周（静态）、宫名随命宫转（动态）—— 与占星恰好互为正反。
+      <br>所以<b>不存在</b>「宫 1 = 子、宫 2 = 丑」这种固定表。
+    </p>
+    <p class="mut" style="margin-top:10px">环上的每个词 —— 地支、藏干、宫号、紫微宫名、行星 —— <b class="cyan">都能点开看详情</b>。</p>
+  </section>
+
+  <!-- ⑩ 发展论 -->
+  <section class="scene" data-dur="10500">
+    <div class="eyebrow">为什么这件事一直没做成</div>
+    <h2>七政四余不是"因为不准"而消失，<br>是<b class="gold">因为成本太高</b></h2>
+    <table style="margin-top:16px">
+      <thead><tr><th style="width:22%">原因</th><th>机制</th></tr></thead>
+      <tbody>
+        <tr><td class="pn">门槛过高</td><td>要算真实星历、宿度、岁差、四余；而子平术只需查表加减</td></tr>
+        <tr><td class="pn">历学垄断</td><td>历代钦天监把历法星占列为禁学，民间私习天文有罪</td></tr>
+        <tr><td class="pn">术语壁垒</td><td>外行<b>无法验证</b>，只能信或不信</td></tr>
+        <tr><td class="pn">断语靠师承</td><td>结论无法机检，传承一断就彻底失传</td></tr>
+      </tbody>
+    </table>
+    <p class="mut" style="margin-top:12px">而融合之所以艰难，是因为大家一直在<b>符号层</b>对话（十神 vs 宫位 vs 星曜），
+      <b>从来没有回到几何层核对</b>。符号层没有共同尺子，所以永远谈不拢。</p>
+    <div class="q">融合的底层原因，是<b>没有从最底层的天文数据做精确核算</b>。<br>
+      所以这个项目做的第一件事不是"融合"，而是<b>对账</b>。</div>
+  </section>
+
+  <!-- ⑪ 自我推翻 -->
+  <section class="scene" data-dur="8500">
+    <div class="eyebrow">一处自我推翻</div>
+    <h2>我们改掉了自己<b class="red">之前的一个结论</b></h2>
+    <div class="row" style="margin-top:8px">
+      <div class="card warn"><div class="t">旧说法</div><div class="b">年柱日柱<b>原理上不可推</b></div>
+        <div class="s">"60 是计数，星盘给不出这是第几个甲子"</div></div>
+      <div class="card ok"><div class="t">新说法</div><div class="b">可推，但要<b>转一道</b></div>
+        <div class="s">星位 →（逆星历）→ 绝对日期 →（历法锚点）→ 干支</div></div>
+    </div>
+    <p class="mut" style="margin-top:22px">
+      为什么会错：我们把「<b>不能直接由几何得出</b>」错说成了「<b>不能推</b>」。
+      大周期模型能反推时间 ⇒ 就能定出日期 ⇒ 干支由历法锚点唯一确定 —— 两句话不可能同时成立。
+    </p>
+    <p class="lead" style="margin-top:18px">不能直接由几何得出，<b class="gold">≠</b> 不能推。</p>
+  </section>
+
+  <!-- ⑫ 收束 -->
+  <section class="scene" data-dur="13000">
+    <div class="eyebrow">所以</div>
+    <h2>这个体系要发展，<br>不是靠"更玄"，而是靠<br><b class="cyan">更可算 · 更可验 · 更可复现</b></h2>
+    <div class="row" style="margin-top:26px">
+      <div class="card"><div class="t">① 先对账</div><div class="b">能算的算，不能算的标"计数"</div><div class="s">绝不假装差一点</div></div>
+      <div class="card"><div class="t">② 再分层</div><div class="b">几何 / 计数 / 符号</div><div class="s">各层不越界</div></div>
+      <div class="card"><div class="t">③ 后验证</div><div class="b">事件样本做统计检验</div><div class="s">不靠祖师权威</div></div>
+      <div class="card"><div class="t">④ 最后才解释</div><div class="b">有支撑再谈"为什么"</div><div class="s">否则只是事后编故事</div></div>
+    </div>
+    <p class="mut" style="margin-top:26px">
+      全部代码与论证已开源于 <b class="cyan">Apache-2.0</b>：可商用、可闭源，须保留版权与许可声明。<br>
+      只收匿名出生时间 + 事例，<b class="green">不收任何身份信息，也绝不收 API Key</b>。
+    </p>
+    <p class="mut" style="margin-top:12px">复现入口：<code>node server.mjs 8788 --open</code> · 回归 39 套 · 数据来源逐条登记于 <code>data/SOURCES.md</code></p>
+  
+    <div class="q" style="margin-top:26px;border-left-color:var(--red);background:rgba(255,154,138,.07);font-size:17px;line-height:1.85">
+      <b class="red">免责声明</b>：本项目<b>仅仅是兴趣爱好的开放讨论</b>，不是产品也不是服务。<br>
+      输出结果可能与现实完全不符，<b>不构成任何诊断、预测或决策建议</b>。<br>
+      <b>因使用本项目输出结果而在现实生活中造成的任何问题、损失或后果，与开发者无关</b>，责任由使用者自行承担。<br>
+      <span class="mut" style="font-size:14.5px">本项目按"现状"提供，不作任何担保；严禁用于医疗、赌博、欺诈或对他人未经同意的命理评估。</span>
+    </div>
+    <p class="mut" style="margin-top:16px;font-size:15px">
+      如果它对你有一点点帮助 ——
+      <a href="https://afdian.com/@YOUR_ID" target="_blank" rel="noopener" style="color:var(--gold)">爱发电</a>
+      支持一下（不附带任何承诺，请量力而行）。
+    </p>
+</section>
+
+
+  <div id="bar"></div>
+  <div id="idx"></div>
+</div></div>
+<div id="ctrl">
+  <button id="btn-pause">暂停</button>
+  <button id="btn-replay">重播</button>
+  <button id="btn-prev">← 上一幕</button>
+  <button id="btn-next">下一幕 →</button>
+</div>
+<script>
+(function(){
+  var scenes=[].slice.call(document.querySelectorAll('.scene'));
+  var bar=document.getElementById('bar'), idx=document.getElementById('idx');
+  var i=0, t=null, paused=false, elapsed=0, started=0;
+  function dur(){ return parseInt(scenes[i].dataset.dur||'7000',10); }
+  function show(k){
+    i=(k+scenes.length)%scenes.length;
+    scenes.forEach(function(s,j){ s.classList.toggle('on', j===i); });
+    idx.textContent=(i+1)+' / '+scenes.length;
+    elapsed=0; started=performance.now();
+    clearTimeout(t);
+    if(!paused) t=setTimeout(next, dur());
+  }
+  function next(){ if(i>=scenes.length-1){ bar.style.width='100%'; return; } show(i+1); }
+  function tick(){
+    if(!paused){
+      var e=performance.now()-started;
+      bar.style.width=Math.min(100,(e/dur())*100)+'%';
+    }
+    requestAnimationFrame(tick);
+  }
+  document.getElementById('btn-pause').onclick=function(){
+    paused=!paused; this.textContent=paused?'继续':'暂停';
+    if(paused){ clearTimeout(t); } else { started=performance.now()-elapsed; t=setTimeout(next, 100); }
+  };
+  document.getElementById('btn-replay').onclick=function(){ paused=false; document.getElementById('btn-pause').textContent='暂停'; show(0); };
+  document.getElementById('btn-prev').onclick=function(){ show(i-1); };
+  document.getElementById('btn-next').onclick=function(){ show(i+1); };
+  document.addEventListener('keydown',function(e){
+    if(e.code==='Space'){ e.preventDefault(); document.getElementById('btn-pause').click(); }
+    if(e.code==='ArrowRight') show(i+1);
+    if(e.code==='ArrowLeft') show(i-1);
+    if(e.key==='r'||e.key==='R') document.getElementById('btn-replay').click();
+  });
+  show(0); tick();
+})();
+</script>
+</body>
+</html>

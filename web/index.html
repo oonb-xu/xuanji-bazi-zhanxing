@@ -1,0 +1,1684 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0d12">
+<title>玄机 · 中西命理融合</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="err-banner" role="alert"></div>
+
+  <!-- ══════════ 全屏引导页 ══════════ -->
+  <div id="landing" role="dialog" aria-modal="true" aria-label="玄机 · 进入引导">
+    <div class="ld-inner">
+      <p class="ld-kicker">中西命理 · 融合模型</p>
+      <h1 class="ld-title">玄 机</h1>
+      <p class="ld-sub">把四套体系翻译到同一张盘上</p>
+      <p class="ld-lead">
+        八字的<b>十神</b>、星盘的<b>宫位</b>、紫微的<b>庙旺</b>、七政四余的<b>宿度</b>——
+        它们说着不同的语言，却指向同一个出生时刻。
+        本系统不做并排罗列，而是先找到底层对应，再融成一张盘。
+      </p>
+      <ul class="ld-points">
+        <li><i>◎</i><b>四系统融合</b><span>十神说力量<br>宫位说领域</span></li>
+        <li><i>◈</i><b>可机检</b><span>每条对应<br>都标置信度</span></li>
+        <li><i>◐</i><b>不下吉凶</b><span>只呈现结构<br>结论留给你</span></li>
+        <li><i>⬡</i><b>本地计算</b><span>只收匿名<br>出生信息</span></li>
+      </ul>
+      <button id="ld-enter" class="ld-enter" type="button">进 入<span>→</span></button>
+      <p class="ld-foot">进入后先到「关于」页 · 按 Esc 可直接跳过</p>
+    </div>
+    <button id="ld-skip" class="ld-skip" type="button">跳过</button>
+  </div>
+
+<div id="app">
+  <header class="topbar">
+    <div class="brand"><span class="logo">☯</span><span>玄机</span><small>中西命理融合</small></div>
+    <div class="status" id="health">连接中…</div>
+  </header>
+
+  
+  <!-- ★ 中西合璧圆盘舞台（可拖拽旋转） -->
+  <section class="stage-hero" id="stage-hero">
+    <canvas></canvas>
+    <div class="stage-tip"></div>
+
+    <div class="stage-copy">
+      <div class="stage-kicker">玄机 · 中西合璧</div>
+      <h1 class="stage-title">天盘 <i>×</i> 星轨</h1>
+      <p class="stage-sub">外圈二十四山（中国）　·　内环十二宫（西洋）　·　同一个时刻的两种编码</p>
+    </div>
+
+    <div class="stage-ctrl">
+      <button type="button" data-stage="spin" class="on">自转</button>
+      <button type="button" data-stage="flat">平视</button>
+      <button type="button" data-stage="top">俯视</button>
+      <button type="button" data-stage="reset">复位</button>
+    </div>
+
+    <div class="stage-hint">
+      <span>拖动旋转</span><span>滚轮缩放</span><span>悬停看对应</span>
+    </div>
+
+    <a class="stage-scroll" href="#main" aria-label="进入">↓</a>
+  </section>
+
+  <main id="main">
+    <!-- ① 关于（首页：这是什么 + 隐私承诺） -->
+    
+      <section class="page" data-page="about">
+      <div class="card">
+        <h2 class="page-title">关于 <span class="sub">它算什么 · 你的数据去哪了</span></h2>
+      
+
+      <div class="card"></div>
+      </div>
+
+      <div class="card" id="about-toc" style="margin-bottom:18px">
+        <div class="note" style="font-size:13px;line-height:1.95;margin-bottom:10px">
+          <b style="color:#5ef1ff">本页导航</b>　<span class="mut2">按「先定位 → 再看证据 → 最后看做不到的地方」排列</span>
+        </div>
+        <div class="toc-grid">
+          <a href="#sec-not-collage" class="toc-i"><b>1</b><span>这不是拼贴</span><i>底层逻辑对应</i></a>
+          <a href="#sec-howto" class="toc-i"><b>2</b><span>怎么用 · API</span><i>什么时候需要</i></a>
+          <a href="#sec-method" class="toc-i"><b>3</b><span>融合路径论文</span><i>完整论证</i></a>
+          <a href="#sec-adv" class="toc-i"><b>4</b><span>各体系独有优势</span><i>结构上做不到的</i></a>
+          <a href="#sec-coupling" class="toc-i"><b>5</b><span>庙旺的维度差异</span><i>耦合 vs 分离</i></a>
+          <a href="#sec-fusion-layers" class="toc-i"><b>6</b><span>一图四层</span><i>各取所长</i></a>
+          <a href="#sec-skeleton" class="toc-i"><b>7</b><span>四系统共同骨架</span><i>五层功能对照</i></a>
+          <a href="#sec-experiment" class="toc-i"><b>8</b><span>60 甲子连续性</span><i>实测与结论</i></a>
+          <a href="#sec-conflict" class="toc-i warn"><b>9</b><span>体系冲突</span><i>做不到、对不上</i></a>
+          <a href="#sec-59-58" class="toc-i warn"><b>10</b><span>实验性板块</span><i>59.58 年 · 微分论证</i></a>
+          <a href="#sec-develop" class="toc-i"><b>11</b><span>这种融合体系怎么发展</span><i>先对账，再融合</i></a><a href="#sec-credits" class="toc-i"><b>12</b><span>开源与数据</span><i>逐条署名</i></a><a href="#sec-license" class="toc-i"><b>13</b><span>开源许可</span><i>Apache-2.0</i></a><a href="#sec-disclaimer" class="toc-i warn"><b>14</b><span>免责声明</span><i>请务必阅读</i></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🔒 隐私承诺（请先读这条）</h3>
+        <p><strong>本站只收集：匿名出生信息。</strong>也就是——出生年月日时、出生地（城市/经纬度）、性别。这些是排盘必需的输入。</p>
+        <p><strong>本站绝不收集、不请求、不存储：</strong></p>
+        <ul class="no-list">
+          <li>❌ 任何 API Key / 令牌 / 密码</li>
+          <li>❌ 姓名、手机号、邮箱、微信、身份证</li>
+          <li>❌ 账号登录信息（本站<strong>没有登录</strong>）</li>
+          <li>❌ 浏览记录、设备指纹、第三方统计埋点</li>
+        </ul>
+        <p>排盘计算<strong>全部在你的浏览器与服务端本地完成</strong>，不会转发给任何第三方。<br>
+        只有你在「反馈」页<strong>主动点提交</strong>时，才会把<strong>匿名命例</strong>存入数据库用于模型校准——同样不含姓名与任何联系方式。</p>
+        <p class="privacy-note">你可以随时在浏览器里清空数据；我们没有账号体系，也就没有"注销"这件事——因为没有东西可注销。</p>
+      </div>
+
+      <div class="card" id="sec-what-is-this">
+        <div class="note">
+        <h3 class="about-sec">这是什么</h3>
+        <p>把三样东西放在一起看：<strong>八字</strong>（出生年月日时排出的四柱）、<strong>星盘</strong>（出生那一刻天上的行星位置）、<strong>六壬</strong>（按占问时刻起的课）。三种方法各有一套说法，这里不打架：<strong>先找到它们底层的对应，融成同一张盘</strong>，再用白话摊给你看。能对应上的地方就是融合；确实对不上的地方才并排列出、不硬凑。</p>
+                <h3 class="about-sec">一句话</h3>
+        <p>你把出生时间地点填进去，它<strong>先把三套体系翻译到同一个坐标上、融成一个模型</strong>，再用白话摊给你看。它不替你下结论——下结论的是你。</p>
+                <h3 class="about-sec">三种办法分别是什么（用白话说）</h3>
+        <ul>
+          <li><strong>八字</strong>：把出生年月日时各换成两个字，一共八个字（所以叫"八字"）。每个字下面还藏着"藏气"，是一层更细的看法。</li>
+          <li><strong>星盘</strong>：算出你出生那一刻，太阳、月亮和其他几颗星各在天空的什么位置，画成一个圆盘。上面那些连线叫"相位"，表示两颗星之间的角度关系。</li>
+          <li><strong>六壬</strong>：这不是算人的，是<strong>算事</strong>的——你心里有件想问的事，把它起念的那个时刻填进去，它按老规矩推演三步给你看（这三步叫"三传"）。</li>
+        </ul>
+                <h3 class="about-sec">★ 最容易出错的地方：出生时间</h3>
+        <p>你填的是<strong>手机/钟表上的时间</strong>。但老办法要用的是<strong>"当地太阳真正在头顶的时间"</strong>——这两者在中国能差<strong>一个多小时</strong>（因为全国统一用北京时间，可太阳并不是按北京的时间升落的）。本站会自动帮你换，换完如果时柱变了会红字提醒。</p>
+        <p>还有两种情况，差<strong>几分钟</strong>结果就完全不同：</p>
+        <ul>
+          <li><strong>出生时间卡在两个时辰之间</strong>（比如 16:58 前后）——差 5 分钟，最后两个字就换成别的。</li>
+          <li><strong>出生时间卡在两个星座交界</strong>——差 3 分钟，"上升星座"就换一个，所有跟上升有关的说法<strong>全部作废</strong>。</li>
+        </ul>
+        <p>所以：<strong>出生时间记不准的，请先去"矫正"页</strong>。提供几件有确切年月的人生大事，它就能反推出更可能的时间。</p>
+                <h3 class="about-sec">哪些可以信，哪些别信</h3>
+        <p><strong>可以信的：算得准不准。</strong>八个字、藏气、行星度数、宫位、三传——都按固定规则算出来，换谁算都一样，错了也能复查。</p>
+        <p><strong>不能全信的：算得灵不灵。</strong></p>
+        <ul>
+          <li>合盘那个分数衡量的是<strong>"两张盘的结构像不像、补不补"</strong>，不是"你俩能不能过一辈子"。它<strong>没有用真实情侣的结局校准过</strong>。</li>
+          <li>两个人怎么相处、愿不愿意让步、遇事怎么选——<strong>这些东西盘里没有</strong>。</li>
+          <li>八字讲"木火土金水"，星盘讲"火土风水"，<strong>字面是两套完全不同的说法</strong>——能对应的部分本系统已经对齐融合了，只有对不上的地方才并排列出，不硬凑成一个数。</li>
+        </ul>
+                <h3 class="about-sec">最后</h3>
+        <p>它是一台<strong>把老规矩拆开给你看</strong>的机器，不是算命先生。它给的每个数字你都可以不信——但至少你能看见它是<strong>怎么算出来的</strong>。</p>
+      </div>
+        </div>
+
+      <div class="card">
+        <h2 id="sec-howto">怎么用 · 需要接 API 吗</h2>
+      <div class="card" style="margin-bottom:16px">
+        <div class="note" style="font-size:13px;line-height:2">
+          <b style="color:#7dffb4">排盘本身不需要 API。</b>八字、星盘、融合盘、四钟时序、动态十神权重、神煞——
+          全部在这台机器上用本地引擎算，<b>不联网、不上传</b>。<br>
+          <b style="color:#ffd58a">只有「AI 解读」这一层需要 API</b>（把算出来的结构交给大模型组织成一段人话）。
+          不接 API，前面的计算和图表全部照常可用，只是没有那段文字解读。<br><br>
+          <b style="color:#ffd58a">另外两类场景也建议接入 API：</b><br>
+          · <b>生时矫正</b>：本地算法只能给出<b>候选时间集</b>（用事件反推，命中区间可能不止一个）；
+          要让模型综合多个事件做全局约束求解、收敛到唯一解，需要 API。<br>
+          · <b>模型精确度</b>：本地是确定性规则引擎，精度是"给定输入必得同一结果"的精确；
+          但<b>断语的取舍与组合</b>（哪条更重要、冲突怎么权衡）本地只能给并列，不会替你排序——
+          这一步建议交给模型。<br>
+          <b style="color:#7dffb4">本机实测参考</b>：月支可从行星位置 100% 推出；
+          时支经均时差修正后约 67.5%（边界附近可能差一位）⇒ <b>高标准场景请接入 API 复核</b>。
+        </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <div class="note" style="font-size:13px;line-height:2;padding:13px 16px;margin-bottom:15px;
+        border-radius:10px;background:rgba(255,196,87,.07);border:1px solid rgba(255,196,87,.32)">
+        <b style="color:#ffc457;font-size:14px">想要精确度，建议必须接 API —— 无论你是什么用途。</b><br>
+        本站内置算法足以把结构算完（八个字、行星度数、宫位、三传），这部分<b>不接 API 也是准的</b>。<br>
+        但下面三项<b>依赖外部星历与更细的历法数据</b>，内置版只能给近似：<br>
+        · <b>高精度行星位置</b>（内置与专业星历可能差角分级）<br>
+        · <b>历史时区与夏令时</b>（尤其 1949 年前、境外出生）<br>
+        · <b>边界情形</b>（出生时刻卡在时辰交界 / 星座交界）<br>
+        所以：<b>只要你在意"准不准"，就接 API</b>——与用途无关，看盘、合盘、矫正、研究都一样。
+      </div>
+      </div>
+
+      <div class="card">
+        <h2>主流 API 怎么拿（四个都行，挑一个）</h2>
+      <div class="card" style="margin-bottom:16px">
+        <table class="api-tb">
+          <thead><tr><th>服务商</th><th>拿 Key 的最短路径</th><th>大致价格</th><th>适合</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">DeepSeek</td>
+              <td>platform.deepseek.com → 注册登录 → 左侧「API keys」→ 创建 → 复制（<b>只显示一次</b>）→ 充值 10 元起</td>
+              <td class="dg a">最便宜</td>
+              <td class="mut2">首选，中文好用、价格低</td>
+            </tr>
+            <tr>
+              <td class="pn">智谱 GLM</td>
+              <td>open.bigmodel.cn → 注册 → 「API Keys」→ 新建 → 复制；新用户常有免费额度</td>
+              <td class="dg a">低</td>
+              <td class="mut2">有免费额度，适合试水</td>
+            </tr>
+            <tr>
+              <td class="pn">阿里通义</td>
+              <td>dashscope.aliyun.com → 登录阿里云 → 「API-KEY 管理」→ 创建</td>
+              <td class="dg">中</td>
+              <td class="mut2">已用阿里云的话方便</td>
+            </tr>
+            <tr>
+              <td class="pn">OpenAI</td>
+              <td>platform.openai.com → API keys → Create new secret key</td>
+              <td class="dg b">较高</td>
+              <td class="mut2">需要海外支付方式</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note" style="margin-top:12px;font-size:12.5px;line-height:1.9">
+          <b>四步通用流程</b>：① 注册并实名（国内平台一般要手机号）② 找到「API Key / 密钥」页面并新建
+          ③ <b style="color:#ffb0a0">立刻复制保存</b>——Key 通常只明文显示一次 ④ 充值（多数平台 10 元起，按 token 计费）。
+        </div>
+      </div>
+
+      <div class="note" id="api-pay-notice" style="font-size:13px;line-height:2;padding:13px 16px;margin:14px 0;
+        border-radius:10px;background:rgba(125,255,180,.06);border:1px solid rgba(125,255,180,.32)">
+        <b style="color:#7dffb4;font-size:14px">⚠️ 充值不是给开发者充，而是给 AI 模型公司充。</b><br>
+        API Key 是你和<b>服务商</b>之间的账户关系。充进去的钱进的是
+        <b>DeepSeek / OpenAI / Anthropic / 阿里云</b> 等<b>模型公司的账户</b>——
+        <b>本站开发者一分钱收不到</b>，也不经手、不代收、不抽成。<br>
+        · 本站是<b>纯前端＋本地服务</b>，不碰你的 Key，也不碰你的余额；<br>
+        · 你填的 Key 只存在你本机浏览器里，本站服务器<b>不保存</b>；<br>
+        · 想省钱可以先用<b>各家的免费额度</b>试，觉得有用再充。<br>
+        <span style="color:rgba(160,200,225,.8)">换句话说：<b>买的是模型公司的算力</b>，不是给这个项目的赞助。</span>
+      </div>
+      </div>
+
+      <div class="card">
+        <h2>Key 怎么用（安全提醒）</h2>
+      <div class="card">
+        <div class="note" style="font-size:13px;line-height:2">
+          <b style="color:#ff8a8a">不要</b>把 Key 写进这个网页的代码里，也不要提交到 GitHub——
+          一旦泄露会被别人跑光余额。<br>
+          正确做法：把 Key 放在<b>本地环境变量</b>里，由你本地的服务端读取：
+        </div>
+        <pre class="api-code"># Windows PowerShell（当前窗口临时生效）
+$env:DEEPSEEK_API_KEY = "sk-你的key"
+
+# 永久写进当前用户环境变量（重开终端生效）
+setx DEEPSEEK_API_KEY "sk-你的key"
+
+# 然后启动服务端
+node server.mjs 8788</pre>
+        <div class="note" style="font-size:12.5px;line-height:1.9">
+          Key 只存在你自己的电脑上。本站<b>不收集、不上传、不存储</b>任何 API Key——
+          这也是首页隐私承诺里写明的那一条。
+        </div>
+      </div>
+
+
+      <div class="card prose">
+        
+    
+
+    <!-- ① 融合 -->
+    
+      </div>
+      </div>
+
+      <div class="card">
+        <h2 id="sec-not-collage">这不是拼贴，是底层逻辑对应</h2>
+      <div class="card" style="margin-bottom:16px;border-color:rgba(94,241,255,.34);background:rgba(94,241,255,.045)">
+        <div class="note" style="font-size:13.5px;line-height:2.05">
+          <b style="color:#7dffb4;font-size:15px">本系统不是把两套体系的输出结果拉在一起做对照。</b><br>
+          它做的是：<b style="color:#5ef1ff">先找到两个体系在底层真正对应的那个量，再在那个量上建立映射。</b>
+        </div>
+        <div class="note" style="font-size:12.5px;line-height:2;margin-top:12px">
+          <b>两者的区别是根本性的：</b><br>
+          <span style="color:#ff9a8a">✗ 结果拼贴</span>：占星说「土星入庙」⇒ 好；八字说「官杀重」⇒ 压力大。
+          两句并列摆着，靠人去找感觉。这种对照<b>没有可检验的基础</b>，换一个人能给出相反的解读。<br>
+          <span style="color:#7dffb4">✓ 底层对应</span>：先证明「月支」与「太阳黄经」是<b>同一个事实的两种命名</b>
+          （节气就是太阳黄经的 30° 刻度，立春 315° = 建寅）—— 这是恒等式，不是比喻。
+          映射建立在恒等式上，才能被机器检验、被别人复现。
+        </div>
+        <div class="note" style="font-size:12.5px;line-height:2;margin-top:12px">
+          <b style="color:#ffd58a">本系统已经找到的底层对应（可机检）：</b>
+        </div>
+        <table class="holo-tb" style="margin-top:8px">
+          <thead><tr><th>底层对应</th><th>为什么是"同一个量"</th><th>实测</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">月支 ⇔ 太阳黄经</td><td class="mut2">节气就是太阳黄经的 30° 刻度，两者是同一事实的两种命名</td><td class="dg a">100%</td></tr>
+            <tr><td class="pn">时支 ⇔ 太阳时角</td><td class="mut2">时辰是时角的 2 小时分块；均时差由太阳黄经反算</td><td class="dg n">67.5%</td></tr>
+            <tr><td class="pn">七政 ⇔ 七曜</td><td class="mut2">同源体系（均出自巴比伦黄道十二宫），名异实同</td><td class="dg a">严格</td></tr>
+            <tr><td class="pn">罗睺/计都/月孛 ⇔ 北南交点/月亮远地点</td><td class="mut2">同一轨道要素的两个名字</td><td class="dg a">严格</td></tr>
+            <tr><td class="pn">十二宫 ⇔ 生活领域</td><td class="mut2">占星与紫微的宫位功能一一对齐</td><td class="dg n">结构</td></tr>
+          </tbody>
+        </table>
+        <div class="note" style="font-size:12.5px;line-height:2;margin-top:12px">
+          <b style="color:#ffd58a">以及明确承认做不到的：</b><br>
+          · <b>年柱、日柱无法从行星位置推出 —— 60 甲子里的「60」<strong>确有天文近似依据</strong>：它是 LCM(12木, 30土)，也 ≈ 3 次木土会合（59.577 年）；且 6 个甲子日 = 360 天，与回归年 365.2422 天咬合 98.56%。但「60」在这套体系里<strong>是计数，不是可测的几何量</strong> —— 星盘能给出所有角度，却给不出"这是第几个甲子"。要从落位反推年柱/日柱，必须有一个<strong>外部纪元锚点</strong>（如 1984 = 甲子）。这是原理性边界，不是精度问题。<br>
+          · 两套体系的心理/物质庙旺<b>不在同一根轴上</b>（占星 f(星,星座)=心理；紫微 f(星,宫位)=物质），
+          所以它们给出相反结论时<b>不是矛盾</b>，而是各测各的层面——<b>正因为不在同一根轴上，才拼得进同一张盘</b>。<br>
+          <b>凡是不能对应的，本系统不允许它去对应。</b>
+        </b></div>
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:12px;color:rgba(160,200,225,.75)">
+          更完整的论证见 <a href="/paper.html" style="color:#5ef1ff">《论中西命理体系的融合路径》</a>。
+        </div>
+      </div>
+      
+
+      
+      </div>
+
+      <div class="card">
+        <h2 id="sec-method">方法论 · 融合路径论文</h2>
+        <div class="qzy-rev" id="qzy-reverse">
+          <h3 style="margin:18px 0 8px;font-size:16px;font-weight:700;color:#5ef1ff">融合路径的重新论述 · 以七政四余为骨架做「逆向复现」</h3>
+          <p class="note" style="margin:0 0 10px">
+            以前我们讲的是「四套体系怎么对应」。现在改成更根本的问法：
+            <b>为什么不从七政四余出发，反推另外三套各自丢掉了哪一环？</b>
+          </p>
+          <p class="note" style="margin:0 0 10px">
+            <b style="color:#ffc457">七政四余的特殊地位</b>：四套里只有它保持「真实天体位置 → 宫次宿度 → 人事」的
+            <b>全程可追溯</b>，每一个判断都能回溯到一个可测的天文量（黄经 / 宿度 / 时角）。
+            <b>它是唯一"每一环都还有物理对应物"的体系</b>，所以拿它当骨架。
+          </p>
+          <table class="holo-tb">
+            <thead><tr><th style="width:18%">体系</th><th style="width:34%">保留的天文量</th><th>在哪一步切断、换成了什么</th></tr></thead>
+            <tbody>
+              <tr><td class="pn">七政四余</td><td>七政 + 四余的宿度与黄经（全量）</td><td class="mut"><b>全链保留</b> ⇒ 骨架</td></tr>
+              <tr><td class="pn">古典占星</td><td>黄经 → 星座 / 宫位</td><td class="mut">人事侧换成<b>心理轴</b>，宫位变成「领域标签」</td></tr>
+              <tr><td class="pn">八字</td><td>太阳黄经（月支）、时角（时支）</td><td class="mut"><b>年柱、日柱换成纯计数</b>，与天体脱钩</td></tr>
+              <tr><td class="pn">紫微斗数</td><td><b>无</b>（只用农历月日时）</td><td class="mut">全链<b>符号化</b>，只留「地支↔星↔宫」排布规则</td></tr>
+            </tbody>
+          </table>
+          <p class="note" style="margin:10px 0 10px">
+            这不是高下，是<b>不同的编码选择</b>：八字用计数换<b>可机算</b>，紫微用符号化换<b>强结构</b>，占星用心理轴换<b>细腻</b>。
+            代价都是同一个 —— <b>某一环的物理可追溯性被切断</b>。
+          </p>
+          <p class="note" style="margin:0 0 8px"><b style="color:#5ef1ff">逆向复现四步</b>：</p>
+          <ol class="note" style="margin:0 0 10px;padding-left:22px;line-height:2">
+            <li><b>坐标还原</b>：每个量标注它锚定在哪个物理量上 —— 黄经 / 时角 / <b>计数</b> / <b>查表</b>。</li>
+            <li><b>截断点识别</b>：找出"换了对象"的地方 —— 几何→计数（年柱日柱）、几何→查表（藏干十神神煞）。</li>
+            <li><b>按链重装</b>：以七政四余的链为骨架，每套体系<b>只在自己保留最完整的那一段说话</b>。</li>
+            <li><b>精进补正</b>：古人修过的（超辰 / 岁差 / 定朔 / 真太阳时 / 均时差）我们补；<b>古人没修的（60 甲子天文对位）明确标为设计选择，不补也不假装补</b>。</li>
+          </ol>
+          <p class="note" style="margin:0 0 8px"><b style="color:#5ef1ff">装配结果（三层，全站共用）</b>：</p>
+          <table class="holo-tb">
+            <thead><tr><th style="width:18%">层</th><th>内容</th><th style="width:22%">能否由星盘反推</th></tr></thead>
+            <tbody>
+              <tr><td class="pn">① 几何层</td><td class="mut">黄经 → 月支（<b>100%</b>）；时角 → 时支（<b>67.5%</b>）；ASC → 命宫/身宫</td><td><b style="color:#7dffb4">可反推</b></td></tr>
+              <tr><td class="pn">② 计数层</td><td class="mut">年柱、日柱（含日主）</td><td><b style="color:#ff9a8a">不可反推</b></td></tr>
+              <tr><td class="pn">③ 符号层</td><td class="mut">藏干、十神、神煞、紫微宫名</td><td><b style="color:#ffc457">查表即得</b></td></tr>
+            </tbody>
+          </table>
+          <p class="note" style="margin:10px 0 0;color:#ffc457">
+            所以「能不能用行星宫位反推八字」这个问题，本身应该拆成三问 ——
+            <b>几何层能、计数层不能、符号层不用推</b>。这才是"逆向复现"该给出的答案。
+          </p>
+          <p class="note" style="margin:8px 0 0">
+            还有一条纪律：七政四余用<b>宿度</b>（恒星黄道，岁差约 50.29″/年），八字用<b>节气</b>（回归黄道，锁太阳）。
+            二者混用会出系统性偏差，所以我们<b>分开记账</b> —— 月支锚回归黄道，宿度层单独标岁差，不混算。
+          </p>
+        </div>
+
+      <div class="card" style="margin-bottom:16px">
+        <div class="note" style="font-size:13px;line-height:2">
+          这套系统为什么这样设计、边界在哪里，都写在
+          <a href="/paper.html" style="color:#5ef1ff"><b>《论中西命理体系的融合路径》</b></a> 里。<br>
+          核心结论：<b>七政四余与古典占星同源</b>（均出自巴比伦黄道十二宫）；
+          两套体系的底层差异不在文化而在<b>编码类型</b>——
+          占星是纯几何编码（位置自足），八字是几何+计数混合编码（含人为甲子原点）。<br>
+          这条差异可以严格证明：<b>月支 100% 可直接从太阳黄经推出；年柱日柱也能推，但路径不同</b>
+          （年柱日柱不是"从几何直接得出"，而是要走两步：<b>逆星历</b>把星位还原成绝对日期 → 再按<b>历法锚点</b>换算干支。中间那一步不携带天文信息，但只要锚点给定，结果就是确定的）。
+        </div>
+      </div>
+      </div>
+
+      <div class="card" id="sec-adv">
+    <h2>各体系独有优势 <span>别的体系结构上做不到的事</span></h2>
+    <div id="adv">
+          <p class="note" style="margin:0 0 10px">
+            换了问法之后，「各体系独有优势」这个问题应该重新提：
+            <b>与其问"它有什么优点"，不如问"在整条链的哪一段，它是唯一还站得住的"</b>。
+            因为每套体系都只在自己<b>保留最完整</b>的那一段最强 —— 别的段落它并不比别人强。
+          </p>
+          <table class="holo-tb">
+            <thead><tr><th style="width:16%">体系</th><th style="width:20%">最强的一段</th><th>具体能力</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="pn">七政四余</td>
+                <td class="mut"><b>天文层</b><br>宿度 → 宫次</td>
+                <td class="mut">星曜的<b>实际位置</b>与庙旺、四余（罗睺/计都/月孛/紫气）—— 唯一能对上<b>恒星宿度</b>的体系</td>
+              </tr>
+              <tr>
+                <td class="pn">古典占星</td>
+                <td class="mut"><b>几何层 → 心理侧</b></td>
+                <td class="mut">星座 + 宫位<b>双维度</b>刻画、相位几何、本质尊贵 —— 「黄经 → 星座/宫位」这一段它最完整</td>
+              </tr>
+              <tr>
+                <td class="pn">八字</td>
+                <td class="mut"><b>计数层 → 力量侧</b></td>
+                <td class="mut"><b>十神的相对性</b>（同一个字，换个日主就换意义）、身强弱与扶抑、大运流年的<b>时序</b> —— 计数层是它独有的</td>
+              </tr>
+              <tr>
+                <td class="pn">紫微斗数</td>
+                <td class="mut"><b>符号层 → 结构侧</b></td>
+                <td class="mut">十二宫<b>强结构</b>、四化（禄权科忌）、星曜组合与亮度 —— 全链符号化换来的结构密度最高</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="note" style="margin:14px 0 0">
+            <b style="color:#5ef1ff">逐条展开（只看它在那一段为什么不可替代）</b>
+          </div>
+
+          <div style="margin-top:10px">
+            <div class="pn" style="font-size:14px;margin-bottom:4px">七政四余 · 天文层</div>
+            <div class="mut" style="margin:0 0 4px 12px">· <b>宿度为锚</b>：唯一直接落在二十八宿上的体系，岁差可单独记账</div>
+            <div class="mut" style="margin:0 0 10px 12px">· <b>四余独有</b>：罗睺/计都（交点）、月孛（远地点）、紫气 —— 占星没有对应物</div>
+          </div>
+
+          <div>
+            <div class="pn" style="font-size:14px;margin-bottom:4px">古典占星 · 几何层（心理侧）</div>
+            <div class="mut" style="margin:0 0 4px 12px">· <b>双维度</b>：同一颗星在不同星座 / 不同宫位，意义不同，且两轴独立</div>
+            <div class="mut" style="margin:0 0 10px 12px">· <b>相位几何</b>：角距是纯几何量，不依赖历法，故最稳定</div>
+          </div>
+
+          <div>
+            <div class="pn" style="font-size:14px;margin-bottom:4px">八字 · 计数层（力量侧）</div>
+            <div class="mut" style="margin:0 0 4px 12px">· <b>相对性</b>：十神是"关系"而不是"东西"，这是别的体系结构上给不出的</div>
+            <div class="mut" style="margin:0 0 4px 12px">· <b>可机算</b>：计数层不依赖天文，纯查表 + 算术即可复现 ⇒ 可批量验证</div>
+            <div class="mut" style="margin:0 0 10px 12px">· <b>时序强</b>：大运/流年给了明确的时间刻度</div>
+          </div>
+
+          <div>
+            <div class="pn" style="font-size:14px;margin-bottom:4px">紫微斗数 · 符号层（结构侧）</div>
+            <div class="mut" style="margin:0 0 4px 12px">· <b>宫位结构化</b>：十二宫各司其职，领域划分最细</div>
+            <div class="mut" style="margin:0 0 4px 12px">· <b>四化</b>：禄权科忌给了一种"同星不同作用"的机制</div>
+            <div class="mut" style="margin:0 0 10px 12px">· <b>代价</b>：天文输入为零，所以它能说"哪里"，说不了"多强"</div>
+          </div>
+
+          <div class="note" style="margin:14px 0 0;color:#ffc457">
+            ⇒ <b>融合的准确表述</b>：不是"四套都拿来用"，而是
+            <b>让每套体系只在自己保留最完整的那一段说话，其余段落让它闭嘴</b>。
+            这也就是上一节「逆向复现」第四步（按链重装）在功能层的落地。
+          </div>
+        </div>
+  </div>
+
+      <div class="card" id="sec-coupling">
+    <h2>庙旺的维度差异 <span>「紫微有庙旺落陷，七政没有」这个观察的精确版</span></h2>
+    <div id="coupling"><table><thead><tr><th>体系</th><th>庙旺是…的函数</th><th>分级</th><th>性质</th><th>优点</th><th>代价</th></tr></thead><tbody><tr><td class="pn">紫微斗数</td><td class="mut">f(星, 宫位)</td><td class="mut">庙/旺/得地/利/平/不得地/陷（7级）</td><td><span class="tg">耦合</span></td><td>一步到位、直觉强</td><td class="mut">不可分离</td></tr><tr><td class="pn">古典占星·本质尊贵</td><td class="mut">f(星, 星座)</td><td class="mut">庙/旺/三分/陷/落（5级）</td><td><span class="sys">分离</span></td><td>可单独追问「本性多强」</td><td class="mut">需另算偶然尊贵</td></tr><tr><td class="pn">古典占星·偶然尊贵</td><td class="mut">f(星, 宫位)+相位</td><td class="mut">角宫/续宫/果宫 + 合轴 + 得时 + 顺逆</td><td><span class="sys">分离</span></td><td>把「显不显」和「强不强」分开</td><td class="mut">需两步</td></tr><tr><td class="pn">七政四余</td><td class="mut">f(星, 星座)（庙旺喜乐）</td><td class="mut">庙/旺/喜乐</td><td><span class="sys">偏分离</span></td><td>与占星同构，可互换</td><td class="mut">无宫位维度</td></tr><tr><td class="pn">八字（得令得地得势得生）</td><td class="mut">f(字, 月令/地支/数量/生扶)</td><td class="mut">连续（0–1 分维）</td><td><span class="sys">分离</span></td><td>四维可分别诊断</td><td class="mut">无宫位概念</td></tr></tbody></table><div class="note">紫微是唯一把「本性」与「领域」耦合的体系，所以它最直觉；其余全部分离，所以它们可计算。这不是优劣，是设计取舍。</div></div>
+  </div>
+
+      <div class="card" id="sec-fusion-layers">
+    <h2>一图四层 <span>融合到一个盘：各取所长</span></h2>
+    <div id="fusion"><div class="note" style="margin:0 0 10px">坐标基准：以黄经（ecliptic longitude）为唯一坐标基准 —— 因为它是四套体系里唯一可精确计算、无歧义的量</div><ul class="layers"><li><b>坐标层</b><span class="tag">古典占星（天文）</span><span class="tag">唯一严格可算的基准</span><div class="mut" style="font-size:12px;margin-top:3px">黄经 0–360°、星座 30° 段、宫位切分</div></li><li><b>本质层</b><span class="tag">古典占星</span><span class="tag">正交分离，可单独追问</span><div class="mut" style="font-size:12px;margin-top:3px">庙 1.55 / 旺 1.38 / 平 1.00 / 陷 0.72 / 落 0.60</div></li><li><b>偶然层</b><span class="tag">古典占星 + 紫微斗数</span><span class="tag">两者都提供「落在哪」的强度信息，紫微作为加乘而非替代</span><div class="mut" style="font-size:12px;margin-top:3px">角宫×1.28 / 续宫×1.06 / 果宫×0.80（占星）＋ 紫微七级亮度（作为额外乘子）</div></li><li><b>关系层</b><span class="tag">八字</span><span class="tag">唯一提供「相对于你」的体系</span><div class="mut" style="font-size:12px;margin-top:3px">十神组权重（比劫/印/食伤/财/官杀）＋ 动态修正</div></li><li><b>领域层</b><span class="tag">古典占星 + 紫微斗数 + 七政四余</span><span class="tag">三套都有，占星最可算</span><div class="mut" style="font-size:12px;margin-top:3px">十二宫领域名（占星/紫微/白话三重）</div></li><li><b>细分层</b><span class="tag">七政四余</span><span class="tag">额外的观测点与更细分辨率</span><div class="mut" style="font-size:12px;margin-top:3px">四余（罗计炁孛）＋ 二十八宿位置</div></li><li><b>符号层</b><span class="tag">八字神煞</span><span class="tag">具体事件与心理颗粒度</span><div class="mut" style="font-size:12px;margin-top:3px">天乙/文昌/驿马/桃花…＋心理轴</div></li></ul><div class="note">规则：每层只回答一个问题；层与层之间不互相解释，只在结果上并排。冲突时并列，不取平均。</div></div>
+  </div>
+
+      <div class="card" id="sec-skeleton">
+    <h2>四系统共同骨架 <span>五层功能对照</span></h2>
+    <div id="skeleton"><table><thead><tr><th>层</th><th>八字</th><th>古典占星</th><th>七政四余</th><th>紫微斗数</th><th>白话</th></tr></thead><tbody><tr><td class="pn">力源（谁在动）</td><td>十神（日主与他字的生克阴阳）</td><td>行星 + 本质尊贵</td><td>七政（日月木火土金水）</td><td>十四主星</td><td class="mut">来的是什么性质的力量</td></tr><tr><td class="pn">领域（落在哪）</td><td>（缺）</td><td>十二宫</td><td>十二宫/十二次</td><td>十二宫（命兄夫子财疾迁仆官田福父）</td><td class="mut">这股力量作用在生活的哪一块</td></tr><tr><td class="pn">位置（在哪发生）</td><td>地支</td><td>星座（30°段）</td><td>十二次 + 二十八宿</td><td>十二宫的地支</td><td class="mut">在哪个环境里发生</td></tr><tr><td class="pn">强度（有多强）</td><td>得令/得地/得势/得生</td><td>庙旺陷落 + 角续果宫 + 偶然尊贵</td><td>庙旺喜乐（同类体系）</td><td>庙旺平陷</td><td class="mut">这力量有多大</td></tr><tr><td class="pn">变化（怎么变）</td><td>大运/流年/刑冲合害</td><td>行运/次运/相位</td><td>行限/流年</td><td>大限/流年/四化</td><td class="mut">什么时候会改变</td></tr></tbody></table><div class="note">八字唯一缺的是「领域」这一层，而其余三套恰好都有；其余三套缺的是「十神这套关系算子」。所以融合的核心动作就是：用十神说力量，用宫位说领域。</div></div>
+  </div>
+
+
+      <div class="card">
+        <h2 id="sec-59-58">实验性假说 · 如果真实周期是 59.58 年</h2>
+      <div class="card" style="margin-bottom:16px;border-color:rgba(180,140,255,.36);background:rgba(180,140,255,.04)">
+        <div class="note" style="font-size:13px;line-height:2">
+          <b style="color:#b48cff">这是一个假说，不是结论。</b>它问的是：
+          如果八字的真实周期不是整数 60，而是 <b>3 次木土会合 = 59.577 年</b>，
+          那么哪些柱会变、哪些不会、什么时候会开始不一致？
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
+          <b style="color:#5ef1ff">① 问题的由来：节气一直在修，干支是冻结的</b><br>
+          中国历史上改历极为频繁（汉太初历、三统历、大衍历、授时历、时宪历……），
+          <b>每一次的核心目的都是修节气</b>——因为节气必须跟着真实太阳位置走。<br>
+          但<b>干支纪年/纪日是一套冻结的 60 进位</b>，它不随历法一起修正。
+          如果真实天文周期不是正好 60，那么这套冻结的刻度就会<b>越走越偏</b>。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:12px">
+          <b style="color:#5ef1ff">② 偏差有多大（本站实算）</b>
+        </div>
+        <table class="holo-tb" style="margin-top:6px">
+          <thead><tr><th>量</th><th>数值</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">标准周期</td><td class="mut2">60.0000 年</td><td class="mut2">60 甲子</td></tr>
+            <tr><td class="pn">木土会合</td><td class="mut2">19.8590 年</td><td class="mut2">synodic</td></tr>
+            <tr><td class="pn">3× 会合</td><td class="dg b">59.5770 年</td><td class="mut2">假说中的"真周期"</td></tr>
+            <tr><td class="pn">每周期差</td><td class="dg b">0.4230 年 = 155 天</td><td class="mut2">这就是"微分"</td></tr>
+            <tr><td class="pn">每年相对推进差</td><td class="mut2">0.710%</td><td class="mut2">逐年累积</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
+          <b style="color:#5ef1ff">③ 影响面：只动 3 处，不动 5 处</b>
+        </div>
+        <table class="holo-tb" style="margin-top:6px">
+          <thead><tr><th style="width:22%">柱 / 项</th><th style="width:26%">由什么决定</th><th>是否受 59.58 影响</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">年柱</td><td class="mut2">60 甲子年循环</td><td class="dg b"><b>★ 受影响</b></td></tr>
+            <tr><td class="pn">月干</td><td class="mut2">f(年干, 月支)</td><td class="dg b"><b>★ 连带受影响</b>（年干变则月干变）</td></tr>
+            <tr><td class="pn">胎元</td><td class="mut2">月干+1、月支+3</td><td class="dg b"><b>★ 连带受影响</b></td></tr>
+            <tr><td class="pn">月支</td><td class="mut2">节气（太阳黄经 30° 刻度）</td><td class="dg a">不变 —— 节气本就随天文修正</td></tr>
+            <tr><td class="pn">日柱</td><td class="mut2">连续天数 mod 60</td><td class="dg a">不变 —— 与木土周期无关</td></tr>
+            <tr><td class="pn">时柱</td><td class="mut2">日干 + 时支</td><td class="dg a">不变</td></tr>
+            <tr><td class="pn">命宫 / 身宫</td><td class="mut2">f(月支, 时支)</td><td class="dg a">不变</td></tr>
+          </tbody>
+        </table>
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:8px;color:rgba(160,200,225,.75)">
+          ⇒ <b>七柱里只有三处会被这个假说改动</b>。这意味着即便假说成立，影响面也远小于"整盘作废"。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
+          <b style="color:#5ef1ff">④ 什么时候才真的会不一致（实算 1800–2200）</b><br>
+          本站以 <b>1984 = 甲子</b> 为共同锚点，逐年比较标准年柱与 59.577 版年柱：
+        </div>
+        <div class="holo-note" style="margin-top:6px;font-size:12.5px;line-height:2">
+          · <b class="green">1984–2124 之间（约 150 年）：两者完全一致</b> —— 对现代出生的人，
+            这个假说<b>不改变任何结果</b>。<br>
+          · <b class="red">1800–1983</b> 与 <b class="red">2125 以后</b>：开始分歧，最大差 2 步。<br>
+          · 全区间分歧年占比 <b>64.8%</b> —— 但这是因为扫描窗口大部分落在 1984 的两侧之外。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
+          <b style="color:#5ef1ff">⑤ 用法的修正（这一条最容易做错）</b><br>
+          不能"直接用日历年重算年柱"——因为<b>立春之前的日期，其八字年属于上一年</b>。
+          正确做法是：<b>只取「同年数下标准索引与实验索引之差」，把这个差分施加到盘上真实的年柱上</b>。
+          本站已按这个方式实现并自检（年柱不变 ⇒ 月干必然也不变）。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
+          <b style="color:#ffd58a">⑥ 何时会提示你使用实验性排盘</b><br>
+          排盘页在以下情况会<b>显式提示</b>，而不是悄悄换算法：<br>
+          · 出生年份落在 <b>1984±150 年之外</b>（此时两套年柱可能不同）<br>
+          · 盘上实际年柱与实验年柱<b>不一致</b><br>
+          · 届时给出<b>两套结果并排</b>（标准版 vs 你选择的实验版），<b>绝不替你选</b>。
+        </div>
+
+        <div class="note" style="font-size:12px;line-height:1.95;margin-top:14px;color:rgba(160,200,225,.75)">
+          <b>这一步的意义</b>：把"历法冻结 vs 天文漂移"这个隐性问题，变成<b>可开关、可对比、可复现</b>的实验。
+          无论假说最终成立与否，<b>能把它量化到"只动三处、只影响 ±150 年之外"，本身就是一条结论</b>。<br>
+          复现：<code>node tools/verify-experimental-calendar.mjs</code>
+        </div>
+      </div>
+      
+        <!-- ═══ A. 结论订正 ═══ -->
+        <h3 class="about-sec" id="d5958-limit">A. 先订正一句话：我说过「现代排盘不受影响」——这话有前提</h3>
+        <p class="note" style="margin:0 0 10px">
+          那个结论<b>只在「按历法计数、以近世锚点重同步」的前提下成立</b>（例如以 1984 = 甲子锚定）。
+          因为 <b>60 甲子是一台计数器</b>（<code>ℤ/60ℤ</code>），只要锚点确定，它永远准确——
+          它<b>不需要</b>和天文对上。
+        </p>
+        <p class="note" style="margin:0 0 10px">
+          但如果要求<b>「从历元起天文连续」</b>，结论就反过来了。以汉太初历元（前 104 年）为锚外推：
+          <br>· 至今天数 <b>2,129 年</b>
+          <br>· 累计偏移 <b>15.01 年</b> ⇒ <b>年柱要错 15 位</b>
+          <br>· 若以 1984 = 甲子锚定，至今 41 年只偏 <b>105.6 天</b>（约 3.5 个月）
+        </p>
+        <table class="holo-tb" style="margin-top:10px">
+          <thead><tr><th style="width:26%">锚点选择</th><th>至今累计偏移</th><th>影响</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">1984 = 甲子（通行做法）</td><td>105.6 天（≈3.5 个月）</td><td class="mut">年柱不变；只在立春附近 ±3.5 个月有争议</td></tr>
+            <tr><td class="pn">汉太初历元 前 104 年</td><td><b style="color:#ff9a8a">15.01 年</b></td><td class="mut">年柱错 <b>15 位</b>，月干随之整列变化</td></tr>
+            <tr><td class="pn">不设锚点、纯天文外推</td><td>随时间线性增长</td><td class="mut">每 142 年错 1 年，<b>无法自洽</b></td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0;color:#ffc457">
+          ⇒ 所以「从万年历最开始推」这件事，<b>恰恰是天文上无法验证的那一步</b>：它是一次<b>计数约定的选择</b>，
+          不是可测的量。订正后的准确说法是：<b>在计数约定下现代排盘无漂移；在「天文连续」假设下现代排盘早已错位。</b>
+        </p>
+
+        <!-- ═══ B. 微分论证 ═══ -->
+        <h3 class="about-sec" id="d5958-diff">B. 本质是微分问题：误差是一阶线性项，不是周期项</h3>
+        <p class="note" style="margin:0 0 8px">设日历周期 <code>T_c = 60</code>（整数定义在 ℤ 上），天文周期</p>
+        <p class="note" style="margin:0 0 8px;padding-left:14px;border-left:2px solid rgba(94,241,255,.35)">
+          <code>T_a = 3 / (1/11.862 − 1/29.457) = 59.576971…</code> 年
+        </p>
+        <p class="note" style="margin:0 0 8px">两者相位函数与相位差：</p>
+        <p class="note" style="margin:0 0 8px;padding-left:14px;border-left:2px solid rgba(94,241,255,.35)">
+          <code>Φ_c(t) = t/T_c mod 1</code>，<code>Φ_a(t) = t/T_a mod 1</code><br>
+          <code>ΔΦ(t) = t·(1/T_a − 1/T_c) = t·k</code>，<b>k = 1.183425×10⁻⁴ /年</b>
+        </p>
+        <p class="note" style="margin:0 0 8px">
+          <b>关键结论</b>：<code>ΔΦ(t)</code> 是 <b>t 的一次函数</b>——这叫<b>久期项（secular term）</b>，不是周期项。
+          它的一阶导数是常数：
+        </p>
+        <p class="note" style="margin:0 0 8px;padding-left:14px;border-left:2px solid rgba(94,241,255,.35)">
+          <code>dε/dt = k·T_a = 7.050×10⁻³</code>（无量纲，恒定）<br>
+          ⇒ <b>二阶项为 0</b>；误差<b>单调累积、永不回头</b>
+        </p>
+        <p class="note" style="margin:0 0 10px">
+          <b>推论（这才是本质）</b>：既然 <code>dε/dt ≡ 常数</code>，那么<b>任何"周期性修补"都不可能消除它</b>——
+          只能用<b>离散重锚（reset）</b>把它归零。这正是古代历法「超辰」在干的事（见 D 节）。
+          八字缺的，就是这一步 reset。
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th>需要累计到的偏移</th><th>所需时间</th><th>换算</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">1 个月</td><td><b>11.8 年</b></td><td class="mut">≈ 0.2 个甲子周期</td></tr>
+            <tr><td class="pn">半年</td><td>70.9 年</td><td class="mut">≈ 1.2 个甲子周期</td></tr>
+            <tr><td class="pn">1 年（年柱错 1 位）</td><td><b>141.8 年</b></td><td class="mut">≈ 2.4 个甲子周期</td></tr>
+            <tr><td class="pn">10 年</td><td>1,418 年</td><td class="mut">≈ 24 个周期</td></tr>
+            <tr><td class="pn">整个 60 年周期</td><td>8,510 年</td><td class="mut">≈ 142 个周期</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:8px 0 0">
+          相对速率：<code>k·T_a = 0.705%/周期</code>（每 60 年漂 <b>0.423029 年 = 154.51 天</b>）。
+        </p>
+
+        <!-- ═══ C. 第二个更快的漂移：6 甲子日 ═══ -->
+        <h3 class="about-sec" id="d5958-jiazi-day">C. 还有个更快的漂移：「6 个甲子日 = 360 天」</h3>
+        <p class="note" style="margin:0 0 8px">
+          360 天 vs 回归年 365.2422 天 ⇒ <b>每年亏 5.2422 天</b>，咬合率 <b>98.56%</b>。
+          看着只差 1.44%，但它是<b>另一个一阶线性项</b>，而且比年柱那个快得多：
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th>累计</th><th>所需时间</th></tr></thead>
+          <tbody>
+            <tr><td>亏满 1 个月（30.4 天）</td><td><b>5.8 年</b></td></tr>
+            <tr><td>亏满 1 个甲子日周期（60 天）</td><td><b>11.4 年</b></td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:8px 0 0;color:#ffc457">
+          ⇒ 「6 甲子日 ≈ 一年」只能当<b>近似</b>。若真把它当历法用，<b>11 年就整周期错位</b>。
+          这也是为什么日柱必须靠<b>连续日计数 + 历法锚点</b>，而不能靠天文推出（与「年柱日柱不可由行位推出」是同一件事）。
+        </p>
+
+        <!-- ═══ D. 古人怎么修的：岁星超辰 ═══ -->
+        <h3 class="about-sec" id="d5958-chaochen">D. 古人早就发现并修过：岁星「超辰」 —— 而八字没有这一步</h3>
+        <p class="note" style="margin:0 0 8px">
+          古籍原文：「<b>岁星右行于天，一岁移一辰，十二岁一小周，千七百二十八年一大周</b>」
+          （<a href="https://www.shidianguji.com/character/%E5%B2%81" style="color:#5ef1ff">《识典古籍·岁》</a>）。
+        </p>
+        <p class="note" style="margin:0 0 10px">
+          注意 <b>1728 = 12 × 144</b>：这就是「<b>144 年超一辰</b>」的结构——
+          岁星纪年名义上 12 年走一辰（12 次），但真实周期短一点，跑满一段时间就会<b>多走一辰</b>，
+          于是历法必须<b>跳过一辰</b>来复位。这个动作叫 <b>超辰（超次）</b>。
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th>口径</th><th>隐含岁星周期</th><th>超一辰间隔</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">三统历古法</td><td>12 / (1 + 1/144) = <b>11.9172 年</b></td><td><b>144 年</b></td></tr>
+            <tr><td class="pn">现代真值</td><td>11.862 年</td><td><b>86 年</b></td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0">
+          这和 59.58 是<b>同一种病</b>：<b>整数周期 ≠ 实际周期</b>，误差是一阶线性的，只能靠离散重锚修。
+          古人在<b>岁星纪年</b>上做了这件事（超辰），在 <b>甲子纪年</b>上没做——
+          因为甲子从一开始就被当作<b>纯计数</b>，不承担天文对位。<b>这是设计选择，不是疏漏。</b>
+        </p>
+
+        <!-- ═══ E. 物候与冷暖：月建比实际季节早整整一个月 ═══ -->
+        <h3 class="about-sec" id="d5958-phenology">E. 冷暖与物候：月建的名义季节，比实际物候早整整一个月建</h3>
+        <p class="note" style="margin:0 0 10px">
+          八字讲「冷暖」，靠的是<b>月建</b>；月建严格绑定<b>太阳黄经</b>（节气）。但气温对太阳有<b>热惯性滞后</b>：
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th>极值</th><th>天文时刻（节气）</th><th>实际最值</th><th>滞后</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">最冷</td><td>冬至 12-21（子月始）</td><td>大寒 01-20（丑月中）</td><td><b>30 天</b></td></tr>
+            <tr><td class="pn">最热</td><td>夏至 06-21（午月始）</td><td>大暑 07-22（未月中）</td><td><b>31 天</b></td></tr>
+            <tr><td class="pn">一个中气间隔</td><td colspan="2">365.2422 / 12 = 30.44 天</td><td class="mut">基准</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 10px">
+          ⇒ <b>热滞后 = 31 / 30.44 = 1.02 个月建</b>。<b>整整一个月建</b>。
+          也就是说：<b>以月建论冷暖，名义上永远比实际物候早一个月</b>。逐月对照：
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th>月建</th><th>节气起</th><th>名义</th><th>实际物候</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">寅</td><td class="mut">立春 02-04</td><td>春季始</td><td class="mut">仍在严寒，回暖初期</td></tr>
+            <tr><td class="pn">卯</td><td class="mut">惊蛰 03-06</td><td>仲春</td><td class="mut">真正回暖</td></tr>
+            <tr><td class="pn">辰</td><td class="mut">清明 04-05</td><td>季春</td><td class="mut">暖而湿</td></tr>
+            <tr><td class="pn">巳</td><td class="mut">立夏 05-06</td><td>夏季始</td><td class="mut">实际仍偏春</td></tr>
+            <tr><td class="pn">午</td><td class="mut">芒种 06-06</td><td>仲夏</td><td class="mut">初夏</td></tr>
+            <tr><td class="pn">未</td><td class="mut">小暑 07-07</td><td>季夏</td><td class="mut"><b>热极在此</b></td></tr>
+            <tr><td class="pn">申</td><td class="mut">立秋 08-08</td><td>秋季始</td><td class="mut">实际仍热</td></tr>
+            <tr><td class="pn">酉</td><td class="mut">白露 09-08</td><td>仲秋</td><td class="mut">转凉</td></tr>
+            <tr><td class="pn">戌</td><td class="mut">寒露 10-08</td><td>季秋</td><td class="mut">干凉</td></tr>
+            <tr><td class="pn">亥</td><td class="mut">立冬 11-07</td><td>冬季始</td><td class="mut">凉而不寒</td></tr>
+            <tr><td class="pn">子</td><td class="mut">大雪 12-07</td><td>仲冬</td><td class="mut">寒但未极</td></tr>
+            <tr><td class="pn">丑</td><td class="mut">小寒 01-06</td><td>季冬</td><td class="mut"><b>冷极在此</b></td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0">
+          <b>历史叠加</b>：小冰期（约 1300–1850，其中蒙德极小期 1645–1715 最冷）让春季再推迟 1–2 周，
+          物候与月建的错位在那些年份更大。<b>所以「某人八字喜火但生在小冰期」这类判断，
+          按节气算的冷暖会系统性地偏「暖」。</b>
+        </p>
+
+        <!-- ═══ F. 什么时候引发误差：精确到月 ═══ -->
+        <h3 class="about-sec" id="d5958-when">F. 什么时候会真的引发误差 —— 精确到月</h3>
+        <table class="holo-tb">
+          <thead><tr><th style="width:22%">情形</th><th>误差性质</th><th>触发时间（精确）</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">① 把 60 年当<b>天文周期</b>用</td>
+              <td>一阶线性，单调</td>
+              <td><b>11.8 年</b>累计到 1 个月；<b>141.8 年</b>错 1 整年（年柱错 1 位）；<b>8,510 年</b>整周期</td>
+            </tr>
+            <tr>
+              <td class="pn">② 以<b>月建论冷暖</b></td>
+              <td>系统偏差（非随机）</td>
+              <td><b>每一个盘都错 1.02 个月建</b>——冷极在丑、热极在未，而名义上分别记在子、午</td>
+            </tr>
+            <tr>
+              <td class="pn">③ 把「6 甲子日 = 360 天」当历法</td>
+              <td>一阶线性，更快</td>
+              <td><b>5.8 年</b>错 1 个月；<b>11.4 年</b>错 1 个整周期（60 天）</td>
+            </tr>
+            <tr>
+              <td class="pn">④ 岁星纪年不超辰</td>
+              <td>一阶线性</td>
+              <td>古法口径 <b>144 年</b>必须跳一辰；现代真值下 <b>86 年</b>就该跳</td>
+            </tr>
+            <tr>
+              <td class="pn">⑤ 小冰期出生者</td>
+              <td>气候偏移（有界）</td>
+              <td>LIA 约 1300–1850 年区间内，物候再偏 <b>1–2 周</b>；蒙德极小期 1645–1715 最强</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0;color:#ffc457">
+          <b>一句话总括</b>：①②③④ 都是<b>同一个数学对象</b>——「整数周期 vs 实数周期」的<b>一阶线性误差</b>
+          （<code>dε/dt = const ≠ 0</code>）。它能被<b>离散重锚</b>归零，不能被测度修正消除。
+          古代历法用「超辰」做了重锚；八字把 60 甲子当纯计数，<b>主动放弃了天文对位</b>，
+          于是既没错、也没修——<b>这正是它可机算的前提，也是它不能反过来证伪天文的原因</b>。
+        </p>
+</div>
+
+      <div class="card" id="d5958-bigcycle" style="margin-top:14px">
+        <h3 style="margin:0 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">
+          大周期精确模型 · 用真实星历量出来，而不是线性外推
+        </h3>
+        <div class="note" style="margin:0 0 10px">
+          上一节说的是<b>一阶线性项</b>（久期漂移）。但真实天体轨道误差是<b>长周期</b>的——
+          只要周期够长，<b>几百年窗口内完全可以精确建模</b>，不必外推到几千年。
+          本节用 <code>astronomy-engine</code> 扫出 <b>1702–2298 年（596 年）全部 31 次木土会合</b>，实测其周期结构。
+        </div>
+        <table class="holo-tb">
+          <thead><tr><th style="width:30%">量</th><th>实测值</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">单次会合间隔</td><td>平均 <b>19.8653</b> 年，σ = 0.5052，极差 <b>1.3776</b>（19.13–20.51）</td><td class="mut">理论 19.85899；<b>单次抖得厉害</b></td></tr>
+            <tr><td class="pn">3 次会合跨度<br><span class="mut2" style="font-size:11px">（对应「60 年」）</span></td><td>平均 <b>59.58991</b> 年，极差仅 <b>0.119 年（43 天）</b></td><td class="mut">理论 59.576971；<b>三次一组几乎是常数</b></td></tr>
+            <tr><td class="pn">与 60 的差</td><td><b>−0.454 ~ −0.366 年</b>（−166 ~ −134 天）</td><td class="mut">稳定在 −5 个月左右</td></tr>
+            <tr><td class="pn">会合点黄经推进</td><td>单次 <b>−116.66°</b>；三元组净 <b>+10°</b></td><td class="mut">每 60 年沿黄道挪约 10°</td></tr>
+            <tr><td class="pn">绕行一周</td><td>≈ 36 个三元组 ≈ <b>2145 年</b></td><td class="mut">会合点转满 360° 的大周期</td></tr>
+            <tr><td class="pn">间隔自相关</td><td>峰值在滞后 <b>3 个会合</b>，<b>r = 0.992</b></td><td class="mut">强周期结构，周期 ≈ 60 年</td></tr>
+          </tbody>
+        </table>
+        <div class="note" style="margin:12px 0 0">
+          <b style="color:#7dffb4">这就是「大周期精确运算」的结构</b>：
+          误差不是单调漂移，而是
+          <b>「≈60 年为节拍的振荡」</b>（r = 0.992）叠加
+          <b>「≈2145 年的慢绕行」</b>。
+          所以在<b>几百年窗口</b>内，可以用实测的周期表精确修正——不需要线性外推到几千年。
+        </div>
+        <div class="note" style="margin:10px 0 0;color:#ffc457">
+          <b>但要诚实说明两件事</b>：<br>
+          ① 单次会合间隔抖动达 ±0.7 年，<b>拿单次会合当"60 年刻度"是不可靠的</b>；必须<b>三次一组</b>才稳定。
+          <br>② 上述 59.5899 比理论 59.5770 略大 0.013 年，差异来自<b>行星摄动与所选窗口</b>——
+          换窗口数值会微变，说明<b>它是窗口统计量，不是宇宙常数</b>。
+        </div>
+        <div class="note" style="margin:10px 0 0;font-size:11.5px">
+          复现：<code>node tools/bigcycle-v2.mjs</code>（输出 reports/jupiter-saturn-bigcycle.json）
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="sec-conflict">体系冲突 · 话说不到一起去的地方</h2>
+      <div class="card" style="margin-bottom:16px;border-color:rgba(255,154,138,.34);background:rgba(255,154,138,.04)">
+        <div class="note" style="font-size:13px;line-height:2">
+          <b style="color:#ff9a8a">这一节专门写"对不上"的地方。</b>不藏、不平均、不用一句话圆过去。
+          每条都标明<b>性质</b>：是<b class="gold">精度不足</b>（可修）、
+          <b class="gold">流派差异</b>（并列呈现，不合并成一个数）、还是<b class="red">原理性不可通约</b>（不修，直接禁止对应）。
+        </div>
+
+        <table class="holo-tb" style="margin-top:14px">
+          <thead><tr><th style="width:22%">冲突 / 不一致</th><th style="width:15%">性质</th><th style="width:33%">具体表现</th><th>本站的处理</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">心理 vs 物质判定相反</td>
+              <td class="dg a">不同轴<br><span class="mut2" style="font-size:10.5px">不是冲突</span></td>
+              <td class="mut2">月亮天蝎：占星「落」；太阴在亥：紫微「庙」</td>
+              <td>两轴各算各的、并列输出「物质有靠，但心里不安」</td>
+            </tr>
+            <tr>
+              <td class="pn">命宫 / 身宫口径分歧</td>
+              <td class="dg b">流派差异</td>
+              <td class="mut2">本地引擎：命宫戊寅 / 身宫丙戌；iztro：命宫乙酉 / 身宫酉（14/26法 vs 和法）</td>
+              <td class="red">两套并排显示，<b>不取其一</b>；未判定谁对</td>
+            </tr>
+            <tr>
+              <td class="pn">月将 vs 月建</td>
+              <td class="dg b">约定不同</td>
+              <td class="mut2">月建按<b>节气</b>换、月将按<b>中气</b>换，中点差半个月</td>
+              <td class="red">明确写明<b>不存在固定偏移</b>，禁止按 ±n 宫硬算</td>
+            </tr>
+            <tr>
+              <td class="pn">父母宫位置</td>
+              <td class="dg b">体系差异</td>
+              <td class="mut2">紫微父母宫在十二宫第 12 位；占星父母常看 4 / 10 宫</td>
+              <td class="red"><b>并列呈现，不折算</b></td>
+            </tr>
+            <tr>
+              <td class="pn">七政庙旺 vs 占星本质尊贵</td>
+              <td class="dg b">同一轴<br><span class="mut2" style="font-size:10.5px">若相反才是真冲突</span></td>
+              <td class="mut2">两者都是 f(星, 星座)，可直接比较</td>
+              <td class="red">本条<b>才是真冲突</b>：并列不平均，标 <code>sameAxis</code></td>
+            </tr>
+            <tr>
+              <td class="pn">时支只能推到 67.5%</td>
+              <td class="dg b">精度不足</td>
+              <td class="mut2">偏差集中在时辰边界（±1 位），缺均时差以外的残余误差</td>
+              <td class="red">标 <code>measuredAccuracy: 0.675</code>，<b>不可替代真实出生时辰</b></td>
+            </tr>
+            <tr>
+              <td class="pn">年柱 / 日柱不可从落位推出</td>
+              <td class="dg b">原理性</td>
+              <td class="mut2">年柱/日柱是<strong>计数</strong>；但可由<b>逆星历</b>还原日期后按历法锚点换算</td>
+              <td class="red">须<b>历法锚点</b>；<b>能推</b>，但不靠几何直推</td>
+            </tr>
+            <tr>
+              <td class="pn">60 甲子连续性只是假设</td>
+              <td class="dg b">史料问题</td>
+              <td class="mut2">独立检验：前113→1965 跨 2077 年精确对上；汉太初历元差 1 位</td>
+              <td class="red">承认<b>局部 1 天级调整</b>；对公元前日柱不作断言</td>
+            </tr>
+            <tr>
+              <td class="pn">二十八宿</td>
+              <td class="dg b">不可通约</td>
+              <td class="mut2">赤道分度，与黄道十二宫是非线性关系；长短悬殊（井 31° vs 觜 2°）</td>
+              <td class="red">只做<b>位置标注</b>，不折算成星座或宫位</td>
+            </tr>
+            <tr>
+              <td class="pn">紫炁</td>
+              <td class="dg b">不可通约</td>
+              <td class="mut2">纯中国概念，西方占星无对应物</td>
+              <td class="red">标为<b>不可通约</b>，<b>不强行换算</b></td>
+            </tr>
+            <tr>
+              <td class="pn">神煞 ↔ 心理</td>
+              <td class="dg b">内部一致性</td>
+              <td class="mut2">只能算"收敛度"，不能证明该心理倾向必然显现</td>
+              <td class="red">标为<b>内部一致性</b>，<b>不是外部验证</b></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note" style="font-size:12.5px;line-height:2;margin-top:14px">
+          <b style="color:#ffd58a">三条不可让步的处理原则：</b><br>
+          <b>①</b> 能把性质说清的，一定标明（精度 / 流派 / 不可通约）——让人知道该不该信这一条；<br>
+          <b>②</b> 同一轴上的相反结论<b>并列不平均</b>；不同轴上的相反结论<b>各自成立</b>，并给出完整读法句；<br>
+          <b>③</b> 不可通约的，<b>禁止它去对应</b>——宁可少说，不做虚假统一。
+        </div>
+        <div class="card" id="opensource-invite" style="margin-top:14px;border-color:rgba(94,241,255,.36);background:rgba(94,241,255,.05)">
+          <div class="note" style="font-size:13px;line-height:2">
+            <b style="color:#5ef1ff">如果你认为上面某一条有解 —— 这个项目是开源的，请直接在这个模型上跑。</b><br>
+            以上每一条"做不到"，我们都附了<b>可复现的脚本与数据格式</b>。
+            你可以：<br>
+            · 用你自己的数据重跑（tools/ 下每个结论都对应一个可执行脚本）<br>
+            · 直接改算法（核心模块在 src/cross/ 与 src/bazi/，全部有独立断言）<br>
+            · 提出反例（能跑出不同结果的样本最有价值）<br><br>
+            <span class="mut2">我们不认为这些边界是终点。它们是<b>当前版本在哪停下</b>的诚实记录——
+            而记录本身就是为了被后来者推翻。</span>
+          </div>
+        </div>
+
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:10px;color:rgba(160,200,225,.72)">
+          更完整的论证与边界讨论见 <a href="/paper.html" style="color:#5ef1ff">《论中西命理体系的融合路径》</a> 第八节。
+        </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <h2 id="sec-experiment">实验性板块 · 60 甲子到底连不连续</h2>
+      <div class="card" style="margin-bottom:16px;border-color:rgba(255,154,138,.3);background:rgba(255,154,138,.035)">
+        <div class="note" style="font-size:13px;line-height:2">
+          <b style="color:#ff9a8a">本节是实验，不是结论。</b>它检验一个流传的质疑：
+          「60 甲子循环在历史上从未连续，现代排盘的日柱是错的」。<br>
+          我们不复述该说法，而是<b>用精确儒略日独立重算</b>，看它在算术上站不站得住。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:14px"><b style="color:#5ef1ff">① 方法（学自该质疑方，值得学的部分）</b></div>
+        <div class="note" style="font-size:12px;line-height:1.95;margin-top:4px">
+          · 只用<b>史料原创干支</b>做锚（《史记·封禅书》、Wechsler 1985 唐礼制、《元史》），不靠现代反推<br>
+          · 算两锚之间<b>精确天数差</b>，<code>mod 60</code>，与记载干支对账<br>
+          · <b style="color:#7dffb4">其最有价值的一点：从现代往前反推古历是循环论证</b> ——
+          反推必然"强迫"古日拟合 60 循环，因此永远对得上，不能用它证明连续性<br>
+          · <b style="color:#ff9a8a">其方法的一处弱点（本站修正）</b>：用「年数 × 365.2422」算天数会引入近似误差；
+          跨闰日必须直接算<b>儒略日（JDN）之差</b>，它按定义就是整数天。本站已用 JDN 重算，
+          并用 2000-01-01 = JDN 2451545、1582-10-15 = JDN 2299161 自检通过。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:14px"><b style="color:#5ef1ff">② 本站实测结果</b></div>
+        <table class="holo-tb" style="margin-top:6px">
+          <thead><tr><th>锚点对</th><th>精确天数差</th><th>mod 60</th><th>预测</th><th>史料</th><th>判定</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">前113-12-24（辛巳）<br>→ 1965-01-10</td>
+              <td class="mut2">758,263 天</td>
+              <td class="mut2">43</td>
+              <td class="pn">甲子</td>
+              <td class="mut2">甲子</td>
+              <td class="dg a">✅ 对上</td>
+            </tr>
+            <tr>
+              <td class="pn">前113-12-24（辛巳）<br>→ 前105-12-24</td>
+              <td class="mut2">2,922 天</td>
+              <td class="mut2">42</td>
+              <td class="pn">癸亥</td>
+              <td class="mut2">甲子</td>
+              <td class="dg b">❌ 差 1 位</td>
+            </tr>
+            <tr>
+              <td class="pn">前105-12-24（记甲子）<br>→ 1965-01-10</td>
+              <td class="mut2">755,341 天</td>
+              <td class="mut2">1</td>
+              <td class="pn">乙丑</td>
+              <td class="mut2">甲子</td>
+              <td class="dg b">❌ 差 1 位</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:12px">
+          <b style="color:#7dffb4">⇒ 结论一（支持该质疑方的具体指控）：</b>
+          前 113 → 1965 这条两千年长链<b>精确自洽</b>；而<b>汉太初历元（前105-12-24）恰好差 1 位</b>。
+          这与「汉武帝把该是癸亥的一天定为甲子」的指控<b>在算术上吻合</b>。
+        </div>
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:8px">
+          <b style="color:#ff9a8a">⇒ 结论二（不支持其大结论）：</b>
+          但其总标题「60 循环从不连续、现代日柱错 ≥3 位」<b>不成立</b>——
+          因为跨越 2077 年的 前113→1965 链条是<b>对得上</b>的。可见是<b>局部 1 天级的人为调整</b>，
+          而非长期断裂。
+        </div>
+        <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:8px">
+          <b style="color:#ffd58a">⇒ 结论三（本引擎的处境）：</b>
+          本引擎的日柱是<b>从现代纪元连续反推</b>得到——这正是被批评的方法。
+          实测：1965-01-10 引擎给甲子 ✅（与史料一致）；但公元前年份 tyme4ts 不支持，
+          引擎给出的是无意义值。<b>因此本站对公元前的日柱不作任何断言。</b>
+        </div>
+
+        <div class="note" style="font-size:12px;line-height:1.95;margin-top:14px;color:rgba(160,200,225,.75)">
+          <b>对主流学术的对照</b>：Adam Smith (2010) 指出 60 循环的连续性<b>只是"被假设"</b>；
+          中文学界唯一的怀疑仅见李学勤 (1957) p.122；并称"没发现任何重置的文本痕迹，此疑问很少被提出"。
+          ⇒ <b>连续性确实是假设而非证明</b>，这一点本站接受；但"已被证明断裂"同样缺乏证据。<br>
+          <b>本节的定位</b>：把"假设"变成"可检验的命题"，并给出可复现的算术结果。
+          相关质疑方为 Prof. Dr. Ong Hean-Tatt（马来西亚 GUI Management Centre，非北京大学），
+          我们借其方法、修正其算术、核对其结论，<b>不采信其关于"八字系伪造自紫微斗数"的附带主张</b>。
+        </div>
+
+        <div class="note" style="font-size:11.5px;line-height:1.9;margin-top:10px;color:rgba(140,180,210,.6)">
+          复现：<code>node tools/experiment-jiazi-continuity.mjs</code>
+        </div>
+      </div>
+      </div>
+
+      <div class="card" id="sec-develop">
+        <h2>这种融合体系该怎么发展 <span class="sub">先对账，再融合</span></h2>
+
+        <p class="note" style="margin:0 0 12px">
+          这一节不谈技术，谈<b>为什么这件事一直没做成</b>，以及<b>如果要做成，顺序应该是什么</b>。
+        </p>
+
+        <h3 style="margin:16px 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">一、七政四余为什么会落寞失传</h3>
+        <table class="holo-tb">
+          <thead><tr><th style="width:20%">原因</th><th>具体机制</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">门槛过高</td><td class="mut">要用到真实星历、宿度、岁差、四余（交点/远地点），每一步都要算；而子平术只需查表加减</td></tr>
+            <tr><td class="pn">历学垄断</td><td class="mut">历代钦天监把历法与星占列为禁学，民间私习天文有罪（唐至明皆有禁令）</td></tr>
+            <tr><td class="pn">术语壁垒</td><td class="mut">庙旺、喜忌、四余层层堆叠，外行<b>无法验证</b>，只能信或不信</td></tr>
+            <tr><td class="pn">断语靠师承</td><td class="mut">结论无法机检，传承一断就彻底失传</td></tr>
+            <tr><td class="pn">竞争劣势</td><td class="mut">子平术用<b>最少输入</b>给出<b>最直接的话</b>，传播成本极低</td></tr>
+            <tr><td class="pn">西学东渐</td><td class="mut">清以后西方占星以"新式"面貌进入，七政四余夹在中西之间，<b>两边都不认它</b></td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0;color:#ffc457">
+          ⇒ <b>它不是"因为不准"而消失，而是"成本太高、无法验证、无法普及"而消失。</b>
+          这一点很重要：<b>失传不等于失效</b>，也可能只是输给了传播效率。
+        </p>
+
+        <h3 style="margin:20px 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">二、为什么融合总是艰难</h3>
+        <table class="holo-tb">
+          <thead><tr><th style="width:18%">层面</th><th>冲突来源</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">输入</td><td class="mut">一个要求精确到分钟 + 经纬度，一个只要年月日时</td></tr>
+            <tr><td class="pn">编码</td><td class="mut">几何编码 vs 计数编码（年柱、日柱）—— 两套不同性质的对象被当成同类</td></tr>
+            <tr><td class="pn">权威</td><td class="mut">各有祖师、各有经典，方法论互不承认</td></tr>
+            <tr><td class="pn">可检验性</td><td class="mut">断语模糊，<b>无法判定谁对</b>，于是只能比资历</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0">
+          <b>根本原因</b>：大家一直在<b>符号层</b>对话（十神 vs 宫位 vs 星曜），
+          从来没有回到<b>几何层</b>做核对。符号层没有共同尺子，所以永远谈不拢。
+        </p>
+
+        <h3 style="margin:20px 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">三、两个体系的人，对彼此的偏见</h3>
+        <table class="holo-tb">
+          <thead><tr><th style="width:20%">偏见</th><th style="width:34%">表现</th><th>事实</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">中式看西学</td>
+              <td class="mut">"占星只会说性格，算不了事"</td>
+              <td class="mut">古典占星本有<b>事件预测</b>传统，只是现代心理占星把它弱化了</td>
+            </tr>
+            <tr>
+              <td class="pn">西学看中式</td>
+              <td class="mut">"八字是宿命论，不自由"</td>
+              <td class="mut">十神是<b>关系</b>不是宿命；但它确实缺少"自由意志"这一层语言</td>
+            </tr>
+            <tr>
+              <td class="pn">双方共同</td>
+              <td class="mut">"对方是伪科学"</td>
+              <td class="mut">双方都缺少<b>可复现的验证机制</b> —— 这是共同短板，不是一方的问题</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0">
+          <b>有意思的是</b>：这两套体系<b>同源于巴比伦黄道十二宫</b>（见第二节）。
+          吵得最凶的两家，其实是一个祖先 —— 偏见来自<b>中断的记忆</b>，不是来自本质差异。
+        </p>
+
+        <h3 style="margin:20px 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">四、融合艰难的底层原因：没有从最底层的天文数据做精确核算</h3>
+        <p class="note" style="margin:0 0 10px">
+          这是本文最核心的一个判断，也是这个项目<b>真正的起点</b>：
+        </p>
+        <ul class="note" style="margin:0 0 10px;padding-left:22px;line-height:2">
+          <li>四套体系都在<b>符号层</b>互相翻译，<b>没人回到几何层对账</b>；</li>
+          <li>八字的月支本来<b>严格绑定太阳黄经</b>（恒等），但没人去核算过；</li>
+          <li>七政四余的宿度会随<b>岁差</b>漂移（约 50.29″/年），但没人标出来；</li>
+          <li>60 甲子被当成"天意"，没人算过它和木土会合之间那 <b>0.423 年</b>的差。</li>
+        </ul>
+        <p class="note" style="margin:0 0 10px">
+          所以这个项目做的第一件事<b>不是"融合"，而是"对账"</b>：
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th style="width:34%">对账项</th><th>实测结果</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">月支 ↔ 太阳黄经</td><td><b style="color:#7dffb4">恒等 100%</b>（节气就是黄经 30° 刻度）</td></tr>
+            <tr><td class="pn">时支 ↔ 太阳时角</td><td><b style="color:#ffc457">67.5%</b>（需均时差 + 真太阳时，边界附近差一位）</td></tr>
+            <tr><td class="pn">60 甲子 ↔ 木土会合</td><td><b>3 次会合 = 59.58991 年</b>，极差仅 0.119 年（43 天）</td></tr>
+            <tr><td class="pn">命宫 ↔ 上升点 ASC</td><td><b style="color:#7dffb4">结构对应</b>（命宫 = f(月支, 时支) ≈ ASC 的粗糙算法）</td></tr>
+            <tr><td class="pn">年柱/日柱 ↔ 逆星历</td><td><b>可推但需转一道</b>：星位 → 绝对日期 → 历法锚点 → 干支</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:10px 0 0;color:#ffc457">
+          ⇒ <b>对完账之后，"融合"才不是比附，而是"在同一把尺子上量出来的结果"。</b>
+        </p>
+
+        <h3 style="margin:20px 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">五、所以应该怎么发展：四步顺序不能颠倒</h3>
+        <table class="holo-tb">
+          <thead><tr><th style="width:14%">步骤</th><th>做法</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">① 先对账</td><td class="mut">把每个量的物理锚点标清楚：<b>能算的算，不能算的明确标"计数"</b>，绝不假装差一点</td></tr>
+            <tr><td class="pn">② 再分层</td><td class="mut">几何层 / 计数层 / 符号层，各层不越界 —— 不让符号层的结论去冒充几何层的证据</td></tr>
+            <tr><td class="pn">③ 后验证</td><td class="mut">用<b>事件样本</b>（出生时间 + 事例）做统计检验，而不是靠祖师权威或个案神验</td></tr>
+            <tr><td class="pn">④ 最后才解释</td><td class="mut">有了统计支撑，再谈"为什么" —— 否则解释只是事后编故事</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin:12px 0 0;font-size:13.5px;color:#9fe8ff">
+          <b>一句话</b>：这个体系要发展，不是靠"更玄"，而是靠
+          <b>更可算、更可验、更可复现</b>。
+          七政四余当年输在"成本"上，那就把成本降到能算；八字赢在"可机算"上，那就把它的物理锚点补回去。
+        </p>
+        <p class="note" style="margin:10px 0 0;font-size:11.5px;color:rgba(160,200,225,.75)">
+          说明：本节是<b>立场与判断</b>，不是已完成的证明。文中「对账」各项的实测数据可在
+          <a href="#sec-59-58" style="color:#5ef1ff">59.58 假说</a> 与
+          <a href="#sec-experiment" style="color:#5ef1ff">实验性板块</a> 中复核。
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 id="sec-credits">开源项目与数据来源</h2>
+
+      
+
+    <!-- 融合 -->
+      
+
+      <div class="card"></div>
+      
+        <div class="note" style="font-size:12.5px;line-height:1.9">
+          本站在排盘与推算上大量复用了开源实现，在此逐一注明。凡标 <b style="color:#7dffb4">MIT</b> 的
+          可按 MIT 条款使用；唯一例外是 <b style="color:#ffd58a">Apache-2.0</b>（大六壬库），
+          其条款额外要求保留 NOTICE 与修改声明。<b>本项目未修改任何第三方的核心算法</b>，
+          只在它们之上写适配层（如 `ziwei/adapter.mjs`）。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:14px"><b style="color:#5ef1ff">一、开源代码库（npm 依赖）</b></div>
+        <table class="holo-tb" style="margin-top:6px">
+          <thead><tr><th>项目</th><th>版本</th><th>许可</th><th>在本站的作用</th></tr></thead>
+          <tbody>
+            <tr><td class="pn"><a href="https://github.com/6tail/tyme4ts" style="color:#5ef1ff">tyme4ts</a></td><td class="mut2">—</td><td class="dg a">MIT</td><td class="mut2">干支历法、节气、农历转换（八字与六壬的时间基座）</td></tr>
+            <tr><td class="pn"><a href="https://github.com/look-fate/liuren-ts-lib" style="color:#5ef1ff">liuren-ts-lib</a></td><td class="mut2">^3.1.0</td><td class="dg b">Apache-2.0</td><td class="mut2">大六壬排盘（三传四课）</td></tr>
+            <tr><td class="pn"><a href="https://github.com/SylarLong/iztro" style="color:#5ef1ff">iztro</a></td><td class="mut2">^2.6.3</td><td class="dg a">MIT</td><td class="mut2">紫微斗数排盘（十二宫、十四主星、四化、五行局）</td></tr>
+            <tr><td class="pn"><a href="https://github.com/cosinekitty/astronomy" style="color:#5ef1ff">astronomy-engine</a></td><td class="mut2">^2.1.19</td><td class="dg a">MIT</td><td class="mut2">行星位置、宫位、行运的天文计算</td></tr>
+            <tr><td class="pn"><a href="https://github.com/openfate-ai/true-solar-time" style="color:#5ef1ff">@openfate/true-solar-time</a></td><td class="mut2">^4.0.2</td><td class="dg a">MIT</td><td class="mut2">真太阳时与均时差（EoT）换算</td></tr>
+            <tr><td class="pn"><a href="https://github.com/adaltas/node-csv" style="color:#5ef1ff">csv-parse</a></td><td class="mut2">^7.0.3</td><td class="dg a">MIT</td><td class="mut2">公开数据集（CSV）的解析</td></tr>
+            <tr><td class="pn"><a href="https://github.com/pillarjs/iconv-lite" style="color:#5ef1ff">iconv-lite</a></td><td class="mut2">^0.7.3</td><td class="dg a">MIT</td><td class="mut2">抓取中文古籍时的编码转换（GBK 等）</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:16px"><b style="color:#5ef1ff">二、公开数据集</b></div>
+        <table class="holo-tb" style="margin-top:6px">
+          <thead><tr><th>来源</th><th>规模</th><th>许可</th><th>用途与限制</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">VedAstro<br><span class="mut2" style="font-size:10.5px">HuggingFace vedastro-org</span></td>
+              <td class="mut2">15,807 盘<br>（AA 级 99.9%）</td>
+              <td class="dg a">MIT</td>
+              <td class="mut2">占星×婚姻事件对拍。<b>限制</b>：吠陀恒星黄道语境，本站为热带黄道</td>
+            </tr>
+            <tr>
+              <td class="pn">Korean Public Figures with Saju<br><span class="mut2" style="font-size:10.5px">HuggingFace brandonrhie</span></td>
+              <td class="mut2">39,494 人</td>
+              <td class="mut2">见原仓库</td>
+              <td class="mut2">三柱对拍（实测 98.68% 一致）。<b>限制</b>：仅日精度、<b>无时柱</b>，时柱与大运不得在此集上评估</td>
+            </tr>
+            <tr>
+              <td class="pn"><a href="https://github.com/stevevandekolk/d3-celestial" style="color:#5ef1ff">d3-celestial</a><br><span class="mut2" style="font-size:10.5px">stars.6.json</span></td>
+              <td class="mut2">921 颗亮星<br>（mag ≤ 4.5）</td>
+              <td class="dg a">BSD-3</td>
+              <td class="mut2">星空背景的真实恒星位置</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:16px"><b style="color:#5ef1ff">三、图像素材</b></div>
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:4px">
+          行星表面纹理（10 张，约 577 KB）来自 <b>Solar System Scope</b>
+          （<a href="https://www.solarsystemscope.com/textures/" style="color:#5ef1ff">solarsystemscope.com/textures</a>），
+          依 <b>CC BY 4.0</b> 使用。
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:16px"><b style="color:#5ef1ff">四、古典文献与传统数据</b></div>
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:4px">
+          · <b>《大六壬断案》</b>（明清刻本，公共领域）—— 用于古典课例对拍三传，共结构化 65 例<br>
+          · <b>《紫微斗数全书》</b>（公共领域）—— 十四主星庙旺表参考（本站表已标「待校」，各派有差异）<br>
+          · <b>二十八宿距度</b> —— 清代黄道宿度通行值（传统历法数据，公共领域）<br>
+          · <b>古典占星尊贵体系</b> —— 托勒密《四书》等公共领域古典文献
+        </div>
+
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:16px"><b style="color:#5ef1ff">五、用户提供</b></div>
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:4px">
+          · <b>人类精标成对样本</b> —— 由本站在「反馈」页收集的<b>匿名命例</b>（不含姓名与联系方式），
+          仅用于模型校准。详见上方隐私承诺。
+        </div>
+
+        <div class="note" style="font-size:12px;line-height:1.9;margin-top:16px;color:rgba(160,200,225,.75)">
+          <b>完整的逐条登记</b>（含每个数据源「查证到什么、能不能用、限制在哪」）见项目内
+          <code>data/SOURCES.md</code>。凡检索过但<b>未找到</b>的（Starlight、璇玑玉衡、linren-skill 等）也如实记录在案，
+          未用不存在的来源充数。
+        </div>
+      </div>
+
+    
+      <div class="card" id="sec-license">
+        <h2>开源许可 <span class="sub">Apache License 2.0</span></h2>
+        <p class="note" style="margin:0 0 10px">
+          本模型（含引擎、前端、文档与数据整理）以
+          <b style="color:#5ef1ff">Apache License 2.0</b> 发布。
+          这是一个<b>宽松型</b>许可 —— 允许商用，也允许闭源分发，但要求保留署名。
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th style="width:16%">类别</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="pn">允许</td>
+              <td class="mut">商业使用 · 修改 · 分发 · 私人使用 · <b>专利授权</b>（贡献者不得事后以专利起诉使用者）</td>
+            </tr>
+            <tr>
+              <td class="pn">要求</td>
+              <td class="mut">
+                ① 保留<b>版权声明</b>与<b>许可声明</b>；<br>
+                ② 若修改了文件，须<b>在改动文件中注明</b>已修改；<br>
+                ③ 分发时须<b>附上许可证副本</b>（LICENSE 文件）；<br>
+                ④ 若原项目带 <b>NOTICE</b> 文件，分发时须一并保留其内容。
+              </td>
+            </tr>
+            <tr>
+              <td class="pn">不授予</td>
+              <td class="mut">
+                ① <b>商标权</b>（不得使用原作者名称/标识做背书）；<br>
+                ② 任何形式的<b>担保</b>——软件按"现状"提供，作者不承担使用后果。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note" style="margin:12px 0 0">
+          <b style="color:#ffc457">一句话读懂</b>：<b>你可以拿去做任何事（包括卖钱、闭源），
+          只要保留版权与许可声明、改过的文件标一下、附上许可证、不拿作者名字做宣传、并接受"没有保修"。</b>
+        </div>
+        <div class="note" style="margin:10px 0 0;font-size:11.5px">
+          许可证全文：<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener" style="color:#5ef1ff">apache.org/licenses/LICENSE-2.0</a>
+          · 第三方依赖各自遵循其原许可（见「开源与数据」一节中的逐条署名）
+        </div>
+      </div>
+
+      <div class="card" id="sec-disclaimer">
+        <h2>免责声明 <span class="sub">请务必阅读</span></h2>
+        <p class="note" style="margin:0 0 12px;font-size:14.5px;color:#ff9a8a">
+          <b>本项目仅仅是兴趣爱好的开放讨论，不是产品，也不是服务。</b>
+        </p>
+        <table class="holo-tb">
+          <thead><tr><th style="width:18%">条目</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">定位</td><td class="mut">个人兴趣驱动的<b>开源研究与技术实验</b>，仅供学习、讨论与学术研究；<b>不是</b>医疗/心理/法律/财务/婚恋/职业工具</td></tr>
+            <tr><td class="pn">输出</td><td class="mut">模型输出<b>可能与现实完全不符</b>；命理体系的有效性在科学上尚无定论；<b>不构成任何诊断、预测或行动建议</b></td></tr>
+            <tr><td class="pn">责任</td><td class="mut"><b style="color:#ff9a8a">因使用本项目输出结果而在现实生活中造成的任何问题、损失、纠纷或后果，与开发者无关</b>；使用者自行承担全部风险</td></tr>
+            <tr><td class="pn">担保</td><td class="mut">按「现状（AS IS）」提供，<b>不作任何明示或暗示担保</b>；第三方星历数据的正确性不由本项目担保</td></tr>
+            <tr><td class="pn">禁止</td><td class="mut">医疗诊断 · 赌博投机 · 欺诈 · 对他人未经同意的命理评估 · 任何违法用途</td></tr>
+            <tr><td class="pn">隐私</td><td class="mut">不收集身份信息，<b>绝不接收 API Key</b>；出生信息只在你的设备与本机服务间流转</td></tr>
+            <tr><td class="pn">未成年人</td><td class="mut">不面向 14 岁以下儿童；未成年人使用需监护人知情同意</td></tr>
+            <tr><td class="pn">效力</td><td class="mut"><b>下载、运行、分发或以任何方式使用本项目，即视为已阅读并同意上述全部条款。</b></td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top:16px;padding:14px 16px;border-radius:12px;border:1px solid rgba(255,196,87,.28);background:rgba(255,196,87,.05)">
+          <div style="font-size:13.5px;font-weight:700;color:#ffd58a;margin-bottom:6px">支持这个项目</div>
+          <div class="note" style="margin:0;font-size:12.5px;line-height:1.9">
+            如果它对你有一点点帮助，可以通过
+            <a href="https://afdian.com/@YOUR_ID" target="_blank" rel="noopener" style="color:#ffc457;font-weight:700">爱发电</a>
+            支持一下。<br>
+            <b>赞助不附带任何承诺</b>：不换付费咨询、不换"更准的结果"、不换功能优先级 ——
+            请<b>量力而行</b>，别为此影响正常生活。<br>
+            不方便赞助的话，<b>给个 Star、提个 Issue、指出一处文献错误，同样是实质性的帮助</b>。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page active" data-page="fusion">
+      <h2 class="page-title">八字 × 占星 <span class="sub">同盘并列</span></h2>
+      <section class="fw-card" id="fusion-wheel-host">
+        <canvas></canvas>
+        <div class="fw-tip"></div>
+        <div class="fw-title">融合盘 3D <span>真实星空 · 七柱（金）· 黄道（青）</span></div>
+        <div class="fw-ctrl">
+          <button type="button" data-fw="spin" class="on">自转</button>
+          <button type="button" data-fw="pillars" class="on">四柱</button>
+          <button type="button" data-fw="planets" class="on">行星</button>
+          <button type="button" data-fw="orbits" class="on">轨道</button>
+          <button type="button" data-fw="aspects" class="on">相位</button>
+          <button type="button" data-fw="houses" class="on">宫位</button>
+          <button type="button" data-fw="link" class="on">恒等线</button>
+          <button type="button" data-fw="bagua" class="on">卦象</button>
+          <button type="button" data-fw="flat">平视</button>
+          <button type="button" data-fw="top">俯视</button>
+          <button type="button" data-fw="fly">穿梭</button>
+          <button type="button" data-fw="reset">复位</button>
+        </div>
+        <div class="fw-hint">拖动环视 · 上下拖看俯仰 · 滚轮缩放（可缩到球心穿梭）· 悬停看中西对照</div>
+        <div class="fw-note"><b>●</b> 四柱（实线·参与排盘与判定）<br><span class="exp">● 胎元/命宫/身宫（虚线·实验展示，不参与判定）</span></div>
+      
+            
+
+
+    </section>
+
+      <div class="card" id="dual-wheel-card" style="margin-top:14px">
+        <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#5ef1ff">外盘 ＋ 内盘 · 两套坐标系的接缝</h3>
+        <p class="note" style="margin:0 0 10px">
+          <b>外环</b>是黄道（十二地支 + 藏干），锚定天球，<b>永恒不动</b>；
+          <b>内环</b>是宫位（带紫微十二宫名），锚定你这张盘的<b>上升点</b>，<b>因人而转</b>。
+          两环之间的旋转量，就是 ASC。
+        </p>
+        <div id="dual-wheel-host"><div class="note">排盘后自动绘制…</div></div>
+        <div id="dw-detail" class="dw-detail"><div class="note">点图上的任意词语（地支 / 藏干 / 宫位 / 紫微宫名 / 行星 / ASC / 七柱）看详情。</div></div>
+      </div>
+
+      <div class="card" id="zhi-cang-legend" style="margin-top:14px">
+        <h3 style="margin:0 0 8px;font-size:15px;font-weight:700;color:#5ef1ff">十二地支 · 藏干 · 与宫位的关系</h3>
+        <div class="note" style="margin:0 0 10px">
+          <b style="color:#ffc457">藏干是固定查表</b>：地支一确定，藏干就固定，<b>没有任何天文自由度</b>。
+          所以「行星落在哪一宫」本身推不出藏干——必须先知道该宫对应的<b>地支</b>。
+        </div>
+        <table class="holo-tb">
+          <thead><tr><th style="width:22%">地支</th><th>藏干（本气 / 中气 / 余气）</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">子</td><td>癸</td></tr>
+            <tr><td class="pn">丑</td><td>己 癸 辛</td></tr>
+            <tr><td class="pn">寅</td><td>甲 丙 戊</td></tr>
+            <tr><td class="pn">卯</td><td>乙</td></tr>
+            <tr><td class="pn">辰</td><td>戊 乙 癸</td></tr>
+            <tr><td class="pn">巳</td><td>丙 戊 庚</td></tr>
+            <tr><td class="pn">午</td><td>丁 己</td></tr>
+            <tr><td class="pn">未</td><td>己 丁 乙</td></tr>
+            <tr><td class="pn">申</td><td>庚 壬 戊</td></tr>
+            <tr><td class="pn">酉</td><td>辛</td></tr>
+            <tr><td class="pn">戌</td><td>戊 辛 丁</td></tr>
+            <tr><td class="pn">亥</td><td>壬 甲</td></tr>
+          </tbody>
+        </table>
+        <div class="note" style="margin:12px 0 0">
+          <b style="color:#5ef1ff">宫位 ↔ 地支 是动态的</b>（这是两套坐标系的分界）：
+        </div>
+        <table class="holo-tb" style="margin-top:8px">
+          <thead><tr><th style="width:24%">坐标环</th><th>锚定于</th><th>是否随人变</th></tr></thead>
+          <tbody>
+            <tr><td class="pn">外层：黄道 / 十二次 / 十二地支</td><td class="mut">天球黄经（绝对）</td><td><b style="color:#7dffb4">静态</b>——寅永远是 315°–345°（立春→惊蛰）</td></tr>
+            <tr><td class="pn">内层：十二宫</td><td class="mut">上升点 ASC（相对观测者）</td><td><b style="color:#ff9a8a">动态</b>——宫 1 起于该盘 ASC，因人因时因纬度而变</td></tr>
+            <tr><td class="pn">紫微斗数（对偶写法）</td><td class="mut">地支固定排在圆周</td><td>地支<b>静态</b>、宫名<b>动态</b>（随命宫转）——与上表恰好互为正反</td></tr>
+          </tbody>
+        </table>
+        <div class="note" style="margin:10px 0 0;color:#ffc457">
+          ⇒ 所以不存在一张「宫 1 = 子、宫 2 = 丑」的固定表。<b>宫位是外环星座盘与内环宫位盘两种坐标系</b>：
+          外层绝对、内层相对；两者之间的旋转量，就是<b>上升点</b>。
+        </div>
+      </div>
+
+      <form class="card form" id="f-fusion">
+        <div class="grid2">
+          <label>出生时间<input type="datetime-local" name="at" required value="2000-01-01T12:00"></label>
+          <label>性别<select name="gender"><option value="女">女</option><option value="男">男</option></select></label>
+          <label>城市<select id="city-fusion" class="city-pick">
+            <option value="">选择城市自动填经纬度…</option>
+            <option value="北京" data-lng="116.407" data-lat="39.904">北京</option>
+            <option value="上海" data-lng="121.474" data-lat="31.23">上海</option>
+            <option value="广州" data-lng="113.264" data-lat="23.129">广州</option>
+            <option value="深圳" data-lng="114.057" data-lat="22.543">深圳</option>
+            <option value="天津" data-lng="117.201" data-lat="39.084">天津</option>
+            <option value="重庆" data-lng="106.551" data-lat="29.563">重庆</option>
+            <option value="成都" data-lng="104.066" data-lat="30.572">成都</option>
+            <option value="杭州" data-lng="120.155" data-lat="30.274">杭州</option>
+            <option value="南京" data-lng="118.797" data-lat="32.06">南京</option>
+            <option value="武汉" data-lng="114.305" data-lat="30.593">武汉</option>
+            <option value="西安" data-lng="108.94" data-lat="34.341">西安</option>
+            <option value="沈阳" data-lng="123.429" data-lat="41.796">沈阳</option>
+            <option value="哈尔滨" data-lng="126.535" data-lat="45.803">哈尔滨</option>
+            <option value="长春" data-lng="125.324" data-lat="43.887">长春</option>
+            <option value="济南" data-lng="117" data-lat="36.651">济南</option>
+            <option value="郑州" data-lng="113.625" data-lat="34.746">郑州</option>
+            <option value="长沙" data-lng="112.939" data-lat="28.228">长沙</option>
+            <option value="南昌" data-lng="115.858" data-lat="28.682">南昌</option>
+            <option value="合肥" data-lng="117.283" data-lat="31.861">合肥</option>
+            <option value="福州" data-lng="119.296" data-lat="26.074">福州</option>
+            <option value="厦门" data-lng="118.089" data-lat="24.479">厦门</option>
+            <option value="昆明" data-lng="102.833" data-lat="24.88">昆明</option>
+            <option value="贵阳" data-lng="106.63" data-lat="26.647">贵阳</option>
+            <option value="南宁" data-lng="108.366" data-lat="22.817">南宁</option>
+            <option value="海口" data-lng="110.199" data-lat="20.044">海口</option>
+            <option value="兰州" data-lng="103.834" data-lat="36.061">兰州</option>
+            <option value="西宁" data-lng="101.778" data-lat="36.617">西宁</option>
+            <option value="银川" data-lng="106.278" data-lat="38.467">银川</option>
+            <option value="乌鲁木齐" data-lng="87.617" data-lat="43.792">乌鲁木齐</option>
+            <option value="呼和浩特" data-lng="111.751" data-lat="40.841">呼和浩特</option>
+            <option value="拉萨" data-lng="91.14" data-lat="29.645">拉萨</option>
+            <option value="石家庄" data-lng="114.502" data-lat="38.045">石家庄</option>
+            <option value="太原" data-lng="112.549" data-lat="37.857">太原</option>
+            <option value="苏州" data-lng="120.585" data-lat="31.299">苏州</option>
+            <option value="无锡" data-lng="120.312" data-lat="31.491">无锡</option>
+            <option value="宁波" data-lng="121.55" data-lat="29.875">宁波</option>
+            <option value="温州" data-lng="120.699" data-lat="27.994">温州</option>
+            <option value="青岛" data-lng="120.383" data-lat="36.067">青岛</option>
+            <option value="大连" data-lng="121.615" data-lat="38.914">大连</option>
+            <option value="东莞" data-lng="113.746" data-lat="23.047">东莞</option>
+            <option value="佛山" data-lng="113.122" data-lat="23.028">佛山</option>
+            <option value="汕头" data-lng="116.708" data-lat="23.371">汕头</option>
+            <option value="惠州" data-lng="114.416" data-lat="23.112">惠州</option>
+            <option value="珠海" data-lng="113.577" data-lat="22.271">珠海</option>
+            <option value="中山" data-lng="113.392" data-lat="22.517">中山</option>
+            <option value="香港" data-lng="114.174" data-lat="22.32">香港</option>
+            <option value="澳门" data-lng="113.549" data-lat="22.199">澳门</option>
+            <option value="台北" data-lng="121.565" data-lat="25.033">台北</option>
+          </select></label>
+        <label>经度<input type="number" name="lng" step="0.001" value="121.474"></label>
+          <label>纬度<input type="number" name="lat" step="0.001" value="31.230"></label>
+        </div>
+        <button type="submit">排盘</button>
+      
+          <div class="opt-row opt-contribute" style="grid-column:1 / -1">
+            <label class="opt-check">
+              <input type="checkbox" id="opt-contribute" name="contribute" value="1">
+              <span class="opt-box"></span>
+              <span class="opt-txt">
+                <b>我愿意贡献这次匿名数据</b>
+                <i>默认<b style="color:#7dffb4">不勾选</b>＝完全不上传，只在本机计算。
+                  勾选后仅上传<b>出生时间 + 事件记录</b>（不含姓名、联系方式、IP）。
+                  用途：校准模型。可随时撤回。</i>
+              </span>
+            </label>
+          </div>
+</form>
+      <div class="rx-trigger">
+        <button type="button" class="rx-open-btn" data-rx-open>⌛ 生时不确定？矫正一下</button>
+        <span class="mut2">用 3 条以上人生事件反推出生时刻，结果可直接排盘</span>
+      </div>
+      <div id="dignity-host" class="holo-row"></div>
+      <div id="deep-host" class="holo-row"></div>
+      <div id="fusion-out"></div>
+    </section>
+
+    <!-- ② 合盘 -->
+    <section class="page" data-page="synastry">
+      <h2 class="page-title">合盘 <span class="sub">互补度 · 星盘结构 · 适婚窗口</span></h2>
+      <form class="card form" id="f-synastry">
+        <div class="grid2 pair">
+          <fieldset><legend>甲方</legend>
+            <label>出生时间<input type="datetime-local" name="a_at" required value="2000-01-01T12:00"></label>
+            <label>性别<select name="a_gender"><option value="男">男</option><option value="女">女</option></select></label>
+            <label>城市<select id="city-a" class="city-pick">
+            <option value="">选择城市自动填经纬度…</option>
+            <option value="北京" data-lng="116.407" data-lat="39.904">北京</option>
+            <option value="上海" data-lng="121.474" data-lat="31.23">上海</option>
+            <option value="广州" data-lng="113.264" data-lat="23.129">广州</option>
+            <option value="深圳" data-lng="114.057" data-lat="22.543">深圳</option>
+            <option value="天津" data-lng="117.201" data-lat="39.084">天津</option>
+            <option value="重庆" data-lng="106.551" data-lat="29.563">重庆</option>
+            <option value="成都" data-lng="104.066" data-lat="30.572">成都</option>
+            <option value="杭州" data-lng="120.155" data-lat="30.274">杭州</option>
+            <option value="南京" data-lng="118.797" data-lat="32.06">南京</option>
+            <option value="武汉" data-lng="114.305" data-lat="30.593">武汉</option>
+            <option value="西安" data-lng="108.94" data-lat="34.341">西安</option>
+            <option value="沈阳" data-lng="123.429" data-lat="41.796">沈阳</option>
+            <option value="哈尔滨" data-lng="126.535" data-lat="45.803">哈尔滨</option>
+            <option value="长春" data-lng="125.324" data-lat="43.887">长春</option>
+            <option value="济南" data-lng="117" data-lat="36.651">济南</option>
+            <option value="郑州" data-lng="113.625" data-lat="34.746">郑州</option>
+            <option value="长沙" data-lng="112.939" data-lat="28.228">长沙</option>
+            <option value="南昌" data-lng="115.858" data-lat="28.682">南昌</option>
+            <option value="合肥" data-lng="117.283" data-lat="31.861">合肥</option>
+            <option value="福州" data-lng="119.296" data-lat="26.074">福州</option>
+            <option value="厦门" data-lng="118.089" data-lat="24.479">厦门</option>
+            <option value="昆明" data-lng="102.833" data-lat="24.88">昆明</option>
+            <option value="贵阳" data-lng="106.63" data-lat="26.647">贵阳</option>
+            <option value="南宁" data-lng="108.366" data-lat="22.817">南宁</option>
+            <option value="海口" data-lng="110.199" data-lat="20.044">海口</option>
+            <option value="兰州" data-lng="103.834" data-lat="36.061">兰州</option>
+            <option value="西宁" data-lng="101.778" data-lat="36.617">西宁</option>
+            <option value="银川" data-lng="106.278" data-lat="38.467">银川</option>
+            <option value="乌鲁木齐" data-lng="87.617" data-lat="43.792">乌鲁木齐</option>
+            <option value="呼和浩特" data-lng="111.751" data-lat="40.841">呼和浩特</option>
+            <option value="拉萨" data-lng="91.14" data-lat="29.645">拉萨</option>
+            <option value="石家庄" data-lng="114.502" data-lat="38.045">石家庄</option>
+            <option value="太原" data-lng="112.549" data-lat="37.857">太原</option>
+            <option value="苏州" data-lng="120.585" data-lat="31.299">苏州</option>
+            <option value="无锡" data-lng="120.312" data-lat="31.491">无锡</option>
+            <option value="宁波" data-lng="121.55" data-lat="29.875">宁波</option>
+            <option value="温州" data-lng="120.699" data-lat="27.994">温州</option>
+            <option value="青岛" data-lng="120.383" data-lat="36.067">青岛</option>
+            <option value="大连" data-lng="121.615" data-lat="38.914">大连</option>
+            <option value="东莞" data-lng="113.746" data-lat="23.047">东莞</option>
+            <option value="佛山" data-lng="113.122" data-lat="23.028">佛山</option>
+            <option value="汕头" data-lng="116.708" data-lat="23.371">汕头</option>
+            <option value="惠州" data-lng="114.416" data-lat="23.112">惠州</option>
+            <option value="珠海" data-lng="113.577" data-lat="22.271">珠海</option>
+            <option value="中山" data-lng="113.392" data-lat="22.517">中山</option>
+            <option value="香港" data-lng="114.174" data-lat="22.32">香港</option>
+            <option value="澳门" data-lng="113.549" data-lat="22.199">澳门</option>
+            <option value="台北" data-lng="121.565" data-lat="25.033">台北</option>
+          </select></label>
+        <label>经度<input type="number" name="a_lng" step="0.001" value="116.407"></label>
+            <label>纬度<input type="number" name="a_lat" step="0.001" value="39.904"></label>
+          </fieldset>
+          <fieldset><legend>乙方</legend>
+            <label>出生时间<input type="datetime-local" name="b_at" required value="2000-01-01T12:00"></label>
+            <label>性别<select name="b_gender"><option value="女">女</option><option value="男">男</option></select></label>
+            <label>城市<select id="city-b" class="city-pick">
+            <option value="">选择城市自动填经纬度…</option>
+            <option value="北京" data-lng="116.407" data-lat="39.904">北京</option>
+            <option value="上海" data-lng="121.474" data-lat="31.23">上海</option>
+            <option value="广州" data-lng="113.264" data-lat="23.129">广州</option>
+            <option value="深圳" data-lng="114.057" data-lat="22.543">深圳</option>
+            <option value="天津" data-lng="117.201" data-lat="39.084">天津</option>
+            <option value="重庆" data-lng="106.551" data-lat="29.563">重庆</option>
+            <option value="成都" data-lng="104.066" data-lat="30.572">成都</option>
+            <option value="杭州" data-lng="120.155" data-lat="30.274">杭州</option>
+            <option value="南京" data-lng="118.797" data-lat="32.06">南京</option>
+            <option value="武汉" data-lng="114.305" data-lat="30.593">武汉</option>
+            <option value="西安" data-lng="108.94" data-lat="34.341">西安</option>
+            <option value="沈阳" data-lng="123.429" data-lat="41.796">沈阳</option>
+            <option value="哈尔滨" data-lng="126.535" data-lat="45.803">哈尔滨</option>
+            <option value="长春" data-lng="125.324" data-lat="43.887">长春</option>
+            <option value="济南" data-lng="117" data-lat="36.651">济南</option>
+            <option value="郑州" data-lng="113.625" data-lat="34.746">郑州</option>
+            <option value="长沙" data-lng="112.939" data-lat="28.228">长沙</option>
+            <option value="南昌" data-lng="115.858" data-lat="28.682">南昌</option>
+            <option value="合肥" data-lng="117.283" data-lat="31.861">合肥</option>
+            <option value="福州" data-lng="119.296" data-lat="26.074">福州</option>
+            <option value="厦门" data-lng="118.089" data-lat="24.479">厦门</option>
+            <option value="昆明" data-lng="102.833" data-lat="24.88">昆明</option>
+            <option value="贵阳" data-lng="106.63" data-lat="26.647">贵阳</option>
+            <option value="南宁" data-lng="108.366" data-lat="22.817">南宁</option>
+            <option value="海口" data-lng="110.199" data-lat="20.044">海口</option>
+            <option value="兰州" data-lng="103.834" data-lat="36.061">兰州</option>
+            <option value="西宁" data-lng="101.778" data-lat="36.617">西宁</option>
+            <option value="银川" data-lng="106.278" data-lat="38.467">银川</option>
+            <option value="乌鲁木齐" data-lng="87.617" data-lat="43.792">乌鲁木齐</option>
+            <option value="呼和浩特" data-lng="111.751" data-lat="40.841">呼和浩特</option>
+            <option value="拉萨" data-lng="91.14" data-lat="29.645">拉萨</option>
+            <option value="石家庄" data-lng="114.502" data-lat="38.045">石家庄</option>
+            <option value="太原" data-lng="112.549" data-lat="37.857">太原</option>
+            <option value="苏州" data-lng="120.585" data-lat="31.299">苏州</option>
+            <option value="无锡" data-lng="120.312" data-lat="31.491">无锡</option>
+            <option value="宁波" data-lng="121.55" data-lat="29.875">宁波</option>
+            <option value="温州" data-lng="120.699" data-lat="27.994">温州</option>
+            <option value="青岛" data-lng="120.383" data-lat="36.067">青岛</option>
+            <option value="大连" data-lng="121.615" data-lat="38.914">大连</option>
+            <option value="东莞" data-lng="113.746" data-lat="23.047">东莞</option>
+            <option value="佛山" data-lng="113.122" data-lat="23.028">佛山</option>
+            <option value="汕头" data-lng="116.708" data-lat="23.371">汕头</option>
+            <option value="惠州" data-lng="114.416" data-lat="23.112">惠州</option>
+            <option value="珠海" data-lng="113.577" data-lat="22.271">珠海</option>
+            <option value="中山" data-lng="113.392" data-lat="22.517">中山</option>
+            <option value="香港" data-lng="114.174" data-lat="22.32">香港</option>
+            <option value="澳门" data-lng="113.549" data-lat="22.199">澳门</option>
+            <option value="台北" data-lng="121.565" data-lat="25.033">台北</option>
+          </select></label>
+        <label>经度<input type="number" name="b_lng" step="0.001" value="121.474"></label>
+            <label>纬度<input type="number" name="b_lat" step="0.001" value="31.230"></label>
+          </fieldset>
+        </div>
+        <button type="submit">计算合盘</button>
+        <label class="opt-check">
+                <input type="checkbox" data-dup="opt-contribute-2" name="contribute" value="1">
+                <span class="opt-box"></span>
+                <span class="opt-txt">
+                  <b>我愿意贡献这次匿名数据</b>
+                  <i>默认<b style="color:#7dffb4">不勾选</b>＝完全不上传，只在本机计算。
+                    勾选后仅上传<b>出生时间 + 事件记录</b>（不含姓名、联系方式、IP）。
+                    用途：校准模型。可随时撤回。</i>
+                </span>
+              </label>
+    </form>
+      <div class="rx-trigger">
+        <button type="button" class="rx-open-btn" data-rx-open>⌛ 生时不确定？矫正一下</button>
+        <span class="mut2">用 3 条以上人生事件反推出生时刻，结果可直接排盘</span>
+      </div>
+
+      <div class="card" id="syn-events-card">
+        <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#5ef1ff;letter-spacing:.04em">
+          你们之间发生过的事 <span class="mut2" style="font-weight:400;font-size:11.5px">可选 · 作为训练样本</span>
+        </h3>
+        <p class="note" style="margin:0 0 10px">
+          吵架、分离、复合、异地、升职、生孩子、搬家、丧亲…… 写清<b>发生了什么</b>与<b>大概哪一年</b>。
+          训练里真正有用的是「<b>出生时间 + 事例</b>」这一对，断语本身并不重要。
+        </p>
+        <div class="rx-events-head">
+          <span>事例（越具体越有价值）</span>
+          <button type="button" id="syn-add-ev" class="rx-add">＋ 加一条</button>
+        </div>
+        <div id="syn-events" class="rx-events"></div>
+        <button type="button" id="syn-submit" class="rx-add" style="margin-top:12px">上交样本（出生时间 + 事例）</button>
+        <div id="syn-sample-out" class="mut2" style="margin-top:8px;font-size:12px"></div>
+      </div>
+      <div id="synastry-out"></div>
+    </section>
+
+    <!-- ③ 大六壬 -->
+    <section class="page" data-page="liuren">
+      <h2 class="page-title">大六壬 <span class="sub">三传四课</span></h2>
+      <form class="card form" id="f-liuren">
+        <div class="grid2">
+          <label>占问时间<input type="datetime-local" name="at" required id="lr-now"></label>
+          <label>所问何事<input type="text" name="matter" placeholder="可留空"></label>
+        </div>
+        <button type="submit">起课</button>
+      </form>
+      <div id="liuren-out"></div>
+    </section>
+
+    <!-- ⑥ 生时矫正 -->
+    <section class="page" data-page="apikey">
+      <h2 class="page-title">API 接入 <span class="sub">填一次，边界情形就能交给模型复核</span></h2>
+
+      <form class="card form" id="f-apikey">
+        <div class="grid2">
+          <label>服务商
+            <select name="provider">
+              <option value="deepseek">DeepSeek（深度求索）</option>
+              <option value="openai">OpenAI</option>
+              <option value="moonshot">Moonshot（月之暗面）</option>
+              <option value="zhipu">智谱 GLM</option>
+              <option value="aliyun">阿里云百炼</option>
+              <option value="custom">自定义</option>
+            </select>
+          </label>
+          <label>模型名 <input type="text" name="model" placeholder="deepseek-chat"></label>
+          <label>Base URL（可留空，按服务商自动填）
+            <input type="text" name="baseUrl" placeholder="https://api.deepseek.com/v1">
+          </label>
+          <label>API Key <input type="password" name="apiKey" placeholder="sk-…" autocomplete="off"></label>
+        </div>
+
+        <div class="note" style="margin-top:10px">
+          <b style="color:#7dffb4">Key 只存在你这台机器的浏览器里</b>（localStorage），
+          <b>不会上传</b>到本站服务端，也不会写进任何样本文件。点「清空」即刻删除。
+          <br>充值付给你选的那家公司，不是本项目开发者——本站没有收款通道。
+        </div>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <button type="submit">保存到本机</button>
+          <button type="button" id="apikey-clear" class="rx-add">清空</button>
+          <button type="button" id="apikey-test" class="rx-add">测连通性</button>
+        </div>
+      </form>
+
+      <div id="apikey-out"></div>
+    </section>
+
+
+    <section class="page" data-page="rectify">
+      <h2 class="page-title">生时矫正 <span class="sub">用人生事件反推出生时刻</span></h2>
+      <form class="card form" id="f-rectify">
+        <div class="grid2">
+          <label>出生日期<input type="date" name="date" required value="1992-08-20"></label>
+          <label>候选出生时间<input type="time" name="time" required value="12:00"></label>
+          <label>经度<input type="number" name="lon" step="0.001" value="121.474"></label>
+          <label>纬度<input type="number" name="lat" step="0.001" value="31.230"></label>
+          <label>搜索窗口（±分钟）<input type="number" name="windowMin" min="1" max="120" step="1" value="60"></label>
+          <label>搜索步长（分钟）<input type="number" name="stepMin" min="1" max="30" step="1" value="1"></label>
+          <label>行运容许度 orb（度）<input type="number" name="orb" min="0.5" max="10" step="0.5" value="3"></label>
+        </div>
+        <div class="rx-events-head">
+          <span>人生事件（至少 3 条，带确切年份）</span>
+          <button type="button" id="rx-add-event" class="rx-add">＋ 加一条</button>
+        </div>
+        <div id="rx-events" class="rx-events"></div>
+        <div id="rx-month-hint" class="mut2" style="font-size:11.5px;margin-top:8px;line-height:1.7;color:#ffc457">
+          月份是<b>可选</b>的：不填则时间误差按 <b>±6 个月</b> 计，矫正结果区间会更宽；填到月份可收窄到 <b>±1 个月</b>。
+        </div>
+        <div class="note">事件类别越多样（婚姻 / 事业 / 重疾 / 迁移…）区分度越高；结果是统计最优，不等于真值。</div>
+        <button type="submit">开始矫正</button>
+      </form>
+      <div id="rectify-out"></div>
+    </section>
+
+    <!-- ⑦ 时序（四钟对齐） -->
+    <section class="page" data-page="timeline">
+      <h2 class="page-title">时序 <span class="sub">大运 · 流年 × 次运 · 行运</span></h2>
+      <div class="form card" id="f-timeline-card">
+        <form id="f-timeline">
+          <div class="grid2">
+            <label>出生时间<input type="text" name="at" value="2000-01-01 12:00" required></label>
+            <label>性别<select name="gender"><option>男</option><option>女</option></select></label>
+            <label>经度<input type="number" name="lng" step="0.001" value="116.407"></label>
+            <label>纬度<input type="number" name="lat" step="0.001" value="39.904"></label>
+            <label>起始年<input type="number" name="fromYear" value="1990"></label>
+            <label>结束年<input type="number" name="toYear" value="2050"></label>
+          </div>
+          <button type="submit">生成时序</button>
+        </form>
+        <div class="note" style="margin-top:10px">四钟刻度不同：大运 10 年/步｜流年 1 年｜次运 1 天=1 年（象征推进）｜行运 实时。只能按年份对齐，不能互相换算。</div>
+      </div>
+      <div id="timeline-out"></div>
+    </section>
+
+  </main>
+
+  <nav class="tabbar">
+    <button type="button" data-go="stage" title="回到圆盘"><i class="ic">◉</i><span>圆盘</span></button>
+    <button data-go="fusion" class="active"><span>☯</span>融合</button>
+    <button data-go="synastry"><span>⚭</span>合盘</button>
+    <button data-go="liuren"><span>卦</span>六壬</button>
+    <button data-go="timeline"><span>⏱</span>时序</button>
+    
+    <button data-go="about"><span>ⓘ</span>关于</button>
+        <a class="tab" href="/glossary.html" title="术语查表 · 四系统白话对照"><span class="tab-ic">🔍</span><span>查表</span></a>
+    <button data-go="apikey"><span>🔑</span>API</button>
+    <button data-go="contribute"><span>✎</span>反馈</button>
+  </nav>
+</div>
+<script src="/report.js"></script>
+  <script src="/share-birth.js"></script>
+  <script src="/wizard.js"></script>
+  <script src="/err-banner.js"></script>
+  <script src="/nav-guard.js"></script>
+  <script type="module" src="/stage.js"></script>
+  <script type="module" src="/timecheck.js"></script>
+<script type="module" src="/dignity-panel.js"></script>
+  <script src="/deep-fetch.js"></script>
+  <script type="module" src="/deep-panel.js"></script>
+  <script type="module" src="/fusion3d.js"></script>
+  <script src="/fw-fullscreen.js"></script>
+  <script type="module" src="/timeline-ui.js"></script>
+  <script type="module" src="/app.js"></script>
+  <script src="/landing.js"></script>
+  <script src="/rectify-embed.js"></script>
+  <script src="/synastry-events.js"></script>
+  <script src="/apikey.js"></script>
+  <script src="/fuse-timeline.js"></script>
+  <script src="/dual-wheel.js"></script>
+  <script src="/dw-interact.js"></script>
+  <script src="/fw-ring-overlay.js"></script>
+</body>
+</html>

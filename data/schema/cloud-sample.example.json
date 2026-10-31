@@ -1,0 +1,53 @@
+{
+  "id": "smp-2026-0001",
+  "birth": {
+    "at": "1990-03-15 12:00",
+    "tz": 8,
+    "lng": 116.407,
+    "lat": 39.904,
+    "gender": "男",
+    "timePrecision": "exact",
+    "rectified": false
+  },
+  "events": [
+    {
+      "year": 2008,
+      "kind": "求学",
+      "note": "离家入学",
+      "certainty": "确定"
+    },
+    {
+      "year": 2014,
+      "month": 7,
+      "kind": "就业",
+      "certainty": "确定"
+    },
+    {
+      "year": 2017,
+      "month": 5,
+      "kind": "婚姻",
+      "certainty": "确定"
+    },
+    {
+      "year": 2019,
+      "month": 11,
+      "kind": "迁移",
+      "note": "跨城",
+      "certainty": "大致"
+    },
+    {
+      "year": 2022,
+      "kind": "升迁",
+      "certainty": "存疑"
+    }
+  ],
+  "consent": {
+    "contribute": true,
+    "ts": "2026-10-29T10:00:00+08:00",
+    "scope": "仅用于模型校准"
+  },
+  "meta": {
+    "source": "自行填写",
+    "version": "1.0"
+  }
+}

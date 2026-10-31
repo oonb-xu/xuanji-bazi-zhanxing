@@ -1,0 +1,9 @@
+{
+  "interface": "Divination_Input",
+  "version": "1.0",
+  "method": "da-liu-ren",
+  "askedAt": "2026-10-08 21:30",
+  "tz": 8,
+  "question": "（示例）此事可否推进",
+  "note": "占课输入：与命盘本体库 bazi_meta_db.json 解耦；本文件只在问占瞬间生成，不写回命盘 DB。月将不填则按中气自动推。"
+}
