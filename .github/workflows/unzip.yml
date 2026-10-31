@@ -1,7 +1,8 @@
 name: Unpack
 
-# 兼容 PowerShell Compress-Archive 打的「反斜杠路径」zip：
-# 用 Python 解包并把 \ 规范成 /，否则 Linux 的 unzip 会把它们当成文件名的一部分。
+# 1. 兼容 PowerShell Compress-Archive 的「反斜杠路径」zip（用 Python 规范化路径）
+# 2. 跳过 .github/workflows/ —— GITHUB_TOKEN 无权创建/修改工作流文件，
+#    否则 git push 会被拒：refusing to allow a GitHub App to create or update workflow
 
 on:
   push:
@@ -26,17 +27,23 @@ jobs:
               print('zip 不存在，跳过')
               raise SystemExit(0)
           n = 0
+          skipped = []
           with zipfile.ZipFile(src) as z:
               for info in z.infolist():
                   if info.is_dir():
                       continue
                   name = info.filename.replace('\\', '/').lstrip('/')
+                  if name.startswith('.github/workflows/'):
+                      skipped.append(name)
+                      continue
                   dst = os.path.join('.', name)
                   os.makedirs(os.path.dirname(dst) or '.', exist_ok=True)
                   with z.open(info) as f, open(dst, 'wb') as o:
                       shutil.copyfileobj(f, o)
                   n += 1
           print('解出', n, '个文件')
+          if skipped:
+              print('跳过工作流文件（需手动添加）:', skipped)
           PY
           rm -f xuanji-minglironghe.zip
           echo '--- 根目录 ---'
