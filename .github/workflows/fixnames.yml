@@ -1,0 +1,48 @@
+name: Remove mojibake filenames
+
+# docs/ 里有一批 GBK 误解码的重复文件（PowerShell 打 zip 时中文名被错误编码），
+# 形如 docs/01-═│╥╗─ú╨═-╡╫▓π╣µ╘≥.md。
+# 本 workflow 按 cp437 制表符 / Latin-1 字符特征删掉它们，保留正确的中文名文件。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 删除乱码文件名
+        run: |
+          python3 - <<'PY'
+          import os, re
+          pat = re.compile(r'[\u00a0-\u00ff\u2500-\u257f\u2580-\u25ff]')
+          n = 0
+          for root, dirs, files in os.walk('.'):
+              dirs[:] = [d for d in dirs if d not in ('.git', 'node_modules', '.github')]
+              for f in files:
+                  p = os.path.join(root, f)
+                  if pat.search(p):
+                      os.remove(p)
+                      n += 1
+                      print('rm', p)
+          print('deleted', n, 'files')
+          PY
+
+      - name: 提交
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: 删除 docs 下的 GBK 乱码重复文件"
+            git push
+          fi
