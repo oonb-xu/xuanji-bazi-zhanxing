@@ -1,0 +1,42 @@
+name: Deploy GitHub Pages
+
+# 只发布 site/ 目录（静态介绍页 + 论文 + 视频）。
+# 完整的融合盘/合盘/六壬需要 Node 后端，跑不了，所以不在这里部署。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 用中文界面
+        run: echo "部署 site/ 到 GitHub Pages"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
