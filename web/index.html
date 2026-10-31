@@ -97,17 +97,18 @@
 
       <div class="card">
         <h3>🔒 隐私承诺（请先读这条）</h3>
-        <p><strong>本站只收集：匿名出生信息。</strong>也就是——出生年月日时、出生地（城市/经纬度）、性别。这些是排盘必需的输入。</p>
-        <p><strong>本站绝不收集、不请求、不存储：</strong></p>
+<p style="margin:10px 0 4px;padding:10px 12px;border-left:3px solid var(--cyan);background:rgba(94,241,255,.06);border-radius:0 8px 8px 0;line-height:1.9"><b>先说清楚定位：这是一个跑在你自己电脑上的本地工具，不是网站。</b>没有服务器收你的数据，也没有账号 —— 下面说的「收集」，全部只发生在<b>你这台机器</b>上。</p>
+        <p><strong>本工具只收集：匿名出生信息。</strong>也就是——出生年月日时、出生地（城市/经纬度）、性别。这些是排盘必需的输入。</p>
+        <p><strong>本工具绝不收集、不请求、不存储：</strong></p>
         <ul class="no-list">
           <li>❌ 任何 API Key / 令牌 / 密码</li>
           <li>❌ 姓名、手机号、邮箱、微信、身份证</li>
-          <li>❌ 账号登录信息（本站<strong>没有登录</strong>）</li>
+          <li>❌ 账号登录信息（本工具<strong>没有登录</strong>）</li>
           <li>❌ 浏览记录、设备指纹、第三方统计埋点</li>
         </ul>
-        <p>排盘计算<strong>全部在你的浏览器与服务端本地完成</strong>，不会转发给任何第三方。<br>
+        <p>排盘计算<strong>全部在你自己这台电脑上完成</strong>（本地服务 + 你的浏览器），不会转发给任何第三方。<br>
         只有你在「反馈」页<strong>主动点提交</strong>时，才会把<strong>匿名命例</strong>存入数据库用于模型校准——同样不含姓名与任何联系方式。</p>
-        <p class="privacy-note">你可以随时在浏览器里清空数据；我们没有账号体系，也就没有"注销"这件事——因为没有东西可注销。</p>
+        <p class="privacy-note">数据只在你本机，随时可以清空；<b>没有账号体系</b>，也就没有"注销"这件事——因为没有东西可注销。</p>
       </div>
 
       <div class="card" id="sec-what-is-this">
@@ -123,7 +124,7 @@
           <li><strong>六壬</strong>：这不是算人的，是<strong>算事</strong>的——你心里有件想问的事，把它起念的那个时刻填进去，它按老规矩推演三步给你看（这三步叫"三传"）。</li>
         </ul>
                 <h3 class="about-sec">★ 最容易出错的地方：出生时间</h3>
-        <p>你填的是<strong>手机/钟表上的时间</strong>。但老办法要用的是<strong>"当地太阳真正在头顶的时间"</strong>——这两者在中国能差<strong>一个多小时</strong>（因为全国统一用北京时间，可太阳并不是按北京的时间升落的）。本站会自动帮你换，换完如果时柱变了会红字提醒。</p>
+        <p>你填的是<strong>手机/钟表上的时间</strong>。但老办法要用的是<strong>"当地太阳真正在头顶的时间"</strong>——这两者在中国能差<strong>一个多小时</strong>（因为全国统一用北京时间，可太阳并不是按北京的时间升落的）。本工具会自动帮你换，换完如果时柱变了会红字提醒。</p>
         <p>还有两种情况，差<strong>几分钟</strong>结果就完全不同：</p>
         <ul>
           <li><strong>出生时间卡在两个时辰之间</strong>（比如 16:58 前后）——差 5 分钟，最后两个字就换成别的。</li>
@@ -167,7 +168,7 @@
         <div class="note" style="font-size:13px;line-height:2;padding:13px 16px;margin-bottom:15px;
         border-radius:10px;background:rgba(255,196,87,.07);border:1px solid rgba(255,196,87,.32)">
         <b style="color:#ffc457;font-size:14px">想要精确度，建议必须接 API —— 无论你是什么用途。</b><br>
-        本站内置算法足以把结构算完（八个字、行星度数、宫位、三传），这部分<b>不接 API 也是准的</b>。<br>
+        本工具内置算法足以把结构算完（八个字、行星度数、宫位、三传），这部分<b>不接 API 也是准的</b>。<br>
         但下面三项<b>依赖外部星历与更细的历法数据</b>，内置版只能给近似：<br>
         · <b>高精度行星位置</b>（内置与专业星历可能差角分级）<br>
         · <b>历史时区与夏令时</b>（尤其 1949 年前、境外出生）<br>
@@ -219,9 +220,9 @@
         <b style="color:#7dffb4;font-size:14px">⚠️ 充值不是给开发者充，而是给 AI 模型公司充。</b><br>
         API Key 是你和<b>服务商</b>之间的账户关系。充进去的钱进的是
         <b>DeepSeek / OpenAI / Anthropic / 阿里云</b> 等<b>模型公司的账户</b>——
-        <b>本站开发者一分钱收不到</b>，也不经手、不代收、不抽成。<br>
-        · 本站是<b>纯前端＋本地服务</b>，不碰你的 Key，也不碰你的余额；<br>
-        · 你填的 Key 只存在你本机浏览器里，本站服务器<b>不保存</b>；<br>
+        <b>本工具开发者一分钱收不到</b>，也不经手、不代收、不抽成。<br>
+        · 本工具是<b>纯前端＋本地服务</b>，不碰你的 Key，也不碰你的余额；<br>
+        · 你填的 Key 只存在你本机浏览器里，本工具服务器<b>不保存</b>；<br>
         · 想省钱可以先用<b>各家的免费额度</b>试，觉得有用再充。<br>
         <span style="color:rgba(160,200,225,.8)">换句话说：<b>买的是模型公司的算力</b>，不是给这个项目的赞助。</span>
       </div>
@@ -244,7 +245,7 @@ setx DEEPSEEK_API_KEY "sk-你的key"
 # 然后启动服务端
 node server.mjs 8788</pre>
         <div class="note" style="font-size:12.5px;line-height:1.9">
-          Key 只存在你自己的电脑上。本站<b>不收集、不上传、不存储</b>任何 API Key——
+          Key 只存在你自己的电脑上。本工具<b>不收集、不上传、不存储</b>任何 API Key——
           这也是首页隐私承诺里写明的那一条。
         </div>
       </div>
@@ -474,7 +475,7 @@ node server.mjs 8788</pre>
         </div>
 
         <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:12px">
-          <b style="color:#5ef1ff">② 偏差有多大（本站实算）</b>
+          <b style="color:#5ef1ff">② 偏差有多大（本工具实算）</b>
         </div>
         <table class="holo-tb" style="margin-top:6px">
           <thead><tr><th>量</th><th>数值</th><th>说明</th></tr></thead>
@@ -508,7 +509,7 @@ node server.mjs 8788</pre>
 
         <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
           <b style="color:#5ef1ff">④ 什么时候才真的会不一致（实算 1800–2200）</b><br>
-          本站以 <b>1984 = 甲子</b> 为共同锚点，逐年比较标准年柱与 59.577 版年柱：
+          本工具以 <b>1984 = 甲子</b> 为共同锚点，逐年比较标准年柱与 59.577 版年柱：
         </div>
         <div class="holo-note" style="margin-top:6px;font-size:12.5px;line-height:2">
           · <b class="green">1984–2124 之间（约 150 年）：两者完全一致</b> —— 对现代出生的人，
@@ -521,7 +522,7 @@ node server.mjs 8788</pre>
           <b style="color:#5ef1ff">⑤ 用法的修正（这一条最容易做错）</b><br>
           不能"直接用日历年重算年柱"——因为<b>立春之前的日期，其八字年属于上一年</b>。
           正确做法是：<b>只取「同年数下标准索引与实验索引之差」，把这个差分施加到盘上真实的年柱上</b>。
-          本站已按这个方式实现并自检（年柱不变 ⇒ 月干必然也不变）。
+          本工具已按这个方式实现并自检（年柱不变 ⇒ 月干必然也不变）。
         </div>
 
         <div class="note" style="font-size:12.5px;line-height:1.95;margin-top:14px">
@@ -773,7 +774,7 @@ node server.mjs 8788</pre>
         </div>
 
         <table class="holo-tb" style="margin-top:14px">
-          <thead><tr><th style="width:22%">冲突 / 不一致</th><th style="width:15%">性质</th><th style="width:33%">具体表现</th><th>本站的处理</th></tr></thead>
+          <thead><tr><th style="width:22%">冲突 / 不一致</th><th style="width:15%">性质</th><th style="width:33%">具体表现</th><th>本工具的处理</th></tr></thead>
           <tbody>
             <tr>
               <td class="pn">心理 vs 物质判定相反</td>
@@ -884,12 +885,12 @@ node server.mjs 8788</pre>
           · 算两锚之间<b>精确天数差</b>，<code>mod 60</code>，与记载干支对账<br>
           · <b style="color:#7dffb4">其最有价值的一点：从现代往前反推古历是循环论证</b> ——
           反推必然"强迫"古日拟合 60 循环，因此永远对得上，不能用它证明连续性<br>
-          · <b style="color:#ff9a8a">其方法的一处弱点（本站修正）</b>：用「年数 × 365.2422」算天数会引入近似误差；
-          跨闰日必须直接算<b>儒略日（JDN）之差</b>，它按定义就是整数天。本站已用 JDN 重算，
+          · <b style="color:#ff9a8a">其方法的一处弱点（本工具修正）</b>：用「年数 × 365.2422」算天数会引入近似误差；
+          跨闰日必须直接算<b>儒略日（JDN）之差</b>，它按定义就是整数天。本工具已用 JDN 重算，
           并用 2000-01-01 = JDN 2451545、1582-10-15 = JDN 2299161 自检通过。
         </div>
 
-        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:14px"><b style="color:#5ef1ff">② 本站实测结果</b></div>
+        <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:14px"><b style="color:#5ef1ff">② 本工具实测结果</b></div>
         <table class="holo-tb" style="margin-top:6px">
           <thead><tr><th>锚点对</th><th>精确天数差</th><th>mod 60</th><th>预测</th><th>史料</th><th>判定</th></tr></thead>
           <tbody>
@@ -935,13 +936,13 @@ node server.mjs 8788</pre>
           <b style="color:#ffd58a">⇒ 结论三（本引擎的处境）：</b>
           本引擎的日柱是<b>从现代纪元连续反推</b>得到——这正是被批评的方法。
           实测：1965-01-10 引擎给甲子 ✅（与史料一致）；但公元前年份 tyme4ts 不支持，
-          引擎给出的是无意义值。<b>因此本站对公元前的日柱不作任何断言。</b>
+          引擎给出的是无意义值。<b>因此本工具对公元前的日柱不作任何断言。</b>
         </div>
 
         <div class="note" style="font-size:12px;line-height:1.95;margin-top:14px;color:rgba(160,200,225,.75)">
           <b>对主流学术的对照</b>：Adam Smith (2010) 指出 60 循环的连续性<b>只是"被假设"</b>；
           中文学界唯一的怀疑仅见李学勤 (1957) p.122；并称"没发现任何重置的文本痕迹，此疑问很少被提出"。
-          ⇒ <b>连续性确实是假设而非证明</b>，这一点本站接受；但"已被证明断裂"同样缺乏证据。<br>
+          ⇒ <b>连续性确实是假设而非证明</b>，这一点本工具接受；但"已被证明断裂"同样缺乏证据。<br>
           <b>本节的定位</b>：把"假设"变成"可检验的命题"，并给出可复现的算术结果。
           相关质疑方为 Prof. Dr. Ong Hean-Tatt（马来西亚 GUI Management Centre，非北京大学），
           我们借其方法、修正其算术、核对其结论，<b>不采信其关于"八字系伪造自紫微斗数"的附带主张</b>。
@@ -1078,7 +1079,7 @@ node server.mjs 8788</pre>
       <div class="card"></div>
       
         <div class="note" style="font-size:12.5px;line-height:1.9">
-          本站在排盘与推算上大量复用了开源实现，在此逐一注明。凡标 <b style="color:#7dffb4">MIT</b> 的
+          本工具在排盘与推算上大量复用了开源实现，在此逐一注明。凡标 <b style="color:#7dffb4">MIT</b> 的
           可按 MIT 条款使用；唯一例外是 <b style="color:#ffd58a">Apache-2.0</b>（大六壬库），
           其条款额外要求保留 NOTICE 与修改声明。<b>本项目未修改任何第三方的核心算法</b>，
           只在它们之上写适配层（如 `ziwei/adapter.mjs`）。
@@ -1086,7 +1087,7 @@ node server.mjs 8788</pre>
 
         <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:14px"><b style="color:#5ef1ff">一、开源代码库（npm 依赖）</b></div>
         <table class="holo-tb" style="margin-top:6px">
-          <thead><tr><th>项目</th><th>版本</th><th>许可</th><th>在本站的作用</th></tr></thead>
+          <thead><tr><th>项目</th><th>版本</th><th>许可</th><th>在本工具的作用</th></tr></thead>
           <tbody>
             <tr><td class="pn"><a href="https://github.com/6tail/tyme4ts" style="color:#5ef1ff">tyme4ts</a></td><td class="mut2">—</td><td class="dg a">MIT</td><td class="mut2">干支历法、节气、农历转换（八字与六壬的时间基座）</td></tr>
             <tr><td class="pn"><a href="https://github.com/look-fate/liuren-ts-lib" style="color:#5ef1ff">liuren-ts-lib</a></td><td class="mut2">^3.1.0</td><td class="dg b">Apache-2.0</td><td class="mut2">大六壬排盘（三传四课）</td></tr>
@@ -1106,7 +1107,7 @@ node server.mjs 8788</pre>
               <td class="pn">VedAstro<br><span class="mut2" style="font-size:10.5px">HuggingFace vedastro-org</span></td>
               <td class="mut2">15,807 盘<br>（AA 级 99.9%）</td>
               <td class="dg a">MIT</td>
-              <td class="mut2">占星×婚姻事件对拍。<b>限制</b>：吠陀恒星黄道语境，本站为热带黄道</td>
+              <td class="mut2">占星×婚姻事件对拍。<b>限制</b>：吠陀恒星黄道语境，本工具为热带黄道</td>
             </tr>
             <tr>
               <td class="pn">Korean Public Figures with Saju<br><span class="mut2" style="font-size:10.5px">HuggingFace brandonrhie</span></td>
@@ -1133,14 +1134,14 @@ node server.mjs 8788</pre>
         <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:16px"><b style="color:#5ef1ff">四、古典文献与传统数据</b></div>
         <div class="note" style="font-size:12px;line-height:1.9;margin-top:4px">
           · <b>《大六壬断案》</b>（明清刻本，公共领域）—— 用于古典课例对拍三传，共结构化 65 例<br>
-          · <b>《紫微斗数全书》</b>（公共领域）—— 十四主星庙旺表参考（本站表已标「待校」，各派有差异）<br>
+          · <b>《紫微斗数全书》</b>（公共领域）—— 十四主星庙旺表参考（本工具表已标「待校」，各派有差异）<br>
           · <b>二十八宿距度</b> —— 清代黄道宿度通行值（传统历法数据，公共领域）<br>
           · <b>古典占星尊贵体系</b> —— 托勒密《四书》等公共领域古典文献
         </div>
 
         <div class="note" style="font-size:12.5px;line-height:1.9;margin-top:16px"><b style="color:#5ef1ff">五、用户提供</b></div>
         <div class="note" style="font-size:12px;line-height:1.9;margin-top:4px">
-          · <b>人类精标成对样本</b> —— 由本站在「反馈」页收集的<b>匿名命例</b>（不含姓名与联系方式），
+          · <b>人类精标成对样本</b> —— 由本工具在「反馈」页收集的<b>匿名命例</b>（不含姓名与联系方式），
           仅用于模型校准。详见上方隐私承诺。
         </div>
 
@@ -1582,8 +1583,8 @@ node server.mjs 8788</pre>
 
         <div class="note" style="margin-top:10px">
           <b style="color:#7dffb4">Key 只存在你这台机器的浏览器里</b>（localStorage），
-          <b>不会上传</b>到本站服务端，也不会写进任何样本文件。点「清空」即刻删除。
-          <br>充值付给你选的那家公司，不是本项目开发者——本站没有收款通道。
+          <b>不会上传</b>到本工具服务端，也不会写进任何样本文件。点「清空」即刻删除。
+          <br>充值付给你选的那家公司，不是本项目开发者——本工具没有收款通道。
         </div>
 
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
