@@ -219,7 +219,7 @@ Key 只存在你自己的电脑上。本站**不收集、不上传、不存储**
 
           **凡是不能对应的，本系统不允许它去对应。**
 
-更完整的论证见 [《论中西命理体系的融合路径》](/paper.html)。
+更完整的论证见 [《论中西命理体系的融合路径》](https://oonb-xu.github.io/xuanji-minglironghe/paper.html)。
 
 ---
 
@@ -268,7 +268,7 @@ Key 只存在你自己的电脑上。本站**不收集、不上传、不存储**
             二者混用会出系统性偏差，所以我们**分开记账** —— 月支锚回归黄道，宿度层单独标岁差，不混算。
 
 这套系统为什么这样设计、边界在哪里，都写在
-          [**《论中西命理体系的融合路径》**](/paper.html) 里。
+          [**《论中西命理体系的融合路径》**](https://oonb-xu.github.io/xuanji-minglironghe/paper.html) 里。
 
           核心结论：**七政四余与古典占星同源**（均出自巴比伦黄道十二宫）；
           两套体系的底层差异不在文化而在**编码类型**——
@@ -655,7 +655,7 @@ F. 什么时候会真的引发误差 —— 精确到月
             我们不认为这些边界是终点。它们是**当前版本在哪停下**的诚实记录——
             而记录本身就是为了被后来者推翻。
 
-更完整的论证与边界讨论见 [《论中西命理体系的融合路径》](/paper.html) 第八节。
+更完整的论证与边界讨论见 [《论中西命理体系的融合路径》](https://oonb-xu.github.io/xuanji-minglironghe/paper.html) 第八节。
 
 ---
 
@@ -909,8 +909,31 @@ npm install
 npm start          # 浏览器打开 http://127.0.0.1:8788
 ```
 
-详细用法见 [USAGE.md](USAGE.md) · 贡献见 [CONTRIBUTING.md](CONTRIBUTING.md) · 隐私见 [PRIVACY.md](PRIVACY.md)
+## 文档索引
 
-## 许可
+| 文档 | 内容 |
+|---|---|
+| [USAGE.md](USAGE.md) | 完整使用手册：CLI、接口、五种部署方式 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | 贡献指南（样本提交的隐私条款） |
+| [PRIVACY.md](PRIVACY.md) | 隐私政策：收什么、不收什么 |
+| [SECURITY.md](SECURITY.md) | 安全策略与漏洞报告 |
+| [CHANGELOG.md](CHANGELOG.md) | 版本记录 |
+| [test/FIXTURES.md](test/FIXTURES.md) | 测试基准盘说明（出生时间已外置本地） |
+| [docs/](docs/) | 论证文档（按编号，从底层规则到各 Part） |
+| [LICENSE](LICENSE) | Apache-2.0 全文 |
 
-[Apache-2.0](LICENSE)
+## 站点
+
+| 页面 | 链接 |
+|---|---|
+| 介绍页 | <https://oonb-xu.github.io/xuanji-minglironghe/> |
+| 论文 | <https://oonb-xu.github.io/xuanji-minglironghe/paper.html> |
+| 宣传视频 | <https://oonb-xu.github.io/xuanji-minglironghe/video.html> |
+
+## 许可与免责
+
+以 [Apache-2.0](LICENSE) 发布。
+
+**本项目仅仅是兴趣爱好的开放讨论**，不是产品也不是服务；输出结果不构成任何诊断、预测或决策建议，
+因使用其输出结果造成的现实问题与开发者无关。
+详见 [PRIVACY.md](PRIVACY.md) 与 [SECURITY.md](SECURITY.md)。
