@@ -1,0 +1,44 @@
+name: Remove case files
+
+# 删除三个真实案例相关文件（隐私清理收尾）
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 删除文件
+        run: |
+          set +e
+          for f in "data/groundtruth/CASE-001.json" "data/charts/CASE-002.json" "KNOWLEDGE-BASE.md" "PROGRESS.md"; do
+            if [ -e "$f" ]; then
+              rm -f "$f"
+              echo "deleted $f"
+            else
+              echo "absent  $f"
+            fi
+          done
+          if [ -f README.md ]; then
+            sed -i 's/（把 YOUR_ID 换成你的爱发电 ID）//g' README.md
+            echo "README cleaned"
+          fi
+
+      - name: 提交
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: 移除真实案例数据文件（隐私清理）"
+            git push
+          fi
