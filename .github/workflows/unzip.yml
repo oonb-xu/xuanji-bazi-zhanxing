@@ -1,0 +1,46 @@
+name: Unpack
+
+# 把仓库根目录的 xuanji-minglironghe.zip 解压成正常源码目录，然后删掉 zip。
+# 提交本文件即会自动触发一次。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 检查 zip
+        id: chk
+        run: |
+          if [ -f xuanji-minglironghe.zip ]; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            ls -lh xuanji-minglironghe.zip
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "zip 不存在，跳过"
+          fi
+
+      - name: 解压
+        if: steps.chk.outputs.found == 'true'
+        run: |
+          unzip -o -q xuanji-minglironghe.zip -d .
+          rm -f xuanji-minglironghe.zip
+          echo "--- 根目录 ---"
+          ls -la | head -40
+
+      - name: 提交
+        if: steps.chk.outputs.found == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "unpack: 展开 zip 为源码目录（594 个文件）" || echo "无变更"
+          git push
