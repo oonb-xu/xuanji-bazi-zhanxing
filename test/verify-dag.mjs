@@ -1,15 +1,16 @@
 // 断语 DAG + 非线性供给 回归钉（exit 0 = 全过）
 //  A DAG 主判定  B 合化子图  C ★非线性供给必须真正转负  D 大运补气与新关系
 import { compileBazi } from '../src/bazi/engine.mjs';
+import { F } from './_fixtures.mjs';
 import { structuralVerdict, dayunSupplement, supplyCurve, heHuaVerdict, chongWinner, rootStrength, REL_WEIGHT, strengthTier, monthHelp, rootSum, biJieStrength, tenGodOf, luRoot, diStrength, LU, hiddenStemsFull, anHeDetect, gaiTou, POS_W, tushiEffect, seatEffect, TUSHI } from '../src/bazi/dag.mjs';
 
 let fails = 0;
 const ok = (c, m) => { if (!c) { fails++; console.log('  x ' + m); } return c; };
 const eq = (a, b, m) => ok(a === b, `${m}：期望 ${b} 实得 ${a}`);
 
-console.log('[A] DAG 主判定（乙木女 戊子 戊午 乙巳 甲申）');
-const F = compileBazi({ at: '2008-07-04 15:41', gender: '女' });
-const F2 = compileBazi({ at: '2008-04-16 09:26', gender: '女' });
+console.log('[A] DAG 主判定（案例丙 戊子 戊午 乙巳 甲申）');
+const F = compileBazi({ at: F.T1, gender: '女' });
+const F2 = compileBazi({ at: F.T3, gender: '女' });
 F.input = { ...(F.input ?? {}), birthDate: '2008-07-04' };
 const v = structuralVerdict(F);
 eq(v.hasRoot, false, '应判无根（地支子午巳申，藏干亦无甲乙）');
@@ -93,25 +94,25 @@ console.log('[H] ★ 二元 → 连续（身强弱 / 月令 / 通根 / 比劫力
   eq(monthHelp('土', '水'), -0.3, '月令克我 = 死 -0.3');  // 土克水（首版误写 火克水，实际是水克火）
   eq(tenGodOf('木', '水'), '食伤', '水生木 ⇒ 木为水之食伤');
   eq(tenGodOf('金', '水'), '印', '金生水 ⇒ 金为水之印');
-  // 乙木女：通根总量必须为 0；比劫力度必须为 0.2（甲坐申=绝）
-  eq(rootSum(['子', '午', '巳', '申'], '木').total, 0, '★ 乙木女通根总量 = 0');
+  // 案例丙：通根总量必须为 0；比劫力度必须为 0.2（甲坐申=绝）
+  eq(rootSum(['子', '午', '巳', '申'], '木').total, 0, '★ 案例丙通根总量 = 0');
   const bj = biJieStrength(F);
   eq(bj.length, 1, '应有 1 个比劫');
   eq(bj[0].force, 0.2, '★ 甲坐申(金克木) → 力度 0.2，而非 1.0');
   // 男：壬坐子应满力
-  const Mz = compileBazi({ at: '2007-12-25 16:26', gender: '男' });
+  const Mz = compileBazi({ at: F.T6, gender: '男' });
   eq(biJieStrength(Mz)[0].force, 1.0, '壬坐子(同类) → 力度 1.0');
-  console.log(`  极弱/弱/中和/极旺 ✓｜月令 1.0/0.6/-0.3 ✓｜乙木女通根0、甲坐申0.2 ✓｜壬坐子1.0 ✓`);
+  console.log(`  极弱/弱/中和/极旺 ✓｜月令 1.0/0.6/-0.3 ✓｜案例丙通根0、甲坐申0.2 ✓｜壬坐子1.0 ✓`);
 }
 
 console.log('[I] ★ 禄根与冲克损伤（接入身强弱）');
 {
   eq(LU['乙'], '卯', '乙禄在卯'); eq(LU['丙'], '巳', '丙禄在巳'); eq(LU['癸'], '子', '癸禄在子');
-  // 乙木女：禄卯，地支无卯 ⇒ 无禄根
+  // 案例丙：禄卯，地支无卯 ⇒ 无禄根
   const luF = luRoot(F);
-  eq(luF.has, false, '★ 乙木女无禄根（地支子午巳申无卯）');
+  eq(luF.has, false, '★ 案例丙无禄根（地支子午巳申无卯）');
   // 男：禄子，在月，无冲刑 ⇒ 完整
-  const Mz = compileBazi({ at: '2007-12-25 16:26', gender: '男' });
+  const Mz = compileBazi({ at: F.T6, gender: '男' });
   const luM = luRoot(Mz);
   eq(luM.has, true, '男应有禄根');
   eq(luM.luZhi, '子', '癸禄在子');
@@ -124,7 +125,7 @@ console.log('[I] ★ 禄根与冲克损伤（接入身强弱）');
   ok(luC.damage > 0, '★ 子午冲 ⇒ 禄根应有损伤，实得 ' + luC.damage);
   ok(luC.effective < 1.0, '★ 禄根效力应下降，实得 ' + luC.effective);
   // 得地强度
-  ok(diStrength(F).di === 0, '乙木女得地 0');
+  ok(diStrength(F).di === 0, '案例丙得地 0');
   ok(diStrength(Mz).di > 0, '男得地 > 0');
   console.log(`  乙禄卯无根｜癸禄子完整1.0｜子午冲时 damage=${luC.damage} eff=${luC.effective} ✓`);
 }
@@ -135,14 +136,14 @@ console.log('[J] ★ 藏干全算 / 暗合 / 盖头截脚 / 位置加权');
   ok(POS_W['日'] > POS_W['时'] && POS_W['时'] > POS_W['年'], '★ 日支（坐下）权重须高于时/年');
   eq(POS_W['日'], 2.0, '日支权重 2.0');
   const hs = hiddenStemsFull(F);
-  eq(hs.byWx['木'] ?? 0, 0, '★ 乙木女藏干加权后 木 = 0（第四重确认无根）');
-  eq(hs.stems.length, 9, '乙木女藏干总数 9（子1 + 午2 + 巳3 + 申3）');
+  eq(hs.byWx['木'] ?? 0, 0, '★ 案例丙藏干加权后 木 = 0（第四重确认无根）');
+  eq(hs.stems.length, 9, '案例丙藏干总数 9（子1 + 午2 + 巳3 + 申3）');
   // 日支（坐下）藏干必须被识别
   const riZhi = hs.stems.filter((x) => x.pos === '日');
   ok(riZhi.length >= 2, '日支巳应有多个藏干');
   ok(riZhi.some((x) => x.gan === '丙'), '巳本气为丙');
   // 暗合
-  ok(anHeDetect(F).length > 0, '乙木女应有暗合（子巳）');
+  ok(anHeDetect(F).length > 0, '案例丙应有暗合（子巳）');
   eq(anHeDetect(F)[0].pair, '子巳', '暗合应为子巳');
   // 盖头 / 截脚
   eq(gaiTou('甲戌').type, '盖头', '甲戌：木克土 ⇒ 盖头');
@@ -162,12 +163,12 @@ console.log('[K] ★ 燥湿土（辰丑湿 / 未戌燥）与坐下效应');
   ok(tushiEffect('戌', '火').mult > 1, '燥土对火应 ×>1');
   eq(tushiEffect('辰', '火').effect, '泻身', '火日主坐湿土辰 ⇒ 泻身');
   ok(tushiEffect('辰', '火').mult < 1, '湿土对火应 ×<1');
-  // 丙火女：坐下是戌（燥），不是辰（湿）
-  eq(seatEffect(F2).zhi, '戌', '★ 丙火女坐下为戌');
+  // 案例乙：坐下是戌（燥），不是辰（湿）
+  eq(seatEffect(F2).zhi, '戌', '★ 案例乙坐下为戌');
   eq(seatEffect(F2).nature, '燥', '★ 坐下属燥土');
   eq(seatEffect(F2).effect, '助身', '★ 燥土火库 ⇒ 助身（x1.15）');
   ok(seatEffect(F2).weighted > 2.0, '位置加权后应 >2.0（位置权重 2.0 × 1.15）');
-  console.log(`  辰/丑=湿、戌/未=燥 ✓｜戌助火1.15、辰晦火0.80 ✓｜丙火女坐戌(燥)助身 x1.15 → 加权2.3 ✓`);
+  console.log(`  辰/丑=湿、戌/未=燥 ✓｜戌助火1.15、辰晦火0.80 ✓｜案例乙坐戌(燥)助身 x1.15 → 加权2.3 ✓`);
 }
 
 console.log('[L] ★ 现代占星容许度标准 + orb 加权 + 大偏移提醒');
@@ -196,21 +197,21 @@ console.log('[L] ★ 现代占星容许度标准 + orb 加权 + 大偏移提醒'
 console.log('[M] ★ 得生（无根 ≠ 无援）');
 {
   const { profileOf } = await import('../src/bazi/complementarity.mjs');
-  const pF = profileOf(F), pF2 = profileOf(F2), pM = profileOf(compileBazi({ at: '2007-12-25 16:26', gender: '男' }));
+  const pF = profileOf(F), pF2 = profileOf(F2), pM = profileOf(compileBazi({ at: F.T6, gender: '男' }));
   // 无根者仍有得生，且必须 >0（子水存活 ⇒ 乙木受生）
-  ok(pF.deSheng > 0, '★ 乙木女无根但得生必须 >0，实得 ' + pF.deSheng);
+  ok(pF.deSheng > 0, '★ 案例丙无根但得生必须 >0，实得 ' + pF.deSheng);
   eq(pF.deShengDetail.rootFactor, 0.5, '★ 无根时受生须打半折（能续不能立）');
   ok(pF.deShengDetail.energy >= 2, '印能量应 ≥2，实得 ' + pF.deShengDetail.energy);
   // 有根者受生不打折
-  eq(pF2.deShengDetail.rootFactor, 1.0, '有根（丙火女）受生不打折');
+  eq(pF2.deShengDetail.rootFactor, 1.0, '有根（案例乙）受生不打折');
   eq(pM.deShengDetail.rootFactor, 1.0, '有根（男）受生不打折');
   // 上限 2.0
   ok(pF.deSheng <= 2.0 && pM.deSheng <= 2.0, '得生不得超过上限 2.0');
-  // vigor 必须体现得生：乙木女 vigor 应高于"仅得令/地/势三项平均"
+  // vigor 必须体现得生：案例丙 vigor 应高于"仅得令/地/势三项平均"
   const threeOnly = (pF.deLing + pF.deDi + pF.deShi) / 3;
   ok(pF.vigor > Math.max(0.2, threeOnly), `★ 加入得生后 vigor(${pF.vigor}) 应高于三项平均(${threeOnly.toFixed(3)})`);
-  ok(pF.vigor < pM.vigor, '乙木女 vigor 仍应低于男（得生不能喧宾夺主）');
-  console.log(`  乙木女 得生${pF.deSheng}(水${pF.deShengDetail.energy}×0.5) → vigor ${pF.vigor}｜男 得生${pM.deSheng}×1.0 → ${pM.vigor} ✓`);
+  ok(pF.vigor < pM.vigor, '案例丙 vigor 仍应低于男（得生不能喧宾夺主）');
+  console.log(`  案例丙 得生${pF.deSheng}(水${pF.deShengDetail.energy}×0.5) → vigor ${pF.vigor}｜男 得生${pM.deSheng}×1.0 → ${pM.vigor} ✓`);
 }
 console.log(fails === 0 ? '\nRESULT: PASS' : `\nRESULT: FAIL (${fails})`);
 process.exit(fails === 0 ? 0 : 1);

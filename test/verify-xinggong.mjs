@@ -1,6 +1,7 @@
 // 星宫分层（星=十神 / 宫=宫位）回归钉 —— 缺口 #1
 // 载入即验证五条机检：import 成功、分层表结构、夫妻宫被冲正例、反例、npm test 可跑
 import { compileBazi } from '../src/bazi/engine.mjs';
+import { F } from './_fixtures.mjs';
 import { starPalace, xingGongWar, PALACE } from '../src/bazi/xing-gong.mjs';
 import { CANG, GAN_WX, KE, POS_W } from '../src/bazi/dag.mjs';
 
@@ -72,9 +73,9 @@ console.log('[D] ★ 反例：日支戌无辰 ⇒ reasons 不含「夫妻宫被�
 console.log('[E] ② 夫妻宫坐忌：与引擎 L5_yongJi.ji 自洽（三人实盘 + 忌神注入）');
 {
   const charts = [
-    compileBazi({ at: '2007-12-25 16:26', gender: '男' }),
-    compileBazi({ at: '2008-07-04 15:41', gender: '女' }),
-    compileBazi({ at: '2008-04-16 09:26', gender: '女' }),
+    compileBazi({ at: F.T6, gender: '男' }),
+    compileBazi({ at: F.T1, gender: '女' }),
+    compileBazi({ at: F.T3, gender: '女' }),
   ];
   for (const b of charts) {
     const ji = b.L5_yongJi.ji;
@@ -105,7 +106,7 @@ console.log('[F] ③④ 配偶星：男财/女官杀，引动与星宫相克');
   eq(expectKe, true, '水/火 相克应成立');
   ok(w4.reasons.includes('星宫相克'), `配偶星水 vs 宫本气火 ⇒ 必须报星宫相克，实得 ${JSON.stringify(w4.reasons)}`);
   // 女命取官杀
-  const F = compileBazi({ at: '2008-04-16 09:26', gender: '女' });
+  const F = compileBazi({ at: F.T3, gender: '女' });
   const wF = xingGongWar(F);
   eq(wF.spouseStar.group, '官杀', '女命配偶星 = 官杀');
   eq(wF.gender, '女', 'date 输入应取 meta.gender');

@@ -13,12 +13,12 @@
     }
   ],
   "time_base": {
-    "civil": "2007-12-25 17:30",
+    "civil": "【已脱敏】",
     "utc": "2007-12-25T09:30:00.000Z",
     "tst": {
       "eot_minutes": 0.148,
       "lon_correction_minutes": -63.76,
-      "apparent_solar": "2007-12-25 16:26",
+      "apparent_solar": "【已脱敏】",
       "shichen_civil": "酉",
       "shichen_true": "申",
       "shichen_differs": true

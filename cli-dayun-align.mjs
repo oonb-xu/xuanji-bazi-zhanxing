@@ -117,7 +117,7 @@ export function yearJudgements(bazi, gender, { from = 20, to = 50 } = {}) {
     const gz = step?.ganzhi ?? null;
     const wx = gz ? GAN_WX[gz[0]] : null;
     // ★ 关键修正：用**扶抑框架**的 valence，而不是旧的"生用神者=喜神"二元逻辑
-    //   （旧逻辑会把"水生木(用神)"的水判为喜神，却忽略身弱时水是克身的官杀 —— 实测丙火女被误判）
+    //   （旧逻辑会把"水生木(用神)"的水判为喜神，却忽略身弱时水是克身的官杀 —— 实测案例乙被误判）
     const v = valence(wx, dmWx, strong, rooted, yong, ji);
     const fav = v >= 1.5 ? '用神级' : v > 0 ? '喜神' : v === 0 ? '闲神' : v === -1 ? '仇神' : '忌神级';
     out.push({ age, ganZhi: gz, wx, v, fav, favorable: v > 0 });

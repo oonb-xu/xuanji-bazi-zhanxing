@@ -1,6 +1,7 @@
 // 应期/引动 回归钉（单元3）：流年干支 → 星（十神）× 宫（四柱宫位）→ 事件时间
 // 判据全部机检：只依赖原局四柱 + 流年干支，独立重算不信任模块内部实现。
 import { readFileSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { compileBazi } from '../src/bazi/engine.mjs';
@@ -168,7 +169,7 @@ console.log('[F] 星宫事件口径逐条钉死（合/刑/官杀/时支）');
 
 console.log('[G] 第二张盘与边界（真太阳时盘，非本单元样本）');
 {
-  const f2 = compileBazi({ at: '2008-04-16 09:26', gender: '女' });
+  const f2 = compileBazi({ at: F.T3, gender: '女' });
   const r2 = yingQi(f2, { fromYear: 2024, years: 10 });
   eq(r2.hits.length, 10, '第二盘 hits 覆盖 10 年');
   const dm2 = f2.pillars[2][0];

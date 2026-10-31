@@ -2,6 +2,7 @@
 // 机检点：角色口径沿用 kuGong｜冲开/合开/透干三闸｜忌神库恒 false｜标度只取 dag 的 POS_W/CANG
 //        ｜totalScore 有限非负｜magnitude 闭集分档
 import { readFileSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { compileBazi } from '../src/bazi/engine.mjs';
@@ -69,9 +70,9 @@ console.log('[D] ★ 判据④：magnitude 闭集 + totalScore 有限非负（�
   const charts = [
     compileBazi({ pillars: ['癸巳', '戊辰', '戊戌', '癸亥'] }),
     compileBazi({ pillars: ['甲寅', '丙午', '戊戌', '庚申'] }),
-    compileBazi({ at: '2007-12-25 16:26', gender: '男' }),
-    compileBazi({ at: '2008-07-04 15:41', gender: '女' }),
-    compileBazi({ at: '2008-04-16 09:26', gender: '女' }),
+    compileBazi({ at: F.T6, gender: '男' }),
+    compileBazi({ at: F.T1, gender: '女' }),
+    compileBazi({ at: F.T3, gender: '女' }),
     compileBazi({ pillars: ['甲寅', '丙午', '庚申', '丁亥'] }),      // 全盘无四库
   ];
   for (const b of charts) {

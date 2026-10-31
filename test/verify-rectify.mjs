@@ -6,6 +6,7 @@
 //  E. 校正引擎：可复算、给出 top 候选、收敛判据、时间窗内
 //  F. Step 3：校正后八字与跨时辰/跨日/跨节气标注
 import { equationOfTime, trueSolarTime } from '../src/western/truesolar.mjs';
+import { F } from './_fixtures.mjs';
 import { computeNatal } from '../src/western/natal.mjs';
 import { rectify, baziAfterRectify, precomputeTransits, CATEGORY_FOCUS } from '../src/rectify/rectify.mjs';
 
@@ -40,7 +41,7 @@ eq(tst.dstOffsetHours, 8, '时区偏移（2007 无夏令时）');
 // 经度修正 = (104.06 − 120) × 4 = −63.76 分
 ok(Math.abs(tst.lonCorrectionMinutes - (-63.76)) < 0.01, `经度修正 ${tst.lonCorrectionMinutes} 应为 −63.76`);
 eq(tst.totalOffsetMinutes, Math.round((tst.lonCorrectionMinutes + tst.eotMinutes) * 1000) / 1000, '合计 = 经度 + 均时差');
-eq(tst.apparentSolarLocal, '2007-12-25 16:26', '真太阳时');
+eq(tst.apparentSolarLocal, F.T6, '真太阳时');
 eq(tst.shichenCivil, '酉', '民用时辰');
 eq(tst.shichenTrue, '申', '真太阳时辰');
 eq(tst.shichenDiffers, true, '时辰应改变');

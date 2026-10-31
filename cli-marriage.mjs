@@ -2,7 +2,7 @@
 #!/usr/bin/env node
 // 婚姻耦合 · 动态权重（数据推导，非人为设定）
 //   node cli-marriage.mjs --run [--charts 240] [--pairs 800]
-//   node cli-marriage.mjs --couple --a "2007-12-25 17:30" --b "2008-07-04 16:45"
+//   node cli-marriage.mjs --couple --a "2000-01-01 12:00" --b "2008-07-04 16:45"
 //
 // ★ 设计（回应用户三点）：
 //   ① 动态权重 = 数据推导：`w_dayun = W0 × g(p_struct)`，其中
@@ -122,7 +122,7 @@ async function main() {
   /* ── 阶段二：对具体一对算婚姻耦合 ── */
   if (flag('couple')) {
     const W = JSON.parse(readFileSync(WEIGHTS_PATH, 'utf8'));
-    const A = arg('a', '2007-12-25 17:30'), B = arg('b', '2008-07-04 16:45');
+    const A = arg('a', '2000-01-01 12:00'), B = arg('b', '2008-07-04 16:45');
     const lonA = Number(arg('a-lon', 104.06)), latA = Number(arg('a-lat', 30.67));
     const lonB = Number(arg('b-lon', 105.05)), latB = Number(arg('b-lat', 29.58));
     const bs = arg('b-true-solar') ? null : null;
@@ -133,8 +133,8 @@ async function main() {
     const pS = pctRank([W.structural.q.p5, W.structural.q.p25, W.structural.q.p50, W.structural.q.p75, W.structural.q.p95], cpl.score);
     const g = gOf(pS), w = Math.round(W0 * g * 1000) / 1000;
     const zS = (cpl.score - W.structural.mean) / W.structural.sd;
-    const baziA = compileBazi({ at: arg('a-ts', '2007-12-25 16:26'), gender: '男' });
-    const baziB = compileBazi({ at: arg('b-ts', '2008-07-04 15:41'), gender: '女' });
+    const baziA = compileBazi({ at: arg('a-ts', '2000-01-01 12:00'), gender: '男' });
+    const baziB = compileBazi({ at: arg('b-ts', '2000-01-01 12:00'), gender: '女' });
     baziA.input = { ...(baziA.input ?? {}), birthDate: '2007-12-25' };
     baziB.input = { ...(baziB.input ?? {}), birthDate: '2008-07-04' };
     const dy = dayunAlignment(baziA, baziB, { sexA: '男', sexB: '女' });

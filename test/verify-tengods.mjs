@@ -1,5 +1,6 @@
 ﻿// 十神与「制」关系 回归钉 v2（吸收盲派核心）
 import { compileBazi } from '../src/bazi/engine.mjs';
+import { F } from './_fixtures.mjs';
 import { tenGod, TG_GROUP, controlAnalysis, kuGong, hanNuan, KU, CONTROL_RULES } from '../src/bazi/ten-gods.mjs';
 
 let fails = 0;
@@ -51,44 +52,44 @@ console.log('[C] ★ 食神制杀必须能触发（合成盘：癸日 + 乙食�
 
 console.log('[D] 三人制关系实测（对齐杨炎论断类型）');
 {
-  const M = compileBazi({ at: '2007-12-25 16:26', gender: '男' });
-  const F = compileBazi({ at: '2008-07-04 15:41', gender: '女' });
-  const F2 = compileBazi({ at: '2008-04-16 09:26', gender: '女' });
+  const M = compileBazi({ at: F.T6, gender: '男' });
+  const F = compileBazi({ at: F.T1, gender: '女' });
+  const F2 = compileBazi({ at: F.T3, gender: '女' });
   const caM = controlAnalysis(M), caF = controlAnalysis(F), caF2 = controlAnalysis(F2);
   // 男：比劫极旺 ⇒ 夺财制得住（对应杨炎「财星被比劫控制，给人打工」）
   const dM = caM.controls.find((x) => x.name === '比劫夺财');
   eq(dM.verdict, '制得住', '★ 男比劫极旺 ⇒ 夺财制得住');
-  // 乙木女：财重破印（对应「财破印」）
+  // 案例丙：财重破印（对应「财破印」）
   const dF = caF.controls.find((x) => x.name === '财破印');
-  eq(dF.verdict, '制得住', '★ 乙木女财 6.375 ≫ 印 1.75 ⇒ 财破印制得住');
-  // 丙火女：食伤最重 ⇒ 食伤制官杀制得住（对应「食神制杀」类）
+  eq(dF.verdict, '制得住', '★ 案例丙财 6.375 ≫ 印 1.75 ⇒ 财破印制得住');
+  // 案例乙：食伤最重 ⇒ 食伤制官杀制得住（对应「食神制杀」类）
   const dF2 = caF2.controls.find((x) => x.name === '食伤制官杀（聚合）');
-  eq(dF2.verdict, '制得住', '★ 丙火女食伤 6.375 ⇒ 制得住');
-  console.log(`  男 比劫夺财 ${dM.ratio} ✓｜乙木女 财破印 ${dF.ratio} ✓｜丙火女 食伤制官杀 ${dF2.ratio} ✓`);
+  eq(dF2.verdict, '制得住', '★ 案例乙食伤 6.375 ⇒ 制得住');
+  console.log(`  男 比劫夺财 ${dM.ratio} ✓｜案例丙 财破印 ${dF.ratio} ✓｜案例乙 食伤制官杀 ${dF2.ratio} ✓`);
 }
 
-console.log('[E] ★ 库必须区分「比劫库（根）」——丙火女坐戌(火库)应为根，不是闲库');
+console.log('[E] ★ 库必须区分「比劫库（根）」——案例乙坐戌(火库)应为根，不是闲库');
 {
   eq(KU['辰'], '水'); eq(KU['戌'], '火'); eq(KU['丑'], '金'); eq(KU['未'], '木');
-  const F2 = compileBazi({ at: '2008-04-16 09:26', gender: '女' });
+  const F2 = compileBazi({ at: F.T3, gender: '女' });
   const ku = kuGong(F2, '木', '土');
   const xu = ku.find((x) => x.zhi === '戌');
-  ok(xu, '丙火女应有戌库');
+  ok(xu, '案例乙应有戌库');
   eq(xu.role, '比劫库(根/帮身)', '★ 丙火坐戌(火库) ⇒ 比劫库/根，首版误判为闲库');
   eq(xu.self, true, 'self 标记应为 true');
-  console.log(`  丙火女 戌 → ${xu.role} ✓（与「燥土助火 ×1.15」一致）`);
+  console.log(`  案例乙 戌 → ${xu.role} ✓（与「燥土助火 ×1.15」一致）`);
 }
 
 console.log('[F] 寒暖调候');
 {
-  const hnM = hanNuan(compileBazi({ at: '2007-12-25 16:26', gender: '男' }));
+  const hnM = hanNuan(compileBazi({ at: F.T6, gender: '男' }));
   ok(/寒/.test(hnM.nature), '男子月生判寒，实得 ' + hnM.nature);
   eq(hnM.hasFire, true, '男有丁火/巳火 ⇒ 有火调候');
-  const hnF = hanNuan(compileBazi({ at: '2008-07-04 15:41', gender: '女' }));
-  ok(/燥|暖/.test(hnF.nature), '乙木女午月生判燥/暖，实得 ' + hnF.nature);
-  eq(hnF.hasWater, true, '乙木女有子水 ⇒ 有水润泽');
-  const hnF2 = hanNuan(compileBazi({ at: '2008-04-16 09:26', gender: '女' }));
-  console.log(`  男 ${hnM.nature}(${hnM.total})｜乙木女 ${hnF.nature}(${hnF.total})｜丙火女 ${hnF2.nature}(${hnF2.total}) ✓`);
+  const hnF = hanNuan(compileBazi({ at: F.T1, gender: '女' }));
+  ok(/燥|暖/.test(hnF.nature), '案例丙午月生判燥/暖，实得 ' + hnF.nature);
+  eq(hnF.hasWater, true, '案例丙有子水 ⇒ 有水润泽');
+  const hnF2 = hanNuan(compileBazi({ at: F.T3, gender: '女' }));
+  console.log(`  男 ${hnM.nature}(${hnM.total})｜案例丙 ${hnF.nature}(${hnF.total})｜案例乙 ${hnF2.nature}(${hnF2.total}) ✓`);
 }
 
 console.log(fails === 0 ? '\nRESULT: PASS' : `\nRESULT: FAIL (${fails})`);

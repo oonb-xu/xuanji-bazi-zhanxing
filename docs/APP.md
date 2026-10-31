@@ -41,7 +41,7 @@ Get-NetTCPConnection -LocalPort 8788 -State Listen | ForEach-Object { Stop-Proce
 
 示例：
 ```powershell
-curl.exe -s -X POST http://127.0.0.1:8788/api/synastry -H "content-type: application/json" -d '{\"a\":{\"at\":\"2007-12-25 17:30\",\"lng\":116.407,\"lat\":39.904,\"gender\":\"男\"},\"b\":{\"at\":\"2008-07-04 16:45\",\"lng\":121.474,\"lat\":31.230,\"gender\":\"女\"}}'
+curl.exe -s -X POST http://127.0.0.1:8788/api/synastry -H "content-type: application/json" -d '{\"a\":{\"at\":\"【已脱敏】\",\"lng\":116.407,\"lat\":39.904,\"gender\":\"男\"},\"b\":{\"at\":\"2008-07-04 16:45\",\"lng\":121.474,\"lat\":31.230,\"gender\":\"女\"}}'
 ```
 
 ## 可视化

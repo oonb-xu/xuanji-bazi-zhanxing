@@ -2,6 +2,7 @@
 //  A 韩式数据载入与列完整（**CSV 列错位 bug 的回归钉**）  B 三柱对拍率  C 胎元  D R-K1 禁止字段为 null
 //  E 法达/小限表  F 次限/三限  G 太阳返照回归误差  H 六壬月将↔太阳黄经恒等
 import { existsSync, readFileSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -75,10 +76,10 @@ if (existsSync(DB)) {
 console.log('[E] 法达 / 小限');
 eq(FIRDARIA_DAY.reduce((a, x) => a + x.years, 0), 70, '法达主期合计 70 年（不含节点）');
 eq(FIRDARIA_NIGHT[0].planet, '月亮', '夜生从月亮起');
-const f0 = firdaria('2007-12-25 17:30', 0, { isDay: true });
+const f0 = firdaria(F.T7, 0, { isDay: true });
 eq(f0.period, '太阳', '0 岁落太阳期');
 eq(f0.sub, '太阳', '子期从主星起');
-const f10 = firdaria('2007-12-25 17:30', 10, { isDay: true });
+const f10 = firdaria(F.T7, 10, { isDay: true });
 eq(f10.period, '金星', '10 岁落金星期');
 ok(f0.subPlanets.length === 7 && new Set(f0.subPlanets).size === 7, '子期 7 星不重复');
 eq(profection('双子', 0).house, 1, '0 岁 1 宫');
@@ -96,7 +97,7 @@ console.log(`  次限/三限/太阳弧（30 岁=${solarArc(30)}°）✓`);
 
 console.log('[G] 太阳返照回归精度');
 const natalSun = 273.198;
-const sr = solarReturn('2007-12-25 17:30', 2025, { lng: 104.06, lat: 30.67, tz: 8 });
+const sr = solarReturn(F.T7, 2025, { lng: 104.06, lat: 30.67, tz: 8 });
 ok(sr !== null, '应找到返照瞬时');
 const utc = new Date(new Date(sr.at.replace(' ', 'T') + 'Z').getTime() - 8 * 3600e3);
 const back = eclipticLongitude('太阳', utc);

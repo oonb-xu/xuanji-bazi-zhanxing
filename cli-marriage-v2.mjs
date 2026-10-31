@@ -156,10 +156,10 @@ async function main() {
   if (flag('pairs')) {
     const W = JSON.parse(readFileSync(W_PATH, 'utf8'));
     const pairs = [
-      { name: 'CASE-001 × CASE-003（乙木女·内江16:45）', a: '2007-12-25 17:30', aTs: '2007-12-25 16:26', aDate: '2007-12-25', alon: 104.06, alat: 30.67,
-        b: '2008-07-04 16:45', bTs: '2008-07-04 15:41', bDate: '2008-07-04', blon: 105.05, blat: 29.58 },
-      { name: 'CASE-001 × CASE-002（丙火女·成都10:30）', a: '2007-12-25 17:30', aTs: '2007-12-25 16:26', aDate: '2007-12-25', alon: 104.06, alat: 30.67,
-        b: '2008-04-16 10:30', bTs: '2008-04-16 09:26', bDate: '2008-04-16', blon: 104.06, blat: 30.67 },
+      { name: 'CASE-001 × CASE-003（案例丙·内江16:45）', a: '2000-01-01 12:00', aTs: '2000-01-01 12:00', aDate: '2007-12-25', alon: 104.06, alat: 30.67,
+        b: '2008-07-04 16:45', bTs: '2000-01-01 12:00', bDate: '2008-07-04', blon: 105.05, blat: 29.58 },
+      { name: 'CASE-001 × CASE-002（案例乙·成都10:30）', a: '2000-01-01 12:00', aTs: '2000-01-01 12:00', aDate: '2007-12-25', alon: 104.06, alat: 30.67,
+        b: '2000-01-01 12:00', bTs: '2000-01-01 12:00', bDate: '2008-04-16', blon: 104.06, blat: 30.67 },
     ];
     for (const p of pairs) {
       const chA = computeNatal({ at: p.a, lng: p.alon, lat: p.alat, tz: 8 });

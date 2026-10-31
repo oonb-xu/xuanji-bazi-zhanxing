@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // 耦合度逐项拆解（回答"每个细目的得分以及原因"）
-//   node cli-coupling-breakdown.mjs --a "2007-12-25 17:30" --a-lon 104.06 --a-lat 30.67 \
+//   node cli-coupling-breakdown.mjs --a "2000-01-01 12:00" --a-lon 104.06 --a-lat 30.67 \
 //                                   --b "2008-07-04 16:45" --b-lon 105.05 --b-lat 29.58
 //
 // 耦合度 = Jaccard(关系多重集) × 长度惩罚
@@ -35,7 +35,7 @@ const IS_MAIN = process.argv[1] && import.meta.url === pathToFileURL(process.arg
 
 async function main() {
   const arg = (k, d = null) => { const i = process.argv.indexOf(`--${k}`); return i >= 0 ? process.argv[i + 1] : d; };
-  const A = arg('a', '2007-12-25 17:30'), B = arg('b', '2008-07-04 16:45');
+  const A = arg('a', '2000-01-01 12:00'), B = arg('b', '2008-07-04 16:45');
   const lonA = Number(arg('a-lon', 104.06)), latA = Number(arg('a-lat', 30.67));
   const lonB = Number(arg('b-lon', 105.05)), latB = Number(arg('b-lat', 29.58));
   const orb = Number(arg('orb', 8));

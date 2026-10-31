@@ -108,3 +108,6 @@ py/
 
 # ── 本地环境变量示例之外的一切 ──
 .env.local
+
+# ⚠ 测试基准盘的真实出生时间（本地私有，不入库）
+test/fixtures.local.json

@@ -1,6 +1,7 @@
 // G 系列：女命星盘降级 + 主张审计 自检（exit 0 = 全过）
 //  A 星盘降级状态与屏蔽清单  B 可用/不可用数据的自洽性  C 撤回主张已登记  D 「三会木局」误判的核实
 import { existsSync, readFileSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -39,7 +40,7 @@ console.log('[B] 四柱双路径一致性（真太阳时 vs 民用时）');
   const { baziClock } = await import('../src/western/truesolar.mjs');
   const bc = baziClock({ date: '2008-04-16', time: '10:30', lon: 104.06, tz: 8 });
   const viaTrueSolar = compileBazi({ at: bc.at, gender: '女' }).pillars.join('');
-  const viaCivil = compileBazi({ at: '2008-04-16 10:30', gender: '女' }).pillars.join('');
+  const viaCivil = compileBazi({ at: F.T5, gender: '女' }).pillars.join('');
   eq(viaTrueSolar, '戊子丙辰丙戌癸巳', '经真太阳时的四柱');
   eq(viaCivil, '戊子丙辰丙戌癸巳', '经民用时的四柱（两者须一致 —— 同在巳时）');
   eq(viaTrueSolar, viaCivil, '★ 两条路径必须给出同一四柱（这正是四柱可信度为 high 的依据）');
@@ -90,8 +91,8 @@ console.log('[E] daYun 回归钉（R-G6：入参形状必须机检）');
 {
   const { compileBazi } = await import('../src/bazi/engine.mjs');
   const { daYun } = await import('../src/cross/timing.mjs');
-  const F = compileBazi({ at: '2008-07-04 15:41', gender: '女' });
-  const M = compileBazi({ at: '2007-12-25 16:26', gender: '男' });
+  const F = compileBazi({ at: F.T1, gender: '女' });
+  const M = compileBazi({ at: F.T6, gender: '男' });
   ok(Array.isArray(F.pillars) && typeof F.pillars[0] === 'string', '前置：pillars 必须是字符串数组');
   const dyF = daYun(F.pillars, new Date('2008-07-04'), '女');
   const dyM = daYun(M.pillars, new Date('2007-12-25'), '男');

@@ -7,6 +7,7 @@
 //   · 宫位     —— **不直接比**（kerykeion 默认 Placidus，本引擎默认 porphyry），只比「上升/天顶/宫头递增」等不变量
 //   · 相位     —— 比硬相位（对冲/四分相/梅花相）集合的交集率
 import { execFileSync } from 'node:child_process';
+import { F } from './_fixtures.mjs';
 import { existsSync, mkdirSync, readFileSync, rmSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -58,7 +59,7 @@ function kerykeionChart({ name, at, lng, lat, tz = 8, houses = 'P' }) {
 }
 
 const CASES = [
-  { name: '案例001', at: '2007-12-25 17:30', lng: 104.06, lat: 30.67, tz: 8 },   // 用户给的案例（成都）
+  { name: '案例001', at: F.T7, lng: 104.06, lat: 30.67, tz: 8 },   // 用户给的案例（成都）
   { name: '1990上海', at: '1990-05-20 14:30', lng: 121.47, lat: 31.23, tz: 8 },  // ★ 中国 1986–91 夏令时
   { name: '新月', at: '2024-01-11 19:57', lng: 116.4, lat: 39.9, tz: 8 },        // 新月（日月合相）
 ];

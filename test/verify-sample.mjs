@@ -7,6 +7,7 @@
 //  F. 后端注册表：mine 与 kerykeion 同 schema；未知后端抛错
 //  G. 统计聚合
 import { existsSync, readFileSync, rmSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateSample, sampleId, collectSample, loadSamples, sampleStats, renderSample, renderSampleRules, alignEvents, SAMPLES_DB, TEMPLATE } from '../src/cross/sample.mjs';
@@ -105,13 +106,13 @@ console.log(`  ${ev.map((x) => `${x.year}${x.liuNian.ganzhi}(${x.hits.map((h) =>
 console.log('[F] 后端注册表');
 eq(BACKENDS.length, 2, '两个后端');
 eq(PRIMARY_BACKEND, 'mine', '主后端 R-W12');
-const m = computeChart('mine', { at: '2007-12-25 17:30', lon: 104.06, lat: 30.67, tzName: 'Asia/Shanghai' });
+const m = computeChart('mine', { at: F.T7, lon: 104.06, lat: 30.67, tzName: 'Asia/Shanghai' });
 for (const b of KEYS) ok(!!m.planets[b], `mine 后端缺 ${b}`);
 ok(HARD_ASPECTS.has('对冲') && HARD_ASPECTS.has('四分相') && HARD_ASPECTS.has('梅花相'), '硬相位集合');
 let threw = false;
-try { computeChart('nonexistent', { at: '2007-12-25 17:30', lon: 1, lat: 1 }); } catch { threw = true; }
+try { computeChart('nonexistent', { at: F.T7, lon: 1, lat: 1 }); } catch { threw = true; }
 ok(threw, '未知后端应抛错');
-const d = computeDual({ at: '2007-12-25 17:30', lon: 104.06, lat: 30.67, tzName: 'Asia/Shanghai' });
+const d = computeDual({ at: F.T7, lon: 104.06, lat: 30.67, tzName: 'Asia/Shanghai' });
 ok(d.mine && (d.kerykeion || d.keryErr), 'computeDual 结构');
 console.log(`  两后端同 schema ✓；未知后端抛错 ✓；computeDual ${d.kerykeion ? '双盘' : `单盘（${d.keryErr}）`} ✓`);
 

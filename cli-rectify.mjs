@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 星盘反推八字引擎 CLI（含生时校正）
 //   node cli-rectify.mjs --case data/samples/case001.json [--window 60] [--step 1] [--json out.json] [--report out.md]
-//   node cli-rectify.mjs --at "2007-12-25 17:30" --lng 104.06 --lat 30.67 --tz Asia/Shanghai --event 2022:家庭 --event 2024:学业
+//   node cli-rectify.mjs --at "2000-01-01 12:00" --lng 104.06 --lat 30.67 --tz Asia/Shanghai --event 2022:家庭 --event 2024:学业
 // Step 5 分支：事件 <3 → 只出原始双盘 + 八字，并提示补事件（不强行校正）
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';

@@ -2,6 +2,7 @@
 //  A 桥接可用性与数值  B ★框架：libephemeris 返回**日心**而非地心（视差 0.36–3.46°）  C 独立校验（JPL 根数开普勒）
 //  D 宫位判定与专家基准一致（9 宫）  E 并入后九宫群星完整
 import { existsSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { hasChiron, chironLongitude, helioToGeo, keplerianChironHelioLon, keplerianHelio, CHIRON_ELEMENTS, signOf, degInSign, attachChiron, CHIRON_NAME } from '../src/western/chiron.mjs';
@@ -35,7 +36,7 @@ console.log('[B] ★ 框架：该接口返回**日心**，必须转地心（否�
   ok(para > 0.2, `视差应显著（实测 ${para.toFixed(2)}°），否则说明无需转换或实现有误`);
   ok(para < 4.0, `视差不应超过 atan(1/q)=${(Math.atan(1 / 8.49) * 180 / Math.PI).toFixed(2)}°，实得 ${para.toFixed(2)}°`);
   // ★ 核心回归钉：不转换会跨宫界（8 宫 vs 9 宫）
-  const raw = computeNatal({ at: '2008-04-16 10:30', lng: 104.06, lat: 30.67, tz: 8 });
+  const raw = computeNatal({ at: F.T5, lng: 104.06, lat: 30.67, tz: 8 });
   const houseOf = (lon) => {
     const cusps = (raw.cuspsRaw ?? raw.cusps ?? []).map((c) => (typeof c === 'number' ? c : c?.lon));
     if (cusps.length !== 12) return null;
@@ -66,7 +67,7 @@ console.log('[C] 独立校验：JPL SBDB 根数开普勒传播');
 
 console.log('[D] 宫位与专家基准一致');
 {
-  const raw = computeNatal({ at: '2008-04-16 10:30', lng: 104.06, lat: 30.67, tz: 8 });
+  const raw = computeNatal({ at: F.T5, lng: 104.06, lat: 30.67, tz: 8 });
   const w = attachChiron(raw, D, { eclipticLonOf: (dt) => eclipticLongitude('太阳', dt) });
   const c = w.planets[CHIRON_NAME];
   ok(c !== undefined, '须并入星盘');
@@ -82,7 +83,7 @@ console.log('[D] 宫位与专家基准一致');
 
 console.log('[E] 并入后九宫群星完整（专家基准：海王星、北交点、凯龙）');
 {
-  const raw = computeNatal({ at: '2008-04-16 10:30', lng: 104.06, lat: 30.67, tz: 8 });
+  const raw = computeNatal({ at: F.T5, lng: 104.06, lat: 30.67, tz: 8 });
   const w = attachChiron(raw, D, { eclipticLonOf: (dt) => eclipticLongitude('太阳', dt) });
   const AX = ['上升', '下降', '天顶', '天底'];
   const h9 = Object.entries(w.planets).filter(([k, v]) => v.house === 9 && !AX.includes(k)).map(([k]) => k).sort();

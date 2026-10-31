@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // kerykeion 后端 CLI：用 kerykeion 出盘 → 喂给本引擎的 Part5/6/8
-//   node cli-kerykeion.mjs --at "2007-12-25 17:30" --lng 104.06 --lat 30.67 --tz Asia/Shanghai
+//   node cli-kerykeion.mjs --at "2000-01-01 12:00" --lng 104.06 --lat 30.67 --tz Asia/Shanghai
 //   node cli-kerykeion.mjs --at … --pillars "丁亥 壬子 癸巳 庚申" --report out.md --json out.json
 // 说明：kerykeion 只做**星盘**；八字部分仍由本引擎计算（可 --pillars 显式给，或由 --at 反推四柱）。
 import { execFileSync } from 'node:child_process';

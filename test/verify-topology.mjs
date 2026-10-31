@@ -2,6 +2,7 @@
 //  A 统一语言（五行节点 + 生/克/比和 边）  B 六壬三传有向图  C 星盘硬相位有向图
 //  D 相位→关系映射（以实测字符串为准）  E 签名/形状  F 几何陷阱回归钉（R-C4）
 import { existsSync, readFileSync } from 'node:fs';
+import { F } from './_fixtures.mjs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
@@ -70,7 +71,7 @@ console.log('[B] 六壬三传有向图');
 
 console.log('[C] 星盘硬相位有向图');
 {
-  const ch = computeNatal({ at: '2007-12-25 17:30', lng: 104.06, lat: 30.67, tz: 8 });
+  const ch = computeNatal({ at: F.T7, lng: 104.06, lat: 30.67, tz: 8 });
   const t = aspectTopology(ch, { maxOrb: 10 });
   ok(t.edges.length > 0, `应产生边（实得 ${t.edges.length}）`);
   ok(t.edges.every((e) => ['生', '克', '比和'].includes(e.rel)), '边关系须在统一词汇内');
@@ -164,7 +165,7 @@ else {
 console.log('[H] 相位双口径（R-G4：整宫制 vs 容许度制，必须并列）');
 {
   const { wholeSignAspects, compareAspectSystems, WHOLE_SIGN_ASPECTS } = await import('../src/western/aspect-systems.mjs');
-  const ch = computeNatal({ at: '2007-12-25 17:30', lng: 104.06, lat: 30.67, tz: 8 });
+  const ch = computeNatal({ at: F.T7, lng: 104.06, lat: 30.67, tz: 8 });
   const ws = wholeSignAspects(ch);
   ok(ws.length > 0, `整宫制应产生相位，实得 ${ws.length}`);
   // ★ 核心回归钉：复现专家档案所说的「日月冲」（太阳摩羯 vs 月亮巨蟹 = 对宫）
