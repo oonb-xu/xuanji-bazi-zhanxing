@@ -142,4 +142,4 @@ console.log(`⑥ 分支 ${BRANCH} → ${commit.sha.slice(0, 10)}`);
 console.log('\n✅ 完成！');
 console.log('   仓库：https://github.com/' + me.login + '/' + REPO);
 console.log('   Pages：Settings → Pages → Source 选 GitHub Actions');
-console.log('   提示：记得把文件里的 YOUR_NAME 换成 ' + me.login + '，YOUR_ID 换成你的爱发电 ID');
+console.log('   提示：记得把文件里的 oonb-xu 换成 ' + me.login + '，YOUR_ID 换成你的爱发电 ID');

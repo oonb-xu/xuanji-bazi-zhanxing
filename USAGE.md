@@ -24,7 +24,7 @@
 ## 1. 30 秒上手
 
 ```bash
-git clone https://github.com/YOUR_NAME/xuanji.git
+git clone https://github.com/oonb-xu/xuanji.git
 cd xuanji
 npm install
 npm start
@@ -145,7 +145,7 @@ npm -v
 ### 方式一：Git（推荐，可更新）
 
 ```bash
-git clone https://github.com/YOUR_NAME/xuanji.git
+git clone https://github.com/oonb-xu/xuanji.git
 cd xuanji
 npm install
 npm start

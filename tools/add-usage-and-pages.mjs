@@ -40,7 +40,7 @@ const USAGE = `# 使用手册
 ## 1. 30 秒上手
 
 \`\`\`bash
-git clone https://github.com/YOUR_NAME/xuanji.git
+git clone https://github.com/oonb-xu/xuanji.git
 cd xuanji
 npm install
 npm start
@@ -161,7 +161,7 @@ npm -v
 ### 方式一：Git（推荐，可更新）
 
 \`\`\`bash
-git clone https://github.com/YOUR_NAME/xuanji.git
+git clone https://github.com/oonb-xu/xuanji.git
 cd xuanji
 npm install
 npm start
@@ -452,7 +452,7 @@ const LANDING = `<!DOCTYPE html>
   <div class="row links">
     <a href="./paper.html">📄 论文</a>
     <a href="./video.html">🎬 宣传视频</a>
-    <a href="https://github.com/YOUR_NAME/xuanji">⭐ GitHub 仓库</a>
+    <a href="https://github.com/oonb-xu/xuanji">⭐ GitHub 仓库</a>
   </div>
 
   <div class="card warn">
@@ -463,11 +463,11 @@ const LANDING = `<!DOCTYPE html>
   </div>
 
   <h2>怎么用</h2>
-  <pre><code>git clone https://github.com/YOUR_NAME/xuanji.git
+  <pre><code>git clone https://github.com/oonb-xu/xuanji.git
 cd xuanji
 npm install
 npm start          # 浏览器自动打开 http://127.0.0.1:8788</code></pre>
-  <p class="mut">没装 Node？看仓库里的 <a href="https://github.com/YOUR_NAME/xuanji/blob/main/USAGE.md">USAGE.md</a>
+  <p class="mut">没装 Node？看仓库里的 <a href="https://github.com/oonb-xu/xuanji/blob/main/USAGE.md">USAGE.md</a>
     第 4 节（便携版 Node / 内网共享 / 云端环境）。</p>
 
   <h2>核心结论（已实测）</h2>
@@ -504,7 +504,7 @@ npm start          # 浏览器自动打开 http://127.0.0.1:8788</code></pre>
   <footer>
     以 <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a> 发布 ·
     不收集身份信息，绝无 API Key 接收 ·
-    <a href="https://github.com/YOUR_NAME/xuanji/blob/main/PRIVACY.md">隐私政策</a><br><br>
+    <a href="https://github.com/oonb-xu/xuanji/blob/main/PRIVACY.md">隐私政策</a><br><br>
     兴趣，不是命运指南。
   </footer>
 </div>

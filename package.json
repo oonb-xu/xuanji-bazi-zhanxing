@@ -82,13 +82,13 @@
     "命理",
     "开源"
   ],
-  "homepage": "https://github.com/YOUR_NAME/xuanji#readme",
+  "homepage": "https://github.com/oonb-xu/xuanji#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_NAME/xuanji.git"
+    "url": "git+https://github.com/oonb-xu/xuanji.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_NAME/xuanji/issues"
+    "url": "https://github.com/oonb-xu/xuanji/issues"
   },
   "files": [
     "bin/",
