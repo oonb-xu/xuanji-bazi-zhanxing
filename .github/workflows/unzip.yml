@@ -1,7 +1,7 @@
 name: Unpack
 
-# 把仓库根目录的 xuanji-minglironghe.zip 解压成正常源码目录，然后删掉 zip。
-# 提交本文件即会自动触发一次。
+# 兼容 PowerShell Compress-Archive 打的「反斜杠路径」zip：
+# 用 Python 解包并把 \ 规范成 /，否则 Linux 的 unzip 会把它们当成文件名的一部分。
 
 on:
   push:
@@ -17,27 +17,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: 检查 zip
-        id: chk
-        run: |
-          if [ -f xuanji-minglironghe.zip ]; then
-            echo "found=true" >> "$GITHUB_OUTPUT"
-            ls -lh xuanji-minglironghe.zip
-          else
-            echo "found=false" >> "$GITHUB_OUTPUT"
-            echo "zip 不存在，跳过"
-          fi
-
       - name: 解压
-        if: steps.chk.outputs.found == 'true'
         run: |
-          unzip -o -q xuanji-minglironghe.zip -d .
+          python3 - <<'PY'
+          import os, shutil, zipfile
+          src = 'xuanji-minglironghe.zip'
+          if not os.path.exists(src):
+              print('zip 不存在，跳过')
+              raise SystemExit(0)
+          n = 0
+          with zipfile.ZipFile(src) as z:
+              for info in z.infolist():
+                  if info.is_dir():
+                      continue
+                  name = info.filename.replace('\\', '/').lstrip('/')
+                  dst = os.path.join('.', name)
+                  os.makedirs(os.path.dirname(dst) or '.', exist_ok=True)
+                  with z.open(info) as f, open(dst, 'wb') as o:
+                      shutil.copyfileobj(f, o)
+                  n += 1
+          print('解出', n, '个文件')
+          PY
           rm -f xuanji-minglironghe.zip
-          echo "--- 根目录 ---"
-          ls -la | head -40
+          echo '--- 根目录 ---'
+          ls -la | head -30 || true
 
       - name: 提交
-        if: steps.chk.outputs.found == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
