@@ -1,0 +1,45 @@
+name: Fix placeholders
+
+# 把仓库里的占位符 YOUR_NAME 换成真实用户名 oonb-xu。
+# （GITHUB_TOKEN 不能改工作流文件，所以本文件跳过 .github/workflows/）
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 替换占位符
+        run: |
+          set -e
+          grep -rl 'YOUR_NAME' . --exclude-dir=.git --exclude-dir=node_modules > /tmp/hits.txt || true
+          echo '--- 命中文件 ---'
+          cat /tmp/hits.txt || true
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            case "$f" in
+              ./.github/workflows/*) echo "skip workflow: $f"; continue ;;
+            esac
+            sed -i 's/YOUR_NAME/oonb-xu/g' "$f"
+            echo "fixed: $f"
+          done < /tmp/hits.txt
+
+      - name: 提交
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "没有变化，跳过提交"
+          else
+            git commit -m "chore: 占位符 YOUR_NAME -> oonb-xu"
+            git push
+          fi
